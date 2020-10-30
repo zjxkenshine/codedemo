@@ -1,8 +1,9 @@
-package easy;
+package easy.data;
 
 import com.alibaba.excel.annotation.ExcelProperty;
 import com.alibaba.excel.annotation.format.DateTimeFormat;
 import com.alibaba.excel.annotation.format.NumberFormat;
+import easy.converter.CustomStringStringConverter;
 import lombok.Data;
 
 import java.util.Date;

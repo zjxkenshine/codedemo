@@ -1,4 +1,4 @@
-package easy;
+package easy.converter;
 
 import com.alibaba.excel.converters.Converter;
 import com.alibaba.excel.enums.CellDataTypeEnum;
