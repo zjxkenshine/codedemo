@@ -4,8 +4,46 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.kenshine.mapper.UserMapper">
 
-   <select id="getUserList" resultType="com.kenshine.pojo.User">
+
+
+    <select id="getUserList" resultType="com.kenshine.pojo.User">
         select * from user
    </select>
+
+    <select id="getUserById" parameterType="int" resultType="com.kenshine.pojo.User">
+        select * from user where id=#{id}
+    </select>
+
+    <select id="getUserById2" parameterType="map" resultType="com.kenshine.pojo.User">
+        select * from user where id=#{userId}
+    </select>
+
+    <select id="getUserLike" resultType="com.kenshine.pojo.User">
+        select * from user where name like #{value}
+    </select>
+
+    <select id="getUserLike2" resultType="com.kenshine.pojo.User">
+        select * from user where name like concat('%',#{value},'%');
+    </select>
+
+    <!--对象中的属性可以直接取出来-->
+    <insert id="addUser" parameterType="com.kenshine.pojo.User">
+        insert into user(id,name,pwd) values(#{id},#{name},#{pwd})
+    </insert>
+
+    <!--Map版本-->
+    <insert id="addUser2" parameterType="map">
+        insert into user(id,name,pwd) values(#{userId},#{userName},#{userPwd})
+    </insert>
+
+    <update id="updateUser" parameterType="com.kenshine.pojo.User">
+        update user set name=#{name},pwd=#{pwd} where id=#{id}
+    </update>
+
+    <delete id="deleteUser" parameterType="int">
+        delete from user where id=#{id}
+    </delete>
+
+
 
 </mapper>
