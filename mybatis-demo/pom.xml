@@ -15,7 +15,7 @@
 
     <!--导入依赖-->
     <dependencies>
-        <!--mysqlq驱动-->
+        <!--mysql驱动-->
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
