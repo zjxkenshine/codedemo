@@ -15,4 +15,4 @@ eureka:
     register-with-eureka: false   # 是否将自己注册到注册中心，默认为true，本身不提供服务
     registry-fetch-interval-seconds: 10   # 表示Eureka Client间隔多久去服务器拉取注册信息，默认为30秒
     service-url:                # 注册中心对外暴露的注册地址，集群环境需要所有都注册
-      defaultZone: http://localhost:8762/eureka/,http://localhost:8761/eureka/
+      defaultZone: http://root:123456@localhost:8762/eureka/,http://root:123456@localhost:8761/eureka/

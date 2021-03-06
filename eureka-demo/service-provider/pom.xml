@@ -36,6 +36,11 @@
       <scope>provided</scope>
     </dependency>
 
+    <!--Spring boot actuator依赖-->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-actuator</artifactId>
+    </dependency>
 
     <!--Spring boot test 依赖-->
     <dependency>
