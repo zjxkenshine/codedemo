@@ -1,8 +1,8 @@
 package com.kenshin.service.impl;
 
+import com.kenshin.service.OrderService;
 import com.kenshin.pojo.Order;
 import com.kenshin.pojo.Product;
-import com.kenshin.service.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
@@ -36,9 +36,9 @@ public class OrderServiceImpl implements OrderService {
 
     @Override
     public Order selectOrderById(Integer id) {
-       // return new Order(id,"order-001","中国",31994D,selectProductListByDiscoveryClient());
-       // return new Order(id,"order-001","中国",31994D,selectProductListByLoadBalancerClient());
-       // return new Order(id,"order-001","中国",31994D,selectProductListByLoadBalancerAnnotation());
+        // return new Order(id,"order-001","中国",31994D,selectProductListByDiscoveryClient());
+        // return new Order(id,"order-001","中国",31994D,selectProductListByLoadBalancerClient());
+        // return new Order(id,"order-001","中国",31994D,selectProductListByLoadBalancerAnnotation());
         return new Order(id,"order-001","中国",31994D,selectProductListByLoadBalancerClient01());
     }
 
