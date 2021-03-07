@@ -3,7 +3,6 @@ package com.kenshin;
 import com.netflix.loadbalancer.RandomRule;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
 
@@ -11,19 +10,18 @@ import org.springframework.web.client.RestTemplate;
  * @author kenshine
  * 开启EurekaClient注解,目前版本如果配置了Eureka注册中心，默认会开启该注解
  */
-@EnableEurekaClient
 @SpringBootApplication
-public class ServiceConsumerApplication {
+public class ServiceConsumerP2PApplication {
 
 
     /**
      * 配置全局负载均衡
      * 局部需要在application.yml中额外配置
      */
-    @Bean
-    public RandomRule randomRule(){
-        return new RandomRule();
-    }
+//    @Bean
+//    public RandomRule randomRule(){
+//        return new RandomRule();
+//    }
 
 
     /**
@@ -39,6 +37,6 @@ public class ServiceConsumerApplication {
 
 
     public static void main(String[] args) {
-        SpringApplication.run(ServiceConsumerApplication.class,args);
+        SpringApplication.run(ServiceConsumerP2PApplication.class,args);
     }
 }

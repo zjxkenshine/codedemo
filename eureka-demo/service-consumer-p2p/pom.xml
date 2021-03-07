@@ -5,7 +5,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.kenshin</groupId>
-  <artifactId>service-consumer</artifactId>
+  <artifactId>service-consumer-p2p</artifactId>
   <version>1.0-SNAPSHOT</version>
 
   <!--继承父依赖-->
@@ -17,18 +17,13 @@
 
   <!--项目依赖-->
   <dependencies>
-    <!--netflix eureka client 依赖-->
-    <dependency>
-      <groupId>org.springframework.cloud</groupId>
-      <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
-    </dependency>
-
     <!--netflix ribbon依赖，默认已经在eureka中有了，不用添加-->
     <!--ribbon点对点直连需要排除eureka依赖-->
-<!--    <dependency>-->
-<!--      <groupId>org.springframework.cloud</groupId>-->
-<!--      <artifactId>spring-cloud-netflix-ribbon</artifactId>-->
-<!--    </dependency>-->
+    <dependency>
+      <groupId>org.springframework.cloud</groupId>
+      <artifactId>spring-cloud-starter-netflix-ribbon</artifactId>
+      <version>2.2.1.RELEASE</version>
+    </dependency>
 
     <!--Spring boot web 依赖-->
     <dependency>
@@ -57,6 +52,5 @@
         </exclusion>
       </exclusions>
     </dependency>
-
   </dependencies>
 </project>

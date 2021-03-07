@@ -27,7 +27,6 @@ public class OrderServiceImpl implements OrderService {
 
     @Autowired
     private DiscoveryClient discoveryClient;
-
     /**
      *  负载均衡器
      */

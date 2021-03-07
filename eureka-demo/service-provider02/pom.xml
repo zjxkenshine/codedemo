@@ -5,7 +5,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.kenshin</groupId>
-  <artifactId>service-consumer</artifactId>
+  <artifactId>service-provider02</artifactId>
   <version>1.0-SNAPSHOT</version>
 
   <!--继承父依赖-->
@@ -23,13 +23,6 @@
       <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
     </dependency>
 
-    <!--netflix ribbon依赖，默认已经在eureka中有了，不用添加-->
-    <!--ribbon点对点直连需要排除eureka依赖-->
-<!--    <dependency>-->
-<!--      <groupId>org.springframework.cloud</groupId>-->
-<!--      <artifactId>spring-cloud-netflix-ribbon</artifactId>-->
-<!--    </dependency>-->
-
     <!--Spring boot web 依赖-->
     <dependency>
       <groupId>org.springframework.boot</groupId>
@@ -43,6 +36,11 @@
       <scope>provided</scope>
     </dependency>
 
+    <!--Spring boot actuator依赖-->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-actuator</artifactId>
+    </dependency>
 
     <!--Spring boot test 依赖-->
     <dependency>
