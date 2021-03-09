@@ -1,0 +1,26 @@
+server:
+  port: 9091    # 端口
+
+spring:
+  application:
+    name: order-service-feign    # 应用名称
+  # sentinel配置
+  cloud:
+    sentinel:
+      transport:
+        port: 8719
+        dashboard: http://localhost:8080
+
+# 配置eureka server注册中心
+eureka:
+  instance:
+    prefer-ip-address: true     # 是否使用ip地址注册
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}   # ip:port
+  client:
+    service-url:                # 注册中心对外暴露的注册地址，集群环境需要所有都注册
+      defaultZone: http://localhost:8761/eureka/, http://localhost:8762/eureka/
+
+# feign 开启sentinel支持
+feign:
+  sentinel:
+    enabled: true
