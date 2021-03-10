@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: rocketmq-demo02
+  profiles:
+    active: demo02
+
+server:
+  port: 8082
+
+rocketmq:
+  name-server: 192.168.64.135:9876
+
+---
+spring:
+  profiles: demo01
+
+rocketmq:
+  producer:
+    group: producer-demo1
+
+
+---
+spring:
+  profiles: demo02
+
+rocketmq:
+  producer:
+    group: producer-demo2
+
+

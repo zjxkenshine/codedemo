@@ -7,23 +7,20 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="eureka-server" />
-        <module name="product-service" />
-        <module name="order-service-feign" />
-        <module name="eureka-server02" />
-        <module name="sentinel-demo" />
-        <module name="order-service-rest" />
+        <module name="rocketmq-demo01" />
+        <module name="rocketmq-demo02" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="rocketmqdemo02" target="1.7" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="eureka-server" options="-parameters" />
-      <module name="eureka-server02" options="-parameters" />
-      <module name="order-service-feign" options="-parameters" />
-      <module name="order-service-rest" options="-parameters" />
-      <module name="product-service" options="-parameters" />
-      <module name="sentinel-demo" options="-parameters" />
+      <module name="rocketmq-demo" options="-parameters" />
+      <module name="rocketmq-demo01" options="-parameters" />
+      <module name="rocketmq-demo02" options="-parameters" />
+      <module name="rocketmqdemo02" options="" />
     </option>
   </component>
 </project>

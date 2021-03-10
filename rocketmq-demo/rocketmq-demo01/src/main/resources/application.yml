@@ -1,0 +1,23 @@
+# 此demo为Rocket原生依赖 rocketmq-client 的使用
+server:
+  port: 8081
+
+# 工程名称
+spring:
+  application:
+    name: rocketmq-demo01
+
+rocketmq:
+  # 生产者配置
+  producer:
+    groupName: ${spring.application.name}
+    # 多个命名服务以；分隔
+    namesrvAddr: 192.168.64.135:9876
+    # default和transaction只能有一个为true ,注解中也一样
+    default: false
+    transaction: true
+  # 消费者配置
+  consumer:
+    groupName: ${spring.application.name}
+    namesrvAddr: 192.168.64.135:9876
+
