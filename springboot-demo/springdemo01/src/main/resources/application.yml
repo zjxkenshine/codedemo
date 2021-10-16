@@ -1,0 +1,26 @@
+# 应用名称
+spring:
+  application:
+    name: springdemo01
+  # 热部署
+  devtools:
+    #是否支持livereload 在devtools模块中包含一个嵌入的livereload服务器，可以在资源变化时用来触发浏览器刷新
+    livereload:
+      enabled: true
+      port: 35729
+    #是否支持热部署
+    restart:
+      enabled: true
+
+server:
+  port: 8080
+  servlet:
+    # 访问路径
+    context-path: /
+
+# 日志配置
+logging:
+  file:
+    path: F:/logs/spring-boot-hello.log
+  # 日志级别
+  level.org.springframework.web: DEBUG
