@@ -1,10 +1,18 @@
 # Default ignored files
-/workspace.xml
-#忽略所有target目录
-target/
-#忽略所有.idea目录
-.idea/
-#忽略所有下级.idea目录
-*/.idea/
-#忽略所有.iml文件
-*.iml
+     /workspace.xml
+     #忽略所有target目录
+     target/
+     #忽略所有.idea目录
+     .idea/
+     #忽略所有下级.iml文件
+     */*.iml
+     #忽略所有下级.idea目录
+     */.idea/
+     #忽略所有.iml文件
+     *.iml
+     #忽略所有下级target目录
+     */target/
+     #忽略所有孙级target目录
+     */*/target/
+     #忽略所有孙级target目录
+     */*/*.iml
