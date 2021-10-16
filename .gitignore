@@ -16,3 +16,9 @@
      */*/target/
      #忽略所有孙级target目录
      */*/*.iml
+
+# git rm -r --cached *.iml
+  #git rm -r --cached .idea
+  #git rm -r --cached target
+  #git rm -r --cached */target
+  #git rm -r --cached */*.iml
