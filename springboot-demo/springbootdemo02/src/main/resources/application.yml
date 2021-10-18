@@ -1,0 +1,48 @@
+spring:
+  thymeleaf:
+    cache: true
+    mode: LEGACYHTML5
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 100MB
+      max-request-size: 100MB
+  datasource:
+    username: root
+    password: zjx123456
+    url: jdbc:mysql://127.0.0.1:3306/db1?characterEncoding=utf8&useSSL=false&serverTimezone=GMT&allowPublicKeyRetrieval=true
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  # 配置说明 https://www.cnblogs.com/gabin/p/7777882.html
+  flyway:
+    baseline-on-migrate: true
+
+#mybatis配置
+#mybatis.type-aliases-package=com.yyg.boot.domain
+#mybatis.mapper-locations=classpath:com/yyg/boot/domain/*.xml
+
+mybatis:
+  type-aliases-package: com.kenshine.demo03.domain
+  # xml方式需要此配置
+  #classpath:com/kenshine/demo03/mapper/*.xml 放在java目录中
+  #classpath:/mapper/*Mapper.xml 放在resources mapper目录中
+  mapper-locations: classpath:/mapper/*Mapper.xml
+
+#文件上传目录（注意Linux和Windows上的目录结构不同）
+#uploadFolder:/root/upload/
+#特别要注意此位置 自定义配置 需要先创建该文件夹
+uploadFolder: D:/upload/
+
+server:
+  port: 8080
+
+#一些thymeleaf的默认配置
+#spring.thymeleaf.cache=true   缓存
+#spring.thymeleaf.check-template-location=true
+#spring.thymeleaf.servlet.content-type=text/html   contenttype
+#spring.thymeleaf.enabled=true   是否开启
+#spring.thymeleaf.encoding=UTF-8     模板编码
+#spring.thymeleaf.excluded-view-names=
+#spring.thymeleaf.mode=HTML5   模式
+#spring.thymeleaf.prefix=classpath:/templates/      默认匹配的前缀
+#spring.thymeleaf.suffix=.html        默认匹配的后缀
+#spring.thymeleaf.template-resolver-order=

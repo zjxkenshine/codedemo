@@ -5,8 +5,14 @@
     <groupId>com.kenshine</groupId>
     <artifactId>springdemo01</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>springdemo01</name>
-    <description>springdemo01</description>
+    <name>springbootdemo01</name>
+    <description>springbootdemo01</description>
+
+    <parent>
+        <groupId>com.kenshine</groupId>
+        <artifactId>springboot-demo</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
 
     <properties>
         <java.version>1.8</java.version>
