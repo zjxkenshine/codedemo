@@ -17,6 +17,16 @@ singleton  单例模式 只能创建一个实例的类
 - demo07    枚举方式(饿汉式),不会被破坏
 - demo08    序列化破坏单例模式 及解决
 - demo09    反射破坏单例模式 及解决
+- demo10    runtime 测试
+
+factory     工厂模式
+- simple_factory    简单工厂模式，不是23种设计模式之一
+- static_factory    静态工厂模式，不是23种设计模式之一
+- factory_method    工厂方法模式
+- abstract_factory  抽象工厂模式，产品族
+- config_factory    简单工厂+配置文件方式  最常用
+
+
 
 # 2.补充
 ## 软件设计原则
@@ -31,6 +41,8 @@ singleton  单例模式 只能创建一个实例的类
 ## 创建型设计模式
 - 单例模式
 - 工厂方法模式
+![](img/工厂方法模式.jpg)
 - 抽象工厂模式
+![](img/抽象工厂模式.jpg)
 - 原型模式
 - 建造者模式
