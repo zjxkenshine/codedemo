@@ -11,3 +11,15 @@ https://blog.csdn.net/syc000666/article/details/105086898
 
 web开发：theamleaf,静态资源,文件上传下载,注解整合SSM,flyway
 
+## 3.springbootdemo03
+整合SpringMVC
+自定义消息转换器HttpMessageConverter
+自定义Json序列化反序列化器
+静态资源配置 resourceHandler
+自定义欢迎页面 viewController 视图控制器
+路径匹配规则   pathmatch
+内容协商ContentNegotiation机制
+请求参数绑定/参数校验 @InitBinder/WebDataBinder/WebBindingInitializer/ConfigurableWebBindingInitializer
+freeMaker模板引擎
+异常页面及统一异常处理
+跨域问题处理
