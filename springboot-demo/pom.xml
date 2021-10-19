@@ -15,6 +15,7 @@
         <module>springbootdemo01</module>
         <module>springbootdemo02</module>
         <module>springbootdemo03</module>
+        <module>springbootdemo04-jersey</module>
     </modules>
 
     <properties>
