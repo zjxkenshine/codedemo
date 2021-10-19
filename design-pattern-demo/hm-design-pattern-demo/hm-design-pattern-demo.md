@@ -26,6 +26,13 @@ factory     工厂模式
 - abstract_factory  抽象工厂模式，产品族
 - config_factory    简单工厂+配置文件方式  最常用
 
+prototype   原型模式  克隆
+- demo     原型模式demo
+- test      测试demo/浅克隆
+- test1     深克隆测试
+
+build   建造者模式
+
 
 
 # 2.补充
@@ -45,4 +52,6 @@ factory     工厂模式
 - 抽象工厂模式
 ![](img/抽象工厂模式.jpg)
 - 原型模式
+![](img/原型模式.jpg)
 - 建造者模式
+![](img/建造者模式.jpg)
