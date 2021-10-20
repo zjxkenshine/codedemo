@@ -40,6 +40,11 @@ proxy   代理模式
 - jdk_proxy         jdk动态代理
 - cglib_proxy       cglib动态代理
 
+adapter    适配器模式，将一种接口转换为另一种接口
+- class_adapter     类适配器
+- object_adapter    对象适配器
+
+
 
 # 2.补充
 ## 软件设计原则
@@ -64,7 +69,12 @@ proxy   代理模式
 
 ## 结构型模式
 - 代理模式
+![](img/静态代理.jpg)
 - 适配器模式
+    - 类适配器
+    ![](img/适配器模式.jpg)
+    - 对象适配器
+    ![](img/对象适配器模式.jpg)
 - 装饰者模式
 - 桥接模式
 - 外观模式
