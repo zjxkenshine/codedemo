@@ -21,6 +21,7 @@
         <module>springbootdemo07-H2</module>
         <module>springbootdemo08-jOOQ</module>
         <module>springbootdemo09-datasource01</module>
+        <module>springbootdemo10-datasource02</module>
     </modules>
 
     <properties>
