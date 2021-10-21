@@ -4,6 +4,7 @@ import lombok.Data;
 import lombok.ToString;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 /**
  * @author ：kenshine
@@ -11,14 +12,19 @@ import javax.persistence.*;
  * @description：用户类
  * @modified By：
  * @version: $
+ *
+ * 开启缓存需要实现序列化接口
  */
 @Data
 @ToString
 @Entity
-public class User {
+public class User implements Serializable {
+
+    //IllegalArgumentException: DefaultSerializer requires a Serializable payload
+    // but received an object of type [com.syc.redis.domain.User]
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
     @Column

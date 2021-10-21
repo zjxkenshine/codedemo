@@ -23,6 +23,7 @@
         <module>springbootdemo09-datasource01</module>
         <module>springbootdemo10-datasource02</module>
         <module>springbootdemo11-redis</module>
+        <module>springbootdemo12-mongodb</module>
     </modules>
 
     <properties>

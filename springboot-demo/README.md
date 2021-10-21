@@ -48,6 +48,9 @@ AOP实现多数据源配置
 ## 11.springbootdemo11-redis
 springboot整合redis
 
+## 12.springbootdemo11-mongodb
+springboot整合mongodb
+
 
 
 
