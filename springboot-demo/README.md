@@ -45,6 +45,10 @@ SpringBoot 整合 jersey
 ## 10.springbootdemo10-datasource02
 AOP实现多数据源配置
 
+## 11.springbootdemo11-redis
+springboot整合redis
+
+
 
 
 
