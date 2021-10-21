@@ -1,0 +1,24 @@
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  datasource:
+    ds1:
+      url: jdbc:mysql://localhost:3306/db1?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8&useSSL=true
+      username: root
+      password: zjx123456
+      driverClassName: com.mysql.cj.jdbc.Driver
+    ds2:
+      url: jdbc:mysql://localhost:3306/db2?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8&useSSL=true
+      username: root
+      password: zjx123456
+      driverClassName: com.mysql.cj.jdbc.Driver
+    type: com.zaxxer.hikari.HikariDataSource
+  #    type: com.alibaba.druid.pool.DruidDataSource
+  jpa:
+    database: mysql
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    database-platform: org.hibernate.dialect.MySQL5Dialect
