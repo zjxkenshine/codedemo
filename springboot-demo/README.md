@@ -36,5 +36,9 @@ SpringBoot 整合 jersey
 ## 7.springbootdemo07-H2
 整合H2数据库
 
+## 8.springbootdemo08-JOOQ
+整合使用jOOQ面向对象查询
+
+
 
 
