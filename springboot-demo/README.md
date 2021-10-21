@@ -24,9 +24,17 @@ web开发：theamleaf,静态资源,文件上传下载,注解整合SSM,flyway
 - 异常页面及统一全局异常处理
 - 跨域问题处理
 
-## 4.springbootdemo04
+## 4.springbootdemo04-jersey
 SpringBoot 整合 jersey
 
+## 5.springbootdemo05-servlet
+整合Servlet,Filter,Listener
+
+## 6.springbootdemo06-SQL
+整合jdbcTemplate,jpa,mybatis
+
+## 7.springbootdemo07-H2
+整合H2数据库
 
 
 

@@ -18,6 +18,7 @@
         <module>springbootdemo04-jersey</module>
         <module>springbootdemo05-servlet</module>
         <module>springbootdemo06-SQL</module>
+        <module>springbootdemo07-H2</module>
     </modules>
 
     <properties>
