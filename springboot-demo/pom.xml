@@ -20,6 +20,7 @@
         <module>springbootdemo06-SQL</module>
         <module>springbootdemo07-H2</module>
         <module>springbootdemo08-jOOQ</module>
+        <module>springbootdemo09-datasource01</module>
     </modules>
 
     <properties>

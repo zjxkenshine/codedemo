@@ -39,6 +39,12 @@ SpringBoot 整合 jersey
 ## 8.springbootdemo08-JOOQ
 整合使用jOOQ面向对象查询
 
+## 9.springbootdemo09-datasource01
+分包实现多数据源配置
+
+## 10.springbootdemo10-datasource02
+AOP实现多数据源配置
+
 
 
 
