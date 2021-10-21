@@ -84,8 +84,9 @@ https://blog.csdn.net/A1342772/article/details/91349142
 ### command 命令模式
 通过命令将调用者和请求接收者解耦
 
-
-
+### responsibility 责任链模式
+- demo 责任链模式示例
+- jdkfilter 模拟FilterChain职责链
 
 
 
@@ -142,7 +143,7 @@ https://blog.csdn.net/A1342772/article/details/91349142
 - 命令模式
 ![](img/命令模式.jpg)
 - 职责链模式/责任链模式
-
+![](img/责任链模式.jpg)
 - 状态模式
 - 观察者模式
 - 中介者模式
