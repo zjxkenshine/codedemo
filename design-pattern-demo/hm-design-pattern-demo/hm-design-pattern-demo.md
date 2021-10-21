@@ -88,6 +88,9 @@ https://blog.csdn.net/A1342772/article/details/91349142
 - demo 责任链模式示例
 - jdkfilter 模拟FilterChain职责链
 
+### state 状态模式
+对有状态的对象，把复杂的“判断逻辑”提取到不同的状态对象中，允许状态对象在其内部状态发生改变时改变其行为
+
 
 
 
@@ -145,6 +148,7 @@ https://blog.csdn.net/A1342772/article/details/91349142
 - 职责链模式/责任链模式
 ![](img/责任链模式.jpg)
 - 状态模式
+![](img/状态模式.jpg)
 - 观察者模式
 - 中介者模式
 - 迭代器模式
