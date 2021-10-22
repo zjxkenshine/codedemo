@@ -24,6 +24,7 @@
         <module>springbootdemo10-datasource02</module>
         <module>springbootdemo11-redis</module>
         <module>springbootdemo12-mongodb</module>
+        <module>springbootdemo13-Neo4j</module>
     </modules>
 
     <properties>
