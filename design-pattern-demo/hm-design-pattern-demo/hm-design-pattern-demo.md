@@ -159,6 +159,7 @@ https://blog.csdn.net/A1342772/article/details/91349142
 - 中介者模式
 ![](img/中介者模式02.jpg)
 - 迭代器模式
+![](img/迭代器模式.jpg)
 - 访问者模式
 - 备忘录模式
 - 解释器模式
