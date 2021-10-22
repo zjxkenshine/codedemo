@@ -1,0 +1,10 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: spirng-boot-mongodb
+  data:
+    mongodb:
+      host: localhost   #同127.0.0.1
+      port: 27017
+      database: db01    #指定操作的数据库
