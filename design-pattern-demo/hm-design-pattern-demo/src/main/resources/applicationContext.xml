@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+    <bean id="userDao" class="com.kenshine.IocTest.dao.impl.UserDaoImpl">
+        <property name="username" value="kenshine"></property>
+        <property name="password" value="123456"></property>
+    </bean>
+
+    <bean id="userService" class="com.kenshine.IocTest.service.impl.UserServiceImpl">
+        <property name="userDao" ref="userDao"></property>
+    </bean>
+
+</beans>
