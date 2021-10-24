@@ -8,7 +8,7 @@ import java.util.concurrent.RecursiveTask;
  * @description：    Fork/Join 实现
  * @modified By：
  * @version: $
- * 有误
+ * TODO: 该类有bug需要修改
  */
 public class ForkJoinCalculate extends RecursiveTask<Long> {
     private static final long serialVersionUID = 1234567890L;
