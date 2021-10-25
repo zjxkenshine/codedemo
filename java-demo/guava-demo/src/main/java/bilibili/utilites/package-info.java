@@ -9,6 +9,5 @@
  * Splitter demo go to {@link SplitterTest}
  * Preconditions demo go to {@link PreconditionsTest}
  *
- *
  */
 package bilibili.utilites;
