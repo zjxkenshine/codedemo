@@ -26,4 +26,6 @@ public class ElasticSearchClientConfig {
         return client;
     }
 
+
+
 }

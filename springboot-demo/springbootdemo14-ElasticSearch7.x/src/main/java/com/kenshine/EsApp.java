@@ -9,6 +9,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @description：elasticsearch启动类
  * @modified By：
  * @version: $
+ *
+ * 说明：
+ *  test包：使用原生RestHighLevelClient测试
+ *  main包：使用ElasticsearchRestTemplate测试
  */
 @SpringBootApplication
 public class EsApp {
