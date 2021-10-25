@@ -11,5 +11,7 @@
 ## bilibili 学习demo目录
 
 - utilities guava工具集的demo
-    - JoinerTest  joiner测试
-    
+    - JoinerTest    Joiner合并测试
+    - SplitterTest      Splitter拆分测试
+    - PreconditionsTest     Preconditions断言测试
+    - 
