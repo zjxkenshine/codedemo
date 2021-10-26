@@ -63,8 +63,12 @@ springboot默认缓存使用
 ## 16.springbootdemo16-Dozer
 springboot集成Dozer 对象拷贝
 
-## 16.springbootdemo17-Validation
+## 17.springbootdemo17-Validation
 springboot整合validation参数校验
+
+## 18.springbootdemo18-Swagger2
+- springboot 整合 Swagger2 和 knife4j
+- 全局异常处理
 
 
 
