@@ -30,6 +30,7 @@
         <module>springbootdemo16-Dozer</module>
         <module>springbootdemo17-Validation</module>
         <module>springbootdemo18-Swagger2</module>
+        <module>springbootdemo19-Swagger3</module>
     </modules>
 
     <properties>

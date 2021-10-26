@@ -70,6 +70,8 @@ springboot整合validation参数校验
 - springboot 整合 Swagger2 和 knife4j
 - 全局异常处理
 
+## 19.springbootdemo19-Swagger3
+springboot 整合 Swagger3 和 knife4j
 
 
 
