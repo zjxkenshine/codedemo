@@ -28,6 +28,7 @@
         <module>springbootdemo14-ElasticSearch7.x</module>
         <module>springbootdemo15-Cache</module>
         <module>springbootdemo16-Dozer</module>
+        <module>springbootdemo17-Validation</module>
     </modules>
 
     <properties>

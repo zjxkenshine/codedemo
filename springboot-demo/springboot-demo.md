@@ -60,8 +60,11 @@ springboot整合ElasticSearch7.x
 ## 15.springbootdemo15-Cache
 springboot默认缓存使用
 
-## 15.springbootdemo16-Dozer
+## 16.springbootdemo16-Dozer
 springboot集成Dozer 对象拷贝
+
+## 16.springbootdemo17-Validation
+springboot整合validation参数校验
 
 
 
