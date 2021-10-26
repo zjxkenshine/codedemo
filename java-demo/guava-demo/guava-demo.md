@@ -37,5 +37,6 @@
     - ExceptionEventBusExample      异常事件监听器
     - DeadEventBusExample           可获取事件信息的监听器
     - async                         AsyncEventBus 异步事件总线
-    
+- concurrent    guava并发包
+    - MonitorExample         Monitor实现生产者消费者
     
