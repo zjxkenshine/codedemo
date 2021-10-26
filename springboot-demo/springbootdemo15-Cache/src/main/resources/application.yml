@@ -1,0 +1,17 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: cache-demo
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: zjx123456
+    url: jdbc:mysql://localhost:3306/db1?useUnicode=true&characterEncoding=utf8&characterSetResults=utf8&useSSL=false&serverTimezone=UTC
+    #cache:
+      #type: generic #默认方式,一共有10种缓存方案
+  jpa:
+    database: mysql
+    show-sql: true #开发阶段,打印要执行的sql语句.
+    hibernate:
+      ddl-auto: update
