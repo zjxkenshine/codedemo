@@ -3,6 +3,7 @@
 - https://ifeve.com/google-guava/
 - https://www.bilibili.com/video/BV1R4411s7GX
 - https://blog.csdn.net/qq_17200461/article/details/114239824
+- https://blog.csdn.net/wuyuxing24/article/details/95505102
 
 
 包目录：
@@ -26,3 +27,15 @@
     - ByteSourceTest    字节输入/输出(ByteSource/Sink)
     - CloserTest        Closer关闭器
     - BaseEncodingTest      Base编码
+- eventBus      事件总线
+    - events        事件及注册
+    - listeners     事件监听器
+    - SimpleEventBus            简单事件监听器示例
+    - MultipleEventExample      多事件监听器示例
+    - InheritListenersEventBusExample    继承监听器
+    - InheritEventBusExample        继承事件
+    - ExceptionEventBusExample      异常事件监听器
+    - DeadEventBusExample           可获取事件信息的监听器
+    - async                         AsyncEventBus 异步事件总线
+    
+    
