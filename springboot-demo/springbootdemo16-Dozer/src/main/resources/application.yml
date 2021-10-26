@@ -1,0 +1,5 @@
+dozer:
+  # 指定Dozer的映射配置文件位置
+  mapping-files:
+    - classpath:dozer/global-dozer.xml
+    - classpath:dozer/dozer.xml

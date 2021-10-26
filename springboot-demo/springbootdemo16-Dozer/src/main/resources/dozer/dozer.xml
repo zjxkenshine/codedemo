@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xmlns="http://dozermapper.github.io/schema/bean-mapping"
+          xsi:schemaLocation="http://dozermapper.github.io/schema/bean-mapping
+                             http://dozermapper.github.io/schema/bean-mapping.xsd">
+    <!-- 描述两个类中属性的对应关系，对于两个类中同名的属性可以不映射 -->
+    <!--map-id 标记映射关系,通过此标识来确定使用该映射关系-->
+    <mapping date-format="yyyy-MM-dd HH:mm:ss" map-id="user">
+        <class-a>com.kenshine.domain.User</class-a>
+        <class-b>com.kenshine.domain.UserDTO</class-b>
+        <!--不同名属性映射-->
+        <field>
+            <a>id</a>
+            <b>userId</b>
+        </field>
+        <field>
+            <a>name</a>
+            <b>userName</b>
+        </field>
+        <field>
+            <a>age</a>
+            <b>userAge</b>
+        </field>
+    </mapping>
+
+    <!--排除某些属性 field-exclude-->
+    <mapping date-format="yyyy-MM-dd HH:mm:ss" map-id="user-exclude">
+        <class-a>com.kenshine.domain.User</class-a>
+        <class-b>com.kenshine.domain.UserDTO</class-b>
+        <!--不同名属性映射-->
+        <field>
+            <a>id</a>
+            <b>userId</b>
+        </field>
+        <field>
+            <a>name</a>
+            <b>userName</b>
+        </field>
+        <field>
+            <a>age</a>
+            <b>userAge</b>
+        </field>
+        <field-exclude>
+            <a>email</a>
+            <b>email</b>
+        </field-exclude>
+    </mapping>
+
+
+    <!-- type="one-way"将映射设置为单向映射  a到b -->
+    <mapping date-format="yyyy-MM-dd HH:mm:ss" map-id="user-oneway" type="one-way">
+        <class-a>com.kenshine.domain.UserDTO</class-a>
+        <class-b>com.kenshine.domain.User</class-b>
+        <field>
+            <a>userId</a>
+            <b>id</b>
+        </field>
+        <field>
+            <a>userName</a>
+            <b>name</b>
+        </field>
+        <field>
+            <a>userAge</a>
+            <b>age</b>
+        </field>
+    </mapping>
+
+    <!--order映射配置-->
+    <mapping date-format="yyyy-MM-dd HH:mm:ss" map-id="order">
+        <class-a>com.kenshine.domain.Order</class-a>
+        <class-b>com.kenshine.domain.OrderDTO</class-b>
+        <field>
+            <a>id</a>
+            <b>orderId</b>
+        </field>
+        <field>
+            <a>number</a>
+            <b>orderNumber</b>
+        </field>
+        <field>
+            <a>description</a>
+            <b>orderDescription</b>
+        </field>
+        <!--指定使用的map-->
+        <field map-id="user">
+            <a>user</a>
+            <b>userDTO</b>
+        </field>
+    </mapping>
+
+    <!--深度拷贝 如一个对象中的String类型属性可以与另一个对象中嵌套的对象的属性进行映射-->
+    <mapping date-format="yyyy-MM-dd HH:mm:ss" map-id="user-deep-mapping">
+        <class-a>com.kenshine.domain.UserInfoDTO</class-a>
+        <class-b>com.kenshine.domain.User</class-b>
+        <field>
+            <a>userId</a>
+            <b>id</b>
+        </field>
+        <field>
+            <a>userName</a>
+            <b>name</b>
+        </field>
+        <field>
+            <a>userAge</a>
+            <b>age</b>
+        </field>
+        <field>
+            <a>userInfo.gender</a>
+            <b>gender</b>
+        </field>
+        <field>
+            <a>userInfo.email</a>
+            <b>email</b>
+        </field>
+        <field>
+            <a>userInfo.birthday</a>
+            <b>birthday</b>
+        </field>
+    </mapping>
+
+</mappings>

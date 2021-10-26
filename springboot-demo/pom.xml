@@ -27,6 +27,7 @@
         <module>springbootdemo13-Neo4j</module>
         <module>springbootdemo14-ElasticSearch7.x</module>
         <module>springbootdemo15-Cache</module>
+        <module>springbootdemo16-Dozer</module>
     </modules>
 
     <properties>

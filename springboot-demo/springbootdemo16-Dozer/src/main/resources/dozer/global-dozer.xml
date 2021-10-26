@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xmlns="http://dozermapper.github.io/schema/bean-mapping"
+          xsi:schemaLocation="http://dozermapper.github.io/schema/bean-mapping
+                              http://dozermapper.github.io/schema/bean-mapping.xsd">
+    <!-- 全局配置：<date-format>表示日期格式 -->
+    <configuration>
+        <date-format>yyyy-MM-dd HH:mm:ss</date-format>
+
+        <!--自定义转换器测试 这样配置双向转换-->
+        <custom-converters>
+            <converter type="com.kenshine.converter.LocalDateTimeToDateDozerConverter" >
+                <class-a>java.time.LocalDateTime</class-a>
+                <class-b>java.util.Date</class-b>
+            </converter>
+        </custom-converters>
+    </configuration>
+
+</mappings>
