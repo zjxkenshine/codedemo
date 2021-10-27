@@ -36,6 +36,7 @@
         <module>springbootdemo22-Sensitive</module>
         <module>springbootdemo23-Mail</module>
         <module>springbootdemo24-Timetask</module>
+        <module>springbootdemo25-Actuator</module>
     </modules>
 
     <properties>

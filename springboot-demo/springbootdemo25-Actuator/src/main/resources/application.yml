@@ -1,0 +1,18 @@
+management:
+  #security:
+  #enabled: false
+  endpoint:
+    beans:
+      enabled: true
+    health:
+      show-details: always
+      enabled: true
+    shutdown:
+      enabled: true #开启关闭功能,默认关闭
+  endpoints:
+    web:
+      base-path: "/actuator" #默认的访问路径
+      exposure:
+        #include: ["health","info"]
+        include: "*"
+        #exclude: "env,beans"
