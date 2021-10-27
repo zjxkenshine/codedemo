@@ -35,6 +35,7 @@
         <module>springbootdemo21-Log4j2</module>
         <module>springbootdemo22-Sensitive</module>
         <module>springbootdemo23-Mail</module>
+        <module>springbootdemo24-Timetask</module>
     </modules>
 
     <properties>

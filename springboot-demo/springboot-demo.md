@@ -85,6 +85,15 @@ springboot 整合 Sensitive 框架实现日志脱敏
 ## 23.springbootdemo23-Mail
 springboot 整合 mail 发送邮件
 
+## 24.springbootdemo24-Timetask
+springboot 整合各种定时任务
+- Timer与TimerTask
+- ScheduledExecutorService
+- Spring Task
+    - 开启异步支持
+- Quartz
+
+
 
 
 
