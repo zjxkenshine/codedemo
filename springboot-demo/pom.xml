@@ -37,6 +37,7 @@
         <module>springbootdemo23-Mail</module>
         <module>springbootdemo24-Timetask</module>
         <module>springbootdemo25-Actuator</module>
+        <module>springbootdemo26-Undertow</module>
     </modules>
 
     <properties>
