@@ -83,7 +83,7 @@ springboot 整合 Log4j2 并实现日志脱敏
 springboot 整合 Sensitive 框架实现日志脱敏
 
 ## 23.springbootdemo23-Mail
-springboot 整合 mail 模块发送短信
+springboot 整合 mail 发送邮件
 
 
 
