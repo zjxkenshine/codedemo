@@ -34,6 +34,7 @@
         <module>springbootdemo20-Antisamy</module>
         <module>springbootdemo21-Log4j2</module>
         <module>springbootdemo22-Sensitive</module>
+        <module>springbootdemo23-Mail</module>
     </modules>
 
     <properties>

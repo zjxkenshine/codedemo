@@ -79,8 +79,12 @@ springboot 整合 Antisamy 防御XSS攻击
 ## 21.springbootdemo21-Log4j2
 springboot 整合 Log4j2 并实现日志脱敏
 
-## 22.springbootdemo22-Log4j2
+## 22.springbootdemo22-Sensitive
 springboot 整合 Sensitive 框架实现日志脱敏
+
+## 23.springbootdemo23-Mail
+springboot 整合 mail 模块发送短信
+
 
 
 

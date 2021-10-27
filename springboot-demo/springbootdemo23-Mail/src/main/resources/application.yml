@@ -1,0 +1,6 @@
+spring:
+  mail:
+    host: smtp.163.com # 如果是163邮箱，则 smtp.163.com
+    username: 17854116993@163.com
+    password: FNSVIYCFOXWUPEHS # 不是邮箱密码，而是授权码
+    default-encoding: UTF-8
