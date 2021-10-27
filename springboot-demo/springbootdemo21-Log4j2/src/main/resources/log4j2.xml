@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 根节点Configuration有两个属性:status和monitorinterval,有两个子节点:Appenders和Loggers(表明可以定义多个Appender和Logger) -->
+<!-- status:这个用于设置log4j2自身内部的信息输出,可以不设置,当设置成trace时,会看到log4j2内部各种详细输出-->
+<!-- monitorInterval:用于指定log4j自动重新配置的监测间隔时间,单位是s,最小是5s;Log4j能够自动检测修改配置 文件和重新配置本身,设置间隔秒数-->
+<Configuration status="info">
+    <properties>
+        <property name="MSG_LOG_HOME">/home/logs/log4j2/</property>
+    </properties>
+
+    <Appenders>
+        <!-- SYSTEM_OUT是输出到统一的输出流，没有指定日志文件 -->
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="[%d{yyyy-MM-dd HH:mm:ss.SSS}]%p[%t]%c{1}|%m%n" />
+        </Console>
+
+        <!-- RollingFile节点用来定义超过指定大小自动删除旧的创建新的的Appender.   name:指定Appender的名字.   fileName:指定输出日志的目的文件带全路径的文件名.   filePattern:指定新建日志文件的名称格式. -->
+        <!-- 详细日志 -->
+        <RollingRandomAccessFile name="DetailRollingFile" fileName="${MSG_LOG_HOME}consumer_detail.log" filePattern="${MSG_LOG_HOME}consumer_detail.%d{yyyyMMddHH}.log" immediateFlush="true">
+            <!--控制台只输出level及以上级别的信息（onMatch），其他的直接拒绝（onMismatch）-->
+            <ThresholdFilter level="INFO" onMatch="ACCEPT" onMismatch="DENY"/>
+            <!-- 自定义layout 实现日志脱敏 -->
+            <Log4jEncodeLayout pattern="[%d{yyyy-MM-dd HH:mm:ss.SSS}]%p[%t]%c{1}|%m%n" charset="UTF-8"/>
+            <!-- Policies:指定滚动日志的策略. -->
+            <Policies>
+                <!-- TimeBasedTriggeringPolicy:Policies子节点，基于时间的滚动策略，interval属性用来指定多久滚动一次，默认是1 hour。modulate=true用来调整时间：比如现在是早上3am，interval是4，那么第一次滚动是在4am，接着是8am，12am...而不是7am. -->
+                <TimeBasedTriggeringPolicy interval="1"/>
+            </Policies>
+        </RollingRandomAccessFile>
+
+        <!-- 简要日志 -->
+        <RollingRandomAccessFile name="MpspRollingFile" fileName="${MSG_LOG_HOME}consumer_mpsp.log" filePattern="${MSG_LOG_HOME}consumer_mpsp.log.%d{yyyyMMddHH}">
+            <ThresholdFilter level="INFO" onMatch="ACCEPT" onMismatch="DENY"/>
+            <PatternLayout pattern="[%d{yyyy-MM-dd HH:mm:ss.SSS}]%m%n"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1"/>
+            </Policies>
+            <!-- DefaultRolloverStrategy属性如不设置，则默认为最多同一文件夹下7个文件，用来指定同一个文件夹下最多有几个日志文件时开始删除最旧的，创建新的(通过max属性) -->
+            <!--<DefaultRolloverStrategy max="200"/>-->
+        </RollingRandomAccessFile>
+        <!-- 性能监控日志 -->
+        <RollingRandomAccessFile name="ssRollingLog" fileName="${MSG_LOG_HOME}ss.log" filePattern="${MSG_LOG_HOME}ss.log.%d{yyyyMMddHH}">
+            <ThresholdFilter level="INFO" onMatch="ACCEPT" onMismatch="DENY"/>
+            <PatternLayout pattern="[%d{yyyy-MM-dd HH:mm:ss.SSS}]%m%n"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1"/>
+            </Policies>
+        </RollingRandomAccessFile>
+        <!-- 关键日志 -->
+        <RollingRandomAccessFile name="mpspRollingLog" fileName="${MSG_LOG_HOME}mpsp.log" filePattern="${MSG_LOG_HOME}mpsp.log.%d{yyyyMMddHH}">
+            <ThresholdFilter level="INFO" onMatch="ACCEPT" onMismatch="DENY"/>
+            <PatternLayout pattern="[%d{yyyy-MM-dd HH:mm:ss.SSS}]%m%n"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1"/>
+            </Policies>
+        </RollingRandomAccessFile>
+    </Appenders>
+
+    <!--定义logger，只有定义了logger并引入的appender，appender才会生效-->
+    <Loggers>
+        <!-- additivity的值如果为false的话，就不会在控制台上输出或者为该Logger再增加一个输出源Consloe -->
+        <Logger name="payGateMpspLog" level="INFO" additivity="false">
+            <AppenderRef ref="MpspRollingFile" />
+        </Logger>
+        <Logger name="mpspLog" level="INFO" additivity="false">
+            <AppenderRef ref="mpspRollingLog" />
+        </Logger>
+        <Logger name="ssLog" level="INFO" additivity="false">
+            <AppenderRef ref="ssRollingLog" />
+        </Logger>
+        <Logger name="payGateBusiLog" level="INFO" additivity="false">
+            <AppenderRef ref="DetailRollingFile" />
+        </Logger>
+        <Logger name="com" level="INFO" additivity="true">
+            <AppenderRef ref="DetailRollingFile" />
+        </Logger>
+        <Root level="info">
+            <AppenderRef ref="Console" />
+        </Root>
+    </Loggers>
+</Configuration>

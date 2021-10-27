@@ -76,6 +76,9 @@ springboot 整合 Swagger3 和 knife4j
 ## 20.springbootdemo20-Antisamy
 springboot 整合 Antisamy 防御XSS攻击
 
+## 20.springbootdemo21-Log4j2
+springboot 整合 Log4j2 并实现日志脱敏
+
 
 
 

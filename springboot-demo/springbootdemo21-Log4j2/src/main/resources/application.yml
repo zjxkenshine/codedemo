@@ -1,0 +1,9 @@
+# 配置
+logging:
+  config: classpath:log4j2.xml
+  level:
+    com.kenshine: info
+
+# 自定义注解指定脱敏字段 ,分开
+myLog:
+  logLayout: IDCard

@@ -32,6 +32,7 @@
         <module>springbootdemo18-Swagger2</module>
         <module>springbootdemo19-Swagger3</module>
         <module>springbootdemo20-Antisamy</module>
+        <module>springbootdemo21-Log4j2</module>
     </modules>
 
     <properties>
