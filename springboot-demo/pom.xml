@@ -38,6 +38,7 @@
         <module>springbootdemo24-Timetask</module>
         <module>springbootdemo25-Actuator</module>
         <module>springbootdemo26-Undertow</module>
+        <module>springbootdemo27-ActiveMQ</module>
     </modules>
 
     <properties>

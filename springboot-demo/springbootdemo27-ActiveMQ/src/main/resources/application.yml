@@ -1,0 +1,18 @@
+#配置activemq
+spring:
+  activemq:
+    #activemq的url
+    broker-url: tcp://127.0.0.1:61616
+    #用户名
+    user: admin
+    #密码
+    password: admin
+    pool:
+      enabled: false #是否使用线程池
+      max-connections: 100 #最大连接数
+    #是否信任所有包
+    packages:
+      trust-all: true
+  #默认情况下，activemq使用的是queue模式，如果要使用topic模式，必须设置为true
+  jms:
+    pub-sub-domain: true
