@@ -1,5 +1,6 @@
 package com.kenshine.config;
 
+import com.github.xiaoymin.knife4j.spring.annotations.EnableKnife4j;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import springfox.documentation.builders.ApiInfoBuilder;
@@ -19,9 +20,14 @@ import java.util.Collections;
  * @description：Swagger3配置
  * @modified By：
  * @version: $
+ *
+ * 访问地址
+ * localhost:8080/doc.html
+ * localhost:8080/swagger-ui
  */
 @Configuration
 @EnableOpenApi
+@EnableKnife4j
 public class Swagger3Config {
 
     /**
