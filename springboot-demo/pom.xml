@@ -39,6 +39,7 @@
         <module>springbootdemo25-Actuator</module>
         <module>springbootdemo26-Undertow</module>
         <module>springbootdemo27-ActiveMQ</module>
+        <module>springbootdemo28-MybatisPlus</module>
     </modules>
 
     <properties>

@@ -1,1 +1,3 @@
-其他框架demo
+- 其他框架demo
+- 需要启多个服务的技术demo
+- 详细整合demo(简单整合在springboot-demo)

@@ -102,6 +102,9 @@ springboot使用undertow作为内置服务器
 ## 27.springbootdemo27-ActiveMQ
 springboot 整合 ActiveMQ
 
+## 28.springbootdemo28-MybatisPlus
+springboot 整合 MybatisPlus
+
 
 
 
