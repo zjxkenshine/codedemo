@@ -1,0 +1,29 @@
+spring:
+  mvc:
+    # jsp配置
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: zjx123456
+    url: jdbc:mysql://127.0.0.1:3306/db1?characterEncoding=utf8&useSSL=false&serverTimezone=GMT&allowPublicKeyRetrieval=true
+
+#  thymeleaf:
+#    #模板的模式，支持 HTML, XML TEXT JAVASCRIPT
+#    mode: HTML5
+#    #编码 可不用配置
+#    encoding: UTF-8
+#    #开发配置为false,避免修改模板还要重启服务器
+#    cache: false
+#    #配置模板路径，默认是templates，可以不用配置
+#    prefix: classpath:/templates
+#    #     新版本不支持content-type: text/html，故新写法
+#    servlet:
+#      content-type: text/html
+
+mybatis:
+  type-aliases-package: com.kenshine.entity1
+  mapper-locations: classpath:mapper/*.xml

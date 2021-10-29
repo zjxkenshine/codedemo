@@ -41,6 +41,7 @@
         <module>springbootdemo27-ActiveMQ</module>
         <module>springbootdemo28-MybatisPlus</module>
         <module>springbootdemo29-Swagger3-SpringDoc</module>
+        <module>springbootdemo30-Shiro</module>
     </modules>
 
     <properties>
