@@ -1,0 +1,24 @@
+springdoc:
+  api-docs:
+    # 是否开启API文档，true表示开启，false表示关闭
+    enabled: true
+    groups:
+      # 是否开启分组，true表示开启
+      enabled: true
+    # API元数据访问路径，默认为/v3/api-docs
+    path: /v3/api-docs
+  swagger-ui:
+    # swagger-ui文档访问路径，默认为/swagger-ui.html
+    path: /swagger-ui.html
+  # 分组配置
+  group-configs:
+    - group: default
+      # 按包路径匹配
+      packagesToScan: com.kenshine.controller.other
+    - group: user
+      packagesToScan: com.kenshine.controller.user
+      # 按路径匹配
+      pathsToMatch: /user/**
+    - group: order
+      packagesToScan: com.kenshine.controller.order
+      pathsToMatch: /order/**

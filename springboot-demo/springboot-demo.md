@@ -71,7 +71,7 @@ springboot整合validation参数校验
 - 全局异常处理
 
 ## 19.springbootdemo19-Swagger3
-springboot 整合 Swagger3 和 knife4j
+springboot 整合 Swagger3 和 knife4j (使用SpringFox注解)
 
 ## 20.springbootdemo20-Antisamy
 springboot 整合 Antisamy 防御XSS攻击
@@ -104,6 +104,9 @@ springboot 整合 ActiveMQ
 
 ## 28.springbootdemo28-MybatisPlus
 springboot 整合 MybatisPlus
+
+## 29.springbootdemo29-Swagger3-SpringDoc
+springboot整合Swagger3(使用SpringDoc注解)
 
 
 
