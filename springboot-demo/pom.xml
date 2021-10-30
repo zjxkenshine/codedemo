@@ -45,6 +45,7 @@
         <module>springbootdemo31-JWT</module>
         <module>springbootdemo32-JTA</module>
         <module>springbootdemo33-Emoji</module>
+        <module>springbootdemo34-i18n</module>
     </modules>
 
     <properties>

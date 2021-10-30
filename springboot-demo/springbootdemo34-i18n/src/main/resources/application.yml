@@ -1,0 +1,8 @@
+spring:
+  messages:
+    basename: classpath:i18n/mess
+    encoding: UTF-8
+
+lang:
+  open: true
+

@@ -120,6 +120,9 @@ springboot整合Druid+Mybatis+JTA分布式事务
 ## 32.springbootdemo33-Emoji
 springboot整合使用Emoji 实现仅后端处理Emoji表情(不涉及数据库)
 
+## 33.springbootdemo34-i18n
+springboot i18n国际化实现
+
 
 
 
