@@ -114,14 +114,17 @@ springboot整合Shiro+mybatis+jsp
 ## 31.springbootdemo31-JWT
 springboot整合druid+mybatis+jwt
 
-## 31.springbootdemo32-JTA
+## 32.springbootdemo32-JTA
 springboot整合Druid+Mybatis+JTA分布式事务
 
-## 32.springbootdemo33-Emoji
+## 33.springbootdemo33-Emoji
 springboot整合使用Emoji 实现仅后端处理Emoji表情(不涉及数据库)
 
-## 33.springbootdemo34-i18n
+## 34.springbootdemo34-i18n
 springboot i18n国际化实现
+
+## 35.springbootdemo35-Retry
+springboot接口重试的实现
 
 
 

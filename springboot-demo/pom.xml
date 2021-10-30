@@ -46,6 +46,7 @@
         <module>springbootdemo32-JTA</module>
         <module>springbootdemo33-Emoji</module>
         <module>springbootdemo34-i18n</module>
+        <module>springbootdemo35-Retry</module>
     </modules>
 
     <properties>
