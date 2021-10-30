@@ -108,6 +108,14 @@ springboot 整合 MybatisPlus
 ## 29.springbootdemo29-Swagger3-SpringDoc
 springboot整合Swagger3(使用SpringDoc注解)
 
+## 30.springbootdemo30-Shiro
+springboot整合Shiro,mybatis,jsp
+
+## 31.springbootdemo31-JWT
+springboot整合mybatis,jwt
+
+
+
 
 
 

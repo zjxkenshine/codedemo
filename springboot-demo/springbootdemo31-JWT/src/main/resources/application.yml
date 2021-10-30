@@ -1,0 +1,23 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: jwt
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/db1?characterEncoding=utf8&useSSL=false&serverTimezone=GMT&allowPublicKeyRetrieval=true
+    username: root
+    password: zjx123456
+
+mybatis:
+  type-aliases-package: com.kenshine.jwt.entity
+  mapper-locations: classpath:mapper/*.xml
+
+
+logging:
+  level:
+    com:
+      kenshine:
+        jwt: debug
