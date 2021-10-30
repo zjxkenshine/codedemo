@@ -117,6 +117,8 @@ springboot整合druid+mybatis+jwt
 ## 31.springbootdemo32-JTA
 springboot整合Druid+Mybatis+JTA分布式事务
 
+## 32.springbootdemo33-Emoji
+springboot整合使用Emoji 实现仅后端处理Emoji表情(不涉及数据库)
 
 
 

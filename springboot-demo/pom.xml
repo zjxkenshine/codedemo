@@ -44,6 +44,7 @@
         <module>springbootdemo30-Shiro</module>
         <module>springbootdemo31-JWT</module>
         <module>springbootdemo32-JTA</module>
+        <module>springbootdemo33-Emoji</module>
     </modules>
 
     <properties>
