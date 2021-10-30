@@ -109,11 +109,13 @@ springboot 整合 MybatisPlus
 springboot整合Swagger3(使用SpringDoc注解)
 
 ## 30.springbootdemo30-Shiro
-springboot整合Shiro,mybatis,jsp
+springboot整合Shiro+mybatis+jsp
 
 ## 31.springbootdemo31-JWT
-springboot整合mybatis,jwt
+springboot整合druid+mybatis+jwt
 
+## 31.springbootdemo32-JTA
+springboot整合Druid+Mybatis+JTA分布式事务
 
 
 

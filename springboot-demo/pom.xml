@@ -43,6 +43,7 @@
         <module>springbootdemo29-Swagger3-SpringDoc</module>
         <module>springbootdemo30-Shiro</module>
         <module>springbootdemo31-JWT</module>
+        <module>springbootdemo32-JTA</module>
     </modules>
 
     <properties>
