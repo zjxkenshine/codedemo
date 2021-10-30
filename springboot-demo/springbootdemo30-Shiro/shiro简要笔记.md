@@ -55,3 +55,8 @@
 4. 认证实现
 5. 授权实现
 
+
+# 5.多realm配置
+- ModularRealmAuthenticator中的doAuthenticate方法
+- 默认使用所有Realms
+- 重写该方法，根据token中的loginType及Realm的getName匹配来添加对应Realm

@@ -27,13 +27,13 @@ public class ShiroConfig {
     @Bean
     public Realm getRealm(){
         CustomerRealm customerRealm = new CustomerRealm();
-//        //设置hashed凭证匹配器
-//        HashedCredentialsMatcher credentialsMatcher = new HashedCredentialsMatcher();
-//        //设置md5加密
-//        credentialsMatcher.setHashAlgorithmName("md5");
-//        //设置散列次数
-//        credentialsMatcher.setHashIterations(1024);
-//        customerRealm.setCredentialsMatcher(credentialsMatcher);
+        //设置hashed凭证匹配器
+        HashedCredentialsMatcher credentialsMatcher = new HashedCredentialsMatcher();
+        //设置md5加密
+        credentialsMatcher.setHashAlgorithmName("md5");
+        //设置散列次数
+        credentialsMatcher.setHashIterations(1024);
+        customerRealm.setCredentialsMatcher(credentialsMatcher);
         return customerRealm;
     }
 
