@@ -43,3 +43,6 @@
     - BucketTest             RateLimit在漏桶算法中的使用
     - TokenBucketExample        RateLimit在令牌桶中的使用
     - ListenableFutureExample       ListenableFuture的使用
+- cache         guava缓存
+    - ReferenceExample      java引用示例
+    - CacheLoaderTest1      CacheLoader基本用法及size,weight逐出策略       
