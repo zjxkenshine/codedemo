@@ -1,4 +1,4 @@
-package com.kenshine.retry.guava.util;
+package com.kenshine.retry.guava.test;
 
 import com.github.rholder.retry.*;
 import com.google.common.base.Predicates;
