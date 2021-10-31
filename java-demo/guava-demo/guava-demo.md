@@ -49,3 +49,8 @@
     - CacheLoaderTest2      AccessTime和WriteTime逐出，软引用和弱引用
     - CacheLoaderTest3      空值处理,refresh,逐出通知等
     - CacheLoaderTest4      CacheStats日志统计，CacheSpec配置字符串
+- collections   guava集合包
+    - FluentIterableTest    FluentIterable流式编程(类似java8Stream)
+    - ListsTest             Lists的使用
+    - SetsTest              Sets的使用
+    - 
