@@ -47,4 +47,5 @@
     - ReferenceExample      java引用示例
     - CacheLoaderTest1      CacheLoader基本用法及size,weight逐出策略
     - CacheLoaderTest2      AccessTime和WriteTime逐出，软引用和弱引用
-    - CacheLoaderTest3         
+    - CacheLoaderTest3      空值处理,refresh,逐出通知等
+    - CacheLoaderTest4      CacheStats日志统计，CacheSpec配置字符串
