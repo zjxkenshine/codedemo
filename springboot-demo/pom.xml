@@ -47,6 +47,7 @@
         <module>springbootdemo33-Emoji</module>
         <module>springbootdemo34-i18n</module>
         <module>springbootdemo35-Retry</module>
+        <module>springbootdemo36-PDF</module>
     </modules>
 
     <properties>
@@ -62,6 +63,28 @@
         <version>2.3.7.RELEASE</version>
         <relativePath/>
     </parent>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <!--lombok-->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+
+
+    </dependencies>
+
 
     <dependencyManagement>
         <dependencies>
