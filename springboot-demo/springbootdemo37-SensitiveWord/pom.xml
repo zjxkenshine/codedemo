@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>springboot-demo</artifactId>
+        <groupId>com.kenshine</groupId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>springbootdemo37-SensitiveWord</artifactId>
+
+    <dependencies>
+        <!--敏感词过滤-->
+        <dependency>
+            <groupId>com.toolgood</groupId>
+            <artifactId>toolgood-words</artifactId>
+            <version>3.0.2.8</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/src/main/resources/lib/toolgood-words-3.0.2.8.jar</systemPath>
+        </dependency>
+
+    </dependencies>
+
+    <!--这样解决打包的时候打不进去该依赖-->
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <!-- 打包时会将本地jar一起打包 -->
+                <configuration>
+                    <includeSystemScope>true</includeSystemScope>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

@@ -48,6 +48,7 @@
         <module>springbootdemo34-i18n</module>
         <module>springbootdemo35-Retry</module>
         <module>springbootdemo36-PDF</module>
+        <module>springbootdemo37-SensitiveWord</module>
     </modules>
 
     <properties>

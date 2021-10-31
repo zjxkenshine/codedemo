@@ -126,12 +126,16 @@ springboot i18n国际化实现
 ## 35.springbootdemo35-Retry
 springboot接口重试的实现
 
-## 35.springbootdemo36-PDF
+## 36.springbootdemo36-PDF
 springboot PDF 相关操作 
 - itext 给PDF增加水印/html转pdf
 - aspose 将word转pdf
 - pdfbox 读取pdf
 - itext 基本操作...
+
+
+## 37.springbootdemo37-SensitiveWord
+springboot整合 toolgood-words 敏感词过滤
 
 
 
