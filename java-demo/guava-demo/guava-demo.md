@@ -59,4 +59,4 @@
     - TableTest             guava table 表
     - RangeTest             Range区间，RangeMap区间Map
     - ImmutableCollectionTest   ImmutableCollection测试,不可变集合
-    - OrderingTest          排序策略相关包
+    - OrderingTest          Ordering排序策略
