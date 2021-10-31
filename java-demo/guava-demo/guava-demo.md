@@ -53,4 +53,10 @@
     - FluentIterableTest    FluentIterable流式编程(类似java8Stream)
     - ListsTest             Lists的使用
     - SetsTest              Sets的使用
-    - 
+    - MapsTest              Maps 创建Map
+    - MultiMapsTest         Multimaps  key可重复的map(不会覆盖)
+    - BiMapTest             BiMap  值不能重复的map
+    - TableTest             guava table 表
+    - RangeTest             Range区间，RangeMap区间Map
+    - ImmutableCollectionTest   ImmutableCollection测试,不可变集合
+    - OrderingTest          排序策略相关包
