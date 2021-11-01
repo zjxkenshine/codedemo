@@ -52,6 +52,7 @@
         <module>springbootdemo38-Lucene</module>
         <module>springbootdemo39-Zxing</module>
         <module>springbootdemo40-Thumbnailator</module>
+        <module>springbootdemo41-Tess4J</module>
     </modules>
 
     <properties>

@@ -143,10 +143,14 @@ springboot整合Lucene全文检索(thymeleaf,jpa)
 springboot整合Zxing生成二维码
 barcode4j生成条形码
 
-## 40. springbootdemo40-Thumbnailator
+## 40.springbootdemo40-Thumbnailator
 springboot整合thumbnailator图片处理
 - 压缩，等比压缩，区域裁剪，水印，旋转
 - 文件上传
+
+# 41.springbootdemo41-Tess4J
+springboot整合tess4j进行OCR图像识别
+- tesseract-ocr
 
 
 
