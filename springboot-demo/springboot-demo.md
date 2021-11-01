@@ -139,6 +139,9 @@ springboot整合 toolgood-words 敏感词过滤
 ## 38.springbootdemo38-Lucene
 springboot整合Lucene全文检索(thymeleaf,jpa)
 
+## 39.springbootdemo39-Zxing
+springboot整合Zxing生成二维码
+barcode4j生成条形码
 
 
 

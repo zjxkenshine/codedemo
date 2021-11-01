@@ -50,6 +50,7 @@
         <module>springbootdemo36-PDF</module>
         <module>springbootdemo37-SensitiveWord</module>
         <module>springbootdemo38-Lucene</module>
+        <module>springbootdemo39-Zxing</module>
     </modules>
 
     <properties>
