@@ -51,6 +51,7 @@
         <module>springbootdemo37-SensitiveWord</module>
         <module>springbootdemo38-Lucene</module>
         <module>springbootdemo39-Zxing</module>
+        <module>springbootdemo40-Thumbnailator</module>
     </modules>
 
     <properties>
