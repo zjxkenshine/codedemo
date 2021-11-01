@@ -9,7 +9,7 @@ https://blog.csdn.net/syc000666/article/details/105086898
 
 ## 2.springbootdemo02
 
-web开发：theamleaf,静态资源,文件上传下载,注解整合SSM,flyway
+web开发：thymeleaf,静态资源,文件上传下载,注解整合SSM,flyway
 
 ## 3.springbootdemo03
 整合SpringMVC:
@@ -133,9 +133,11 @@ springboot PDF 相关操作
 - pdfbox 读取pdf
 - itext 基本操作...
 
-
 ## 37.springbootdemo37-SensitiveWord
 springboot整合 toolgood-words 敏感词过滤
+
+## 38.springbootdemo38-Lucene
+springboot整合Lucene全文检索(thymeleaf,jpa)
 
 
 

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<!--    <meta name="renderer" content="webkit">-->
+    <title> 测试Lucene</title>
+</head>
+
+<body >
+
+    <div th:each="content : ${list}" style="width: 200px;height: 200px;float: left;border: 1px solid red;margin-left: 20px;margin-top: 20px;">
+        title:
+        <div th:text="${content.title!=null ?content.title:''}">
+            111
+        </div>
+        descs:
+        <!--/*@thymesVar id="content" type="com.kenshine.lucene.domain.Content"*/-->
+        <div th:text="${content.descs!=null ?content.descs:''}">
+            222
+        </div>
+    </div>
+
+</body>
+
+</html>
