@@ -152,8 +152,11 @@ springboot整合thumbnailator图片处理
 springboot整合tess4j进行OCR图像识别
 - tesseract-ocr
 
-# 42.springbootdemo42-Minio
+# 42.springbootdemo42-MinIO
 springboot简单整合minio实现文件存储
+
+# 43.springbootdemo43-SocketIO
+springboot整合Netty-SocketIO实现消息推送
 
 
 

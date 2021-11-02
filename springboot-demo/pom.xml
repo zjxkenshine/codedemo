@@ -54,6 +54,7 @@
         <module>springbootdemo40-Thumbnailator</module>
         <module>springbootdemo41-Tess4J</module>
         <module>springbootdemo42-MinIO</module>
+        <module>springbootdemo43-SocketIO</module>
     </modules>
 
     <properties>

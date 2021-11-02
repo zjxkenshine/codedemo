@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>这里是模拟接口发送，不是客户端请求</title>
+</head>
+<body>
+<div>
+    <div>
+        <label>userId:</label>
+        <input type="text" name="userId">
+    </div>
+    <div>
+        <label>toUserId:</label>
+        <input type="text" name="toUserId">
+    </div>
+    <div>
+        <label>message:</label>
+        <input type="text" name="message">
+    </div>
+    <div>
+        <button id="btnSend" onclick="send()">发送</button>
+    </div>
+    <ul id="msgList">
+    </ul>
+</div>
+<script src="./socket.io.js"></script>
+<script type="text/javascript">
+    var socket;
+    var msgList = document.getElementById('msgList');
+    var btnSend = document.getElementById('btnSend');
+    var userIdInput = document.getElementsByName('userId')[0];
+    var toUserIdInput = document.getElementsByName('toUserId')[0];
+    var msgInput = document.getElementsByName('message')[0];
+
+    function send() {
+        //连接首次输入的用户
+        if (!socket) {
+            connect();
+        }
+        socket.emit('toServer', {toUserId: toUserIdInput.value, message: msgInput.value}, function(data) {
+            console.log('收到回复：', data)
+        });
+    }
+
+    function connect() {
+        var opts = {
+            query: 'userId=' + userIdInput.value
+        };
+        socket = io.connect('http://localhost:8091', opts);
+        socket.on('connect', function () {
+            console.log("连接成功");
+        });
+
+        socket.on('updateMsg', function (data) {
+            console.log('收到服务器消息', data);
+            var li = document.createElement('li');
+            li.innerHTML = data.userId + ':' + data.data;
+            msgList.appendChild(li);
+        });
+
+        socket.on('disconnect', function () {
+            console.log('已断开连接')
+        });
+    }
+</script>
+</body>
+</html>
