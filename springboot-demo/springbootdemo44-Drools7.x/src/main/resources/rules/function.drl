@@ -1,0 +1,19 @@
+package testfunction
+import com.kenshine.drools.demo01.entity.Student
+/*
+    此规则文件用于测试function函数
+*/
+
+//定义一个函数
+function String sayHello(String name){
+    return "hello " + name;
+}
+
+rule "rule_function_1"
+    when
+        $student:Student(name != null)
+    then
+        //调用上面定义的函数
+        String ret = sayHello($student.getName());
+        System.out.println(ret);
+end

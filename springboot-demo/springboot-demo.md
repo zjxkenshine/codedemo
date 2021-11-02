@@ -158,6 +158,12 @@ springboot简单整合minio实现文件存储
 # 43.springbootdemo43-SocketIO
 springboot整合Netty-SocketIO实现消息推送
 
+# 44.springbootdemo44-Drools7.x
+springboot整合Drools7.x规则引擎(KIE)
+
+
+
+
 
 
 
