@@ -58,6 +58,7 @@
         <module>springbootdemo44-Drools7.x</module>
         <module>springbootdemo45-CXF</module>
         <module>springbootdemo46-Jasypt</module>
+        <module>springbootdemo47-Kaptcha</module>
     </modules>
 
     <properties>

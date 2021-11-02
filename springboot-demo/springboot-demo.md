@@ -165,9 +165,13 @@ springboot整合Drools7.x规则引擎(KIE)
 # 45.springbootdemo45-CXF
 springboot整合Apache-CXF实现 webservice JAX-WS
 
-# 45.springbootdemo46-Jasypt
+# 46.springbootdemo46-Jasypt
 springboot整合Jasypt实现配置文件数据库密码加密
 mybatis,mysql
+
+# 47.springbootdemo47-Kapatcha
+springboot整合 Kapatcha + Redis 实现验证码并校验
+
 
 
 
