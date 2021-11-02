@@ -53,6 +53,7 @@
         <module>springbootdemo39-Zxing</module>
         <module>springbootdemo40-Thumbnailator</module>
         <module>springbootdemo41-Tess4J</module>
+        <module>springbootdemo42-MinIO</module>
     </modules>
 
     <properties>
