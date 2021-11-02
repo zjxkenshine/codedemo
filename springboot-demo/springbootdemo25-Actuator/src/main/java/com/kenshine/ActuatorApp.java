@@ -10,6 +10,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @modified By：
  * @version: $
  *
+ * TODO springboot admin 可视化监控并告警
  */
 @SpringBootApplication
 public class ActuatorApp {

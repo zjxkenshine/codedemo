@@ -9,6 +9,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @description：jwt应用测试
  * @modified By：
  * @version: 1.0$
+ *
+ * @TODO jjwt
  */
 @SpringBootApplication
 public class JWTApp {
