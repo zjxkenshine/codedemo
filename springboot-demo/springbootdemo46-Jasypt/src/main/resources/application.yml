@@ -1,0 +1,22 @@
+# 数据库配置,密码换成加密后的
+spring:
+  application:
+    name: jasypt
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/db1?characterEncoding=utf8&useSSL=false&serverTimezone=GMT&allowPublicKeyRetrieval=true
+    username: root
+    password: ENC(a9abwZ23NGgSz5mBLc/aeNFe1B6CPUPr)
+
+mybatis:
+  type-aliases-package: com.kenshine.jasypt.entity
+  mapper-locations: classpath:mapper/*.xml
+
+##############jasypt密钥#####################
+jasypt:
+  encryptor:
+    algorithm: PBEWithMD5AndDES
+    iv-generator-classname: org.jasypt.iv.NoIvGenerator
+    #生产环境最好不要在这配置，容易被破解，去掉此配置使用java -jar -Djasypt.encryptor.password=iscas xxx.jar来代替
+    password: iscas

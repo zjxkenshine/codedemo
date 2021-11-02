@@ -10,6 +10,7 @@ https://blog.csdn.net/syc000666/article/details/105086898
 ## 2.springbootdemo02
 
 web开发：thymeleaf,静态资源,文件上传下载,注解整合SSM,flyway
+pageHelper
 
 ## 3.springbootdemo03
 整合SpringMVC:
@@ -161,14 +162,12 @@ springboot整合Netty-SocketIO实现消息推送
 # 44.springbootdemo44-Drools7.x
 springboot整合Drools7.x规则引擎(KIE)
 
-# 45.springbootdemo44-CXF
+# 45.springbootdemo45-CXF
 springboot整合Apache-CXF实现 webservice JAX-WS
 
-
-
-
-
-
+# 45.springbootdemo46-Jasypt
+springboot整合Jasypt实现配置文件数据库密码加密
+mybatis,mysql
 
 
 
