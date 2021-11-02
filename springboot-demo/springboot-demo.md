@@ -161,6 +161,9 @@ springboot整合Netty-SocketIO实现消息推送
 # 44.springbootdemo44-Drools7.x
 springboot整合Drools7.x规则引擎(KIE)
 
+# 45.springbootdemo44-CXF
+springboot整合Apache-CXF实现 webservice JAX-WS
+
 
 
 

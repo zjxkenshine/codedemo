@@ -56,6 +56,7 @@
         <module>springbootdemo42-MinIO</module>
         <module>springbootdemo43-SocketIO</module>
         <module>springbootdemo44-Drools7.x</module>
+        <module>springbootdemo45-CXF</module>
     </modules>
 
     <properties>
