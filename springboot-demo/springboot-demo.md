@@ -187,3 +187,7 @@ mybatis,mysql
 # 51.springbootdemo51-Protobuf
 springboot整合Protobuf
 
+# 52.springbootdemo52-Derby
+springboot整合内存数据库Derby
+
+

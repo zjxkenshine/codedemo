@@ -63,6 +63,7 @@
         <module>springbootdemo49-Thymeleaf</module>
         <module>springbootdemo50-Quartz</module>
         <module>springbootdemo51-Protobuf</module>
+        <module>springbootdemo53-Derby</module>
     </modules>
 
     <properties>
