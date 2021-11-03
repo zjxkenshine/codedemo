@@ -16,6 +16,7 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.net.URL;
 import java.net.URLEncoder;
+import java.util.HashMap;
 import java.util.Hashtable;
 
 /**
@@ -179,20 +180,64 @@ public class QRCodeUtils {
         return response.getOutputStream();
     }
 
+
+
+    /**
+     *
+     * @Title:getQRresult
+     * @Description:读取二维码
+     */
+    public static Result getQRresult(String filePath) {
+        /**
+         * 如果用的jdk是1.9，需要配置下面这一行。
+         */
+        //System.setProperty("java.specification.version", "1.9");
+        Result result = null;
+        try {
+            File file = new File(filePath);
+
+            BufferedImage bufferedImage = ImageIO.read(file);
+            BinaryBitmap bitmap = new BinaryBitmap(
+                    new HybridBinarizer(new BufferedImageLuminanceSource(bufferedImage)));
+
+            HashMap hints = new HashMap<>();
+            hints.put(EncodeHintType.CHARACTER_SET, CHARSET);
+            result = new MultiFormatReader().decode(bitmap, hints);
+        } catch (NotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        return result;
+    }
+
     public static void main(String[] args) throws Exception {
-        // 存放在二维码中的内容
-        String text = "www.baidu.com";
-        // 嵌入二维码的图片路径
-        String imgPath=null;
-        // 生成的二维码的路径及名称
-        String destPath = "F:\\IDEAworkespace\\codedemo\\springboot-demo\\springbootdemo39-Zxing\\src\\main\\resources\\qrcode\\baidu.jpg";
-        FileUtils.touch(destPath);
-        //生成二维码
-        QRCodeUtils.encode(text, null, destPath, true);
-        // 解析二维码
-        String str = QRCodeUtils.decode(destPath);
-        // 打印出解析出的内容
-        System.out.println(str);
+//        // 存放在二维码中的内容
+//        String text = "www.baidu.com";
+//        // 嵌入二维码的图片路径
+//        String imgPath=null;
+//        // 生成的二维码的路径及名称
+//        String destPath = "F:\\IDEAworkespace\\codedemo\\springboot-demo\\springbootdemo39-Zxing\\src\\main\\resources\\qrcode\\baidu.jpg";
+//        FileUtils.touch(destPath);
+//        //生成二维码
+//        QRCodeUtils.encode(text, null, destPath, true);
+//        // 解析二维码
+//        String str = QRCodeUtils.decode(destPath);
+//        // 打印出解析出的内容
+//        System.out.println(str);
+
+
+
+        //读取二维码
+        Result result = getQRresult("D:\\IdeaWorkSpace\\codedemo\\springboot-demo\\springbootdemo39-Zxing\\src\\main\\resources\\qrcode\\baidu.jpg");
+        if (result != null) {
+            System.out.println("二维码内容：" + result.getText());
+            if (result.getText() != null) {
+                System.out.println(result.getText());
+            }
+            System.out.println("二维码格式：" + result.getBarcodeFormat());
+        }
     }
 
 }
