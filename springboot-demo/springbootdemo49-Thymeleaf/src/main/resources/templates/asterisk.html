@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>选择表达式（星号语法）</title>
+</head>
+<body>
+<p>*语法</p>
+<div th:object="${user}">
+    <p>id: <span th:text="*{id}"></span></p>
+    <p>username: <span th:text="*{username}"></span></p>
+    <p>password: <span th:text="*{password}"></span></p>
+</div>
+<p>$语法</p>
+<div>
+    <p>id: <span th:text="${user.id}"></span></p>
+    <p>username: <span th:text="${user.username}"></span></p>
+    <p>password: <span th:text="${user.password}"></span></p>
+</div>
+<p>$和*混合使用</p>
+<div th:object="${user}">
+    <p>id: <span th:text="*{id}"></span></p>
+    <p>username: <span th:text="${user.username}"></span></p>
+    <p>password: <span th:text="*{password}"></span></p>
+</div>
+<p>对象选择到位时所选对象将作为#object表达式变量可⽤于$表达式</p>
+<div th:object="${user}">
+    <p>id: <span th:text="${#object.id}"></span></p>
+    <p>username: <span th:text="${user.username}"></span></p>
+    <p>password: <span th:text="*{password}"></span></p>
+</div>
+<p>没有执⾏对象选择时$和*语法等效</p>
+<div>
+    <p>id: <span th:text="*{user.id}"></span></p>
+    <p>username: <span th:text="*{user.username}"></span></p>
+    <p>password: <span th:text="*{user.password}"></span></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>条件判断</title>
+</head>
+<body>
+<p th:text="|age: ${age}, userLevel: ${userLevel}, rank: ${rank}|"></p>
+<div th:if="${age} >= 18 and ${userLevel} eq 6">
+    <span>年龄大于18并且用户等级等于6，则显示此元素</span>
+</div>
+<div th:unless="!(${age} < 18 or ${userLevel} ne 6)">
+    <span>与if条件判断相反，年龄小于18或用户等级不等于6，则显示此元素</span>
+</div>
+<div th:if="'null'">
+    <span>表达式的值不为null，th:if判定此表达式的值为true</span>
+</div>
+<div th:if="null">
+    <span>表达式的值为null，th:if判定此表达式的值为false</span>
+</div>
+<div th:if="${age}">
+    <span>值是数字并且不为0，判定此表达式的值为true</span>
+</div>
+<div th:if="0">
+    <span>值是数字但为0，判定此表达式的值为false</span>
+</div>
+<div th:if="A">
+    <span>值是一个字符并且不为0，判定此表达式的值为true</span>
+</div>
+<div th:if="'string'">
+    <span>值是一个字符串，不是false，off或no，判定此表达式的值为true</span>
+</div>
+<div th:if="'false'">
+    <span>值是字符串false，判定此表达式的值为false</span>
+</div>
+<div th:if="'off'">
+    <span>值是字符串off，判定此表达式的值为false</span>
+</div>
+<div th:if="'no'">
+    <span>值是字符串no，判定此表达式的值为false</span>
+</div>
+<hr/>
+<div th:switch="${rank}">
+    <span th:case="1">青铜</span>
+    <span th:case="2">白银</span>
+    <span th:case="3">黄金</span>
+    <span th:case="4">铂金</span>
+    <span th:case="5">钻石</span>
+    <span th:case="6">王者</span>
+    <span th:case="*">无段位</span>
+</div>
+</body>
+</html>

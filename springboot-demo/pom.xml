@@ -60,6 +60,7 @@
         <module>springbootdemo46-Jasypt</module>
         <module>springbootdemo47-Kaptcha</module>
         <module>springbootdemo48-Cucumber</module>
+        <module>springbootdemo49-Thymeleaf</module>
     </modules>
 
     <properties>

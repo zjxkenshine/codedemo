@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>设置属性</title>
+</head>
+<body>
+<div>
+    <p>设置单个任何属性：<input type="submit" value="提交" th:attr="value=${success}"></p>
+    <!-- th:attr可以以逗号分隔的形式来设置多个属性值 -->
+    <p>设置多个任何属性：<input type="submit" value="提交" th:attr="value=${success},class='btn btn-primary'"></p>
+    <p>设置单个指定属性：<input type="submit" value="提交" th:value="${success}"></p>
+    <p>设置多个指定属性：<input type="submit" value="提交" th:value="${success}" th:class="'btn btn-primary'"></p>
+    <!-- th:attrappend设置后缀 -->
+    <p>设置属性后缀：<input type="submit" value="提交" th:attrappend="value=${' ' + success}"></p>
+    <!-- th:attrprepend设置前缀 -->
+    <p>设置属性前缀：<input type="submit" value="提交" th:attrprepend="value=${success + ' '}"></p>
+    <!-- th:classappend追加class样式 -->
+    <p>追加class样式：<input type="submit" value="提交" class='btn btn-primary' th:classappend="'btn-warning'"></p>
+    <!-- th:styleappend追加style样式 -->
+    <p>追加style样式：<input type="submit" value="提交" style="text-align: left" th:styleappend="'color: green'"></p>
+    <!-- 如果条件表达式结果为true，则该属性将被设置为其固定值，如果结果为false，则不会设置该属性 -->
+    <p>设置布尔属性checked：<input type="checkbox" name="active" th:checked="${active}"></p>
+    <!--
+        data-{prefix}-{name}语法是在HTML5中编写⾃定义属性的标准⽅式，不需要使⽤任何命名空间
+        Thymeleaf使这种语法自动适用于所有的方言（不仅仅是标准的方法）
+    -->
+    <p>使用HTML5自定义属性语法来处理模版：<span data-th-text="${success}"></span></p>
+</div>
+</body>
+</html>

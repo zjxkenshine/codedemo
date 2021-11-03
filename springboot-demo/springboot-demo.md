@@ -176,5 +176,9 @@ springboot整合 Kapatcha + Redis 实现验证码并校验
 springboot简单整合Cucumber实现BDD驱动测试
 feature
 
+# 49.springbootdemo49-Thymeleaf
+springboot整合Thymeleaf模板引擎
+基本使用，国际化等
+
 
 

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>条件表达式、默认表达式、_符号</title>
+</head>
+<body>
+<p th:text="|grade: ${grade}, age: ${age}|"></p>
+<div>
+    <ul>
+        <li>
+            <!-- (if) ? (then) : (else) -->
+            <p><span>成绩是否及格：</span><span th:text="${grade >= 60} ? '及格' : '不及格'"></span></p>
+        </li>
+        <li>
+            <!-- (if) ? (then)，else表达式可以省略，在这种情况下，如果条件为false，则返回null值 -->
+            <p><span>成绩是否是正常数据：</span><span th:text="${grade >= 0 and grade <= 100} ? '正常数据'"></span></p>
+        </li>
+        <li>
+            <!-- 条件表达式可以使⽤括号嵌套 -->
+            <p><span>成绩对应的级别：</span><span th:text="${grade >= 0 and grade <= 100} ? (${grade >= 60} ? (${grade} >= 70 ? (${grade >= 90} ? '优' : '良') : '差') : '不及格') : '无效数据'"></span></p>
+        </li>
+        <li>
+            <!-- 默认表达式 第一个表达式结果不为null，则结果使用第一个表达式的值，结果为null，则使用第二个表达式 -->
+            <p><span>年龄：</span><span th:text="${age} ?: '没有年龄数据'"></span></p>
+        </li>
+        <li>
+            <p><span>默认表达式嵌套示例：</span><span th:text="${age} ?: (${grade} ?: '年龄和成绩数据都不存在')"></span></p>
+        </li>
+        <li>
+            <!-- _符号指定表达式不处理任何结果，这允许开发⼈员使⽤原型⽂本作为默认值 -->
+            <p><span>年龄：</span><span th:text="${age} ?: _">没有年龄数据</span></p>
+        </li>
+    </ul>
+</div>
+</body>
+</html>

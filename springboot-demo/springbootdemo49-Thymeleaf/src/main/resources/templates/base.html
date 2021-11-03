@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head th:fragment="common_header (title)">
+        <meta charset="UTF-8">
+        <title th:replace="${title}">common title</title>
+    </head>
+    <body>
+        <div th:fragment="common_div (header,left,footer)">
+            <div th:replace="${header}"><h1>common header</h1></div>
+            <div th:replace="${left}"><h1>common left</h1></div>
+            <p>common content</p>
+            <div th:replace="${footer}"><h1>common footer</h1></div>
+        </div>
+    </body>
+<!--    <div th:fragment="common_div (header,left,footer,condition)">-->
+<!--        <div th:replace="${condition} ? ${header} : _"><h1>Common header</h1></div>-->
+<!--        <div th:replace="${condition} ? ${left}: _"><h1>Common left</h1></div>-->
+<!--        <p>Common content</p>-->
+<!--        <div th:replace="${condition} ? ${footer}: _"><h1>Common footer</h1></div>-->
+<!--    </div>-->
+
+</html>

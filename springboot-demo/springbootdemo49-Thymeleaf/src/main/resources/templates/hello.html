@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello Thymeleaf</title>
+</head>
+<body>
+<div>
+    <span th:text="${hello}">th:text文本替换会转义html标签，不解析html</span>
+</div>
+<hr/>
+<div>
+    <span th:utext="${hello}">th:utext文本替换不会转义html标签，会解析html</span>
+</div>
+</body>
+</html>

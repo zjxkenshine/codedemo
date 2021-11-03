@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>工具类对象Dates</title>
+</head>
+<body>
+<div>
+    <span>格式化日期格式1（format）：</span>
+    <span th:text="${#dates.format(date)}"></span>
+    <br/>
+    <span>格式化日期格式2（format）：</span>
+    <span th:text="${#dates.format(date, 'yyyy/MM/dd hh:mm:ss')}"></span>
+    <br/>
+    <span>获取年（year）：</span>
+    <span th:text="${#dates.year(date)}"></span>
+    <br/>
+    <span>获取月（month）：</span>
+    <span th:text="${#dates.month(date)}"></span>
+    <br/>
+    <span>获取日（day）：</span>
+    <span th:text="${#dates.day(date)}"></span>
+    <br/>
+    <span>获取时（hour）：</span>
+    <span th:text="${#dates.hour(date)}"></span>
+    <br/>
+    <span>获取分（minute）：</span>
+    <span th:text="${#dates.minute(date)}"></span>
+    <br/>
+    <span>获取秒（second）：</span>
+    <span th:text="${#dates.second(date)}"></span>
+    <br/>
+    <span>获取毫秒（millisecond）：</span>
+    <span th:text="${#dates.millisecond(date)}"></span>
+    <br/>
+    <span>获取月份名称（monthName）：</span>
+    <span th:text="${#dates.monthName(date)}"></span>
+    <br/>
+    <span>获取星期索引，1为星期日，2为星期1，···，7为星期六（dayOfWeek）：</span>
+    <span th:text="${#dates.dayOfWeek(date)}"></span>
+    <br/>
+    <span>获取星期名称（dayOfWeekName）：</span>
+    <span th:text="${#dates.dayOfWeekName(date)}"></span>
+    <br/>
+    <span>创建当前date和time（createNow）：</span>
+    <span th:text="${#dates.createNow()}"></span>
+    <br/>
+    <span>创建当前date，time设置为00:00（createToday）：</span>
+    <span th:text="${#dates.createToday()}"></span>
+</div>
+</body>
+</html>

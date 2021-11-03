@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>国际化</title>
+</head>
+<body>
+<div>
+    <span><button th:text="#{user.register}">注册</button></span>
+    <span><button th:text="#{user.login}">登录</button></span>
+    <span th:text="#{index.language}">语言</span>
+    <a th:href="@{/index(lang='zn_CN')}" th:text="#{index.language.chinese}">中文</a>
+    <a th:href="@{/index(lang='en_US')}" th:text="#{index.language.english}">英文</a>
+</div>
+</body>
+</html>

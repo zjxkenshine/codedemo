@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>局部变量</title>
+</head>
+<body>
+<!-- 使⽤th:with属性声明局部变量 -->
+<div th:with="user1=${users[0]}">
+    <span>user1的姓名：</span><span th:text="${user1.username}"></span>
+</div>
+<!-- 使⽤通常的多重赋值语法同时定义多个变量 -->
+<div th:with="user1=${users[0]},user2=${users[1]}">
+    <span>user1的姓名：</span><span th:text="${user1.username}"></span>
+    <br/>
+    <span>user2的姓名：</span><span th:text="${user2.username}"></span>
+</div>
+<!-- th:with属性允许重⽤在同⼀属性中定义的变量 -->
+<div>
+    <!-- th:with的优先级高于th:text -->
+    <span>当前时间：</span><span th:with="now=${#calendars.createNow()}" th:text="${#calendars.format(now, 'yyyy/MM/dd hh:mm:ss')}"></span>
+</div>
+
+</body>
+</html>

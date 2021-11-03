@@ -1,0 +1,20 @@
+# thymeleaf常见配置
+spring:
+  thymeleaf:
+    # 在构建URL时附加到视图名称的前缀，默认为classpath:/templates/
+    prefix: classpath:/templates/
+    # 在构建URL时附加到视图名称的后缀，默认为.html
+    suffix: .html
+    # 模板模式，默认为HTML
+    mode: HTML
+    # 模板文件编码，默认为UTF-8
+    encoding: UTF-8
+    # 是否启用模板缓存，默认为true，表示启用，false不启用
+    cache: false
+    # 在呈现模板之前是否检查模板存在与否，默认为true
+    check-template: true
+    # 是否检查模板位置存在与否，默认为true
+    check-template-location: true
+  messages:
+    # 配置消息源的基本名称，默认为messages，这里配置为国际化配置文件的前缀
+    basename: i18n.index

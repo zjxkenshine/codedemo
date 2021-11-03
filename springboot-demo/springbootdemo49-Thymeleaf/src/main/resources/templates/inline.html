@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>内联</title>
+</head>
+<body>
+<h1>th:text和th:utext</h1>
+<p>Hello <span th:text="${user.username}">World</span> !</p>
+<p>Hello <span th:utext="${user.username}">World</span> !</p>
+<h1>内联表达式</h1>
+<!-- 会转义html标签，等价于th:text -->
+<p>Hello [[${user.username}]] !</p>
+<!-- 不会转义html标签，等价于th:utext -->
+<p>Hello [(${user.username})] !</p>
+
+
+<h1>内联JavaScript</h1>
+<div>
+    <span><button onclick="showPassword()">按钮</button></span>
+</div>
+
+
+<!--<style type="text/css" th:inline="css">-->
+<!--    [[${element}]] {-->
+<!--        text-align: [[${align}]];-->
+<!--        color: [[${color}]];-->
+<!--    }-->
+<!--</style>-->
+
+<style type="text/css" th:inline="css">
+    h1 {
+        text-align: /*[[${align}]]*/ left;
+        color: /*[(${color})]*/ #B60d16;
+    }
+</style>
+
+
+</body>
+
+<script type="text/javascript" th:inline="javascript">
+    let password = [[${user.password}]];
+    console.log("password:", password);
+    function showPassword() {
+        alert(password);
+    }
+
+    // userMap为一个Map对象，Thymeleaf会将其转换为JavaScript对象
+    let userMap = /*[[${userMap}]]*/ null;
+    console.log("userMap:", userMap);
+    // 遍历userMap
+    for (let key in userMap) {
+        console.log(key + ": " + "{id: " + userMap[key].id
+            + ", username: " + userMap[key].username + ", password: " + userMap[key].password + "}");
+    }
+</script>
+
+</html>

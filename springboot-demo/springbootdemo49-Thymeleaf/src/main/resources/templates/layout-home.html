@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="base :: common_header(~{:: title})">
+    <title>模板布局主页</title>
+</head>
+<body>
+<div th:replace="base :: common_div (~{layout/header :: header},~{layout/left :: left},~{layout/footer :: footer})"></div>
+
+<div th:replace="base :: common_div (~{layout/header :: header},~{layout/left :: left},~{})"></div>
+
+<div th:replace="base :: common_div (~{layout/header :: header},~{layout/left :: left},_)"></div>
+
+<div th:replace="base :: common_div (${condition} ? ~{layout/header :: header} : ~{},${condition} ? ~{layout/left :: left} : ~{},${condition} ? ~{layout/footer :: footer} : ~{})"></div>
+
+<!--<div th:replace="base :: common_div (~{layout/header :: header},~{layout/left :: left},~{layout/footer :: footer},${condition})"></div>-->
+
+
+
+</body>
+</html>

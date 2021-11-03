@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>循环迭代Array</title>
+</head>
+<body>
+<table>
+    <thead>
+    <tr>
+        <th>id</th>
+        <th>username</th>
+        <th>password</th>
+        <th>index</th>
+        <th>count</th>
+        <th>size</th>
+        <th>current</th>
+        <th>even</th>
+        <th>odd</th>
+        <th>first</th>
+        <th>last</th>
+    </tr>
+    </thead>
+    <tbody>
+    <!-- ${users}为迭代表达式或被迭代变量，userStat为状态变量，user为迭代变量 -->
+    <tr th:each="user,userStat : ${users}">
+        <td th:text="${user.id}"></td>
+        <td th:text="${user.username}"></td>
+        <td th:text="${user.password}"></td>
+        <!-- 当前迭代索引，从0开始 -->
+        <td th:text="${userStat.index}"></td>
+        <!-- 当前迭代索引，从1开始 -->
+        <td th:text="${userStat.count}"></td>
+        <!-- 被迭代变量中元素总数 -->
+        <td th:text="${userStat.size}"></td>
+        <!-- 每次迭代的迭代变量 -->
+        <td th:text="${userStat.current}"></td>
+        <!-- 布尔值，当前迭代是否是偶数，从1算起 -->
+        <td th:text="${userStat.even}"></td>
+        <!-- 布尔值，当前迭代是否是奇数，从1算起 -->
+        <td th:text="${userStat.odd}"></td>
+        <!-- 布尔值，当前迭代是否是第一个 -->
+        <td th:text="${userStat.first}"></td>
+        <!-- 布尔值，当前迭代是否是最后一个 -->
+        <td th:text="${userStat.last}"></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

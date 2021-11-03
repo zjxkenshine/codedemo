@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>运算符</title>
+</head>
+<body>
+<p th:text="|x=${x}, y=${y}|"></p>
+<p>算术运算符：+、-、*、/（div）、%（mod）</p>
+<div>
+    <ul>
+        <li>
+            <p><span>(y + x % 3) * (y - x / 2) ：</span><span th:text="(${y} + ${x} % 3) * (${y} - ${x} / 2)"></span></p>
+        </li>
+        <li>
+            <!-- 运算符也可以在OGNL变量表达式本身中应⽤（这种情况下由OGNL解析执⾏，⽽不是Thymeleaf标准表达式引擎来解析执⾏） -->
+            <p><span>(x * 5 + 8 div y) mod (x - y) ：</span><span th:text="${(x * 5 + 8 div y) mod (x - y)}"></span></p>
+        </li>
+    </ul>
+</div>
+<p>比较和等值运算符：>（gt）、<（lt）、>=（ge）、<=（le）、==（eq）、!=（ne）</p>
+<div>
+    <ul>
+        <li>
+            <p><span>x > 5：</span><span th:text="${x} > 5"></span></p>
+        </li>
+        <li>
+            <p><span>y le 2：</span><span th:text="${y le 2}"></span></p>
+        </li>
+        <li>
+            <p><span>(x * y) < 50：</span><span th:text="${(x * y) < 50}"></span></p>
+        </li>
+        <li>
+            <p><span>y ge x：</span><span th:text="${y} ge ${x}"></span></p>
+        </li>
+        <li>
+            <p><span>x == y：</span><span th:text="${x == y}"></span></p>
+        </li>
+        <li>
+            <p><span>x ne y：</span><span th:text="${x} ne ${y}"></span></p>
+        </li>
+    </ul>
+</div>
+<p>布尔运算符：and、or、!（not）</p>
+<div>
+    <ul>
+        <li>
+            <p><span>y lt x and -x gt -y：</span><span th:text="${y} lt ${x} and ${-x} gt ${-y}"></span></p>
+        </li>
+        <li>
+            <p><span>-x <= -y or y >= x：</span><span th:text="${-x <= -y or y >= x}"></span></p>
+        </li>
+        <li>
+            <p><span>!(x != y)：</span><span th:text="${!(x != y)}"></span></p>
+        </li>
+        <li>
+            <p><span>not (x eq y)：</span><span th:text="${not (x eq y)}"></span></p>
+        </li>
+    </ul>
+</div>
+</body>
+</html>

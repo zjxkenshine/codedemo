@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>字面量</title>
+</head>
+<body>
+<div>
+    <ul>
+        <li>
+            <p><span>文本文字：</span><span th:text="'Hello World'">⽂本文字只是包含在单引号之间的字符串，可以包含任何字符，其中的单引号需要\'转义</span></p>
+        </li>
+        <li>
+            <p><span>数字字面量：</span><span th:text="2020 + 1">数字字面量就是数字</span></p>
+        </li>
+        <li>
+            <p><span>布尔字面量：</span><span th:if="${flag} == false">布尔字⾯量包含true和false</span></p>
+        </li>
+        <li>
+            <p><span>null字面量：</span><span th:if="${flag} != null">Thymeleaf标准表达式语法中也可以使⽤null字⾯量</span></p>
+        </li>
+        <li>
+            <p><span>文本符号：</span><span th:text="Hello_.-._World">数字，布尔和null字面量实际上是⽂本符号的特殊情况</span></p>
+        </li>
+    </ul>
+</div>
+</body>
+</html>

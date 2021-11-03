@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>文本操作（字符串连接）</title>
+</head>
+<body>
+<div>
+    <ul>
+        <li>
+            <p><span>方式1（+）：</span><span th:text="'username: ' + ${user.username} + ', password: ' + ${user.password}"></span></p>
+        </li>
+        <li>
+            <p><span>方式2（|）：</span><span th:text="|username: ${user.username}, password: ${user.password}|"></span></p>
+        </li>
+        <li>
+            <!-- 只有变量或消息表达式（${}，*{}，#{}）才允许包含在||中 -->
+            <p><span>方式3（+与|混合）：</span><span th:text="'username: ' + ${user.username} + |, password: ${user.password}|"></span></p>
+        </li>
+        <li>
+            <p><span>方式4（#strings.concat）：</span><span th:text="${#strings.concat('username: ', user.username, ', password: ', user.password)}"></span></p>
+        </li>
+        <li>
+            <p><span>方式5（#strings.append）：</span><span th:text="${#strings.append('username: ' + user.username, ', password: ' + user.password)}"></span></p>
+        </li>
+        <li>
+            <p><span>方式6（#strings.prepend）：</span><span th:text="${#strings.prepend(', password: ' + user.password, 'username: ' + user.username)}"></span></p>
+        </li>
+        <li>
+            <p><span>方式7（#strings.arrayJoin）：</span><span th:text="${#strings.arrayJoin(new String[] {'username: ', user.username, ', password: ', user.password}, '')}"></span></p>
+        </li>
+    </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>引用模板片段</title>
+</head>
+<body>
+<div th:insert="~{footer :: copy1}"></div>
+<div th:replace="~{footer :: copy1}"></div>
+<div th:include="~{footer :: copy1}"></div>
+
+<div th:insert="footer :: copy2">th:insert将指定片段插⼊到指定宿主标签的标签体中</div>
+<div th:replace="footer :: copy2">th:replace实际上⽤指定的⽚段替换其宿主标签</div>
+<div th:include="footer :: copy2">th:include只插⼊此⽚段的内容到指定宿主标签的标签体中</div>
+
+<div th:insert="~{footer :: (${flag} ? copy1 : copy2)}">模板名和选择器都可以是表达式</div>
+
+<div th:replace="~{footer}">引用名为footer的整个模板</div>
+<div th:insert="~{:: frag}">引用当前模板中的片段</div>
+<div th:insert="~{this :: input}">引用当前模板中的片段</div>
+
+<div th:insert="~{footer :: #copy-section}">可以通过id属性来引⽤没有th:fragment属性的⽚段</div>
+
+
+
+<!-- 引用定义了参数的模板片段的两种语法 -->
+<div th:insert="footer :: frag (${var1},${var2})">引用定义了参数的模板片段语法1</div>
+<div th:insert="footer :: frag (var1=${var1},var2=${var2})">引用定义了参数的模板片段语法2，可以改变参数顺序</div>
+
+<!-- 没有定义参数的模板片段中的局部变量，可以使用以下语法调用，以下两种写法等价 -->
+<div th:insert="footer :: frag2 (var1=${var1},var2=${var2})">没有定义参数的模板片段中的局部变量的调用语法1</div>
+<div th:insert="footer :: frag2" th:with="var1=${var1},var2=${var2}">没有定义参数的模板片段中的局部变量的调用语法2</div>
+
+
+<!-- 引用带有断言的模板片段 -->
+<div th:insert="footer :: assert-test (${user})"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div th:fragment="frag">
+    <p>~{:: selector}或~{this :: selector}包含在同⼀模板中的匹配指定选择器的⽚段</p>
+</div>
+<div>
+    <p>文本输入框：<input type="text" value="输入内容"></p>
+</div>
+<input type="submit" value="提交">
+</body>
+</html>

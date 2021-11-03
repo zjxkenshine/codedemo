@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>循环迭代Map</title>
+</head>
+<body>
+<table>
+    <thead>
+    <tr>
+        <th>id</th>
+        <th>username</th>
+        <th>password</th>
+        <th>key</th>
+        <th>index</th>
+        <th>count</th>
+        <th>size</th>
+        <th>current</th>
+        <th>even</th>
+        <th>odd</th>
+        <th>first</th>
+        <th>last</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="map,mapStat : ${userMap}">
+        <td th:text="${mapStat.current.value.id}"></td>
+        <td th:text="${mapStat.current.value.username}"></td>
+        <td th:text="${mapStat.current.value.password}"></td>
+        <td th:text="${mapStat.current.key}"></td>
+        <td th:text="${mapStat.index}"></td>
+        <td th:text="${mapStat.count}"></td>
+        <td th:text="${mapStat.size}"></td>
+        <td th:text="${mapStat.current}"></td>
+        <td th:text="${mapStat.even}"></td>
+        <td th:text="${mapStat.odd}"></td>
+        <td th:text="${mapStat.first}"></td>
+        <td th:text="${mapStat.last}"></td>
+    </tr>
+    </tbody>
+</table>
+<hr/>
+<table>
+    <thead>
+    <tr>
+        <th>id</th>
+        <th>username</th>
+        <th>password</th>
+        <th>key</th>
+        <th>index</th>
+        <th>count</th>
+        <th>size</th>
+        <th>current</th>
+        <th>even</th>
+        <th>odd</th>
+        <th>first</th>
+        <th>last</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="map,mapStat : ${userMap}">
+        <td th:text="${map.value.id}"></td>
+        <td th:text="${map.value.username}"></td>
+        <td th:text="${map.value.password}"></td>
+        <td th:text="${map.key}"></td>
+        <td th:text="${mapStat.index}"></td>
+        <td th:text="${mapStat.count}"></td>
+        <td th:text="${mapStat.size}"></td>
+        <td th:text="${mapStat.current}"></td>
+        <td th:text="${mapStat.even}"></td>
+        <td th:text="${mapStat.odd}"></td>
+        <td th:text="${mapStat.first}"></td>
+        <td th:text="${mapStat.last}"></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

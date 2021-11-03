@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>URL表达式</title>
+</head>
+<body>
+<ol>
+    <li><a href="user/one.html" th:href="@{/user/one(id=${user.id})}">设置单个参数</a></li>
+    <li><a href="user/list.html" th:href="@{/user/list(username=${user.username},password=${user.password})}">设置多个参数</a></li>
+    <li><a href="user/one.html" th:href="@{/user/one/{id}(id=${user.id})}">URL路径中也允许使⽤变量模板（rest风格参数）</a></li>
+    <li><a href="user/update.html" th:href="@{${url}(id=${user.id})}">URL基数也可以是计算另⼀个表达式的结果</a></li>
+    <li><a href="store/user/update.html" th:href="@{'/store' + ${url}(id=${user.id})}">url基数也可以是计算另⼀个表达式的结果</a></li>
+</ol>
+<hr/>
+<!-- th:action设置表单提交地址 -->
+<form id="login-form" th:action="@{/hello}">
+    <button>提交</button>
+</form>
+</body>
+</html>

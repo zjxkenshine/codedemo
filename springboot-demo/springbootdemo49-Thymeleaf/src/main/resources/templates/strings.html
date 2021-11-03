@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>工具类对象Strings</title>
+</head>
+<body>
+<div>
+    <span>字符串转换（toString）：</span>
+    <span th:text="${#strings.toString(user)}"></span>
+    <br/>
+    <span>检查字符串是否为空（isEmpty）：</span>
+    <span th:text="${#strings.isEmpty(user.username)}"></span>
+    <br/>
+    <span>字符串为空时使用默认值（defaultString）：</span>
+    <span th:text="${#strings.defaultString(user.password, 'admin')}"></span>
+    <br/>
+    <span>检查字符串是否以指定片段开头（startsWith）：</span>
+    <span th:text="${#strings.startsWith(user.username, 'Spring')}"></span>
+    <br/>
+    <span>检查字符串是否以指定片段结尾（endsWith）：</span>
+    <span th:text="${#strings.endsWith(user.username, 'test')}"></span>
+    <br/>
+    <span>检查字符串是否包含指定片段（contains）：</span>
+    <span th:text="${#strings.contains(user.username, 'Thymeleaf')}"></span>
+    <br/>
+    <span>判断两个字符串是否相等（equals）：</span>
+    <span th:text="${#strings.equals(user.username, str)}"></span>
+    <br/>
+    <span>判断两个字符串是否相等，忽略大小写（equalsIgnoreCase）：</span>
+    <span th:text="${#strings.equalsIgnoreCase(user.username, 'springboot-thymeleaf-strings-test')}"></span>
+    <br/>
+    <span>获取字符串长度（length）：</span>
+    <span th:text="${#strings.length(user.username)}"></span>
+    <br/>
+    <span>字符串转换为大写字母（toUpperCase）：</span>
+    <span th:text="${#strings.toUpperCase(user.username)}"></span>
+    <br/>
+    <span>字符串转换为小写字母（toLowerCase）：</span>
+    <span th:text="${#strings.toLowerCase(user.username)}"></span>
+    <br/>
+    <span>片段在字符串中的索引（indexOf）：</span>
+    <span th:text="${#strings.indexOf(user.username, 'Boot')}"></span>
+    <br/>
+    <span>字符串去除空格（trim）：</span>
+    <span th:text="${#strings.trim(str)}"></span>
+    <br/>
+    <span>字符串省略（abbreviate）：</span>
+    <span th:text="${#strings.abbreviate(user.username, 23)}"></span>
+    <br/>
+    <span>字符串截取，从指定索引开始截取到末尾（substring）：</span>
+    <span th:text="${#strings.substring(user.username, 11)}"></span>
+    <br/>
+    <span>字符串截取指定开始索引到结束索引之间的部分，不包含结束索引字符（substring）：</span>
+    <span th:text="${#strings.substring(user.username, 11, 20)}"></span>
+    <br/>
+    <span>截取指定字符串第一次出现前的字符串（substringBefore）：</span>
+    <span th:text="${#strings.substringBefore(user.username, '-')}"></span>
+    <br/>
+    <span>截取指定字符串第一次出现后的字符串（substringAfter）：</span>
+    <span th:text="${#strings.substringAfter(user.username, '-')}"></span>
+    <br/>
+    <span>字符串替换（replace）：</span>
+    <span th:text="${#strings.replace(user.username, '-', '_')}"></span>
+    <br/>
+    <span>从字符串头部向前追加（prepend）：</span>
+    <span th:text="${#strings.prepend(user.username, '用户名是')}"></span>
+    <br/>
+    <span>从字符串尾部向后追加（append）：</span>
+    <span th:text="${#strings.append(user.username, '是用户名')}"></span>
+    <br/>
+    <span>字符串连接（concat）：</span>
+    <span th:text="${#strings.concat(user.username, '-concat')}"></span>
+    <br/>
+    <span>字符串连接（concatReplaceNulls）：</span>
+    <span th:text="${#strings.concatReplaceNulls(user.username, '用户名是', null, '-concatReplaceNulls')}"></span>
+    <br/>
+    <span>字符串拆分（arraySplit）：</span>
+    <span th:each="element:${#strings.arraySplit(user.username, '-')}">[[${element}]] </span>
+    <br/>
+    <span>字符串组合（arrayJoin）：</span>
+    <span th:text="${#strings.arrayJoin(strs, '-')}"></span>
+    <br/>
+    <span>随机字符串（randomAlphanumeric）：</span>
+    <span th:text="${#strings.randomAlphanumeric(16)}"></span>
+</div>
+</body>
+</html>

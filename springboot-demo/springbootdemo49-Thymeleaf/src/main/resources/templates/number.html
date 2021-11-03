@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>工具类对象Numbers</title>
+</head>
+<body>
+<div>
+    <span>整数格式化 - 设置最小整数位数为3（formatInteger）：</span>
+    <span th:text="${#numbers.formatInteger(num, 3)}"></span>
+    <br/>
+    <span>整数格式化 - 设置最小整数位数为6（formatInteger）：</span>
+    <span th:text="${#numbers.formatInteger(num, 6)}"></span>
+    <br/>
+    <span>整数格式化 - 设置千位分隔符为.（formatInteger）：</span>
+    <span th:text="${#numbers.formatInteger(num, 6, 'POINT')}"></span>
+    <br/>
+    <span>整数格式化 - 设置千位分隔符为,（formatInteger）：</span>
+    <span th:text="${#numbers.formatInteger(num, 6, 'COMMA')}"></span>
+    <br/>
+    <span>整数数组格式化（arrayFormatInteger）：</span>
+    <span th:each="element:${#numbers.arrayFormatInteger(nums, 6)}">[[${element}]] </span>
+    <br/>
+    <span>小数格式化 - 设置最小整数位数为5且精确保留3位小数位数（formatDecimal）</span>
+    <span th:text="${#numbers.formatDecimal(num2, 5, 3)}"></span>
+    <br/>
+    <span>小数格式化 - 设置千位分隔符为.且小数点分隔符为,（formatDecimal）</span>
+    <span th:text="${#numbers.formatDecimal(num2, 5, 'POINT', 3, 'COMMA')}"></span>
+    <br/>
+    <span>货币格式化（formatCurrency）：</span>
+    <span th:text="${#numbers.formatCurrency(num)}"></span>
+    <br/>
+    <span>百分比格式化 - 设置最小整数位数为2且精确保留3位小数（formatPercent）：</span>
+    <span th:text="${#numbers.formatPercent(0.25831694, 2, 3)}"></span>
+    <br/>
+    <span>创建整数数字序列 - 序列从1到10步长为3（sequence）：</span>
+    <span th:each="n:${#numbers.sequence(1, 10, 3)}">[[${n}]] </span>
+    <br/>
+</div>
+</body>
+</html>
