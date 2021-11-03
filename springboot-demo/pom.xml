@@ -61,6 +61,7 @@
         <module>springbootdemo47-Kaptcha</module>
         <module>springbootdemo48-Cucumber</module>
         <module>springbootdemo49-Thymeleaf</module>
+        <module>springbootdemo50-Quartz</module>
     </modules>
 
     <properties>

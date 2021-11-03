@@ -1,0 +1,46 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: springboot-quartz-complex
+  # 配置数据源
+  datasource:
+    # 数据库驱动，这里配置高版本mysql驱动
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/db2?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf8&autoReconnect=true&allowMultiQueries=true&useSSL=false
+    username: root
+    password: zjx123456
+    hikari:
+      max-lifetime: 540000 #连接最大存活时间，默认30分钟
+      maximum-pool-size: 20 #最大连接数
+      minimum-idle: 10 #最小空闲连接，默认10
+      idle-timeout: 600000 #空闲连接超时时间，默认600000(10分钟)
+      auto-commit: true
+      pool-name: HikariCP
+      connection-timeout: 60000 #连接超时时间，默认30秒
+      connection-test-query: SELECT 1 #测试连接是否可用查询语句
+  quartz:
+    job-store-type: jdbc #将任务保存到数据库
+    wait-for-jobs-to-complete-on-shutdown: true #程序结束时会等待quartz相关内容结束
+    overwrite-existing-jobs: true #启动时更新已存在的job
+    jdbc:
+      initialize-schema: never
+    properties:
+      org:
+        quartz:
+          scheduler:
+            instanceName: scheduler #实例名
+            instanceId: AUTO #实例编号自动生成
+          jobStore:
+            class: org.quartz.impl.jdbcjobstore.JobStoreTX #数据保存方式为数据库持久化
+            driverDelegateClass: org.quartz.impl.jdbcjobstore.StdJDBCDelegate #数据库代理类
+            tablePrefix: QRTZ_ #数据表的前缀
+            isClustered: false #是否以集群方式运行
+            clusterCheckinInterval: 10000 #调度实例失效的检查时间间隔，单位毫秒
+            useProperties: true #JobDataMaps是否都为String类型
+            misfireThreshold: 60000 #最大能忍受的触发超时时间
+          threadPool:
+            class: org.quartz.simpl.SimpleThreadPool #连接池实现类
+            threadCount: 10 #线程数量
+            threadPriority: 5 #线程优先级
+            threadsInheritContextClassLoaderOfInitializingThread: true #配置是否启动自动加载数据库内的定时任务，默认true

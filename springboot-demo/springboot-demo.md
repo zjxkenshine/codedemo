@@ -180,5 +180,8 @@ feature
 springboot整合Thymeleaf模板引擎
 基本使用，国际化等
 
+# 50.springbootdemo50-Quartz
+springboot整合Quartz实现定时任务增删改查
+mybatis,mysql
 
 
