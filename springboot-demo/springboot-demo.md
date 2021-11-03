@@ -172,6 +172,9 @@ mybatis,mysql
 # 47.springbootdemo47-Kapatcha
 springboot整合 Kapatcha + Redis 实现验证码并校验
 
+# 48.springbootdemo48-Cucumber
+springboot简单整合Cucumber实现BDD驱动测试
+feature
 
 
 

@@ -59,6 +59,7 @@
         <module>springbootdemo45-CXF</module>
         <module>springbootdemo46-Jasypt</module>
         <module>springbootdemo47-Kaptcha</module>
+        <module>springbootdemo48-Cucumber</module>
     </modules>
 
     <properties>
