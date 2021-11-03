@@ -10,7 +10,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @modified By：
  * @version: $
  *
- * TODO avro  接口使用protobuf  编译protobuf
+ * TODO avro 等其他序列化
  */
 @SpringBootApplication
 public class ProtobufApp {

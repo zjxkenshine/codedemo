@@ -20,6 +20,10 @@ import java.util.concurrent.ConcurrentHashMap;
  * @description：ProtoBuf工具类
  * @modified By：
  * @version: $
+ *
+ * 使用protostuff不用手动编译
+ * 使用protobuf要手动编译生成.proto文件，很麻烦
+ *
  */
 public class ProtoBufUtil {
     private static Logger log = LoggerFactory.getLogger(ProtoBufUtil.class);

@@ -8,4 +8,5 @@ Protobuf编码规则详解
 - https://blog.csdn.net/mijichui2153/article/details/111475823
 
 # ProtoBuf概述
-ProtoBuf是一种序列化和解析速度远高于JSON和XML的数据格式
+- ProtoBuf是一种序列化和解析速度远高于JSON和XML的数据格式
+- ProtoStuff简化了Protobuf的序列化/反序列化流程

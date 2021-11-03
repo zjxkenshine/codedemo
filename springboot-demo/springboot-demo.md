@@ -185,7 +185,7 @@ springboot整合Quartz实现定时任务增删改查
 mybatis,mysql
 
 # 51.springbootdemo51-Protobuf
-springboot整合Protobuf
+springboot整合Protobuf/Protostuff
 
 # 52.springbootdemo52-ProGuard
 springboot整合ProGuard实现代码混淆
