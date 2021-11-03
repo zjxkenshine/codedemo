@@ -187,7 +187,10 @@ mybatis,mysql
 # 51.springbootdemo51-Protobuf
 springboot整合Protobuf
 
-# 52.springbootdemo52-Derby
-springboot整合内存数据库Derby
+# 52.springbootdemo52-ProGuard
+springboot整合ProGuard实现代码混淆
+
+# 53.springbootdemo53-Derby
+springboot整合mybatis+druid+Derby内存数据库
 
 
