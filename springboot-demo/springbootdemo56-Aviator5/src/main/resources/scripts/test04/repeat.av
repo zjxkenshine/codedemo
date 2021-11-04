@@ -1,0 +1,8 @@
+## examples/repeat.av
+
+let list = repeat(10, "a");
+
+p("type of list: " + type(list));
+p("count of list: " + count(list));
+p("list[0]=" + list[0]);
+p("list is: " + list);

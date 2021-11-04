@@ -67,6 +67,7 @@
         <module>springbootdemo53-Derby</module>
         <module>springbootdemo54-Kilim</module>
         <module>springbootdemo55-CSV</module>
+        <module>springbootdemo56-Aviator5</module>
     </modules>
 
     <properties>

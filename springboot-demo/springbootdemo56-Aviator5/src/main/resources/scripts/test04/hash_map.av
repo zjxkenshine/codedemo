@@ -1,0 +1,4 @@
+## examples/hash_map.av
+let m = seq.map("a", 1, "b", 2, "c", 3, 4, 5);
+
+println(m);

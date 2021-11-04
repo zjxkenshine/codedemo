@@ -1,0 +1,18 @@
+## examples/use.av
+
+use java.util.*;
+
+let list = new ArrayList(10);
+
+seq.add(list, 1);
+seq.add(list, 2);
+
+p("list[0]=#{list[0]}");
+p("list[1]=#{list[1]}");
+
+let set = new HashSet();
+seq.add(set, "a");
+seq.add(set, "a");
+
+p("set type is: " + type(set));
+p("set is: #{set}");

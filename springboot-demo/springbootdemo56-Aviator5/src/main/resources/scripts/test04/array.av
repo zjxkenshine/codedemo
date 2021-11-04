@@ -1,0 +1,6 @@
+## examples/array.av
+
+let a = seq.array(int, 1, 2, 3, 4);
+
+println("type(a) is : " + type(a));
+println("count(a) is: " + count(a));

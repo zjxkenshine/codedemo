@@ -1,0 +1,7 @@
+fn test(a, b, c, d) {
+  a * b + c * d
+}
+let a = tuple(1, 2);
+let list = seq.list(3, 4);
+
+p(test(*a, *list));

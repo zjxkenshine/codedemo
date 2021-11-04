@@ -1,0 +1,16 @@
+## examples/function_overload.av
+
+fn join(s1) {
+  "#{s1}"
+}
+fn join(s1, s2) {
+  "#{s1}#{s2}"
+}
+
+fn join(s1, s2, s3) {
+ "#{s1}#{s2}#{s3}"
+}
+
+p(join("hello"));
+p(join("hello", " world"));
+p(join("hello", " world", ", aviator"));
