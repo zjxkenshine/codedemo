@@ -208,4 +208,7 @@ springboot整合Aviator表达式引擎
 ## 57.springbootdemo57-JavaMelody
 springboot整合JavaMelody监控
 
+## 58.springbootdemo58-Forest
+springboot简单使用Forest远程接口调用
+
 
