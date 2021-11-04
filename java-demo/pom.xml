@@ -13,6 +13,8 @@
         <module>java8-demo</module>
         <module>guava-demo</module>
         <module>juc-demo</module>
+        <module>aes-cmac-demo</module>
+        <module>hm-design-pattern-demo</module>
     </modules>
 
 
