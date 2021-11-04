@@ -66,6 +66,7 @@
         <module>springbootdemo52-ProGuard</module>
         <module>springbootdemo53-Derby</module>
         <module>springbootdemo54-Kilim</module>
+        <module>springbootdemo55-CSV</module>
     </modules>
 
     <properties>
