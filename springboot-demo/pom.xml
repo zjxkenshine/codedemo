@@ -65,6 +65,7 @@
         <module>springbootdemo51-Protobuf</module>
         <module>springbootdemo52-ProGuard</module>
         <module>springbootdemo53-Derby</module>
+        <module>springbootdemo54-Kilim</module>
     </modules>
 
     <properties>
