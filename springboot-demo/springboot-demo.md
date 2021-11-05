@@ -1,8 +1,4 @@
-# 1. 参考地址
-https://blog.csdn.net/syc000666/article/details/105086898
-
-# 2.各模块学习内容
-
+# Springboot整合技术及业务场景demo
 ## 1.springbootdemo01
 
 自定义banner，配置，热部署
@@ -219,4 +215,7 @@ java图片格式转换
 
 ## 61.springbootdemo61-SaToken
 springboot整合Sa-Token实现权限认证
+
+## 62.springbootdemo62-EhCache
+Springboot Cache整合EhCache
 

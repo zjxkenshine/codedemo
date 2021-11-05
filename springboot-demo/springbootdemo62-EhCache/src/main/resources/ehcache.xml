@@ -1,0 +1,39 @@
+<ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../config/ehcache.xsd">
+
+    <!-- 操作系统缓存的临时目录,内存满后写入该目录 -->
+    <diskStore path="java.io.tmpdir"/>
+
+    <!--
+        maxElementsOnDisk： 磁盘缓存中最多可以存放的元素数量;
+        eternal：缓存中对象是否永久有效;
+        timeToIdleSeconds：当eternal=false时使用，缓存数据有效期(单位:秒),时间段内没有访问该元素,将被清除;
+        timeToLiveSeconds：缓存数据的存活时间;
+        maxElementsInMemory：内存中最多可以存放的元素数量，overflowToDisk=true,则会将Cache中多出的元素放入磁盘文件中,若overflowToDisk=false,则根据memoryStoreEvictionPolicy策略替换Cache中原有的元素;
+        diskExpiryThreadIntervalSeconds:磁盘缓存的清理线程运行间隔;
+        memoryStoreEvictionPolicy:缓存释放策略,LRU会优先清理最少使用的缓存；
+        localTempSwap：持久化策略
+        Cannot use both <persistence ...> and overflowToDisk in a single cache configuration.
+    -->
+    <defaultCache
+            maxElementsInMemory="1000"
+            eternal="false"
+            timeToIdleSeconds="120"
+            timeToLiveSeconds="120"
+            maxElementsOnDisk="10000000"
+            diskExpiryThreadIntervalSeconds="120"
+            memoryStoreEvictionPolicy="LRU">
+        <persistence strategy="localTempSwap"/>
+    </defaultCache>
+
+    <!--user缓存配置-->
+    <cache name="user"
+           maxElementsInMemory="1000"
+           eternal="false"
+           timeToIdleSeconds="120"
+           timeToLiveSeconds="120"
+           maxElementsOnDisk="10000000"
+           diskExpiryThreadIntervalSeconds="120"
+           memoryStoreEvictionPolicy="LRU">
+        <persistence strategy="localTempSwap"/>
+    </cache>
+</ehcache>

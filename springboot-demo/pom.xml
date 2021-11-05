@@ -73,6 +73,7 @@
         <module>springbootdemo59-Avatar</module>
         <module>springbootdemo60-Image</module>
         <module>springbootdemo61-SaToken</module>
+        <module>springbootdemo62-EhCache</module>
     </modules>
 
     <properties>
