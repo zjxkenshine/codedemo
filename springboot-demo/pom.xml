@@ -68,6 +68,8 @@
         <module>springbootdemo54-Kilim</module>
         <module>springbootdemo55-CSV</module>
         <module>springbootdemo56-Aviator5</module>
+        <module>springbootdemo57-JavaMelody</module>
+        <module>springbootdemo58-Forest</module>
     </modules>
 
     <properties>
