@@ -211,4 +211,6 @@ springboot整合JavaMelody监控
 ## 58.springbootdemo58-Forest
 springboot简单使用Forest远程接口调用
 
+## 59.springbootdemo59-Avatar
+java生成随机头像(文字与Hash类型)
 

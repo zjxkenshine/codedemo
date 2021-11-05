@@ -70,6 +70,7 @@
         <module>springbootdemo56-Aviator5</module>
         <module>springbootdemo57-JavaMelody</module>
         <module>springbootdemo58-Forest</module>
+        <module>springbootdemo59-Avatar</module>
     </modules>
 
     <properties>
