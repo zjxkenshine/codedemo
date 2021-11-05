@@ -217,3 +217,6 @@ java生成随机头像(文字与Hash类型)
 ## 60.springbootdemo60-Image
 java图片格式转换
 
+## 61.springbootdemo61-SaToken
+springboot整合Sa-Token实现权限认证
+
