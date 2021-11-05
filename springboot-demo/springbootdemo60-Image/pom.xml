@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>springboot-demo</artifactId>
+        <groupId>com.kenshine</groupId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>springbootdemo60-Image</artifactId>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>org.freehep</groupId>
+            <artifactId>freehep-graphicsio-emf</artifactId>
+            <version>2.4</version>
+        </dependency>
+        <dependency>
+            <groupId>org.freehep</groupId>
+            <artifactId>freehep-graphicsio-svg</artifactId>
+            <version>2.4</version>
+        </dependency>
+        <dependency>
+            <groupId>net.arnx</groupId>
+            <artifactId>wmf2svg</artifactId>
+            <version>0.9.5</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.xmlgraphics</groupId>
+            <artifactId>batik-transcoder</artifactId>
+            <version>1.9.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.xmlgraphics</groupId>
+            <artifactId>batik-codec</artifactId>
+            <version>1.9.1</version>
+        </dependency>
+
+    </dependencies>
+</project>

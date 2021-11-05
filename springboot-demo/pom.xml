@@ -71,6 +71,7 @@
         <module>springbootdemo57-JavaMelody</module>
         <module>springbootdemo58-Forest</module>
         <module>springbootdemo59-Avatar</module>
+        <module>springbootdemo60-Image</module>
     </modules>
 
     <properties>

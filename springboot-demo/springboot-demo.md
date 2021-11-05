@@ -214,3 +214,6 @@ springboot简单使用Forest远程接口调用
 ## 59.springbootdemo59-Avatar
 java生成随机头像(文字与Hash类型)
 
+## 60.springbootdemo60-Image
+java图片格式转换
+
