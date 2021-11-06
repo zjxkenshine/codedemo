@@ -76,6 +76,7 @@
         <module>springbootdemo62-EhCache</module>
         <module>springbootdemo63-Oval</module>
         <module>springbootdemo64-FreeMarker</module>
+        <module>springbootdemo65-Docker</module>
     </modules>
 
     <properties>
