@@ -3,6 +3,8 @@ package com.kenshine.oval.entity;
 import lombok.Data;
 import lombok.experimental.Accessors;
 import net.sf.oval.constraint.Length;
+import net.sf.oval.guard.Guarded;
+import org.aspectj.lang.annotation.Pointcut;
 
 /**
  * @author ：kenshine
@@ -28,5 +30,4 @@ public class User {
 
     @Length(min=5,max=20,profiles="p2",message = "用户名长度必须为5~20")
     private String loginName;
-
 }
