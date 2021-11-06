@@ -222,3 +222,7 @@ Springboot Cache整合EhCache
 ## 63.springbootdemo63-Oval
 Springboot整合Oval框架参数校验
 
+## 64.springbootdemo64-FreeMaker
+Springboot整合FreeMaker
+
+

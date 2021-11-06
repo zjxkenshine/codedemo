@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>序列操作</title>
+</head>
+<body>
+<h1>序列连接</h1>
+<div>
+    <table>
+        <thead>
+        <th>id</th>
+        <th>username</th>
+        <th>password</th>
+        </thead>
+        <tbody>
+        <#list users1 + users2 as user>
+            <tr>
+                <td>${user.id}</td>
+                <td>${user.username}</td>
+                <td>${user.password}</td>
+            </tr>
+        </#list>
+        </tbody>
+    </table>
+</div>
+<h1>序列切分</h1>
+<div>
+    <p>将序列切分为从索引1到3（包括3）的子序列</p>
+    <table>
+        <thead>
+        <th>id</th>
+        <th>username</th>
+        <th>password</th>
+        </thead>
+        <tbody>
+        <#list (users1 + users2)[1..3] as user>
+            <tr>
+                <td>${user.id}</td>
+                <td>${user.username}</td>
+                <td>${user.password}</td>
+            </tr>
+        </#list>
+        </tbody>
+    </table>
+    <p>将序列切分为从索引1到3（不包括3）的子序列</p>
+    <table>
+        <thead>
+        <th>id</th>
+        <th>username</th>
+        <th>password</th>
+        </thead>
+        <tbody>
+        <#list (users1 + users2)[1..<3] as user>
+            <tr>
+                <td>${user.id}</td>
+                <td>${user.username}</td>
+                <td>${user.password}</td>
+            </tr>
+        </#list>
+        </tbody>
+    </table>
+    <p>将序列切分为从索引2开始长度为2的子序列</p>
+    <table>
+        <thead>
+        <th>id</th>
+        <th>username</th>
+        <th>password</th>
+        </thead>
+        <tbody>
+        <#list (users1 + users2)[2..*2] as user>
+            <tr>
+                <td>${user.id}</td>
+                <td>${user.username}</td>
+                <td>${user.password}</td>
+            </tr>
+        </#list>
+        </tbody>
+    </table>
+    <p>将序列切分为从索引2开始长度为5的子序列（切分长度已经超过了从开始索引到被切分序列末尾的长度，所以这里只截取到序列末尾）</p>
+    <table>
+        <thead>
+        <th>id</th>
+        <th>username</th>
+        <th>password</th>
+        </thead>
+        <tbody>
+        <#list (users1 + users2)[2..*5] as user>
+            <tr>
+                <td>${user.id}</td>
+                <td>${user.username}</td>
+                <td>${user.password}</td>
+            </tr>
+        </#list>
+        </tbody>
+    </table>
+    <#-- 有限长度切分允许开始索引超过最后项索引一个数（但不能再多了） -->
+    <p>将序列切分为从索引5开始长度为2的子序列（开始索引已经超出了序列的索引范围，所以这里切分结果为空）</p>
+    <table>
+        <thead>
+        <th>id</th>
+        <th>username</th>
+        <th>password</th>
+        </thead>
+        <tbody>
+        <#list (users1 + users2)[5..*2] as user>
+            <tr>
+                <td>${user.id}</td>
+                <td>${user.username}</td>
+                <td>${user.password}</td>
+            </tr>
+        </#list>
+        </tbody>
+    </table>
+    <p>将序列切分为从索引1开始的子序列</p>
+    <table>
+        <thead>
+        <th>id</th>
+        <th>username</th>
+        <th>password</th>
+        </thead>
+        <tbody>
+        <#list (users1 + users2)[1..] as user>
+            <tr>
+                <td>${user.id}</td>
+                <td>${user.username}</td>
+                <td>${user.password}</td>
+            </tr>
+        </#list>
+        </tbody>
+    </table>
+    <#-- 无右边界切分允许开始索引超过最后项索引一个数（但不能再多了） -->
+    <p>将序列切分为从索引5开始的子序列（开始索引已经超出了序列的索引范围，所以这里切分结果为空）</p>
+    <table>
+        <thead>
+        <th>id</th>
+        <th>username</th>
+        <th>password</th>
+        </thead>
+        <tbody>
+        <#list (users1 + users2)[5..] as user>
+            <tr>
+                <td>${user.id}</td>
+                <td>${user.username}</td>
+                <td>${user.password}</td>
+            </tr>
+        </#list>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+spring:
+  freemarker:
+    # 模板的加载路径，多个以,分隔，默认为classpath:/templates/
+    template-loader-path: classpath:/templates/
+    # 在构建URL时附加到视图名称的前缀，注意不包含路径，默认为空字符串
+    prefix: fm-
+    # 在构建URL时附加到视图名称的后缀，默认为.ftlh
+    suffix: .ftl
+    # 模板文件编码，默认为UTF-8
+    charset: UTF-8
+    # 是否启用模板缓存，默认为true，表示启用，false不启用
+    cache: false
+    # 是否检查模板位置存在与否，默认为true
+    check-template-location: true
+    # Content-Type的值，默认为text/html
+    content-type: text/html
+    # 在与模板合并之前，是否将所有请求属性添加到模型中，默认为false
+    expose-request-attributes: false
+    # 在与模板合并之前，是否将所有HttpSession属性添加到模型中，默认为false
+    expose-session-attributes: false
+    # 是否以springMacroRequestContext的形式暴露一个RequestContext，供Spring的macro库使用，默认为true
+    expose-spring-macro-helpers: true
+    # 是否允许HttpServletRequest属性覆盖（隐藏）控制器生成的同名模型属性，默认为false
+    allow-request-override: false
+    # 是否允许HttpSession属性覆盖（隐藏）控制器生成的同名模型属性，默认为false
+    allow-session-override: false
+    # 是否优先从文件系统加载模板，以实现模板变化的热检测
+    # 当模板路径被检测到是一个目录时，模板只从该目录加载，其他匹配的类路径位置将不被考虑
+    prefer-file-system-access: true
