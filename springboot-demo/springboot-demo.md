@@ -228,4 +228,6 @@ Springboot整合FreeMaker
 ## 65.springbootdemo65-Docker
 Springboot整合Docker
 
+## 66.springbootdemo66-Flowable
+Springboot整合flowable工作流引擎
 

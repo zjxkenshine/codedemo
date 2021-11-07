@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>springboot-demo</artifactId>
+        <groupId>com.kenshine</groupId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>springbootdemo66-Flowable</artifactId>
+
+    <properties>
+        <flowable.version>6.4.1</flowable.version>
+    </properties>
+
+    <dependencies>
+
+        <!-- mysql 驱动 -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+        </dependency>
+
+
+        <!-- mybatis-plus 起步依赖 包含了mybatis的所有依赖 -->
+        <!-- 与flowable冲突，待解决-->
+<!--        <dependency>-->
+<!--            <groupId>com.baomidou</groupId>-->
+<!--            <artifactId>mybatis-plus-boot-starter</artifactId>-->
+<!--            <version>3.4.2</version>-->
+<!--        </dependency>-->
+
+        <!--mybatis-->
+        <dependency>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter</artifactId>
+            <version>2.2.0</version>
+        </dependency>
+
+        <!-- redis -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-pool2</artifactId>
+            <version>2.6.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.8.1</version>
+        </dependency>
+
+        <!-- Flowable spring-boot 版套餐 -->
+        <dependency>
+            <groupId>org.flowable</groupId>
+            <artifactId>flowable-spring-boot-starter</artifactId>
+            <version>${flowable.version}</version>
+        </dependency>
+
+        <!-- Flowable 内部日志采用 SLF4J -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.21</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+            <version>1.7.21</version>
+        </dependency>
+
+        <!-- 引入Druid依赖 -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid</artifactId>
+            <version>1.1.24</version>
+        </dependency>
+
+        <!--fastjson 依赖-->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.61</version>
+        </dependency>
+
+        <!-- app 依赖 包含 rest，logic，conf -->
+        <!-- flowable 集成依赖 rest，logic，conf -->
+        <dependency>
+            <groupId>org.flowable</groupId>
+            <artifactId>flowable-ui-modeler-rest</artifactId>
+            <version>${flowable.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.flowable</groupId>
+            <artifactId>flowable-ui-modeler-logic</artifactId>
+            <version>${flowable.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.flowable</groupId>
+            <artifactId>flowable-ui-modeler-conf</artifactId>
+            <version>${flowable.version}</version>
+        </dependency>
+
+    </dependencies>
+
+</project>
