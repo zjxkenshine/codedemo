@@ -80,6 +80,7 @@
         <module>springbootdemo66-Flowable</module>
         <module>springbootdemo67-P6spy</module>
         <module>springbootdemo68-mockito</module>
+        <module>springbootdemo69-Druid</module>
     </modules>
 
     <properties>

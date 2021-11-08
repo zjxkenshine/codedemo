@@ -230,7 +230,7 @@ Springboot整合Docker
 
 ## 66.springbootdemo66-Flowable
 Springboot整合flowable工作流引擎
-durid,mybatis
+Druid,mybatis
 
 ## 67.springbootdemo67-P6spy
 Springboot整合P6SPY打印sql日志
@@ -238,5 +238,10 @@ mybatisplus
 
 ## 68.springbootdemo68-Mockito
 Springboot整合Mockito单元测试
+
+## 69.springbootdemo69-Druid
+Springboot整合druid连接池实现监控
+Springboot整合druid实现数据库密码加密
+
 
 
