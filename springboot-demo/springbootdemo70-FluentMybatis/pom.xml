@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>springboot-demo</artifactId>
+        <groupId>com.kenshine</groupId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>springbootdemo70-FluentMybatis</artifactId>
+
+    <properties>
+        <fluent-mybatis.version>1.6.13</fluent-mybatis.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+        <!-- 引入fluent-mybatis 运行依赖包, scope为compile -->
+        <dependency>
+            <groupId>com.github.atool</groupId>
+            <artifactId>fluent-mybatis</artifactId>
+            <version>${fluent-mybatis.version}</version>
+        </dependency>
+        <!-- 引入fluent-mybatis-processor, scope设置为provider 编译需要，运行时不需要 -->
+        <dependency>
+            <groupId>com.github.atool</groupId>
+            <artifactId>fluent-mybatis-processor</artifactId>
+            <version>${fluent-mybatis.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter</artifactId>
+            <version>2.2.0</version>
+        </dependency>
+    </dependencies>
+
+
+</project>

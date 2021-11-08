@@ -243,5 +243,6 @@ Springboot整合Mockito单元测试
 Springboot整合druid连接池实现监控
 Springboot整合druid实现数据库密码加密
 
-
+## 70.springbootdemo70-FluentMybatis
+Springboot整合FluentMybatis实现增删改查
 
