@@ -63,6 +63,10 @@
     - 镜像备份：将镜像保存为tar文件`docker save -o nginx01.tar mynginx01`
     - 镜像恢复与迁移：`docker load -i nginx01.tar`
 
-        
+5. Dockerfile：
+    - 见dockerfile示例
+6. 另一种maven pugin部署方式
+    - 见pom2.xml docker-maven-plugin
+    - pom.xml dockerfile-maven-plugin
 
     

@@ -10,26 +10,28 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>springbootdemo65-Docker</artifactId>
+
     <properties>
+        <java.version>1.8</java.version>
+        <dockerfile-maven-plugin.version>1.4.10</dockerfile-maven-plugin.version>
         <docker.image.prefix>springboot</docker.image.prefix>
     </properties>
+
     <build>
         <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
             <!-- docker插件 -->
             <plugin>
                 <groupId>com.spotify</groupId>
-                <artifactId>docker-maven-plugin</artifactId>
-                <version>1.0.0</version>
+                <artifactId>dockerfile-maven-plugin</artifactId>
+                <version>${dockerfile-maven-plugin.version}</version>
                 <configuration>
-                    <imageName>${docker.image.prefix}/${project.artifactId}</imageName>
-                    <dockerDirectory>src/main/docker</dockerDirectory>
-                    <resources>
-                        <resource>
-                            <targetPath>/</targetPath>
-                            <directory>${project.build.directory}</directory>
-                            <include>${project.build.finalName}.jar</include>
-                        </resource>
-                    </resources>
+                    <contextDirectory>src/main/docker</contextDirectory>
+                    <repository>${docker.image.prefix}/${project.artifactId}</repository>
+                    <tag>v1</tag>
                 </configuration>
             </plugin>
         </plugins>

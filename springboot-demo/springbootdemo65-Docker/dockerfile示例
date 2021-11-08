@@ -1,0 +1,43 @@
+FROM java:8
+
+#维护者信息
+MAINTAINER boris@email.com
+
+#添加元数据到镜像，LABEL是以键值对形式
+LABEL maintainer="bo.zou <boris@email.com>"
+LABEL copyright="2015 ~ 2020 www.boris.com Inc. All rights reserved."
+LABEL version="1.0.0"
+LABEL declaration="Boris Test Dockerfile"
+
+#ENV设置环境变量 timezone
+ENV TIMEZONE Asia/Shanghai
+
+#设置容器的工作目录
+# WORKDIR
+#RUN指令：用于指定 docker build 过程中要运行的命令
+RUN mkdir /usr/local/boris
+WORKDIR /usr/local/boris
+
+#复制指令，从上下文目录中复制文件或者目录到容器里指定路径
+#ADD 指令和 COPY 的使用格式一致（同样需求下，官方推荐使用 COPY）
+#将jar包添加到容器中并更名为app.jar
+COPY *.jar /usr/local/boris/app.jar
+
+#定义匿名数据卷。在启动容器时忘记挂载数据卷，会自动挂载到匿名卷。
+#可以在镜像中创建挂载点，只要通过该镜像创建的容器都有了挂载点
+#作用是和docker run命令的-v是一样，将宿主机和容器的目录做映射
+#区别是：通过 VOLUME 指令创建的挂载点，无法指定宿主机上对应的目录，是自动生成的。可以通过查看容器的信息查看到，例：docker inspect 容器ID
+#VOLUME ["/usr/local/boris/dockerlog"]
+
+###声明启动端口号
+EXPOSE 8080
+
+#CMD 和 ENTRYPOINT 在docker run 时运行(启动容器时执行)，主要用来指定容器默认执行的命令.
+#CMD作用：当Docker镜像被启动后Docker容器将会默认执行的命令，CMD 指令指定的程序会被 docker run 命令行参数中指定要运行的程序所覆盖
+#ENTRYPOINT作用：类似于 CMD 指令，区别在于不会被 docker run 的命令行参数指定的指令所覆盖，而且这些命令行参数会被当作参数送给 ENTRYPOINT 指令指定的程序
+#一个Dockerfile中只能有一个CMD或ENTRYPOINT命令，多个仅最后一个生效。多数情况下它们应该是单独使用的。
+#配合使用时：
+#• 如果 ENTRYPOINT 使用了 shell 模式，CMD 指令会被忽略。
+#• 如果 ENTRYPOINT 使用了 exec 模式，CMD 指定的内容被追加为 ENTRYPOINT 指定命令的参数。
+#• 如果 ENTRYPOINT 使用了 exec 模式，CMD 也应该使用 exec 模式。
+ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","app.jar"]
