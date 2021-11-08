@@ -51,3 +51,6 @@ no main manifest attribute, in /app.jar
 两种部署方式：
 - 将应用和Dockerfile打包到服务器并构建镜像
 - 通过maven方式本地镜像化,连接远程docker2573端口并自动发布运行
+
+dockerfile配置
+![](img/dockerfile配置.jpg)
