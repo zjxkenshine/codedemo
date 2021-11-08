@@ -79,6 +79,7 @@
         <module>springbootdemo65-Docker</module>
         <module>springbootdemo66-Flowable</module>
         <module>springbootdemo67-P6spy</module>
+        <module>springbootdemo68-mockito</module>
     </modules>
 
     <properties>
