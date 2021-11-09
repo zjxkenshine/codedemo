@@ -252,5 +252,10 @@ Springboot整合Screw实现数据库文档生成
 ## 72.springbootdemo72-Sonar
 IDEA sonarLint插件的配置与使用及分析项目
 
+## 73.springbootdemo73-UReport2
+springboot整合UReport2报表引擎
+
+
+
 
 

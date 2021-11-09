@@ -84,6 +84,7 @@
         <module>springbootdemo70-FluentMybatis</module>
         <module>springbootdemo71-Screw</module>
         <module>springbootdemo72-Sonar</module>
+        <module>springbootdemo73-UReport2</module>
     </modules>
 
     <properties>
