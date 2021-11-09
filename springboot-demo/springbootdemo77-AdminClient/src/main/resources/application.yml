@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: Client
+  boot:
+    admin:
+      client:
+        # 配置 Admin Server（服务端的名字）
+        url: http://localhost:9000
+server:
+  port: 9001
+
+# 开放端点用于 SpringBoot Admin 的监控
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+logging:
+  file:
+    # 配置生成日志文件名称
+    name: admin-client.log

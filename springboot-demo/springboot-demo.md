@@ -264,5 +264,13 @@ springboot整合EasyCaptcha生成图片验证码
 ## 76.springbootdemo76-JApiDocs
 springboot整合JApiDocs生成接口文档
 
+## 77.springbootdemo77-Admin
+springboot整合 SpringBoot Admin 管理和监控Springboot应用
+
+springbootdemo77-AdminClient
+- 客户端应用
+
+
+
 
 

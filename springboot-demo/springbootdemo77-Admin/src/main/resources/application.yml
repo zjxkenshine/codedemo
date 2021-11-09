@@ -1,0 +1,9 @@
+server:
+  port: 9000
+spring:
+  application:
+    name: Server
+  security:
+    user:
+      name: admin
+      password: admin
