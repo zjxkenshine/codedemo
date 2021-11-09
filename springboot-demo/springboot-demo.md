@@ -261,4 +261,8 @@ springboot整合时序数据库InfluxDB1.8.5实现增删改查
 ## 75.springbootdemo75-EasyCaptcha
 springboot整合EasyCaptcha生成图片验证码
 
+## 76.springbootdemo76-JApiDocs
+springboot整合JApiDocs生成接口文档
+
+
 
