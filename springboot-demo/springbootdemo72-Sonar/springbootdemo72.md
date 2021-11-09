@@ -5,6 +5,9 @@ Spring Boot 整合 Sonar(分析项目)
 - https://www.cnblogs.com/alvin-perfect/p/11776245.html
 - 详见最外层pom.xml
 
+IDEA中使用插件sonarlint连接到SonarQube对代码质量进行管控(比较全)
+- https://www.cnblogs.com/passedbylove/p/12432955.html
+
 IDEA SonarLint插件方式(可以与上面的项目绑定)
 - https://blog.csdn.net/qq_35550345/article/details/103589175
 
@@ -17,6 +20,7 @@ Sonar中文汉化
 # 踩坑
 1. SonarQube的安装部署过程中踩过的坑
     - https://blog.csdn.net/weixin_41596463/article/details/106250621
+    - https://blog.csdn.net/weixin_40686603/article/details/90208627
 
 2. SonarLint与SonarQube版本不一致: 离线安装sonarLint回退插件版本或升级SonarQube版本
     - http://plugins.jetbrains.com/plugin/7973-sonarlint/versions
@@ -30,4 +34,8 @@ Sonar中文汉化
 
 5. No files nor directories matching 'target/classes'
 - sonar.java.binaries指定其他目录
+
+6. sonarlint连接sonarQube后，无法检查出代码问题
+- https://www.oschina.net/question/3518539_2267183?sort=default
+
 
