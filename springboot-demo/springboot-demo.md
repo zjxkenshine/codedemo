@@ -258,5 +258,7 @@ springboot整合UReport2报表引擎
 ## 74.springbootdemo74-InfluxDB
 springboot整合时序数据库InfluxDB1.8.5实现增删改查
 
+## 75.springbootdemo75-EasyCaptcha
+springboot整合EasyCaptcha生成图片验证码
 
 

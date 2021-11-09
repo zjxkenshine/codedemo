@@ -1,0 +1,14 @@
+# redis配置
+spring:
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    password:
+    timeout: 3600ms #超时时间
+    database: 1
+    lettuce: #若是在配置中配置了lettuce的pool属性，那么必须在pom.xml文件中加入commons-pool2的依赖。
+      pool:
+        max-active: 8 #最大连接数
+        max-idle: 8 #最大空闲连接 默认8
+        max-wait: -1ms #默认-1 最大连接阻塞等待时间
+        min-idle: 0 #最小空闲连接
