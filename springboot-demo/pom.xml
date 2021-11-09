@@ -85,6 +85,7 @@
         <module>springbootdemo71-Screw</module>
         <module>springbootdemo72-Sonar</module>
         <module>springbootdemo73-UReport2</module>
+        <module>springbootdemo74-InfluxDB</module>
     </modules>
 
     <properties>

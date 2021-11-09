@@ -1,0 +1,10 @@
+spring:
+  influx:
+    # 链接地址
+    url: http://localhost:8086
+    # 用户名
+    user: root
+    # 密码
+    password: zjx123456
+    # 数据库名称
+    dataBaseName: db1
