@@ -249,3 +249,8 @@ Springboot整合FluentMybatis实现增删改查
 ## 71.springbootdemo71-Screw
 Springboot整合Screw实现数据库文档生成
 
+## 72.springbootdemo72-Sonar
+IDEA sonarLint插件的配置与使用及分析项目
+
+
+
