@@ -82,6 +82,7 @@
         <module>springbootdemo68-mockito</module>
         <module>springbootdemo69-Druid</module>
         <module>springbootdemo70-FluentMybatis</module>
+        <module>springbootdemo71-Screw</module>
     </modules>
 
     <properties>

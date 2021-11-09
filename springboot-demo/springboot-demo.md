@@ -246,3 +246,6 @@ Springboot整合druid实现数据库密码加密
 ## 70.springbootdemo70-FluentMybatis
 Springboot整合FluentMybatis实现增删改查
 
+## 71.springbootdemo71-Screw
+Springboot整合Screw实现数据库文档生成
+
