@@ -91,6 +91,7 @@
         <module>springbootdemo77-Admin</module>
         <module>springbootdemo77-AdminClient</module>
         <module>springbootdemo78-KeytoolSSL</module>
+        <module>springbootdemo79-LiquiBase</module>
     </modules>
 
     <properties>

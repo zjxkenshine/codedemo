@@ -273,6 +273,9 @@ springbootdemo77-AdminClient
 ## 78.springbootdemo78-KeytoolSSL
 springboot整合Keytool生成的ssl证书使用Https
 
+## 79.springbootdemo79-LiquiBase
+SpringBoot简单整合Liquibase数据库版本管理
+
 
 
 

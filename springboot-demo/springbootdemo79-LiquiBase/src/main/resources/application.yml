@@ -1,0 +1,6 @@
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/db1?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC&useSSL=true
+    username: root
+    password: zjx123456
+    driver-class-name: com.mysql.cj.jdbc.Driver #mysql6.0之后推荐使用这个驱动包
