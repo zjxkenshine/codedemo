@@ -1,0 +1,28 @@
+#服务器配置
+server:
+  port: 8080
+  tomcat:
+    uri-encoding: utf-8
+
+spring:
+  #数据源
+  datasource:
+    url: jdbc:mysql://localhost:3306/db1?serverTimezone=Asia/Shanghai&characterEncoding=utf8
+    username: root
+    password: zjx123456
+  #视图层控制
+  mvc:
+    static-path-pattern: /static/**
+    view:
+      prefix: classpath:/templates/
+      suffix: .html
+
+#Mybatis扫描
+mybatis:
+  mapper-locations: classpath*:mapper/*.xml
+  #起别名。可省略写mybatis的xml中的resultType的全路径
+  type-aliases-package: com.springboot.ssm.domain
+
+# Excel存放位置
+excel:
+  path: F:\IDEAworkespace\codedemo\springboot-demo\springbootdemo80-EasyExcel\src\main\resources\export\

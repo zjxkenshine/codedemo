@@ -92,6 +92,7 @@
         <module>springbootdemo77-AdminClient</module>
         <module>springbootdemo78-KeytoolSSL</module>
         <module>springbootdemo79-LiquiBase</module>
+        <module>springbootdemo80-EasyExcel</module>
     </modules>
 
     <properties>
