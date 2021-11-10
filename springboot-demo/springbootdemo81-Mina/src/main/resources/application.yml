@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: mina
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+    default-property-inclusion: NON_NULL
+
+server:
+  port: 8080
+  servlet:
+    encoding:
+      charset: UTF-8
+
+mina:
+  host: 127.0.0.1
+  port1: 10010
+  port2: 10011

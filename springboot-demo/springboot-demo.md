@@ -279,6 +279,9 @@ SpringBoot简单整合Liquibase数据库版本管理
 ## 80.springbootdemo80-EasyExcel
 SpringBoot简单整合EasyExcel
 
+## 81.springbootdemo81-Mina
+SpringBoot整合Mina(Socket通讯框架)
+
 
 
 

@@ -93,6 +93,7 @@
         <module>springbootdemo78-KeytoolSSL</module>
         <module>springbootdemo79-LiquiBase</module>
         <module>springbootdemo80-EasyExcel</module>
+        <module>springbootdemo81-Mina</module>
     </modules>
 
     <properties>
