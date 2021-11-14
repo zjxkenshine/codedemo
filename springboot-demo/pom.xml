@@ -95,6 +95,7 @@
         <module>springbootdemo80-EasyExcel</module>
         <module>springbootdemo81-Mina</module>
         <module>springbootdemo82-Memcached</module>
+        <module>springbootdemo83-SpyMemcached</module>
     </modules>
 
     <properties>

@@ -285,7 +285,10 @@ SpringBoot整合Mina(Socket通讯框架)
 ## 82.springbootdemo82-Memcached
 SpringBoot整合XMemcached操作Memcached
 
-## 83.springbootdemo83-
+## 83.springbootdemo83-SpyMemcached
+SpringBoot整合SpyMemcached操作Memcached
+
+
 
 
 
