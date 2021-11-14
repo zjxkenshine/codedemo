@@ -1,0 +1,10 @@
+spring:
+  memcached:
+    # memcached服务器节点
+    servers: 127.0.0.1:11211
+    # nio连接池的数量
+    poolSize: 10
+    # 设置默认操作超时
+    opTimeout: 3000
+    # 是否启用url encode机制
+    sanitizeKeys: false

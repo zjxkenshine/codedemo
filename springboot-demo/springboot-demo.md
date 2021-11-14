@@ -282,6 +282,12 @@ SpringBoot简单整合EasyExcel
 ## 81.springbootdemo81-Mina
 SpringBoot整合Mina(Socket通讯框架)
 
+## 82.springbootdemo82-Memcached
+SpringBoot整合XMemcached操作Memcached
+
+## 83.springbootdemo83-
+
+
 
 
 

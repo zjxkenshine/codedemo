@@ -94,6 +94,7 @@
         <module>springbootdemo79-LiquiBase</module>
         <module>springbootdemo80-EasyExcel</module>
         <module>springbootdemo81-Mina</module>
+        <module>springbootdemo82-Memcached</module>
     </modules>
 
     <properties>
