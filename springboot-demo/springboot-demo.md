@@ -294,6 +294,11 @@ SpringBoot整合GraphQL
 ## 85.springbootdemo85-JJWT
 SpringBoot整合JJWT生成JWT
 
+## 86.springbootdemo86-Quasar
+Java使用简单使用协程库Quasar
+
+
+
 
 
 
