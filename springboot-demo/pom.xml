@@ -97,6 +97,7 @@
         <module>springbootdemo82-Memcached</module>
         <module>springbootdemo83-SpyMemcached</module>
         <module>springbootdemo84-GraphQL</module>
+        <module>springbootdemo85-JJWT</module>
     </modules>
 
     <properties>
