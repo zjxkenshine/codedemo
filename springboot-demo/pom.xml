@@ -96,6 +96,7 @@
         <module>springbootdemo81-Mina</module>
         <module>springbootdemo82-Memcached</module>
         <module>springbootdemo83-SpyMemcached</module>
+        <module>springbootdemo84-GraphQL</module>
     </modules>
 
     <properties>

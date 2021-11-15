@@ -1,0 +1,54 @@
+#Server
+server:
+  port: 8080
+
+#Mysql
+spring:
+  datasource:
+    c3p0:
+      driverClass: com.mysql.cj.jdbc.Driver
+      jdbcUrl: jdbc:mysql://localhost:3306/db3?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8&useSSL=false
+      user: root
+      password: zjx123456
+
+#Mybatis
+mybatis:
+  config-location: classpath:mybatis/mybatis-config.xml
+  mapper-locations: classpath*:mybatis/mapper/**/*.xml
+
+#GraphQL
+graphql:
+  servlet:
+    mapping: /graphql
+    enabled: true
+    corsEnabled: true
+    cors:
+      allowed-origins: http://some.domain.com
+    # if you want to @ExceptionHandler annotation for custom GraphQLErrors
+    exception-handlers-enabled: true
+    contextSetting: PER_REQUEST_WITH_INSTRUMENTATION
+  tools:
+    schema-location-pattern: "**/*.graphqls"
+    # Enable or disable the introspection query. Disabling it puts your server in contravention of the GraphQL
+    # specification and expectations of most clients, so use this option with caution
+
+#GraphiQL Tool
+graphiql:
+  mapping: /graphiql
+  endpoint:
+    graphql: /graphql
+  subscriptions:
+    timeout: 30
+    reconnect: false
+  static:
+    basePath: /
+  enabled: true
+  pageTitle: GraphiQL
+  props:
+    resources:
+      query: /graphql/types.graphqls
+      variables: /graphql/types.graphqls
+    variables:
+      editorTheme: "solarized light"
+  headers:
+    Authorization: "Bearer <your-token>"

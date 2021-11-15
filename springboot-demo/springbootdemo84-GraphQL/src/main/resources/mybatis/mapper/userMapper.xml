@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kenshine.graphql.dao.UserMapper">
+    <select id="getUserByNickname" resultType="com.kenshine.graphql.entity.User">
+        SELECT
+            id,
+            nickname,
+            mail,
+            description,
+            DATE_FORMAT(update_time,'%Y-%m-%d %H:%i') updateTime,
+            DATE_FORMAT(create_time,'%Y-%m-%d %H:%i') createTime
+        FROM
+            user
+        WHERE
+            nickname = #{nickname}
+    </select>
+
+    <select id="getUserById" resultType="com.kenshine.graphql.entity.User">
+        SELECT
+            id,
+            nickname,
+            mail,
+            description,
+            DATE_FORMAT(update_time,'%Y-%m-%d %H:%i') updateTime,
+            DATE_FORMAT(create_time,'%Y-%m-%d %H:%i') createTime
+        FROM
+            user
+        WHERE
+            id = #{id}
+    </select>
+
+    <select id="listUsers" resultType="com.kenshine.graphql.entity.User">
+        SELECT
+            id id,
+            nickname nickname,
+            mail mail,
+            description description,
+            DATE_FORMAT(update_time,'%Y-%m-%d %H:%i:%s') updateTime,
+            DATE_FORMAT(create_time,'%Y-%m-%d %H:%i:%s') createTime
+        FROM
+            user
+    </select>
+
+    <insert id="addUser" parameterType="com.kenshine.graphql.entity.User"
+            keyProperty="id" useGeneratedKeys="true">
+        INSERT INTO
+            user
+        (
+            nickname,
+            password,
+            mail,
+            description,
+            update_time,
+            create_time
+        )
+        VALUES
+        (
+            #{nickname},
+            #{password},
+            #{mail},
+            #{description},
+            now(),
+            now()
+        )
+    </insert>
+
+    <update id="updateUser">
+        UPDATE
+            user
+        SET
+            nickname = #{nickname},
+            mail = #{mail},
+            description = #{description},
+            update_time = now()
+        WHERE
+            id = #{id}
+    </update>
+
+    <delete id="deleteUser">
+        DELETE FROM
+            user
+        WHERE
+            id = #{id}
+    </delete>
+</mapper>
