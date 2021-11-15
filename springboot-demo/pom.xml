@@ -99,6 +99,7 @@
         <module>springbootdemo84-GraphQL</module>
         <module>springbootdemo85-JJWT</module>
         <module>springbootdemo86-Quasar</module>
+        <module>springbootdemo87-OrientDB</module>
     </modules>
 
     <properties>

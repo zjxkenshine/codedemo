@@ -1,0 +1,5 @@
+orient:
+  url: remote:localhost
+  database: demo87
+  username: root
+  password: zjx123456

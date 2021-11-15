@@ -297,6 +297,10 @@ SpringBoot整合JJWT生成JWT
 ## 86.springbootdemo86-Quasar
 Java使用简单使用协程库Quasar
 
+## 87.springbootdemo87-OrientDB
+SpringBoot整合OrientDB进行简单操作
+
+
 
 
 
