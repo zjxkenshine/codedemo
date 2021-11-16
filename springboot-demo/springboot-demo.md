@@ -311,6 +311,9 @@ Springboot整合dynamic-datasource实现多数据源配置
 springboot整合dynamic-datasource多数据源+flyway
 druid多数据源可视化页面配置
 
+## 91.springbootdemo91-Magic-Api
+springboot整合Magic-Api快速接口开发
+
 
 
 

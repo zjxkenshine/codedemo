@@ -103,6 +103,7 @@
         <module>springbootdemo88-Xxl-Job</module>
         <module>springbootdemo89-Dynamic-Datasource</module>
         <module>springbootdemo90-Flyway</module>
+        <module>springbootdemo91-Magic-Api</module>
     </modules>
 
     <properties>
