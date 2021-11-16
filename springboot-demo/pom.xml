@@ -100,6 +100,7 @@
         <module>springbootdemo85-JJWT</module>
         <module>springbootdemo86-Quasar</module>
         <module>springbootdemo87-OrientDB</module>
+        <module>springbootdemo88-Xxl-Job</module>
     </modules>
 
     <properties>
@@ -134,6 +135,12 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+            <optional>true</optional>
         </dependency>
 
     </dependencies>

@@ -300,6 +300,9 @@ Java使用简单使用协程库Quasar
 ## 87.springbootdemo87-OrientDB
 SpringBoot整合OrientDB进行简单操作
 
+## 88.springbootdemo88-Xxl-Job
+SpringBoot整合Xxl-Job分布式定时任务管理
+
 
 
 
