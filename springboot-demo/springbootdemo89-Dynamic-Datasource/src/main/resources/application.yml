@@ -1,0 +1,57 @@
+spring:
+  autoconfigure:
+    # 自动化配置 例外处理
+    exclude: com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    #多数据源配置
+    dynamic:
+      #设置默认的数据源
+      primary: master
+      datasource:
+        # 数据库1
+        master:
+          driver-class-name: com.mysql.cj.jdbc.Driver
+          url: jdbc:mysql://127.0.0.1:3306/db1?characterEncoding=utf8&useSSL=false&serverTimezone=GMT&allowPublicKeyRetrieval=true
+          username: root
+          password: TMKfbTbAi5HEgsa/yDFshJ9SE0u1w8cGP8iH44OnrfQekNPqOPXBNeoDZqoJRTqi5BDiww9+7gKGBu+0hSu1kA==
+          druid:
+            filters: stat,slf4j,wall,config
+            initial-size: 10
+            max-active: 100
+            max-open-prepared-statements: 20
+            max-pool-prepared-statement-per-connection-size: 20
+            max-wait: 60000
+            min-evictable-idle-time-millis: 300000
+            min-idle: 10
+            pool-prepared-statements: true
+            test-on-borrow: false
+            test-on-return: false
+            test-while-idle: true
+            time-between-eviction-runs-millis: 60000
+            validation-query: select 'x'
+            publicKey: MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBAKNNFHy401ty+z0sBQpOaOngh/66W6VpZy8TQkhQqqiZt/gIjT8zv1XSta+92Oxv6SVbJtrdO2k4jpu9XZhtdG0CAwEAAQ==
+            connection-properties: config.decrypt=true;config.decrypt.key=${spring.datasource.dynamic.datasource.master.druid.publicKey}
+        # 数据库2
+        slave1:
+          driver-class-name: com.mysql.cj.jdbc.Driver
+          url: jdbc:mysql://127.0.0.1:3306/db2?characterEncoding=utf8&useSSL=false&serverTimezone=GMT&allowPublicKeyRetrieval=true
+          username: root
+          password: TMKfbTbAi5HEgsa/yDFshJ9SE0u1w8cGP8iH44OnrfQekNPqOPXBNeoDZqoJRTqi5BDiww9+7gKGBu+0hSu1kA==
+          druid:
+            filters: stat,slf4j,wall,config
+            initial-size: 10
+            max-active: 100
+            max-open-prepared-statements: 20
+            max-pool-prepared-statement-per-connection-size: 20
+            max-wait: 60000
+            min-evictable-idle-time-millis: 300000
+            min-idle: 10
+            pool-prepared-statements: true
+            test-on-borrow: false
+            test-on-return: false
+            test-while-idle: true
+            time-between-eviction-runs-millis: 60000
+            validation-query: select 'x'
+            publicKey: MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBAKNNFHy401ty+z0sBQpOaOngh/66W6VpZy8TQkhQqqiZt/gIjT8zv1XSta+92Oxv6SVbJtrdO2k4jpu9XZhtdG0CAwEAAQ==
+            connection-properties: config.decrypt=true;config.decrypt.key=${spring.datasource.dynamic.datasource.msg.druid.publicKey}

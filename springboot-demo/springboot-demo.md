@@ -303,6 +303,9 @@ SpringBoot整合OrientDB进行简单操作
 ## 88.springbootdemo88-Xxl-Job
 SpringBoot整合Xxl-Job分布式定时任务管理
 
+## 89.springbootdemo89-Dynamic-Datasource
+Springboot整合dynamic-datasource实现多数据源配置
+(MybatisPlus + Druid)
 
 
 
