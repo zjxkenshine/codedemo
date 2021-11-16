@@ -1,0 +1,3 @@
+- QueryDSL可以在任何支持的ORM框架或者SQL平台上以一种通用的API方式来构建查询。
+- 目前QueryDSL支持的平台包括JPA,JDO,SQL,Mongodb 等等
+- https://github.com/querydsl/querydsl

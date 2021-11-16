@@ -314,6 +314,9 @@ druid多数据源可视化页面配置
 ## 91.springbootdemo91-Magic-Api
 springboot整合Magic-Api快速接口开发
 
+## 92.springbootdemo92-QueryDSL
+springboot简单整合JPA+QueryDSL
+
 
 
 
