@@ -307,6 +307,10 @@ SpringBoot整合Xxl-Job分布式定时任务管理
 Springboot整合dynamic-datasource实现多数据源配置
 (MybatisPlus + Druid)
 
+## 90.springbootdemo90-Flyway
+springboot整合dynamic-datasource多数据源+flyway
+druid多数据源可视化页面配置
+
 
 
 

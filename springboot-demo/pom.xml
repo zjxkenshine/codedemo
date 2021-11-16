@@ -102,6 +102,7 @@
         <module>springbootdemo87-OrientDB</module>
         <module>springbootdemo88-Xxl-Job</module>
         <module>springbootdemo89-Dynamic-Datasource</module>
+        <module>springbootdemo90-Flyway</module>
     </modules>
 
     <properties>
