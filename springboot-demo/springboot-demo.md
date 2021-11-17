@@ -326,6 +326,8 @@ springboot整合Equator对象属性比对器
 ## 95.springbootdemo95-CQEngine
 springboot整合CQEngine集合检索引擎
 
+## 96.springbootdemo96-Checker-Framework
+java使用Checker Framework(CF) 插件式类型检查框架
 
 
 

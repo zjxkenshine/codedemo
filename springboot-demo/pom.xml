@@ -108,6 +108,7 @@
         <module>springbootdemo93-Hippo4j</module>
         <module>springbootdemo94-Equator</module>
         <module>springbootdemo95-CQEngine</module>
+        <module>springbootdemo96-Checker-Framework</module>
     </modules>
 
     <properties>
