@@ -105,6 +105,7 @@
         <module>springbootdemo90-Flyway</module>
         <module>springbootdemo91-Magic-Api</module>
         <module>springbootdemo92-QueryDSL</module>
+        <module>springbootdemo93-Hippo4j</module>
     </modules>
 
     <properties>

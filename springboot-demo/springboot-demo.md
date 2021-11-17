@@ -317,6 +317,9 @@ springboot整合Magic-Api快速接口开发
 ## 92.springbootdemo92-QueryDSL
 springboot简单整合JPA+QueryDSL
 
+## 93.springbootdemo93-Hippo4j
+springboot整合Hippo4j动态线程池
+
 
 
 

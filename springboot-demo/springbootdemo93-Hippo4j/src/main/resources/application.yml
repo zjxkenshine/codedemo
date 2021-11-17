@@ -1,0 +1,22 @@
+spring:
+  profiles:
+    active: dev
+  application:
+    name: dynamic-threadpool-example
+  dynamic:
+    thread-pool:
+      notifys:
+        - type: DING
+          url: https://oapi.dingtalk.com/robot/send?access_token=
+          # 此处可以选择自己的钉钉群
+          token:
+          # 通知时 @ 人员
+          receives:
+      # 报警发送间隔
+      alarm-interval: 30
+      # 服务端地址
+      server-addr: http://localhost:6691
+      # 租户 id, 对应 tenant 表
+      namespace: prescription
+      # 项目 id, 对应 item 表
+      item-id: ${spring.application.name}
