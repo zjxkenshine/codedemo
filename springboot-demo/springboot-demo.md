@@ -29,7 +29,7 @@ JAX-RS
 整合Servlet,Filter,Listener
 
 ## 6.springbootdemo06-SQL
-整合jdbcTemplate,jpa,mybatis
+整合jdbcTemplate,jpa(Hibernate),mybatis
 
 ## 7.springbootdemo07-H2
 整合H2数据库
@@ -322,6 +322,10 @@ springboot整合Hippo4j动态线程池
 
 ## 94.springbootdemo94-Equator
 springboot整合Equator对象属性比对器
+
+## 95.springbootdemo95-CQEngine
+springboot整合CQEngine集合检索引擎
+
 
 
 
