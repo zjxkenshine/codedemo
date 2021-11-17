@@ -320,6 +320,9 @@ springboot简单整合JPA+QueryDSL
 ## 93.springbootdemo93-Hippo4j
 springboot整合Hippo4j动态线程池
 
+## 94.springbootdemo94-Equator
+springboot整合Equator对象属性比对器
+
 
 
 

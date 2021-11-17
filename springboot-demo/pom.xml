@@ -106,6 +106,7 @@
         <module>springbootdemo91-Magic-Api</module>
         <module>springbootdemo92-QueryDSL</module>
         <module>springbootdemo93-Hippo4j</module>
+        <module>springbootdemo94-Equator</module>
     </modules>
 
     <properties>
