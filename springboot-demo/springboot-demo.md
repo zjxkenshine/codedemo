@@ -329,6 +329,9 @@ springboot整合CQEngine集合检索引擎
 ## 96.springbootdemo96-Checker-Framework
 java使用Checker Framework(CF) 插件式类型检查框架
 
+## 97.springbootdemo97-Typetools
+java整合使用typetools泛型处理工具
+
 
 
 
