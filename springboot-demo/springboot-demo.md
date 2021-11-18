@@ -335,6 +335,10 @@ java整合使用typetools泛型处理工具
 ## 98.springbootdemo98-Websocket
 springboot整合websocket
 
+## 99.springbootdemo99-kryo
+springboot整合kryo高性能的序列化/反序列化工具
+
+
 
 
 

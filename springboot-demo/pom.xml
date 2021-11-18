@@ -111,6 +111,7 @@
         <module>springbootdemo96-Checker-Framework</module>
         <module>springbootdemo97-Typetools</module>
         <module>springbootdemo98-Websocket</module>
+        <module>springbootdemo99-kryo</module>
     </modules>
 
     <properties>
