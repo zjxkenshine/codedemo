@@ -4,12 +4,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.kenshine</groupId>
-    <artifactId>springboot-demos01</artifactId>
+    <artifactId>springboot-demo</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>springboot-demo</name>
-    <description>springboot各种整合demo项目</description>
+    <description>springboot(java)各种整合各种技术demo(01~99)</description>
 
     <modules>
         <module>springbootdemo01</module>
