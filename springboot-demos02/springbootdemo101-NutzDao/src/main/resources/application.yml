@@ -1,0 +1,62 @@
+server:
+  #设置程序启动端口号
+  port: 7000
+beetl:
+  #模板路径
+  templatesPath: templates
+beetlsql:
+  enabled: false
+oauth:
+  qq:
+    #你的appid
+    client_id: 123456
+    #你的appkey
+    client_secret: aaaaaaaaaaaa
+    #你接收响应code码地址
+    redirect_uri: http://localhost:7000/authorize/qq
+    #腾讯获取code码地址
+    code_callback_uri: https://graph.qq.com/oauth2.0/authorize
+    #腾讯获取access_token地址
+    access_token_callback_uri: https://graph.qq.com/oauth2.0/token
+    #腾讯获取openid地址
+    openid_callback_uri: https://graph.qq.com/oauth2.0/me
+    #腾讯获取用户信息地址
+    user_info_callback_uri: https://graph.qq.com/user/get_user_info
+spring:
+  aop:
+    #开启aop代理
+    auto: true
+    proxy-target-class: true
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: zjx123456
+    url: jdbc:mysql://127.0.0.1:3306/db4?characterEncoding=utf8&serverTimezone=GMT&autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useSSL=false
+    type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+      # 初始连接数
+      initial-size: 5
+      # 最大激活数
+      max-active: 50
+      # 最大等待时间
+      max-wait: 3000
+      # 是否启用非公平锁
+      use-unfair-lock: true
+      # mysql 用 false | oracle 用 true
+      pool-prepared-statements: false
+nutz:
+  json:
+    auto-unicode: false
+    quote-name: true
+    ignore-null: true
+    null-as-emtry: true
+    enabled: true
+    mode: compact
+  dao:
+    runtime:
+      create: true #自动创建表
+      migration: false #根据bena自动更新表结构
+      basepackage: com.kenshine.nutz.model.mapped  #扫描bean
+    sqlmanager:
+      paths:
+        - sqls  #sql文件存放位置

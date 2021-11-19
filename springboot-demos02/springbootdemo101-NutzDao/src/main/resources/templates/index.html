@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>测试页面</title>
+</head>
+<body>
+<a href="/logout">退出登陆</a><br>
+<span>通过beetl取值</span>
+<h1>${beetl!}</h1>
+<div>
+    <ul>
+        <li><a href="/user">需要user角色的页面</a></li>
+        <li><a href="/user/per">需要user角色和user:query权限的页面</a></li>
+        <li><a href="/admin">需要admin角色的页面</a></li>
+        <li><a href="/abc">通过注解控制的url，需要admin角色才能访问</a></li>
+    </ul>
+</div>
+</body>
+</html>

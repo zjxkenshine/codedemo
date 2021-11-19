@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录页面</title>
+</head>
+<body>
+<form action="/login" method="post">
+    <div>
+        <span style="color: red;">${msg!}</span>
+        <br>
+        <div>
+            <label>用户名称：</label>
+            <input type="text" name="username" placeholder="请输入用户名称！">
+        </div>
+        <br>
+        <div>
+            <label>用户密码：</label>
+            <input type="password" name="password" placeholder="请输入用户密码！">
+        </div>
+        <div>
+            <input type="checkbox" checked="checked"  name="rememberMe" />记住我
+        </div>
+        <br>
+        <input type="submit" value="登录" style="margin-left: 100px">
+        <br>
+        <a href="/login/qq">QQ登陆</a>
+    </div>
+</form>
+</body>
+</html>
