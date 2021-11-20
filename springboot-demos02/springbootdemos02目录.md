@@ -5,4 +5,9 @@ Springboot简单整合poi-tl Word模板引擎
 ## 101.springbootdemo101-NutzDao
 springboot整合nutzDao (shiro+beetl模板引擎)
 
+## 102.springbootdemo102-Caffeine
+springboot整合Caffeine原生缓存
+
+## 103.springbootdemo103-Caffeine-Cache
+springboot整合Caffeine+Cache
 
