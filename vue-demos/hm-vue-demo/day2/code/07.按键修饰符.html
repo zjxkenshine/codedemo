@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="app">
+    <input type="text" @keyup.esc="clearInput" @keyup.enter="commitAjax">
+  </div>
+
+  <!-- 1. 导入 Vue 的库文件，在 window 全局就有了 Vue 这个构造函数 -->
+  <script src="./lib/vue-2.6.12.js"></script>
+  <!-- 2. 创建 Vue 的实例对象 -->
+  <script>
+    // 创建 Vue 的实例对象
+    const vue = new Vue({
+      el: '#app',
+      data: {},
+      methods: {
+        clearInput(e) {
+          console.log('触发了 clearInput 方法')
+          e.target.value = ''
+        },
+        commitAjax() {
+          console.log('触发了 commitAjax 方法')
+        }
+      },
+    })
+  </script>
+</body>
+
+</html>

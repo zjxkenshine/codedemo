@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="app">
+    <p v-if="flag">这是被 v-if 控制的元素</p>
+    <p v-show="flag">这是被 v-show 控制的元素</p>
+
+    <hr>
+    <div v-if="type === 'A'">优秀</div>
+    <div v-else-if="type === 'B'">良好</div>
+    <div v-else-if="type === 'C'">一般</div>
+    <div v-else>差</div>
+  </div>
+
+  <!-- 1. 导入 Vue 的库文件，在 window 全局就有了 Vue 这个构造函数 -->
+  <script src="./lib/vue-2.6.12.js"></script>
+  <!-- 2. 创建 Vue 的实例对象 -->
+  <script>
+    // 创建 Vue 的实例对象
+    const vue = new Vue({
+      el: '#app',
+      data: {
+        flag: true,
+        type: 'B'
+      }
+    })
+  </script>
+</body>
+
+</html>

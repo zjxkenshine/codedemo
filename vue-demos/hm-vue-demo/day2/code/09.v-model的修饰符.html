@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="app">
+    <input type="text" v-model.number="n1"> + <input type="text" v-model.number="n2"> = <span>{{ n1 + n2 }}</span>
+    <hr>
+    <input type="text" v-model.trim="username">
+    <button @click="showName">获取用户名</button>
+    <hr>
+    <input type="text" v-model.lazy="username">
+  </div>
+
+  <!-- 1. 导入 Vue 的库文件，在 window 全局就有了 Vue 这个构造函数 -->
+  <script src="./lib/vue-2.6.12.js"></script>
+  <!-- 2. 创建 Vue 的实例对象 -->
+  <script>
+    // 创建 Vue 的实例对象
+    const vm = new Vue({
+      el: '#app',
+      data: {
+        username: 'kenshine',
+        n1: 1,
+        n2: 2
+      },
+      methods: {
+        showName() {
+          console.log(`用户名是："${this.username}"`)
+        }
+      },
+    })
+  </script>
+</body>
+
+</html>

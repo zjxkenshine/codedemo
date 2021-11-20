@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="app">
+    <input type="text" :placeholder="tips">
+    <hr>
+    <!-- vue 规定 v-bind: 指令可以简写为 : -->
+    <img :src="photo" alt="" style="width: 150px;">
+
+    <hr>
+    <div>1 + 2 的结果是：{{ 1 + 2 }}</div>
+    <div>{{ tips }} 反转的结果是：{{ tips.split('').reverse().join('') }}</div>
+    <div :title="'box' + index">这是一个 div</div>
+  </div>
+
+  <!-- 1. 导入 Vue 的库文件，在 window 全局就有了 Vue 这个构造函数 -->
+  <script src="./lib/vue-2.6.12.js"></script>
+  <!-- 2. 创建 Vue 的实例对象 -->
+  <script>
+    // 创建 Vue 的实例对象
+    const vue = new Vue({
+      el: '#app',
+      data: {
+        tips: '请输入用户名',
+        photo: 'https://cn.vuejs.org/images/logo.svg',
+        index: 3
+      }
+    })
+  </script>
+</body>
+
+</html>

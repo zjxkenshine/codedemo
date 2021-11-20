@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="app">
+    <p>count 的值是：{{ count }}</p>
+    <!-- 在绑定事件处理函数的时候，可以使用 () 传递参数 -->
+    <!-- v-on: 指令可以被简写为 @ -->
+    <button @click="add(1)">+1</button>
+    <button @click="sub">-1</button>
+  </div>
+
+
+  <script src="./lib/vue-2.6.12.js"></script>
+  <script>
+    // 创建 Vue 的实例对象
+    const vue = new Vue({
+      el: '#app',
+      // data 对象就是要渲染到页面上的数据
+      data: {
+        count: 0
+      },
+      // methods 的作用，就是定义事件的处理函数
+      methods: {
+        add(n) {
+          // 在 methods 处理函数中，this 就是 new 出来的 vue 实例对象
+          // console.log(vue === this)
+          console.log(vue)
+          // vue.count += 1
+          this.count += n
+        },
+        sub() {
+          // console.log('触发了 sub 处理函数')
+          this.count -= 1
+        }
+      }
+    })
+  </script>
+</body>
+
+</html>

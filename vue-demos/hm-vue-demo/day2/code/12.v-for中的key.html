@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- 在页面中声明一个将要被 vue 所控制的 DOM 区域 -->
+  <div id="app">
+
+    <!-- 添加用户的区域 -->
+    <div>
+      <input type="text" v-model="name">
+      <button @click="addNewUser">添加</button>
+    </div>
+
+    <!-- 用户列表区域 -->
+    <ul>
+      <li v-for="(user, index) in userlist" :key="user.id">
+        <input type="checkbox" />
+        姓名：{{user.name}}
+      </li>
+    </ul>
+  </div>
+
+  <script src="./lib/vue-2.6.12.js"></script>
+  <script>
+    const vue = new Vue({
+      el: '#app',
+      data: {
+        // 用户列表
+        userlist: [
+          { id: 1, name: 'zs' },
+          { id: 2, name: 'ls' }
+        ],
+        // 输入的用户名
+        name: '',
+        // 下一个可用的 id 值
+        nextId: 3
+      },
+      methods: {
+        // 点击了添加按钮
+        addNewUser() {
+          //unshift 添加到数组开头
+          this.userlist.unshift({ id: this.nextId, name: this.name })
+          this.name = ''
+          this.nextId++
+        }
+      },
+    })
+  </script>
+</body>
+
+</html>

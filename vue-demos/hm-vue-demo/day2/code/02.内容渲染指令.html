@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="app">
+    <!--1.v-text方式-->
+    <p v-text="username"></p>
+    <p v-text="gender">性别：</p>
+
+    <hr>
+    <!--2.插值方式-->
+    <p>姓名：{{ username }}</p>
+    <p>性别：{{ gender }}</p>
+
+    <hr>
+    <!--3.v-html-->
+    <div v-text="info"></div>
+    <div>{{ info }}</div>
+    <div v-html="info"></div>
+  </div>
+
+  <!-- 导入Vue -->
+  <script src="./lib/vue-2.6.12.js"></script>
+  <!-- 创建 Vue 的实例对象 -->
+  <script>
+    // 创建 Vue 的实例对象
+    const vue = new Vue({
+      // el 属性是固定的写法，表示当前 vue 实例要控制页面上的哪个区域，接收的值是一个选择器
+      el: '#app',
+      // data 对象就是要渲染到页面上的数据
+      data: {
+        username: 'kenshine',
+        gender: '男',
+        info: '<h4 style="color: red; font-weight: bold;">欢迎大家来学习 vue.js</h4>'
+      }
+    })
+  </script>
+</body>
+
+</html>
