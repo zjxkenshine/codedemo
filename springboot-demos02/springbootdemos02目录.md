@@ -9,5 +9,9 @@ springboot整合nutzDao (shiro+beetl模板引擎)
 springboot整合Caffeine原生缓存
 
 ## 103.springbootdemo103-Caffeine-Cache
-springboot整合Caffeine+Cache
+springboot整合Caffeine+Cache.
+
+## 104.springbootdemo104-Transactional
+springboot全局事务配置
+
 

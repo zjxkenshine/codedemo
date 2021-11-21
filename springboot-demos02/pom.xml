@@ -18,6 +18,7 @@
         <module>springbootdemo101-NutzDao</module>
         <module>springbootdemo102-Caffeine</module>
         <module>springbootdemo103-Caffeine-Cache</module>
+        <module>springbootdemo104-Transactional</module>
     </modules>
 
     <properties>
