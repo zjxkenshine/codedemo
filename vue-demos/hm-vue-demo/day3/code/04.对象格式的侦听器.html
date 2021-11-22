@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="app">
+    <input type="text" v-model="username">
+  </div>
+
+  <script src="./lib/vue-2.6.12.js"></script>
+  <script src="./lib/jquery-v3.6.0.js"></script>
+
+  <script>
+    const vm = new Vue({
+      el: '#app',
+      data: {
+        username: 'admin'
+      },
+      // 所有的侦听器，都应该被定义到 watch 节点下
+      watch: {
+        // 定义对象格式的侦听器
+        username: {
+          // 侦听器的处理函数
+          handler(newVal, oldVal) {
+            console.log(newVal, oldVal)
+          },
+          // immediate 选项的默认值是 false
+          // immediate 的作用是：控制侦听器是否自动触发一次！
+          immediate: true
+        }
+      }
+    })
+  </script>
+</body>
+
+</html>

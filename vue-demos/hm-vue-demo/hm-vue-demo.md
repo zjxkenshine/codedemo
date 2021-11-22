@@ -5,3 +5,4 @@
 # 2.目录
 - day1: webpack
 - day2: vue简介与指令
+- day3: 过滤器，watch，compute，axios，vue-cli

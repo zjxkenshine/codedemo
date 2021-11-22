@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="./lib/vue-2.6.12.js"></script>
+  <style>
+    .box {
+      width: 200px;
+      height: 200px;
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="app">
+    <div>
+      <span>R：</span>
+      <input type="text" v-model.number="r">
+    </div>
+    <div>
+      <span>G：</span>
+      <input type="text" v-model.number="g">
+    </div>
+    <div>
+      <span>B：</span>
+      <input type="text" v-model.number="b">
+    </div>
+    <hr>
+
+    <!-- 专门用户呈现颜色的 div 盒子 -->
+    <!-- 在属性身上，: 代表  v-bind: 属性绑定 -->
+    <!-- :style 代表动态绑定一个样式对象，它的值是一个 {  } 样式对象 -->
+    <!-- 当前的样式对象中，只包含 backgroundColor 背景颜色 -->
+    <div class="box" :style="{ backgroundColor: rgb }">
+      {{ rgb }}
+    </div>
+    <button @click="show">按钮</button>
+  </div>
+
+  <script>
+    // 创建 Vue 实例，得到 ViewModel
+    var vm = new Vue({
+      el: '#app',
+      data: {
+        // 红色
+        r: 0,
+        // 绿色
+        g: 0,
+        // 蓝色
+        b: 0
+      },
+      methods: {
+        // 点击按钮，在终端显示最新的颜色
+        show() {
+          console.log(this.rgb)
+        }
+      },
+      // 所有的计算属性，都要定义到 computed 节点之下
+      // 计算属性在定义的时候，要定义成“方法格式”
+      computed: {
+        // rgb 作为一个计算属性，被定义成了方法格式，
+        // 最终，在这个方法中，要返回一个生成好的 rgb(x,x,x) 的字符串
+        rgb() {
+          return `rgb(${this.r}, ${this.g}, ${this.b})`
+        }
+      }
+    });
+
+    console.log(vm)
+  </script>
+</body>
+
+</html>

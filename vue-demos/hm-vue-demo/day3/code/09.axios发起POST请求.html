@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <button id="btnPost">发起POST请求</button>
+  <button id="btnGet">发起GET请求</button>
+
+  <script src="./lib/axios.js"></script>
+  <script>
+    document.querySelector('#btnPost').addEventListener('click', async function () {
+      // 如果调用某个方法的返回值是 Promise 实例，则前面可以添加 await！
+      // await 只能用在被 async “修饰”的方法中
+      const { data } = await axios({
+        method: 'POST',
+        url: 'http://www.liulongbin.top:3006/api/post',
+        data: {
+          name: 'zs',
+          age: 20
+        }
+      })
+
+      console.log(data)
+    })
+
+    document.querySelector('#btnGet').addEventListener('click', async function () {
+      // 解构赋值的时候，使用 : 进行重命名
+      // 1. 调用 axios 之后，使用 async/await 进行简化
+      // 2. 使用解构赋值，从 axios 封装的大对象中，把 data 属性解构出来
+      // 3. 把解构出来的 data 属性，使用 冒号 进行重命名，一般都重命名为 { data: res }
+      const { data: res } = await axios({
+        method: 'GET',
+        url: 'http://www.liulongbin.top:3006/api/getbooks'
+      })
+
+      console.log(res.data)
+    })
+
+    // $.ajax()   $.get()  $.post()
+    // axios()    axios.get()    axios.post()    axios.delete()   axios.put()
+  </script>
+</body>
+
+</html>
