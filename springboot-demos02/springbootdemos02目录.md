@@ -14,4 +14,10 @@ springboot整合Caffeine+Cache.
 ## 104.springbootdemo104-Transactional
 springboot全局事务配置
 
+## 105.springbootdemo105-Urule
+springboot整合URule可视化规则引擎
+- Urule服务端
+
+springbootdemo105-Urule-Client
+- Urule客户端
 

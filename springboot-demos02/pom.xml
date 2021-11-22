@@ -19,6 +19,8 @@
         <module>springbootdemo102-Caffeine</module>
         <module>springbootdemo103-Caffeine-Cache</module>
         <module>springbootdemo104-Transactional</module>
+        <module>springbootdemo105-Urule</module>
+        <module>springbootdemo105-Urule-Client</module>
     </modules>
 
     <properties>
