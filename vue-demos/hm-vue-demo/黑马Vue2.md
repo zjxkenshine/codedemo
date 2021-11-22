@@ -255,9 +255,9 @@ v-if 指令在使用的时候，有两种方式：
 - 默认返回的是promise，用`.then`来获取数据，`result.data`
   - `await axios...`：只能用于`async`修饰的方法，直接获取到data（ES8）
 
-# 3.Vue-cli
+# 3.Vue组件
 
-## 3.1 快速创建Vue项目
+## 3.1 vue-cli
 
 1. vue-cli是 Vue.js 开发脚手架。它简化了程序员基于`webpack`创建工程化的Vue项目的过程
 2. 安装：`npm install -g @vue/cli`
@@ -274,9 +274,13 @@ v-if 指令在使用的时候，有两种方式：
 ## 3.2 组件的使用
 
 1. 组件化开发：
+
    - 根据封装的思想，把页面上可重用的UI结构封装为组件，从而方便项目的开发和维护
+
 2. vue 中规定：组件的后缀名是`.vue`
+
 3. 组成：
+
    - **template**：组件的模板结构（必选）
      - 每个组件对应的模板结构，需要定义到 `<template>`节点中
      - 只起到包裹性质的作用，它不会被渲染为真正的 DOM 元素
@@ -284,17 +288,40 @@ v-if 指令在使用的时候，有两种方式：
    - **script**：组件的JavaScript行为（可选）
      - `.vue` 组件中的`data`必须是一个函数，不能直接指向一个数据对象
    - **style**：组件的样式（可选）
+
 4. 组件之间的父子关系：
+
    - 组件在被封装好之后，彼此之间是相互独立的，不存在父子关系
    - 在使用组件的时候，根据彼此的嵌套关系，形成了父子关系、兄弟关系
+
 5. 使用组件的三个步骤：
+
    1. 使用`import`语法导入需要的组件
    2. 使用`components`节点注册组件
       - `components`注册私有子组件
       - `Vue.component()`方法注册全局组件
    3. 以标签形式使用刚才注册的组件
 
+6. 路径提示插件：`Path AutoComplete`
 
+   ```json
+   	//settings.json下添加该配置
+   	"path-autocomplete.pathMappings":{
+           "@/":"${folder}/src/"
+       },
+       "path-autocomplete.extensionOnImport":true,
+   ```
+
+7. 标签自动闭合插件：`Auto Close Tag`
+
+## 3.3 props
+
+1. `props`是组件的**自定义属性**，可以避免与其他组件定义的属性冲突
+2. `props`是只读的，程序员不能直接修改props的值
+3. `default`：默认值
+4. `type`：属性的值类型
+5. `required`：将属性设置为必填项
+6. 可用于组件之间传值
 
 
 
