@@ -7,11 +7,10 @@
 - day2: vue简介与指令
 - day3: 过滤器，watch，compute，axios，vue-cli
 - day4: 组件，props，组件传值(props，$emit，eventBus)
+- day5: ref引用，购物车案例
 
 # 3.踩坑
-
 - Syntax Error: TypeError: Cannot read property ‘parseComponent‘ of undefined
-
   - https://blog.csdn.net/iloki/article/details/116265694
 
   

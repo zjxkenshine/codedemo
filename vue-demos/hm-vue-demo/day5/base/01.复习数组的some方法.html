@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <script>
+    const arr = ['小红', '你大红', '苏大强', '宝']
+
+    // forEach 循环一旦开始，无法在中间被停止
+    /* arr.forEach((item, index) => {
+      console.log('object')
+      if (item === '苏大强') {
+        console.log(index)
+      }
+    }) */
+
+    /* arr.some((item, index) => {
+      console.log('ok')
+      if (item === '苏大强') {
+        console.log(index)
+        // 在找到对应的项之后，可以通过 return true 固定的语法，来终止 some 循环
+        return true
+      }
+    }) */
+  </script>
+</body>
+
+</html>
