@@ -17,6 +17,10 @@ Solr【一】：初识Solr
 - https://www.cnblogs.com/blueskyli/p/8326229.html
 
 
+Solr入门指南
+- https://cs.xieyonghui.com/architecture/solr-guide_127.html
+
+
 # 踩坑
 对实体servertimezone的引用必须以;结尾
 - https://www.cnblogs.com/fyhsACr/p/10411056.html
