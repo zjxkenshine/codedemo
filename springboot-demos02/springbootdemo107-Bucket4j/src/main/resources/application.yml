@@ -1,0 +1,39 @@
+spring:
+  cache:
+    cache-names:
+      - rate-limit-buckets
+    # caffeine配置
+    caffeine:
+      spec: maximumSize=100000,expireAfterAccess=3600s
+
+bucket4j:
+  # 启用Bucket4j自动配置
+  enabled: true
+  # 过滤器，可配置多个
+  filters:
+    - cache-name: rate-limit-buckets # 从缓存中获取 API密钥的存储桶
+      url: /api/v1.*
+      # 在第一个匹配速率限制配置处停止
+      strategy: first
+      # 返回
+      http-response-body: "{ \"status\": 429, \"error\": \"Too Many Requests\", \"message\": \"You have exhausted your API Request Quota\" }"
+      # 限流器配置
+      rate-limits:
+        - expression: "getHeader('X-api-key')"    # 使用Spring Expression Language（SpEL）检索密钥
+          execute-condition: "getHeader('X-api-key').startsWith('TEST01-')" #   使用SpEL决定是否执行速率限制  X-api-key以TEST01-开头
+          # 定义Bucket4j速率限制参数
+          bandwidths:
+            - capacity: 15   # 总数
+              time: 1        # 时间
+              unit: hours
+        - expression: "getHeader('X-api-key')"
+          execute-condition: "getHeader('X-api-key').startsWith('TEST02-')"
+          bandwidths:
+            - capacity: 10
+              time: 1
+              unit: hours
+        - expression: "getHeader('X-api-key')"
+          bandwidths:
+            - capacity: 5
+              time: 1
+              unit: hours

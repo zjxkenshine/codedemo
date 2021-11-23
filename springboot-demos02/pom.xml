@@ -22,6 +22,7 @@
         <module>springbootdemo105-Urule</module>
         <module>springbootdemo105-Urule-Client</module>
         <module>springbootdemo106-Solr</module>
+        <module>springbootdemo107-Bucket4j</module>
     </modules>
 
     <properties>

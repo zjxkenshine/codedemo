@@ -24,4 +24,8 @@ springbootdemo105-Urule-Client
 ## 106.springbootdemo106-Solr
 springboot整合Solr
 
+## 107.springbootdemo107-Bucket4j
+springboot整合Bucket4j+Caffeine限流(Bucket4j-Spring-Boot-Starter)
+- 原生Bucket-core方式详见官网
+
 
