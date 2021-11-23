@@ -6,7 +6,7 @@ spring:
     name: UruleClient
   datasource:
     name: datasource
-    url: jdbc:mysql://127.0.0.1:3306/db3?characterEncoding=utf8&serverTimezone=GMT&autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useSSL=false
+    url: jdbc:mysql://127.0.0.1:3306/db3?characterEncoding=utf8&serverTimezone=GMT;&autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useSSL=false
     username: root
     password: zjx123456
     # 使用druid数据源

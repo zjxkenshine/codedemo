@@ -21,6 +21,7 @@
         <module>springbootdemo104-Transactional</module>
         <module>springbootdemo105-Urule</module>
         <module>springbootdemo105-Urule-Client</module>
+        <module>springbootdemo106-Solr</module>
     </modules>
 
     <properties>

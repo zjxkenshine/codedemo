@@ -21,3 +21,7 @@ springboot整合URule可视化规则引擎
 springbootdemo105-Urule-Client
 - Urule客户端
 
+## 106.springbootdemo106-Solr
+springboot整合Solr
+
+

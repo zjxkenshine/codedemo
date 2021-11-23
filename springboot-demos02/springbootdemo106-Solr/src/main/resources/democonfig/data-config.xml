@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<dataConfig>
+	<dataSource name = "source1" type = "JdbcDataSource"
+				driver = "com.mysql.cj.jdbc.Driver"
+				url = "jdbc:mysql://localhost:3306/solr?characterEncoding=utf8&amp;serverTimezone=GMT&amp;autoReconnect=true&amp;failOverReadOnly=false&amp;maxReconnects=10&amp;useSSL=false"
+				user="root"
+				password = "zjx123456"
+				encoding="UTF-8"/>
+	<document>
+		<entity name = "user" processor = "SqlEntityProcessor" pk="id"
+				query = "select id,user_name,sex,address,host from user">
+			<field name = "id" column = "id"/>
+			<field name = "username" column = "user_name"/>
+			<field name = "sex" column = "sex"/>
+			<field name = "address" column = "address"/>
+			<field name = "host" column = "host"/>
+		</entity>
+	</document>
+</dataConfig>
