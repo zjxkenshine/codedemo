@@ -32,3 +32,5 @@ springboot整合Bucket4j+Caffeine限流(Bucket4j-Spring-Boot-Starter)
 SpringBoot整合Hazelcast实现分布式缓存
 - 01/02分别为模拟的两个服务节点
 
+## 109.springbootdemo109-Jacoco
+springboot使用Jacoco生成测试用例覆盖率报告

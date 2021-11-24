@@ -25,6 +25,7 @@
         <module>springbootdemo107-Bucket4j</module>
         <module>springbootdemo108-Hazelcast01</module>
         <module>springbootdemo108-Hazelcast02</module>
+        <module>springbootdemo109-Jacoco</module>
     </modules>
 
     <properties>
