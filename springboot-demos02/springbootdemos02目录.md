@@ -28,4 +28,7 @@ springboot整合Solr
 springboot整合Bucket4j+Caffeine限流(Bucket4j-Spring-Boot-Starter)
 - 原生Bucket-core方式详见官网
 
+## 108.springbootdemo108-Hazelcast
+SpringBoot整合Hazelcast实现分布式缓存
+- 01/02分别为模拟的两个服务节点
 

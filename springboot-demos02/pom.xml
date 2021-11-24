@@ -23,6 +23,8 @@
         <module>springbootdemo105-Urule-Client</module>
         <module>springbootdemo106-Solr</module>
         <module>springbootdemo107-Bucket4j</module>
+        <module>springbootdemo108-Hazelcast01</module>
+        <module>springbootdemo108-Hazelcast02</module>
     </modules>
 
     <properties>
