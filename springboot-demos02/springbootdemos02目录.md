@@ -44,4 +44,7 @@ Springboot中使用SseEmitter实现消息推送
 ## 112.springbootdemo112-Affinity
 Springboot整合Affinity实现线程亲和性
 
+## 113.springbootdemo113-PropertySource-Yml
+springboot中使@PropertySource加载yml文件
+
 

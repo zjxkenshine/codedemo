@@ -29,6 +29,7 @@
         <module>springbootdemo110-Commons-Exec</module>
         <module>springbootdemo111-SseEmitter</module>
         <module>springbootdemo112-Affinity</module>
+        <module>springbootdemo113-PropertySource-Yml</module>
     </modules>
 
     <properties>
