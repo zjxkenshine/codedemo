@@ -28,6 +28,7 @@
         <module>springbootdemo109-Jacoco</module>
         <module>springbootdemo110-Commons-Exec</module>
         <module>springbootdemo111-SseEmitter</module>
+        <module>springbootdemo112-Affinity</module>
     </modules>
 
     <properties>

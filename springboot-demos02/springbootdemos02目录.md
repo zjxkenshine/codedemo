@@ -38,7 +38,10 @@ springboot使用Jacoco生成测试用例覆盖率报告
 ## 110.springbootdemo110-Commons-Exec
 java整合使用commons-exec执行SHELL命令或DOS命令
 
-## 111.springbootdemo110-SseEmitter
+## 111.springbootdemo111-SseEmitter
 Springboot中使用SseEmitter实现消息推送
+
+## 112.springbootdemo112-Affinity
+Springboot整合Affinity实现线程亲和性
 
 
