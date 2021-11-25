@@ -26,6 +26,7 @@
         <module>springbootdemo108-Hazelcast01</module>
         <module>springbootdemo108-Hazelcast02</module>
         <module>springbootdemo109-Jacoco</module>
+        <module>springbootdemo110-Commons-Exec</module>
     </modules>
 
     <properties>

@@ -34,3 +34,8 @@ SpringBoot整合Hazelcast实现分布式缓存
 
 ## 109.springbootdemo109-Jacoco
 springboot使用Jacoco生成测试用例覆盖率报告
+
+## 110.springbootdemo110-Commons-Exec
+java整合使用commons-exec执行SHELL命令或DOS命令
+
+
