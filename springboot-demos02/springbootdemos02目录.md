@@ -47,4 +47,5 @@ Springboot整合Affinity实现线程亲和性
 ## 113.springbootdemo113-PropertySource-Yml
 springboot中使@PropertySource加载yml文件
 
-
+## 114.springbootdemo114-Jsp
+springboot整合使用jsp
