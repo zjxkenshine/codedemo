@@ -1,0 +1,8 @@
+spring:
+  #HTML配置
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+    enabled: true
+    encoding: UTF-8
+    cache: false
