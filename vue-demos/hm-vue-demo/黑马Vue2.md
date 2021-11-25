@@ -417,3 +417,16 @@ v-if 指令在使用的时候，有两种方式：
 ## 全局自定义指令
 
 - 全局共享的自定义指令需要通过`Vue.directive()`进行声明
+
+# 6.ESLint
+
+JS代码规范工具
+
+1. 相关配置：
+   - `Format On Save`勾选
+   - `Tab Size`：设置为2
+2. ESlint规则：https://eslint.bootcss.com/docs/rules/
+3. 相关插件：需要配置
+   - ESLint
+   - Prettier - Code formatter
+     - 需要`.prettierrc`文件
