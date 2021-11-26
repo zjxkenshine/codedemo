@@ -61,4 +61,7 @@ springboot简单整合Ratpack
 ## 117.springbootdemo117-Cobertura
 springboot整合cobertura-maven-plugin生成测试覆盖报告
 
+## 118.springbootdemo118-Plexus
+springboot简单使用Plexus-Utils工具集
+
 
