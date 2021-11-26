@@ -36,6 +36,7 @@
         <module>springbootdemo117-Cobertura</module>
         <module>springbootdemo118-Plexus</module>
         <module>springbootdemo119-Snakeyaml</module>
+        <module>springbootdemo120-Dwr</module>
     </modules>
 
     <properties>
