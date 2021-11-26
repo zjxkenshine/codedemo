@@ -49,3 +49,8 @@ springboot中使@PropertySource加载yml文件
 
 ## 114.springbootdemo114-Jsp
 springboot整合使用jsp
+
+## 115.springbootdemo115-EChartsConvert
+springboot整合phantomjs+EChartsConvert生成Echarts图片
+- FreeMark
+- Echarts
