@@ -54,3 +54,7 @@ springboot整合使用jsp
 springboot整合phantomjs+EChartsConvert生成Echarts图片
 - FreeMark
 - Echarts
+
+## 116.springbootdemo116-RatPack
+springboot简单整合Ratpack
+

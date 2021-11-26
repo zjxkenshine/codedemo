@@ -32,6 +32,7 @@
         <module>springbootdemo113-PropertySource-Yml</module>
         <module>springbootdemo114-Jsp</module>
         <module>springbootdemo115-EChartsConvert</module>
+        <module>springbootdemo116-RatPack</module>
     </modules>
 
     <properties>
