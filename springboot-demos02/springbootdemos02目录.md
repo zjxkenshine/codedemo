@@ -64,4 +64,8 @@ springboot整合cobertura-maven-plugin生成测试覆盖报告
 ## 118.springbootdemo118-Plexus
 springboot简单使用Plexus-Utils工具集
 
+## 119.springbootdemo119-Snakeyaml
+springboot整合Snakeyaml操作yml文件
+
+
 
