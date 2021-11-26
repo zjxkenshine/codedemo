@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>springboot-demos02</artifactId>
+        <groupId>com.kenshine</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>springbootdemo117-Cobertura</artifactId>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <exclusions>
+                <!--TODO 只有排除spring-boot-starter-logging才可以运行成功，排除cobertura的会一直报错-->
+                <exclusion>
+                    <artifactId>spring-boot-starter-logging</artifactId>
+                    <groupId>org.springframework.boot</groupId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+<!--        &lt;!&ndash;集成log4j2&ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.boot</groupId>-->
+<!--            <artifactId>spring-boot-starter-log4j2</artifactId>-->
+<!--        </dependency>-->
+
+    </dependencies>
+
+    <build>
+        <plugins>
+<!--            <plugin>-->
+<!--                <groupId>org.apache.maven.plugins</groupId>-->
+<!--                <artifactId>maven-compiler-plugin</artifactId>-->
+<!--                <version>3.6.1</version>-->
+<!--                <configuration>-->
+<!--                    <source>1.8</source>-->
+<!--                    <target>1.8</target>-->
+<!--                    <encoding>UTF-8</encoding>-->
+<!--                </configuration>-->
+<!--            </plugin>-->
+            <!--cobertura插件生成测试覆盖率-->
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>cobertura-maven-plugin</artifactId>
+                <version>2.7</version>
+                <configuration>
+
+                    <formats>
+                        <format>html</format>
+                        <format>xml</format>
+                    </formats>
+                    <instrumentation>
+                        <excludes>
+                            <exclude>com/**/*Test.class</exclude>
+                        </excludes>
+                    </instrumentation>
+                    <check/>
+                </configuration>
+                <dependencies>
+                    <!--排除冲突的slf4j-->
+                    <dependency>
+                        <groupId>net.sourceforge.cobertura</groupId>
+                        <artifactId>cobertura</artifactId>
+                        <version>2.1.1</version>
+<!--                        <exclusions>-->
+<!--                            <exclusion>-->
+<!--                                <groupId>ch.qos.logback</groupId>-->
+<!--                                <artifactId>logback-classic</artifactId>-->
+<!--                            </exclusion>-->
+<!--                        </exclusions>-->
+                    </dependency>
+                </dependencies>
+            </plugin>
+        </plugins>
+    </build>
+
+    <!--<reporting>中的配置作用于Maven的site阶段，用于生成报表 与build类似-->
+    <!--同时出现在<build>和<reporting>中的插件，<reporting>中对该插件的配置也能够在构建过程中生效，即该插件的配置是<build>和<reporting>中的配置的合并-->
+    <reporting>
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>cobertura-maven-plugin</artifactId>
+                <configuration>
+                    <formats>
+                        <format>html</format>
+                        <format>xml</format>
+                    </formats>
+                    <check/>
+                </configuration>
+            </plugin>
+        </plugins>
+    </reporting>
+
+<!--    <dependencyManagement>-->
+<!--        <dependencies>-->
+
+<!--            &lt;!&ndash; 删除依赖cobertura-maven-plugin->cobertura 2.7->logback &ndash;&gt;-->
+<!--            &lt;!&ndash; 解决执行cobertura:cobertura 日志加载失败（logback, log4j冲突）问题 &ndash;&gt;-->
+<!--            <dependency>-->
+<!--                <groupId>net.sourceforge.cobertura</groupId>-->
+<!--                <artifactId>cobertura</artifactId>-->
+<!--                <version>2.1.1</version>-->
+<!--                <scope>test</scope>-->
+<!--                <exclusions>-->
+<!--                    <exclusion>-->
+<!--                        <groupId>ch.qos.logback</groupId>-->
+<!--                        <artifactId>logback-classic</artifactId>-->
+<!--                    </exclusion>-->
+<!--                </exclusions>-->
+<!--            </dependency>-->
+<!--        </dependencies>-->
+<!--    </dependencyManagement>-->
+</project>

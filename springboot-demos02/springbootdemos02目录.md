@@ -58,3 +58,7 @@ springboot整合phantomjs+EChartsConvert生成Echarts图片
 ## 116.springbootdemo116-RatPack
 springboot简单整合Ratpack
 
+## 117.springbootdemo117-Cobertura
+springboot整合cobertura-maven-plugin生成测试覆盖报告
+
+

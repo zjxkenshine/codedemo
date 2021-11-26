@@ -33,6 +33,7 @@
         <module>springbootdemo114-Jsp</module>
         <module>springbootdemo115-EChartsConvert</module>
         <module>springbootdemo116-RatPack</module>
+        <module>springbootdemo117-Cobertura</module>
     </modules>
 
     <properties>
