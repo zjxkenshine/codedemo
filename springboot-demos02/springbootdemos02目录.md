@@ -70,4 +70,8 @@ springboot整合Snakeyaml操作yml文件
 ## 120.springbootdemo120-Dwr
 springboot整合Dwr实现Ajax
 
+## 121.springbootdemo121-PlumeLog-Lite
+springboot整合PlumeLog-Lite+Logback轻量级日志管理
+
+
 

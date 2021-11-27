@@ -1,0 +1,17 @@
+spring:
+  mvc:
+    static-path-pattern: /**
+  resources:
+    static-locations: classpath:/META-INF/resources/,classpath:/resources/,classpath:/static/,classpath:/public/
+  application:
+    name: PlumeLogLiteApp
+server:
+  port: 8080
+
+# plumelog-lite配置
+plumelog:
+  model: lite
+  # lite模式下日志存储路径,对应logback-spring中的配置
+  lite:
+    log:
+      path: /plumelog/lite

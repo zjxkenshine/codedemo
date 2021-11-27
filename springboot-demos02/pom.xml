@@ -37,6 +37,7 @@
         <module>springbootdemo118-Plexus</module>
         <module>springbootdemo119-Snakeyaml</module>
         <module>springbootdemo120-Dwr</module>
+        <module>springbootdemo121-PlumeLog-Lite</module>
     </modules>
 
     <properties>
