@@ -254,6 +254,8 @@ v-if 指令在使用的时候，有两种方式：
 - 详见：`day3/code/08~10`
 - 默认返回的是promise，用`.then`来获取数据，`result.data`
   - `await axios...`：只能用于`async`修饰的方法，直接获取到data（ES8）
+- Axios封装及统一接口管理
+  - https://blog.csdn.net/lhjuejiang/article/details/81515839
 
 # 3.Vue组件
 
@@ -304,7 +306,7 @@ v-if 指令在使用的时候，有两种方式：
 
 6. 路径提示插件：`Path AutoComplete`
 
-   ```json
+   ```js
    	//settings.json下添加该配置
    	"path-autocomplete.pathMappings":{
            "@/":"${folder}/src/"
@@ -430,3 +432,73 @@ JS代码规范工具
    - ESLint
    - Prettier - Code formatter
      - 需要`.prettierrc`文件
+
+# 7.路由router
+
+路由就是对应关系（跳转关系）
+
+## 7.1 前端路由的概念与原理
+
+1. SPA：
+
+   - SPA 指的是一个 web 网站只有唯一的一个 HTML 页面，所有组件的展示与切换都在这唯一的一个页面内完成
+
+   - 此时，不同组件之间的切换需要通过前端路由来实现
+
+2. 前端路由：Hash 地址与组件之间的对应关系
+
+3. 前端路由工作示意图：
+
+   ![](img/前端路由原理.jpg)
+
+## 7.2 vue-router 的基本用法
+
+1. 概述：vue.js 官方给出的路由解决方案。它只能结合 vue 项目进行使用，能够轻松的管理 SPA 项目中组件的切换
+2. 安装和配置的步骤：
+   - 安装 vue-router 包 ：`npm i vue-router@3.5.2 -S`
+   - 创建路由模块
+     - `new VueRouter`
+     - `Vue.use(VueRouter);`
+   - 导入并挂载路由模块
+   - 声明路由链接和占位符
+     - 使用 vue-router 提供的 `<router-link>` 和` <router-view> `声明路由链接和占位符
+
+## 7.3 vue-router 的常见用法
+
+1. **路由重定向**：通过路由规则的`redirect`属性指定
+   - 用户在访问地址 A 的时候，强制用户跳转到地址 C ，从而展示特定的组件页面
+2. **嵌套路由**：`children: [path{...},path{...}..]`属性（参考`day7/router-demo1/About.vue`组件）
+3. **动态路由匹配**：把 Hash 地址中可变的部分定义为参数项，从而提高路由规则的复用性
+   - 在 vue-router 中使用英文的冒号`:`来定义路由的参数项，示例：`/movie/:id`
+   -  `this.$route.params`对象访问到动态匹配的参数值
+   - vue-router 允许在路由规则中开启`props`传参简化参数获取
+4.  **声明式导航 & 编程式导航**：
+   - 概念：
+     - 声明式：`<a>`标签，`<router-link>`
+     - 编程式：`location.href`
+   - vue-router 提供了许多编程式导航的 API：
+     - `this.$router.push('hash 地址')`：跳转到指定 hash 地址，并增加一条历史记录
+     - `this.$router.replace('hash 地址') `：跳转到指定的 hash 地址，并替换掉当前的历史记录
+     - `this.$router.go(数值 n)`：实现导航历史前进、后退
+       - `$router.back()`：后退
+       - `$router.forward()`：前进
+5. **导航守卫**：导航守卫可以控制路由的访问权限
+   - **全局前置守卫**：每次发生路由的导航跳转时，都会触发全局前置守卫
+   - `router.beforeEach(function(to, from, next) {...})`
+     - to：表示将要访问的路由的信息对象
+     - from：表示将要离开的路由的信息对象
+     - next()：函数表示放行的意思
+6. 更多用法：https://next.router.vuejs.org/zh/introduction.html
+
+## 8.Vuex：状态管理
+- https://vuex.vuejs.org/zh/guide/
+ 
+
+
+
+
+
+
+
+
+
