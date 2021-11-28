@@ -38,6 +38,7 @@
         <module>springbootdemo119-Snakeyaml</module>
         <module>springbootdemo120-Dwr</module>
         <module>springbootdemo121-PlumeLog-Lite</module>
+        <module>springbootdemo122-MapStruct</module>
     </modules>
 
     <properties>

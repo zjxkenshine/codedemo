@@ -73,5 +73,6 @@ springboot整合Dwr实现Ajax
 ## 121.springbootdemo121-PlumeLog-Lite
 springboot整合PlumeLog-Lite+Logback轻量级日志管理
 
-
+## 122.springbootdemo121-MapStruct
+springboot整合MapStruct对象复制
 
