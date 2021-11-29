@@ -39,6 +39,7 @@
         <module>springbootdemo120-Dwr</module>
         <module>springbootdemo121-PlumeLog-Lite</module>
         <module>springbootdemo122-MapStruct</module>
+        <module>springbootdemo123-PowerMock</module>
     </modules>
 
     <properties>
