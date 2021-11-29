@@ -78,3 +78,8 @@ springboot整合MapStruct对象复制
 
 ## 123.springbootdemo123-PowerMock
 springboot整合PowerMock单元测试
+
+## 124.springbootdemo124-Objenesis
+java使用Objenesis实例化对象
+
+

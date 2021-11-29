@@ -40,6 +40,7 @@
         <module>springbootdemo121-PlumeLog-Lite</module>
         <module>springbootdemo122-MapStruct</module>
         <module>springbootdemo123-PowerMock</module>
+        <module>springbootdemo124-Objenesis</module>
     </modules>
 
     <properties>
