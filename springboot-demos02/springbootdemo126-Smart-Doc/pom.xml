@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>springboot-demos02</artifactId>
+        <groupId>com.kenshine</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>springbootdemo126-Smart-Doc</artifactId>
+
+
+    <!--smart-doc插件-->
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>com.github.shalousun</groupId>
+                <artifactId>smart-doc-maven-plugin</artifactId>
+                <version>2.2.7</version>
+                <configuration>
+                    <!--Specify the configuration file used to generate the document-->
+                    <configFile>./src/main/resources/smart-doc.json</configFile>
+                    <projectName>test</projectName>
+                    <!--smart-doc implements automatic analysis of the dependency tree to load the source code of third-party dependencies. If some framework dependency libraries are not loaded, an error is reported, then use excludes to exclude-->
+                    <excludes>
+                        <!--The format is: groupId: artifactId; refer to the following-->
+                        <!--Regular expressions can also be used, such as: com.google:.* -->
+                        <exclude>com.google.guava:guava</exclude>
+                    </excludes>
+                    <!--Since version 1.0.8, the plugin provides includes support-->
+                    <!--smart-doc can automatically analyze the dependency tree to load all dependent source code. In principle, it will affect the efficiency of document construction, so you can use includes to let the plugin load the components you configure.-->
+                    <includes>
+                        <!--The format is: groupId: artifactId; refer to the following-->
+                        <!--Regular expressions can also be used, such as: com.google:.* -->
+                        <include>com.alibaba:fastjson</include>
+                    </includes>
+                </configuration>
+                <executions>
+                    <execution>
+                        <!--Comment out phase if you don't need to start smart-doc when compiling-->
+                        <phase>compile</phase>
+                        <goals>
+                            <!--smart-doc provides html, openapi, markdown, adoc and other goals-->
+                            <goal>html</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

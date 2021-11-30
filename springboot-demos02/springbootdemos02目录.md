@@ -85,3 +85,5 @@ java使用Objenesis实例化对象
 ## 125.springbootdemo125-Jetty
 SpringBoot整合Jetty容器
 
+## 126.springbootdemo126-Smart-Doc
+springBoot整合Smart-Doc生成Api文档

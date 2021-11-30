@@ -42,6 +42,7 @@
         <module>springbootdemo123-PowerMock</module>
         <module>springbootdemo124-Objenesis</module>
         <module>springbootdemo125-Jetty</module>
+        <module>springbootdemo126-Smart-Doc</module>
     </modules>
 
     <properties>
