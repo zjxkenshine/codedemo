@@ -45,6 +45,7 @@
         <module>springbootdemo126-Smart-Doc</module>
         <module>springbootdemo127-Infinispan</module>
         <module>springbootdemo128-Woodstox</module>
+        <module>springbootdemo129-DOM-XML</module>
     </modules>
 
     <properties>
