@@ -46,6 +46,7 @@
         <module>springbootdemo127-Infinispan</module>
         <module>springbootdemo128-Woodstox</module>
         <module>springbootdemo129-DOM-XML</module>
+        <module>springbootdemo130-SAX</module>
     </modules>
 
     <properties>
