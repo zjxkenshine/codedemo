@@ -87,3 +87,7 @@ SpringBoot整合Jetty容器
 
 ## 126.springbootdemo126-Smart-Doc
 springBoot整合Smart-Doc生成Api文档
+
+## 127.springbootdemo127-Infinispan
+springBoot简单整合Infinispan缓存(嵌入方式)
+

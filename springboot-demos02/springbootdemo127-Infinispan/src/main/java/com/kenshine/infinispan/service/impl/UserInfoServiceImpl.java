@@ -1,8 +1,8 @@
-package com.kenshine.caffeinecache.service.impl;
+package com.kenshine.infinispan.service.impl;
 
-import com.kenshine.caffeinecache.domain.UserInfo;
-import com.kenshine.caffeinecache.mapper.UserInfoMapper;
-import com.kenshine.caffeinecache.service.UserInfoService;
+import com.kenshine.infinispan.domain.UserInfo;
+import com.kenshine.infinispan.mapper.UserInfoMapper;
+import com.kenshine.infinispan.service.UserInfoService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.CacheEvict;
