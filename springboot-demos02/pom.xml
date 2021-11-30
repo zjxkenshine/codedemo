@@ -44,6 +44,7 @@
         <module>springbootdemo125-Jetty</module>
         <module>springbootdemo126-Smart-Doc</module>
         <module>springbootdemo127-Infinispan</module>
+        <module>springbootdemo128-Woodstox</module>
     </modules>
 
     <properties>

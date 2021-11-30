@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<school:grade xmlns:school="http://www.w3.org/TR/html4/school/">
+    <school:student rollno="1" school:age="10">
+        <school:firstname>cxx1</school:firstname>
+        <lastname>kenshine1</lastname>
+        <nickname>stars1</nickname>
+        <marks>81</marks>
+    </school:student>
+    <student rollno="2">
+        <firstname>cxx2</firstname>
+        <lastname>kenshine2</lastname>
+        <nickname>stars2</nickname>
+        <marks>83</marks>
+    </student>
+    <student rollno="3">
+        <firstname>cxx3</firstname>
+        <lastname>kenshine3</lastname>
+        <nickname>stars3</nickname>
+        <marks>85</marks>
+    </student>
+</school:grade>

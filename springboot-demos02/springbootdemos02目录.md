@@ -91,3 +91,7 @@ springBoot整合Smart-Doc生成Api文档
 ## 127.springbootdemo127-Infinispan
 springBoot简单整合Infinispan缓存(嵌入方式)
 
+## 128.springbootdemo128-Woodstox
+Java使用woodstox处理XML
+- https://www.cnblogs.com/wuyongyin/tag/XML/
+
