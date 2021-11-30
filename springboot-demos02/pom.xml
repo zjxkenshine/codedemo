@@ -47,6 +47,7 @@
         <module>springbootdemo128-Woodstox</module>
         <module>springbootdemo129-DOM-XML</module>
         <module>springbootdemo130-SAX</module>
+        <module>springbootdemo131-StAX</module>
     </modules>
 
     <properties>
