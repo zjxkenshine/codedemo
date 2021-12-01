@@ -49,6 +49,7 @@
         <module>springbootdemo130-SAX</module>
         <module>springbootdemo131-StAX</module>
         <module>springbootdemo132-JDOM</module>
+        <module>springbootdemo133-Dom4j</module>
     </modules>
 
     <properties>
