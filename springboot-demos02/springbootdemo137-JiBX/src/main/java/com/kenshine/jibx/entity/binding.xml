@@ -1,0 +1,16 @@
+<binding>
+    <mapping name="grade" class="com.kenshine.jibx.entity.Grade">
+        <namespace prefix="school" uri="http://www.w3.org/TR/html4/school/" default="elements"></namespace>
+        <collection field="students" type="java.util.ArrayList" item-type="com.kenshine.jibx.entity.Student">
+        </collection>
+    </mapping>
+    <mapping name="student" class="com.kenshine.jibx.entity.Student">
+        <namespace prefix="school" uri="http://www.w3.org/TR/html4/school/" default="elements"></namespace>
+        <value style="attribute" name="rollno" field="rollno"></value>
+        <value style="attribute" name="age" field="age"></value>
+        <value name="firstname" field="firstname"></value>
+        <value name="lastname" field="lastname"></value>
+        <value name="nickname" field="nickname"></value>
+        <value name="marks" field="marks"></value>
+    </mapping>
+</binding>
