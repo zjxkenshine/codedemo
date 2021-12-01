@@ -104,3 +104,5 @@ Java使用SAX(推)方式处理XML
 ## 131.springbootdemo131-StAX
 Java使用StAX(拉)方式处理XML
 
+## 132.springbootdemo132-JDOM
+Java使用JDOM处理XML
