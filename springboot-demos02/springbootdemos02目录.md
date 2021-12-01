@@ -121,3 +121,6 @@ Java使用Castor操作XML
 
 ## 137.springbootdemo137-JiBX
 Java使用JiBX操作XML
+
+## 138.springbootdemo138-XMLBeans
+Java使用XMLBeans操作XML

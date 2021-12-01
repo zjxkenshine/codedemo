@@ -1,0 +1,20 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.w3.org/TR/html4/school/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="grade">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="student" maxOccurs="unbounded" minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element type="xs:string" name="firstname"/>
+                            <xs:element type="xs:string" name="lastname"/>
+                            <xs:element type="xs:string" name="nickname"/>
+                            <xs:element type="xs:byte" name="marks"/>
+                        </xs:sequence>
+                        <xs:attribute type="xs:byte" name="rollno" use="optional"/>
+                        <xs:attribute type="xs:byte" name="age" use="optional"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

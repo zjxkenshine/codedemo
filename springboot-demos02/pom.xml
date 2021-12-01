@@ -54,6 +54,7 @@
         <module>springbootdemo135-JAXB</module>
         <module>springbootdemo136-Castor</module>
         <module>springbootdemo137-JiBX</module>
+        <module>springbootdemo138-XMLBeans</module>
     </modules>
 
     <properties>
