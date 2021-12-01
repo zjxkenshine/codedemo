@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapping PUBLIC "-//EXOLAB/Castor Mapping DTD Version 1.0//EN" "http://castor.org/mapping.dtd">
+<mapping>
+    <class name="com.kenshine.castorxml.entity.Grade">
+        <map-to xml="grade" ns-prefix="school" ns-uri="http://www.w3.org/TR/html4/school/"/>
+
+        <field name="students" type="com.kenshine.castorxml.entity.Student" collection="arraylist">
+            <bind-xml name="student"></bind-xml>
+        </field>
+    </class>
+    <class name="com.kenshine.castorxml.entity.Student">
+        <!--<map-to ns-prefix="" ns-uri=""></map-to>-->
+        <field name="rollno">
+            <bind-xml name="rollno" node="attribute"></bind-xml>
+        </field>
+        <field name="age">
+            <bind-xml name="school:age" node="attribute" xmlns:school="http://www.w3.org/TR/html4/school/"></bind-xml>
+        </field>
+        <field name="firstname">
+            <bind-xml name="school:firstname" node="element" xmlns:school="http://www.w3.org/TR/html4/school/"></bind-xml>
+        </field>
+        <field name="lastname">
+            <bind-xml name="lastname" node="element"></bind-xml>
+        </field>
+        <field name="nickname">
+            <bind-xml name="nickname" node="element"></bind-xml>
+        </field>
+        <field name="marks">
+            <bind-xml name="marks" node="element"></bind-xml>
+        </field>
+    </class>
+</mapping>

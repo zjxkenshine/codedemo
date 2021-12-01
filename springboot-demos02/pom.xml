@@ -52,6 +52,7 @@
         <module>springbootdemo133-Dom4j</module>
         <module>springbootdemo134-XPath</module>
         <module>springbootdemo135-JAXB</module>
+        <module>springbootdemo136-Castor</module>
     </modules>
 
     <properties>
