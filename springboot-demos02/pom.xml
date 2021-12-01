@@ -50,6 +50,7 @@
         <module>springbootdemo131-StAX</module>
         <module>springbootdemo132-JDOM</module>
         <module>springbootdemo133-Dom4j</module>
+        <module>springbootdemo134-XPath</module>
     </modules>
 
     <properties>
