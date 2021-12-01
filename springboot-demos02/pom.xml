@@ -51,6 +51,7 @@
         <module>springbootdemo132-JDOM</module>
         <module>springbootdemo133-Dom4j</module>
         <module>springbootdemo134-XPath</module>
+        <module>springbootdemo135-JAXB</module>
     </modules>
 
     <properties>
