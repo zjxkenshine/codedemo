@@ -127,3 +127,6 @@ Java使用XMLBeans操作XML
 
 ## 139.springbootdemo139-XPP3
 Java使用XPP3操作XML
+
+## 140.springbootdemo140-XStream
+Java使用XStream操作XML

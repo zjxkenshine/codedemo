@@ -56,6 +56,7 @@
         <module>springbootdemo137-JiBX</module>
         <module>springbootdemo138-XMLBeans</module>
         <module>springbootdemo139-XPP3</module>
+        <module>springbootdemo140-XStream</module>
     </modules>
 
     <properties>
