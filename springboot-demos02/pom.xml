@@ -57,6 +57,7 @@
         <module>springbootdemo138-XMLBeans</module>
         <module>springbootdemo139-XPP3</module>
         <module>springbootdemo140-XStream</module>
+        <module>springbootdemo141-Common-cli</module>
     </modules>
 
     <properties>
