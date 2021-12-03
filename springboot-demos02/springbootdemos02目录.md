@@ -133,3 +133,6 @@ Java使用XStream操作XML
 
 ## 141.springbootdemo141-Common-cli
 springboot使用Common-cli解析命令行参数
+
+## 142.springbootdemo142-HikariCP
+springboot默认连接池HikariCP的配置
