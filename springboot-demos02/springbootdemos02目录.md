@@ -136,3 +136,7 @@ springboot使用Common-cli解析命令行参数
 
 ## 142.springbootdemo142-HikariCP
 springboot默认连接池HikariCP的配置
+
+## 143.springbootdemo143-JMH
+springboot整合JMH微基准测试
+

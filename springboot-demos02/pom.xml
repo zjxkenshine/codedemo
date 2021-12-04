@@ -59,6 +59,7 @@
         <module>springbootdemo140-XStream</module>
         <module>springbootdemo141-Common-cli</module>
         <module>springbootdemo142-HikariCP</module>
+        <module>springbootdemo143-JMH</module>
     </modules>
 
     <properties>
