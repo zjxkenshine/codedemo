@@ -63,6 +63,7 @@
         <module>springbootdemo144-Exception</module>
         <module>springbootdemo145-Interceptor</module>
         <module>springbootdemo146-ArgumentResolver</module>
+        <module>springbootdemo147-MVEL2.0</module>
     </modules>
 
     <properties>
