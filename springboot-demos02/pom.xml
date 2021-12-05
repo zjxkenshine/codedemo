@@ -60,6 +60,7 @@
         <module>springbootdemo141-Common-cli</module>
         <module>springbootdemo142-HikariCP</module>
         <module>springbootdemo143-JMH</module>
+        <module>springbootdemo144-Exception</module>
     </modules>
 
     <properties>

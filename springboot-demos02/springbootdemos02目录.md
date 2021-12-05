@@ -140,3 +140,5 @@ springboot默认连接池HikariCP的配置
 ## 143.springbootdemo143-JMH
 springboot整合JMH微基准测试
 
+## 144.springbootdemo144-Exception
+springboot全局异常配置
