@@ -145,3 +145,6 @@ springboot全局异常配置
 
 ## 145.springbootdemo145-Interceptor
 springboot拦截器Interceptor配置
+
+## 146.springbootdemo146-ArgumentResolver
+springboot参数解析器HandlerMethodArgumentResolver的使用

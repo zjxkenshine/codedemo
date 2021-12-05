@@ -62,6 +62,7 @@
         <module>springbootdemo143-JMH</module>
         <module>springbootdemo144-Exception</module>
         <module>springbootdemo145-Interceptor</module>
+        <module>springbootdemo146-ArgumentResolver</module>
     </modules>
 
     <properties>
