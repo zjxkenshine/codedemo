@@ -65,6 +65,7 @@
         <module>springbootdemo146-ArgumentResolver</module>
         <module>springbootdemo147-MVEL2.0</module>
         <module>springbootdemo148-Hsqldb</module>
+        <module>springbootdemo149-Servlet-AsyncContext</module>
     </modules>
 
     <properties>

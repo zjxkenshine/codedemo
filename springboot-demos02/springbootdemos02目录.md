@@ -154,3 +154,6 @@ java整合使用MVEL2.0表达式
 
 ## 148.springbootdemo148-Hsqldb
 springboot整合内存数据库hsqldb
+
+## 149.springbootdemo149-Servlet-AsyncContext
+springboot整合Servlet3.0新特性AsyncContext异步请求
