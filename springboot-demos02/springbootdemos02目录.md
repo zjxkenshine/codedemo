@@ -151,3 +151,6 @@ springboot参数解析器HandlerMethodArgumentResolver的使用
 
 ## 147.springbootdemo147-MVEL2.0
 java整合使用MVEL2.0表达式
+
+## 148.springbootdemo148-Hsqldb
+springboot整合内存数据库hsqldb

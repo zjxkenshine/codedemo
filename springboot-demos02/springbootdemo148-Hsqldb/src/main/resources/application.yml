@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    username: kenshine
+    password: 123456
+    url: jdbc:hsqldb:mem://localhost/blogdb;shutdown=true
+    driver-class-name: org.hsqldb.jdbcDriver
+    schema: classpath:schema.sql
+    data: classpath:data.sql
+    initialization-mode: always
+    continue-on-error: true
