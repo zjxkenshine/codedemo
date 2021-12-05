@@ -61,6 +61,7 @@
         <module>springbootdemo142-HikariCP</module>
         <module>springbootdemo143-JMH</module>
         <module>springbootdemo144-Exception</module>
+        <module>springbootdemo145-Interceptor</module>
     </modules>
 
     <properties>
