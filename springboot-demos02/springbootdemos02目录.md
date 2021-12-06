@@ -164,3 +164,6 @@ springboot中使用Servlet4 PushBuilder服务器资源推送
 
 ## 151.springbootdemo151-Sqlite
 springBoot集成内存数据库Sqlite
+
+## 152.springbootdemo152-RequestContextHolder
+springmvc的RequestContextHolder获取请求

@@ -68,6 +68,7 @@
         <module>springbootdemo149-Servlet-AsyncContext</module>
         <module>springbootdemo150-Servlet-PushBuilder</module>
         <module>springbootdemo151-Sqlite</module>
+        <module>springbootdemo152-RequestContextHolder</module>
     </modules>
 
     <properties>
