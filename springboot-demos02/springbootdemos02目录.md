@@ -167,3 +167,7 @@ springBoot集成内存数据库Sqlite
 
 ## 152.springbootdemo152-RequestContextHolder
 springmvc的RequestContextHolder获取请求
+
+## 153.springbootdemo153-Coherence-Cache
+springBoot简单整合Coherence缓存
+- 暂时无法启动CoherenceServer,待发布3.0.1版本再测试
