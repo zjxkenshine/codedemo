@@ -67,6 +67,7 @@
         <module>springbootdemo148-Hsqldb</module>
         <module>springbootdemo149-Servlet-AsyncContext</module>
         <module>springbootdemo150-Servlet-PushBuilder</module>
+        <module>springbootdemo151-Sqlite</module>
     </modules>
 
     <properties>

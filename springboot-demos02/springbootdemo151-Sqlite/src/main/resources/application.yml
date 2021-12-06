@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    username: kenshine
+    password: zjx123456
+    url: jdbc:sqlite:blog.db
+    driver-class-name: org.sqlite.JDBC
+    schema: classpath:schema.sql
+    data: classpath:data.sql
+    initialization-mode: always
+    continue-on-error: true
