@@ -1,0 +1,19 @@
+server:
+  port: 443
+  server-header: springboot.io
+  servlet:
+    context-path: /
+  ssl:
+    # 证书路径
+    key-store: classpath:server.keystore
+    # 与申请时输入一致
+    key-alias: server
+    enabled: true
+    key-store-type: JKS
+    #与申请时输入一致
+    key-store-password: 123456
+    # java8 TLS才支持http2
+    protocol: TLSv1.2
+  # 开启http2
+  http2:
+    enabled: true
