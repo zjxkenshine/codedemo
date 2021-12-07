@@ -74,6 +74,7 @@
         <module>springbootdemo155-Jbehave</module>
         <module>springbootdemo156-War</module>
         <module>springbootdemo157-Javolution</module>
+        <module>springbootdemo158-Jopt-Simple</module>
     </modules>
 
     <properties>
