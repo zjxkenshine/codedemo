@@ -177,3 +177,6 @@ Java开源编译器Janino的使用
 
 ## 155.springbootdemo155-Jbehave
 Spring简单整合Jbehave BDD测试框架
+
+## 156.springbootdemo156-War
+SpringBoot打war包，部署到Tomcat服务器

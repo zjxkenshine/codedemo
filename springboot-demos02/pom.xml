@@ -72,6 +72,7 @@
         <module>springbootdemo153-Coherence-Cache</module>
         <module>springbootdemo154-Janino</module>
         <module>springbootdemo155-Jbehave</module>
+        <module>springbootdemo156-War</module>
     </modules>
 
     <properties>
