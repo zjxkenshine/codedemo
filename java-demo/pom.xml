@@ -15,6 +15,7 @@
         <module>juc-demo</module>
         <module>aes-cmac-demo</module>
         <module>hm-design-pattern-demo</module>
+        <module>javax-demo</module>
     </modules>
 
 

@@ -1,9 +1,19 @@
 # 目录
-## 1.java8-demo
-## 2.guava-demo
-## 3.juc-demo
-## 4.aes-cmac-demo
+## aes-cmac-demo
 aes-cmac 加密的demo
-## 5.hm-design-pattern-demo
+
+## guava-demo
+guava的demo
+
+## hm-design-pattern-demo
 黑马设计模式demo
+
+## java8-demo
+java8新特性demo
+
+## java8-demo
+javax扩展包使用demo
+
+## juc-demo
+juc使用demo
 
