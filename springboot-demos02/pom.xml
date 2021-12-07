@@ -73,6 +73,7 @@
         <module>springbootdemo154-Janino</module>
         <module>springbootdemo155-Jbehave</module>
         <module>springbootdemo156-War</module>
+        <module>springbootdemo157-Javolution</module>
     </modules>
 
     <properties>
