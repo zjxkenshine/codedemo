@@ -71,6 +71,7 @@
         <module>springbootdemo152-RequestContextHolder</module>
         <module>springbootdemo153-Coherence-Cache</module>
         <module>springbootdemo154-Janino</module>
+        <module>springbootdemo155-Jbehave</module>
     </modules>
 
     <properties>
