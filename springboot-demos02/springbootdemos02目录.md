@@ -171,3 +171,6 @@ springmvc的RequestContextHolder获取请求
 ## 153.springbootdemo153-Coherence-Cache
 springBoot简单整合Coherence缓存
 - 暂时无法启动CoherenceServer,待发布3.0.1版本再测试
+
+## 154.springbootdemo154-Janino
+Java开源编译器Janino的使用
