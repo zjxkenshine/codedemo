@@ -77,6 +77,7 @@
         <module>springbootdemo158-Jopt-Simple</module>
         <module>springbootdemo159-DeferredResult</module>
         <module>springbootdemo160-@Async</module>
+        <module>springbootdemo161-Jline3</module>
     </modules>
 
     <properties>
