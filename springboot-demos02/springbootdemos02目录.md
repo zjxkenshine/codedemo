@@ -197,3 +197,6 @@ SpringBoot使用@Async注解实现异步调用
 
 ## 161.springbootdemo161-Jline3
 java命令行交互输入库Jline3入门
+
+## 162.springbootdemo162-Juniversalchardet
+java编码检测库Juniversalchardet的使用
