@@ -191,3 +191,6 @@ Java命令行解析工具包jopt-simple的使用
 SpringMVC异步处理DeferredResult的使用
 SpringBoot异步任务WebAsyncTask的使用
 - Callable
+
+## 160.springbootdemo160-@Async
+SpringBoot使用@Async注解实现异步调用
