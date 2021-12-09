@@ -203,3 +203,6 @@ java编码检测库Juniversalchardet的使用
 
 ## 163.springbootdemo163-ApplicationEvent
 Springboot中ApplicationListener和ApplicationEvent的使用
+
+## 164.springbootdemo164-PropertyResolver
+Springboot中的PropertyResolver概述及Environment的简单使用
