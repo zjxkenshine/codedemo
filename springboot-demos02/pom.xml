@@ -79,6 +79,7 @@
         <module>springbootdemo160-@Async</module>
         <module>springbootdemo161-Jline3</module>
         <module>springbootdemo162-Juniversalchardet</module>
+        <module>springbootdemo163-ApplicationEvent</module>
     </modules>
 
     <properties>
