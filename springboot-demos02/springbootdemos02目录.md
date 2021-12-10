@@ -212,3 +212,6 @@ Springboot默认序列化工具Jackson的使用
 
 ## 166.springbootdemo166-Gson
 springboot整合Gson
+
+## 167.springbootdemo167-FastJson
+springboot整合FastJson

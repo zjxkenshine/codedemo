@@ -83,6 +83,7 @@
         <module>springbootdemo164-PropertyResolver</module>
         <module>springbootdemo165-Jackson</module>
         <module>springbootdemo166-Gson</module>
+        <module>springbootdemo167-FastJson</module>
     </modules>
 
     <properties>
