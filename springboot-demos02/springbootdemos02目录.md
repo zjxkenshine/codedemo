@@ -215,3 +215,6 @@ springboot整合Gson
 
 ## 167.springbootdemo167-FastJson
 springboot整合FastJson
+
+## 168.springbootdemo168-AJ-Captcha
+springboot整合Aj-Captcha行为验证码
