@@ -1,0 +1,3 @@
+spring:
+  gson:
+    date-format: yyyy-MM-dd

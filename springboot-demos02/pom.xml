@@ -82,6 +82,7 @@
         <module>springbootdemo163-ApplicationEvent</module>
         <module>springbootdemo164-PropertyResolver</module>
         <module>springbootdemo165-Jackson</module>
+        <module>springbootdemo166-Gson</module>
     </modules>
 
     <properties>
@@ -116,6 +117,7 @@
             <artifactId>lombok</artifactId>
         </dependency>
 
+        <!--配置文件提示-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-configuration-processor</artifactId>

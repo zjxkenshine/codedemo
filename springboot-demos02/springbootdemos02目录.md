@@ -209,3 +209,6 @@ Springboot中的PropertyResolver概述及Environment的简单使用
 
 ## 165.springbootdemo165-Jackson
 Springboot默认序列化工具Jackson的使用
+
+## 166.springbootdemo166-Gson
+springboot整合Gson
