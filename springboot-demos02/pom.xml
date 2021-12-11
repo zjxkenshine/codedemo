@@ -86,6 +86,7 @@
         <module>springbootdemo167-FastJson</module>
         <module>springbootdemo168-AJ-Captcha</module>
         <module>springbootdemo169-QLExpress</module>
+        <module>springbootdemo170-JSqlParser</module>
     </modules>
 
     <properties>
