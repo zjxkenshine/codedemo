@@ -87,6 +87,7 @@
         <module>springbootdemo168-AJ-Captcha</module>
         <module>springbootdemo169-QLExpress</module>
         <module>springbootdemo170-JSqlParser</module>
+        <module>springbootdemo171-Jansi</module>
     </modules>
 
     <properties>
