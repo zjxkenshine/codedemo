@@ -85,6 +85,7 @@
         <module>springbootdemo166-Gson</module>
         <module>springbootdemo167-FastJson</module>
         <module>springbootdemo168-AJ-Captcha</module>
+        <module>springbootdemo169-QLExpress</module>
     </modules>
 
     <properties>

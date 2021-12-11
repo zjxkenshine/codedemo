@@ -218,3 +218,6 @@ springboot整合FastJson
 
 ## 168.springbootdemo168-AJ-Captcha
 springboot整合Aj-Captcha行为验证码
+
+## 169.springbootdemo169-QLExpress
+springboot整合QLExpress动态脚本引擎
