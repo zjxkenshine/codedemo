@@ -89,6 +89,7 @@
         <module>springbootdemo170-JSqlParser</module>
         <module>springbootdemo171-Jansi</module>
         <module>springbootdemo172-Ini4j</module>
+        <module>springbootdemo173-Hppc</module>
     </modules>
 
     <properties>
