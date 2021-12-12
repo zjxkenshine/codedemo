@@ -90,6 +90,7 @@
         <module>springbootdemo171-Jansi</module>
         <module>springbootdemo172-Ini4j</module>
         <module>springbootdemo173-Hppc</module>
+        <module>springbootdemo174-Picocli</module>
     </modules>
 
     <properties>
