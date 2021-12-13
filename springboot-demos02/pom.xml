@@ -91,6 +91,7 @@
         <module>springbootdemo172-Ini4j</module>
         <module>springbootdemo173-Hppc</module>
         <module>springbootdemo174-Picocli</module>
+        <module>springbootdemo175-Poi-Word</module>
     </modules>
 
     <properties>
