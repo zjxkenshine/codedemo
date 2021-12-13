@@ -1,4 +1,4 @@
-# Springboot(Java)整合各种技术demo
+# Springboot(Java)整合各种技术/原理demo
 ## 100.springbootdemo100-Poi-tl
 Springboot简单整合poi-tl Word模板引擎
 
@@ -242,3 +242,8 @@ springboot使用poi操作word文档
 
 ## 176.springbootdemo176-JMX
 java使用JMX(jmxtools)实现监控
+
+## 177.springbootdemo177-CommandLineRunner
+- springboot中CommandLineRunner/ApplicationRunner的使用
+- @PostConstruct 的使用
+

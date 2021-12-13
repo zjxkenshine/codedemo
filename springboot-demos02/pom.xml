@@ -93,6 +93,7 @@
         <module>springbootdemo174-Picocli</module>
         <module>springbootdemo175-Poi-Word</module>
         <module>springbootdemo176-JMX</module>
+        <module>springbootdemo177-CommandLineRunner</module>
     </modules>
 
     <properties>
