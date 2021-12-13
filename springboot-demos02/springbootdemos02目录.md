@@ -239,3 +239,6 @@ java命令行解析库Picocli的使用
 
 ## 175.springbootdemo175-Poi-Word
 springboot使用poi操作word文档
+
+## 176.springbootdemo176-JMX
+java使用JMX(jmxtools)实现监控
