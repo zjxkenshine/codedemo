@@ -96,6 +96,7 @@
         <module>springbootdemo177-CommandLineRunner</module>
         <module>springbootdemo178-SpringFactoriesLoader</module>
         <module>springbootdemo179-FailureAnalyzer</module>
+        <module>springbootdemo180-EnvironmentAware</module>
     </modules>
 
     <properties>
