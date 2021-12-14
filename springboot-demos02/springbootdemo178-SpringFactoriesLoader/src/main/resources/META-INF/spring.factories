@@ -1,0 +1,4 @@
+# BeanInfoFactory加载，也可以加载其他类型，多个用,隔开，具体参考springboot源码下的factories
+org.springframework.beans.BeanInfoFactory=com.kenshine.factoriesLoader.service.impl.HelloServiceImpl
+
+com.kenshine.factoriesLoader.service.TestService=com.kenshine.factoriesLoader.service.impl.TestServiceImpl

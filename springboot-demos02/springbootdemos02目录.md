@@ -247,3 +247,6 @@ java使用JMX(jmxtools)实现监控
 - springboot中CommandLineRunner/ApplicationRunner的使用
 - @PostConstruct 的使用
 
+## 178.springbootdemo178-SpringFactoriesLoader
+- springboot使用SpringFactoriesLoader加载Bean
+- BeanInfo,BeanInfoFactory,Introspector内省
