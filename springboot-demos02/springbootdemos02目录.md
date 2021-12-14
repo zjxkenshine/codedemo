@@ -250,3 +250,7 @@ java使用JMX(jmxtools)实现监控
 ## 178.springbootdemo178-SpringFactoriesLoader
 - springboot使用SpringFactoriesLoader加载Bean
 - BeanInfo,BeanInfoFactory,Introspector内省
+
+## 179.springbootdemo179-FailureAnalyzer
+springboot使用FailureAnalyzer定制启动失败信息
+- FailureAnalysis,FailureAnalysisReporter

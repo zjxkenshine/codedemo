@@ -95,6 +95,7 @@
         <module>springbootdemo176-JMX</module>
         <module>springbootdemo177-CommandLineRunner</module>
         <module>springbootdemo178-SpringFactoriesLoader</module>
+        <module>springbootdemo179-FailureAnalyzer</module>
     </modules>
 
     <properties>
