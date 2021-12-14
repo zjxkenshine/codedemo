@@ -8,8 +8,14 @@
 3. 将自定义FailureAnalyzer注册到`resources/META-INF/spring.factories`
 4. 抛出异常则程序会启动失败
 
+# 3.FailureAnalysis
+FailureAnalyzer的分析结果
 
-# 3.结构示意图(包含auto-configure包)
+# 4.FailureAnalysisReporter
+向用户报告FailureAnalysis
+- 只有一个实现：LoggingFailureAnalysisReporter
+
+# 5.结构示意图(包含auto-configure包)
 ![](img/FailureAnalyzer接口实现.jpg)
 具体说明：每个实现都对应一个Exception
 
