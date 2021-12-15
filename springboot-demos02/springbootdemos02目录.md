@@ -254,6 +254,7 @@ java使用JMX(jmxtools)实现监控
 ## 179.springbootdemo179-FailureAnalyzer
 springboot使用FailureAnalyzer定制启动失败信息
 - FailureAnalysis,FailureAnalysisReporter
+- FailureAnalyzers,SpringBootExceptionReporter
 
 ## 180.springbootdemo180-EnvironmentAware
 - springboot中的Aware接口族示例

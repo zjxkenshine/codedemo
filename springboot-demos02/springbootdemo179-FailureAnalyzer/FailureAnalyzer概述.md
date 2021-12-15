@@ -1,7 +1,6 @@
 # 1.FailureAnalyzer简介
 用于分析故障并提供可显示给用户的诊断信息的接口
 
-
 # 2.如何使用
 1. 自定义异常
 2. 自定义FailureAnalyzer处理该异常
@@ -15,7 +14,15 @@ FailureAnalyzer的分析结果
 向用户报告FailureAnalysis
 - 只有一个实现：LoggingFailureAnalysisReporter
 
-# 5.结构示意图(包含auto-configure包)
+# 5.SpringBootExceptionReporter
+用于支持自定义上报SpringApplication启动错误的回调接口,通过SpringFactoriesLoader加载
+- 唯一实现类FailureAnalyzers
+
+# 6.FailureAnalyzers
+- 调用FailureAnalyzer分析并使用FailureAnalysisReporter报告分析结果FailureAnalysis
+- 从SpringFactoriesLoader中加载FailureAnalysisReporter
+
+# 7.结构示意图(包含auto-configure包)
 ![](img/FailureAnalyzer接口实现.jpg)
 具体说明：每个实现都对应一个Exception
 
