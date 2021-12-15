@@ -258,3 +258,10 @@ springboot使用FailureAnalyzer定制启动失败信息
 ## 180.springbootdemo180-EnvironmentAware
 - springboot中的Aware接口族示例
 - EnvironmentAware使用示例
+
+## 181.springbootdemo181-Order
+springboot排序相关注解/接口的使用示例
+- @Order，Ordered，@Priority，PriorityOrdered
+- OrderComparator，AnnotationAwareOrderComparator
+- OrderComparator.OrderSourceProvider
+
