@@ -98,6 +98,7 @@
         <module>springbootdemo179-FailureAnalyzer</module>
         <module>springbootdemo180-EnvironmentAware</module>
         <module>springbootdemo181-Order&amp;Ordered</module>
+        <module>springbootdemo182-Snappy-Java</module>
     </modules>
 
     <properties>
