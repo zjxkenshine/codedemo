@@ -268,3 +268,6 @@ springboot排序相关注解/接口的使用示例
 
 ## 182.springbootdemo182-Snappy-Java
 java使用Snappy-Java进行压缩/解压示例
+
+## 183.springbootdemo183-Guice
+Guice 谷歌IOC框架 入门案例
