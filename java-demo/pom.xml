@@ -16,6 +16,7 @@
         <module>aes-cmac-demo</module>
         <module>hm-design-pattern-demo</module>
         <module>javax-demo</module>
+        <module>java-base-demo</module>
     </modules>
 
 
