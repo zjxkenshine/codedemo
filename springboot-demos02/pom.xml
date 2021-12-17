@@ -101,6 +101,7 @@
         <module>springbootdemo182-Snappy-Java</module>
         <module>springbootdemo183-Guice</module>
         <module>springbootdemo184-BouncyCastle</module>
+        <module>springbootdemo185-CouchDB-Ektorp</module>
     </modules>
 
     <properties>

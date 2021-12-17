@@ -274,3 +274,6 @@ Guice 谷歌IOC框架 入门案例
 
 ## 184.springbootdemo184-BouncyCastle
 java第三方加密库BouncyCastle的使用
+
+## 185.springbootdemo185-CouchDB-Ektorp
+springboot整合CouchDB(使用Ektorp客户端)
