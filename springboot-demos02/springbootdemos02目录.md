@@ -280,3 +280,6 @@ springboot整合CouchDB(使用Ektorp客户端)
 
 ## 186.springbootdemo186-Okio
 springboot简单整合Okio3
+
+## 187.springbootdemo187-OkHttp
+springboot整合OkHttp3

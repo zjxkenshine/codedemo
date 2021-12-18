@@ -103,6 +103,7 @@
         <module>springbootdemo184-BouncyCastle</module>
         <module>springbootdemo185-CouchDB-Ektorp</module>
         <module>springbootdemo186-Okio</module>
+        <module>springbootdemo187-OkHttp</module>
     </modules>
 
     <properties>
