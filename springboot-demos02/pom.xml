@@ -102,6 +102,7 @@
         <module>springbootdemo183-Guice</module>
         <module>springbootdemo184-BouncyCastle</module>
         <module>springbootdemo185-CouchDB-Ektorp</module>
+        <module>springbootdemo186-Okio</module>
     </modules>
 
     <properties>

@@ -277,3 +277,6 @@ java第三方加密库BouncyCastle的使用
 
 ## 185.springbootdemo185-CouchDB-Ektorp
 springboot整合CouchDB(使用Ektorp客户端)
+
+## 186.springbootdemo186-Okio
+springboot简单整合Okio3
