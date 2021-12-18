@@ -73,3 +73,8 @@ OkHttpClient client = new OkHttpClient.Builder()
     - 访问携带的请求的Connection
 - 重写请求：参考GzipRequestInterceptor
 - 重写响应：类似重写请求
+
+# 3.使用
+- `OkHttpClient.newBuilder().build` 配置并创建一个客户端连接
+- 身份认证：`new OkHttpClient.Builder().authenticator(...)`
+- 详细使用查看demoTest

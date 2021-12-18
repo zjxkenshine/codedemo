@@ -18,7 +18,6 @@ import java.security.cert.Certificate;
  * 1. 自定义监听器 EventListener
  * 2. 监听工厂 EventListener.Factory
  * 3. Https连接
- *
  */
 public class OkHttpTest {
 
@@ -120,11 +119,6 @@ public class OkHttpTest {
             e.printStackTrace();
         }
     }
-
-
-
-
-
 
 
 }
