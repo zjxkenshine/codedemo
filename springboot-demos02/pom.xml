@@ -105,6 +105,7 @@
         <module>springbootdemo186-Okio</module>
         <module>springbootdemo187-OkHttp</module>
         <module>springbootdemo188-Awaitility</module>
+        <module>springbootdemo189-Plexus-Classworlds</module>
     </modules>
 
     <properties>

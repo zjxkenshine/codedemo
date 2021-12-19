@@ -286,3 +286,6 @@ springboot整合OkHttp3
 
 ## 188.springbootdemo188-Awaitility
 springboot整合Awaitility异步测试
+
+## 189.springbootdemo189-Plexus-Classworlds
+springboot整合Plexus-Classworlds类加载器
