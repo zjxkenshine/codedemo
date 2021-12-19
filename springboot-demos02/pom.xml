@@ -104,6 +104,7 @@
         <module>springbootdemo185-CouchDB-Ektorp</module>
         <module>springbootdemo186-Okio</module>
         <module>springbootdemo187-OkHttp</module>
+        <module>springbootdemo188-Awaitility</module>
     </modules>
 
     <properties>

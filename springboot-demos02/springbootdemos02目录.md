@@ -283,3 +283,6 @@ springboot简单整合Okio3
 
 ## 187.springbootdemo187-OkHttp
 springboot整合OkHttp3
+
+## 188.springbootdemo188-Awaitility
+springboot整合Awaitility异步测试
