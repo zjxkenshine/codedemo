@@ -68,3 +68,45 @@ Agrone提供了一套自己的 Clock API，首先它是基于Epoch Time，顶层
 3. Broadcast：广播，发送方的生产速度快于消费者的消费能力，消息会被丢弃
     - BroadcastTransmitter：生产者
     - BroadcastReceiver：消费者
+
+## 3.4 数据结构
+Agrona 提供了许多集合数据结构，用于解决基础数据类型在集合中需要装箱拆箱的开销
+1. HashMaps：
+    - Int2IntHashMap：`<int, int>`的 HashMap
+    - Int2ObjectHashMap：`<int, object>`的 HashMap
+    - Long2LongHashMap：`<long, long>`的 HashMap
+    - 其他HashMap详见`org.agrona.collections`包
+2. Caches：
+    - Int2ObjectCache
+    - IntLruCache：固定大小缓存，使用LRU策略清理缓存
+3. HashSets：
+    - IntHashSet：基础 int 类型的 HashSet，自动扩容
+    - ObjectHashSet：object 类型的 HashSet，自动扩容
+4. Others：其他集合
+    - IntArrayList：基础 int 类型的 ArrayList
+    - IntArrayQueue：基础 int 类型的 ArrayQueue
+    - BiInt2ObjectMap：将两个 int 类型组合成一个 key，value 为 object 的 Map
+
+## 3.5 Direct Buffer直接缓冲区
+具体示例查看ringbuffer中的ReceiveAgent
+1. Agrona 定义了 DirectBuffer 接口在用于和 Aeron 交互，它有点类似于 Java NIO ByteBuffer，但更方便一些
+    - UnsafeBuffer：堆外固定大小缓冲区，当超出大小时，会抛出 IndexOutOfBoundsException 异常
+    - ExpandableDirectByteBuffer：底层使用 ByteBuffer的直接缓冲区，超出大小会创建新ByteBuffer并拷贝
+    - ExpandableArrayBuffer：底层使用字节数组（new byte[size]）的直接缓冲区
+2. 字序问题：
+    - Agrona 默认使用的字节序为 ByteOrder.nativeOrder() 的字节序，读写使用不同的字节序，会导致错误的结果
+    - 不同操作系统可能会出现这个问题
+3. Chars & Bytes
+    - DirectBuffer 提供了读写单个字节或 16 位字符的方法
+4. Shorts, Integers & Longs
+    - DirectBuffer 提供了对 short、int、long 型数据的读写支持。
+    - 对于 int 和 long，还额外提供了 compare-and-set、get-and-add、get-and-set 的工具方法
+5. Floats & Doubles
+    - DirectBuffer 提供了读写 float 和 double 的方法
+    - 通常不推荐使用 float 和 double 进行数据传输，要么使用格式化为字符串的 BigDecimal，要么使用缩放后的 long
+6. Strings
+    - putStringAscii、putStringUtf8 操作非固定长度字符串，效率较低
+    - putStringWithoutLengthAscii、putStringWithoutLengthUtf8 操作固定长度字符串
+
+## 3.6 IdGenerator
+基于雪花算法的id生成器
