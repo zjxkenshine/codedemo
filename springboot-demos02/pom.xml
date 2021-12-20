@@ -106,6 +106,7 @@
         <module>springbootdemo187-OkHttp</module>
         <module>springbootdemo188-Awaitility</module>
         <module>springbootdemo189-Plexus-Classworlds</module>
+        <module>springbootdemo190-Agrona</module>
     </modules>
 
     <properties>
