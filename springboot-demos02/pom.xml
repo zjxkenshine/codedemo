@@ -107,6 +107,7 @@
         <module>springbootdemo188-Awaitility</module>
         <module>springbootdemo189-Plexus-Classworlds</module>
         <module>springbootdemo190-Agrona</module>
+        <module>springbootdemo191-UserAgentUtils</module>
     </modules>
 
     <properties>
