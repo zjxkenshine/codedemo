@@ -28,3 +28,10 @@
     - rule：生成词法语法解析的基础
         - 包括了lexer与parser，每条规则都是key:value的形式，以分号结尾。
         - lexer首字母大写，parser小写
+
+# 5.简要生成步骤
+1. IDEA安装antlr v4插件
+2. maven引入antlr4-runtime
+3. 编写g4文件
+4. 配置Antlr
+5. 生成Antlr代码

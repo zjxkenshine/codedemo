@@ -10,6 +10,13 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>springbootdemo194-Antlr4</artifactId>
-
+    <dependencies>
+        <!--antlr4 runtime 与插件版本一致-->
+        <dependency>
+            <groupId>org.antlr</groupId>
+            <artifactId>antlr4-runtime</artifactId>
+            <version>4.9.2</version>
+        </dependency>
+    </dependencies>
 
 </project>

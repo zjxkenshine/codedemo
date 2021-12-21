@@ -1,6 +1,6 @@
 grammar Dsl;    //定义规则文件grammar
 @header {        //一种action,定义生成的词法语法解析文件的头，当使用java的时候，生成的类需要包名，可以在这里统一定义
- package antlr;
+ package com.kenshine.antlr4.demo;
 }
 
 //parsers
