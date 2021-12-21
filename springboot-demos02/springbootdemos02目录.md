@@ -298,3 +298,6 @@ springboot使用UserAgentUtils获取浏览器信息
 
 ## 192.springbootdemo192-JTidy
 HTML解析类库JTidy的使用
+
+## 193.springbootdemo193-DBunit
+springboot整合DBunit数据库单元测试

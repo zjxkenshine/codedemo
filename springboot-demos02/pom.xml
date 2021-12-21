@@ -109,6 +109,7 @@
         <module>springbootdemo190-Agrona</module>
         <module>springbootdemo191-UserAgentUtils</module>
         <module>springbootdemo192-JTidy</module>
+        <module>springbootdemo193-DBunit</module>
     </modules>
 
     <properties>
