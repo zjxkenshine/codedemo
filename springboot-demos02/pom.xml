@@ -110,6 +110,7 @@
         <module>springbootdemo191-UserAgentUtils</module>
         <module>springbootdemo192-JTidy</module>
         <module>springbootdemo193-DBunit</module>
+        <module>springbootdemo194-Antlr4</module>
     </modules>
 
     <properties>
