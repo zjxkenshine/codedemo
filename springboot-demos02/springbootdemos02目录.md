@@ -307,3 +307,7 @@ Antlr4语言解析工具入门使用
 
 ## 195.springbootdemo195-PageHelper
 springboot整合PageHelper分页插件
+- mybatisplus
+
+## 196.springbootdemo196-RestTemplate
+springboot使用RestTemplate调用rest接口
