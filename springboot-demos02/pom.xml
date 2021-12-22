@@ -111,6 +111,7 @@
         <module>springbootdemo192-JTidy</module>
         <module>springbootdemo193-DBunit</module>
         <module>springbootdemo194-Antlr4</module>
+        <module>springbootdemo195-PageHelper</module>
     </modules>
 
     <properties>
