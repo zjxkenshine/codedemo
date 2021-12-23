@@ -113,6 +113,7 @@
         <module>springbootdemo194-Antlr4</module>
         <module>springbootdemo195-PageHelper</module>
         <module>springbootdemo196-RestTemplate</module>
+        <module>springbootdemo197-Saxon</module>
     </modules>
 
     <properties>

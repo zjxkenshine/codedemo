@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flight>
+    <row flightno="CA3411" airline_code="CA" airline_namecn="中国国际航空公司" airline_nameen="Air China" city_code="SHA" city_namecn="上海虹桥" city_nameen="Shanghai" flight_date="20130202" flight_time="2200" status_code="cancel" status_namecn="取消" status_nameen="Cancel" checkin_counter="M2-3" gate="A118"/>
+    <row flightno="CA3411" airline_code="CA" airline_namecn="中国国际航空公司" airline_nameen="Air China" city_code="SHA" city_namecn="上海虹桥" city_nameen="Shanghai" flight_date="20130202" flight_time="2300" status_code="fly" status_namecn="起飞" status_nameen="Fly" checkin_counter="M2-3" gate="A118"/>
+    <row flightno="CZ3412" airline_code="CZ" airline_namecn="中国南方航空公司" airline_nameen="South Air" city_code="PEK" city_namecn="北京" city_nameen="Beijing" flight_date="20130203" flight_time="2200" status_code="fly" status_namecn="起飞" status_nameen="Fly" checkin_counter="M1-3" gate="A218"/>
+</flight>
