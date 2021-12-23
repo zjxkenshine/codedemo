@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<school>
+    <students>
+        <student>
+            <name>Lucy</name>
+            <gender>Female</gender>
+        </student>
+        <student>
+            <name>Lily</name>
+            <gender>Female</gender>
+        </student>
+        <student>
+            <name>Tom</name>
+            <gender>Male</gender>
+        </student>
+    </students>
+</school>
