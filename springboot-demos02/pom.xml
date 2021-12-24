@@ -115,6 +115,7 @@
         <module>springbootdemo196-RestTemplate</module>
         <module>springbootdemo197-Saxon</module>
         <module>springbootdemo198-Xalan</module>
+        <module>springbootdemo199-ArangoDB</module>
     </modules>
 
     <properties>
