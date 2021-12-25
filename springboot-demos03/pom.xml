@@ -9,6 +9,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>springbootdemo200-Lz4</module>
+        <module>springbootdemo201-JCommander</module>
     </modules>
 
     <packaging>pom</packaging>
