@@ -11,6 +11,7 @@
         <module>springbootdemo200-Lz4</module>
         <module>springbootdemo201-JCommander</module>
         <module>springbootdemo202-SBE</module>
+        <module>springbootdemo203-JsonPath</module>
     </modules>
 
     <packaging>pom</packaging>
