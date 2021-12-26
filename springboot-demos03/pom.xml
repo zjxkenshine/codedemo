@@ -10,11 +10,12 @@
     <modules>
         <module>springbootdemo200-Lz4</module>
         <module>springbootdemo201-JCommander</module>
+        <module>springbootdemo202-SBE</module>
     </modules>
 
     <packaging>pom</packaging>
 
-    <name>springboot-demos02</name>
+    <name>springboot-demos03</name>
     <description>springboot(java)各种整合各种技术demo(200~299)</description>
     <properties>
         <java.version>1.8</java.version>
