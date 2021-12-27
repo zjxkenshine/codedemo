@@ -13,6 +13,7 @@
         <module>springbootdemo202-SBE</module>
         <module>springbootdemo203-JsonPath</module>
         <module>springbootdemo204-TestNG</module>
+        <module>springbootdemo205-ExtentReport</module>
     </modules>
 
     <packaging>pom</packaging>

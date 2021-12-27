@@ -13,3 +13,6 @@ java命令行参数解析工具JCommander的使用
 
 ## 204.springbootdemo204-TestNG
 springboot整合TestNG+ReportNg自动化测试并生成报告
+
+## 205.springbootdemo205-ExtentReport
+springboot+TestNG+ExtentReport生成测试报告
