@@ -312,8 +312,20 @@ public class MybatisPlusTest2 {
         maps.forEach(map -> logger.info(map.toString()));
     }
 
-
-
+    /**
+     * 10.and的使用  表示一对小括号
+     */
+    @Test
+    public void test_And() {
+        LambdaQueryWrapper<User> lqw = new LambdaQueryWrapper<>();
+        // SELECT username,password,realname FROM user WHERE (age > 28 and user_point > 5000) or age <25
+        lqw.select(User::getUsername, User::getPassword,User::getRealname)
+                .and(qw->qw.gt(User::getAge, 28).gt(User::getUserPoint,5000))
+                .lt(User::getAge,25);
+        // 只返回第一个字段username
+        List<Object> objects = userMapper.selectObjs(lqw);
+        objects.forEach(object -> logger.info(object.toString()));
+    }
 
 
 
