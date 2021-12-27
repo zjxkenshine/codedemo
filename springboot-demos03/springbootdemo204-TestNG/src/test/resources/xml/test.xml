@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="MySuite">
+    <!--选择一个类中的全部测试脚本-->
+    <test name="Test01">
+        <classes>
+            <class name="test.Test01Case" />
+        </classes>
+    </test>
+    <!--选择一个类中的部分测试脚本-->
+    <test name="Test02">
+        <classes>
+            <class name="test.Test02Case" >
+                <methods>
+                    <include name="test001"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <!--选择一个类中的某些组-->
+    <test name="Test03">
+        <groups>
+            <run>
+                <include name="group1"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="test.Test02Case"></class>
+        </classes>
+    </test>
+
+    <!--监听器配置-->
+    <listeners>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    </listeners>
+</suite>

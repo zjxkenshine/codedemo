@@ -12,4 +12,4 @@ java命令行参数解析工具JCommander的使用
 使用JsonPath解析Json
 
 ## 204.springbootdemo204-TestNG
-testNG单元测试
+springboot整合TestNG+ReportNg自动化测试并生成报告

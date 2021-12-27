@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
  * @modified By：
  * @version: $
  */
-public class TestCase extends BaseCase {
+public class Test01Case extends BaseCase {
     @Autowired
     private ITestService iTestService;
 
