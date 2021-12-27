@@ -12,6 +12,7 @@
         <module>springbootdemo201-JCommander</module>
         <module>springbootdemo202-SBE</module>
         <module>springbootdemo203-JsonPath</module>
+        <module>springbootdemo204-TestNG</module>
     </modules>
 
     <packaging>pom</packaging>
