@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<!--parallel="tests"，表示多线程级别为test级别-->
+<!--thread-count="2"，表示线程数为2-->
+<suite name="thread" parallel="tests" thread-count="2">
+    <test name="demo1">
+        <classes>
+            <class name="test.parallelclass.Test06ClassCase1"></class>
+        </classes>
+    </test>
+
+    <test name="demo2">
+        <classes>
+            <class name="test.parallelclass.Test06ClassCase2"></class>
+        </classes>
+    </test>
+</suite>

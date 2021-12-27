@@ -36,3 +36,34 @@
 用于设置测试集
 - 右键run可直接运行
 - Edit Configure->Listeners->勾选使用默认reporters
+
+# 6.预期异常
+` @Test(expectedExceptions = Exception.class)`
+
+# 7.依赖测试
+测试方法B的执行，依赖测试方法A，就叫做依赖测试。分为硬依赖测试和软依赖测试
+- 硬依赖测试：
+    - 测试方法A先执行，若A执行成功，则B再执行。若A执行失败，则B不执行
+    - `@Test(dependsOnMethods = {“test1”,“test2”...})`
+- 软依赖测试：
+    - 测试方法A先执行，无论A是否执行成功，A执行后B都会执行
+    - `@Test(dependsOnMethods = {“test1”,“test2”...}, alwaysRun=true)`
+
+# 8.参数化测试
+通过XML/@Parameters/@DataProvider将参数传递给@Test方法,两种方式：
+    - 使用testing.xml
+    - 使用数据提供者@DataProvider
+
+# 9.开启多个线程测试
+传统的测试使用单线程执行，多线程可以提高测试用例的执行效率
+- 注解实现
+- xml实现
+
+级别：
+- methods级别：所有用例都可以在不同的线程去执行
+- classs级别：不同class tag下的用例可以在不同的线程执行，相同class tag下的用例只能在同一个线程中执行
+- tests级别：不同test tag下的用例可以在不同的线程执行，相同test tag下的用例只能在同一个线程中执行
+
+# 10.超时测试
+当测试用例超过timeOut设定的时间，则认为用例执行失败，继续运行下面的用例
+- `@Test(timeout=“毫秒值”)`

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<suite name="parameter">
+    <test name="param">
+
+        <classes>
+            <parameter name="name" value="kenshine"/>
+            <parameter name="age" value="25"/>
+            <!--加上ParamterTest，就可以使用xml执行ParamterTest类内的测试了-->
+            <class name="test.Test05ParameterCase"/>
+        </classes>
+
+    </test>
+
+</suite>

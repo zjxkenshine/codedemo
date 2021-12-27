@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<suite name="Testng Parallel Test" parallel="tests" thread-count="5">
+<!--<suite name="Testng Parallel Test" parallel="classes" thread-count="5">-->
+<!--<suite name="Testng Parallel Test" parallel="methods" thread-count="5">-->
+<!-- xml方式多线程测试-->
+</suite>
