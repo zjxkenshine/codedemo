@@ -14,6 +14,7 @@
         <module>springbootdemo203-JsonPath</module>
         <module>springbootdemo204-TestNG</module>
         <module>springbootdemo205-ExtentReport</module>
+        <module>springbootdemo206-MapDB</module>
     </modules>
 
     <packaging>pom</packaging>

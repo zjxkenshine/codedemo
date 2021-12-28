@@ -16,3 +16,6 @@ springboot整合TestNG+ReportNg自动化测试并生成报告
 
 ## 205.springbootdemo205-ExtentReport
 springboot+TestNG+ExtentReport生成测试报告
+
+## 206.springbootdemo206-MapDB
+springboot整合MapDB嵌入式数据库
