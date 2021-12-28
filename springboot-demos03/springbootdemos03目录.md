@@ -19,3 +19,7 @@ springboot+TestNG+ExtentReport生成测试报告
 
 ## 206.springbootdemo206-MapDB
 springboot整合MapDB嵌入式数据库
+
+## 207.springbootdemo207-Aether
+- 使用Eclipse Aether API远程获取Maven仓库GAV信息
+- Aether远程下载jar包

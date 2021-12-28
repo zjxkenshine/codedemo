@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>springboot-demos03</artifactId>
+        <groupId>com.kenshine</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>springbootdemo207-Aether</artifactId>
+
+    <properties>
+        <aetherVersion>1.0.0.v20140518</aetherVersion>
+        <mavenVersion>3.1.0</mavenVersion>
+        <wagonVersion>1.0</wagonVersion>
+    </properties>
+
+    <dependencies>
+        <!--aether-api 应用程序编程接口-->
+        <dependency>
+            <groupId>org.eclipse.aether</groupId>
+            <artifactId>aether-api</artifactId>
+            <version>${aetherVersion}</version>
+        </dependency>
+        <!--aether-util 实用程序类和存储库系统的现成组件-->
+        <dependency>
+            <groupId>org.eclipse.aether</groupId>
+            <artifactId>aether-util</artifactId>
+            <version>${aetherVersion}</version>
+        </dependency>
+        <!--aether-impl 存储库实现类-->
+        <dependency>
+            <groupId>org.eclipse.aether</groupId>
+            <artifactId>aether-impl</artifactId>
+            <version>${aetherVersion}</version>
+        </dependency>
+        <!--aether-connector-basic 上传和下载到远程存储库-->
+        <dependency>
+            <groupId>org.eclipse.aether</groupId>
+            <artifactId>aether-connector-basic</artifactId>
+            <version>${aetherVersion}</version>
+        </dependency>
+        <!--aether-transport-file 传输模块，增加了对使用file: URL访问存储库的支持-->
+        <dependency>
+            <groupId>org.eclipse.aether</groupId>
+            <artifactId>aether-transport-file</artifactId>
+            <version>${aetherVersion}</version>
+        </dependency>
+        <!--aether-transport-http 允许访问基于http:和https:的存储库-->
+        <dependency>
+            <groupId>org.eclipse.aether</groupId>
+            <artifactId>aether-transport-http</artifactId>
+            <version>${aetherVersion}</version>
+        </dependency>
+        <!--aether-transport-wagon 基于Maven Wagon 可以使用任何现有的 Wagon 供应商来访问存储库-->
+        <dependency>
+            <groupId>org.eclipse.aether</groupId>
+            <artifactId>aether-transport-wagon</artifactId>
+            <version>${aetherVersion}</version>
+        </dependency>
+        <!--maven-aether-provider 提供了使用 Maven POM 作为工件描述符并从中提取依赖信息的部分。-->
+        <!--此外，它还提供对 Maven 存储库中使用的其他元数据文件的处理-->
+        <dependency>
+            <groupId>org.apache.maven</groupId>
+            <artifactId>maven-aether-provider</artifactId>
+            <version>${mavenVersion}</version>
+        </dependency>
+        <!--wagon-ssh 增加了对使用scp:和sftp:方案的传输的支持 -->
+        <dependency>
+            <groupId>org.apache.maven.wagon</groupId>
+            <artifactId>wagon-ssh</artifactId>
+            <version>${wagonVersion}</version>
+        </dependency>
+    </dependencies>
+
+</project>

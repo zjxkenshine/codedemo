@@ -15,6 +15,7 @@
         <module>springbootdemo204-TestNG</module>
         <module>springbootdemo205-ExtentReport</module>
         <module>springbootdemo206-MapDB</module>
+        <module>springbootdemo207-Aether</module>
     </modules>
 
     <packaging>pom</packaging>
