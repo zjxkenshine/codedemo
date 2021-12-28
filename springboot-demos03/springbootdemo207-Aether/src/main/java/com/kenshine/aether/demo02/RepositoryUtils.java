@@ -24,6 +24,7 @@ import org.eclipse.aether.util.graph.visitor.PreorderNodeListGenerator;
 import org.eclipse.aether.util.repository.AuthenticationBuilder;
 import org.eclipse.aether.version.Version;
 
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -124,6 +125,7 @@ public class RepositoryUtils {
 
     /**
      * 下载该jar包及其所有依赖jar包
+     * collectDependencies 下载依赖jar包
      * @param params
      */
     public static void DownLoadWithDependency(Params params) throws DependencyCollectionException, DependencyResolutionException {
@@ -159,8 +161,70 @@ public class RepositoryUtils {
 
             PreorderNodeListGenerator nlg = new PreorderNodeListGenerator();
             node.accept( nlg );
-            System.out.println( nlg.getClassPath() );
+            System.out.println( nlg.getClassPath());
     }
+
+
+    /**
+     * resolveVersion
+     * 將RELEASE/LATEST/SNAPSHOT解析为具体版本信息 如果在
+     */
+    public static VersionResult resolveVersion(Params params) throws VersionRangeResolutionException, VersionResolutionException {
+        String groupId=params.getGroupId();
+        String artifactId=params.getArtifactId();
+        String repositoryUrl=params.getRepository();
+        String target=params.getTarget();
+        String username=params.getUsername();
+        String password=params.getPassword();
+
+        RepositorySystem repoSystem = newRepositorySystem();
+        RepositorySystemSession session = newSession( repoSystem ,target);
+        RemoteRepository central=null;
+        if(username==null&&password==null) {
+            central = new RemoteRepository.Builder( "central", "default", repositoryUrl ).build();
+        }else{
+            Authentication authentication=new AuthenticationBuilder().addUsername(username).addPassword(password).build();
+            central = new RemoteRepository.Builder( "central", "default", repositoryUrl ).setAuthentication(authentication).build();
+        }
+        Artifact artifact = new DefaultArtifact( groupId+":"+artifactId+":" +params.getVersion());
+        //请求对象
+        VersionRequest versionRequest = new VersionRequest();
+        versionRequest.setArtifact(artifact);
+        versionRequest.addRepository(central);
+        VersionResult result = repoSystem.resolveVersion(session,versionRequest);
+        System.out.println( "version" + result );
+        return result;
+    }
+
+    /**
+     * readArtifactDescriptor
+     * 获取artifact的一些潜在信息，如直接依赖等
+     */
+    public static ArtifactDescriptorResult readArtifactDescriptor(Params params) throws ArtifactDescriptorException {
+        String groupId=params.getGroupId();
+        String artifactId=params.getArtifactId();
+        String repositoryUrl=params.getRepository();
+        String target=params.getTarget();
+        String username=params.getUsername();
+        String password=params.getPassword();
+
+        RepositorySystem repoSystem = newRepositorySystem();
+        RepositorySystemSession session = newSession( repoSystem ,target);
+        RemoteRepository central=null;
+        if(username==null&&password==null) {
+            central = new RemoteRepository.Builder( "central", "default", repositoryUrl ).build();
+        }else{
+            Authentication authentication=new AuthenticationBuilder().addUsername(username).addPassword(password).build();
+            central = new RemoteRepository.Builder( "central", "default", repositoryUrl ).setAuthentication(authentication).build();
+        }
+        Artifact artifact = new DefaultArtifact( groupId+":"+artifactId+":" +params.getVersion());
+        ArtifactDescriptorRequest request = new ArtifactDescriptorRequest();
+        request.setArtifact(artifact);
+        request.setRepositories(Arrays.asList(central));
+        ArtifactDescriptorResult result = repoSystem.readArtifactDescriptor(session,request);
+        return result;
+    }
+
 
 
 

@@ -1,0 +1,16 @@
+# 1.RepositorySystem接口中的方法概述
+- resolveVersionRange：按升序解析范围版本列表
+- resolveVersion：将SNAPSHOT/LEAST/RELEASE等解析为具体版本
+- readArtifactDescriptor：分析Artifact的一些信息
+- collectDependencies：下载相关依赖
+- resolveDependencies：下载并分析相关的依赖
+- resolveArtifact：分析Artifact并将其下载到本地
+- resolveArtifacts：下载多个
+- resolveMetadata：解析元数据集合的路径。 如有必要，元数据将下载到本地存储库
+- install：将Artifact集合及其元数据安装到本地库
+- deploy：将Artifact及元数据上传到远程仓库
+- newLocalRepositoryManager：为本地仓库新建管理器
+    - 管理对本地存储库的访问
+- newSyncContext：创建同步上下文，用于同步获取artifacts或metadatas
+- newResolutionRepositories：创建带解析存储库
+- newDeploymentRepository：创建部署存储库
