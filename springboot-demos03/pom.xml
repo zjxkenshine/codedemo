@@ -17,6 +17,7 @@
         <module>springbootdemo206-MapDB</module>
         <module>springbootdemo207-Aether</module>
         <module>springbootdemo208-Trove4j</module>
+        <module>springbootdemo209-TypeSafeConfig</module>
     </modules>
 
     <packaging>pom</packaging>

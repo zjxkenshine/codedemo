@@ -26,3 +26,6 @@ springboot整合MapDB嵌入式数据库
 
 ## 208.springbootdemo208-Trove4j
 GUN Trove高性能集合的使用
+
+## 209.springbootdemo209-TypeSafeConfig
+springboot整合配置工具库TypeSafeConfig

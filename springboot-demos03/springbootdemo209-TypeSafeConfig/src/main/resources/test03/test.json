@@ -1,0 +1,11 @@
+{
+  "id": 1,
+  "label": "user",
+  "user": [{
+    "id": 1,
+    "name": "kenshine"
+  },{
+    "id": 2,
+    "name": "qin"
+  }]
+}
