@@ -32,3 +32,6 @@ springboot整合配置工具库TypeSafeConfig
 
 ## 210.springbootdemo210-Lightbend-Emoji
 Lightbend-Emoji处理Emoji字符串
+
+## 211.springbootdemo211-JavaEWAH
+JavaEWAH压缩位图使用
