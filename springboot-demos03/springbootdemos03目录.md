@@ -34,4 +34,7 @@ springboot整合配置工具库TypeSafeConfig
 Lightbend-Emoji处理Emoji字符串
 
 ## 211.springbootdemo211-JavaEWAH
-JavaEWAH压缩位图使用
+JavaEWAH压缩位图的使用
+
+## 212.springbootdemo212-RoaringBitmap
+RoaringBitmap压缩位图的使用

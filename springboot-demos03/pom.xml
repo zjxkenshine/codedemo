@@ -20,6 +20,7 @@
         <module>springbootdemo209-TypeSafeConfig</module>
         <module>springbootdemo210-Lightbend-Emoji</module>
         <module>springbootdemo211-JavaEWAH</module>
+        <module>springbootdemo212-RoaringBitmap</module>
     </modules>
 
     <packaging>pom</packaging>
