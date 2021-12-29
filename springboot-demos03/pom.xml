@@ -18,6 +18,7 @@
         <module>springbootdemo207-Aether</module>
         <module>springbootdemo208-Trove4j</module>
         <module>springbootdemo209-TypeSafeConfig</module>
+        <module>springbootdemo210-Lightbend-Emoji</module>
     </modules>
 
     <packaging>pom</packaging>
