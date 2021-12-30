@@ -38,3 +38,6 @@ JavaEWAH压缩位图的使用
 
 ## 212.springbootdemo212-RoaringBitmap
 RoaringBitmap压缩位图的使用
+
+## 213.springbootdemo213-Vavr
+Vavr函数库的使用
