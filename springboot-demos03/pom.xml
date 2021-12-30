@@ -22,6 +22,7 @@
         <module>springbootdemo211-JavaEWAH</module>
         <module>springbootdemo212-RoaringBitmap</module>
         <module>springbootdemo213-Vavr</module>
+        <module>springbootdemo214-CGLib</module>
     </modules>
 
     <packaging>pom</packaging>
