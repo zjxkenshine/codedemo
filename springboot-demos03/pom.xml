@@ -23,6 +23,7 @@
         <module>springbootdemo212-RoaringBitmap</module>
         <module>springbootdemo213-Vavr</module>
         <module>springbootdemo214-CGLib</module>
+        <module>springbootdemo215-JavaParser</module>
     </modules>
 
     <packaging>pom</packaging>
