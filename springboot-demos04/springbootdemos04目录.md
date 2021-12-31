@@ -25,3 +25,6 @@
 
 ## 300.springbootdemo300-HttpRequestWrapper
 HttpServletRequestWrapper防止xss注入
+
+## 301.springbootdemo301-HttpResponseWrapper
+HttpServletResponseWrapper修改Response对象实现Gzip压缩
