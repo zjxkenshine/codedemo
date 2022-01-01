@@ -11,6 +11,7 @@
     <modules>
         <module>springbootdemo300-HttpRequestWrapper</module>
         <module>springbootdemo301-HttpResponseWrapper</module>
+        <module>springbootdemo302-ApplicationContext</module>
     </modules>
 
     <properties>
