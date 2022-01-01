@@ -25,6 +25,7 @@
         <module>springbootdemo214-CGLib</module>
         <module>springbootdemo215-JavaParser</module>
         <module>springbootdemo216-Javacc</module>
+        <module>springbootdemo217-FastUtil</module>
     </modules>
 
     <packaging>pom</packaging>
