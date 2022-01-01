@@ -1,0 +1,30 @@
+/* adder.jj Adding up numbers */
+options {
+    STATIC = false ;
+    }
+
+PARSER_BEGIN(Adder)
+    package com.kenshine.javacc.demo02;
+    public class Adder {
+        public static void main( String[] args ) throws ParseException, TokenMgrError {
+            Adder parser = new Adder( System.in );
+            parser.Start();
+        }
+    }
+PARSER_END(Adder)
+// 词法描述器
+SKIP : { " "}
+SKIP : { "\n" | "\r" | "\r\n" }
+TOKEN : { < PLUS : "+" > }
+TOKEN : { < NUMBER : (["0"-"9"])+ > }
+
+void Start() : //语法分析器的描述由BNF生产式构成
+{}
+{
+    <NUMBER>
+    (
+        <PLUS>
+        <NUMBER>
+    )*
+    <EOF>
+}

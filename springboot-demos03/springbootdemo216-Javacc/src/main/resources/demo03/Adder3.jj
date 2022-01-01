@@ -1,0 +1,45 @@
+/* adder.jj Adding up numbers */
+options {
+    STATIC = false ;
+    }
+
+PARSER_BEGIN(Adder)
+    package com.kenshine.javacc.demo03;
+    public class Adder {
+        public static void main( String[] args ) throws ParseException, TokenMgrError, NumberFormatException {
+            Adder parser = new Adder( System.in );
+            int val = parser.Start();
+            System.out.println(val);
+        }
+    }
+PARSER_END(Adder)
+
+SKIP : { " "}
+SKIP : { "\n" | "\r" | "\r\n" }
+TOKEN : { < PLUS : "+" > }
+TOKEN : { < NUMBER : (["0"-"9"])+ > }
+
+int Start() throws NumberFormatException :
+{
+    int i ;
+    int value ;
+}
+{
+    value = Primary()
+    (
+        <PLUS>
+        i = Primary()
+        { value += i ; }
+    )*
+    <EOF>
+    { return value ; }
+}
+
+int Primary() throws NumberFormatException :
+{
+    Token t ;
+}
+{
+    t=<NUMBER>
+    { return Integer.parseInt( t.image ) ; }
+}

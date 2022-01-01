@@ -1,0 +1,57 @@
+options {
+    LOOKAHEAD=1;//LL(1)文法 maven插件中也可以设置
+    //为true的话JavaCC生成的所有成员及方法都将被定义为static
+    STATIC = false;
+}
+
+PARSER_BEGIN(Adder)
+//解释器定义
+package com.kenshine.javacc.demo01;
+import java.io.*;
+public class Adder {
+    public static void main(String[] args) {
+        for (String arg : args) {
+            try {
+                System.out.println(evaluate(arg));
+//                return(evaluate(arg));
+            } catch (ParseException ex) {
+                System.err.println(ex.getMessage());
+            }
+        }
+    }
+
+    public static long evaluate(String src) throws ParseException {
+        Reader reader = new StringReader(src);
+        //.expr 开始解析，解析正常结束后会返回语义值 方法在改文件最后语义部分定义
+        //有四种构造器：
+        //Parser(InputStream s)
+        //Parser (InputStream s, String encoding)
+        //Parser(Reader r)
+        //Parser (x x x x TokenManager tm)
+        return new Adder(reader).expr();
+    }
+}
+PARSER_END(Adder)
+
+SKIP: { <[" ", "\t", "\r", "\n"]> } //SKIP表示跳过空格、制表符(tab)和换行符
+TOKEN: {    //扫描整数字符并生成token
+    //Unix规则
+    // []可选
+    //+：前面内容出现一次或多次
+    //*：前面内容出现0次或多次
+    //?：前面内容出现0次或1次
+    //|：前或后
+    //()：内容优先级
+    <INTEGER: (["0"-"9"])+>
+}
+
+long expr():    // 解析器定义
+{
+    Token x, y;
+}
+{
+    x=<INTEGER> "+" y=<INTEGER> <EOF>   //<EOF>结束符
+    {
+        return Long.parseLong(x.image) + Long.parseLong(y.image);
+    }
+}
