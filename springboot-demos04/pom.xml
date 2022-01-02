@@ -13,6 +13,8 @@
         <module>springbootdemo301-HttpResponseWrapper</module>
         <module>springbootdemo302-ApplicationContext</module>
         <module>springbootdemo303-BeanPostProcessor</module>
+        <module>springbootdemo304-Starter</module>
+        <module>springbootdemo304-StarterTest</module>
     </modules>
 
     <properties>

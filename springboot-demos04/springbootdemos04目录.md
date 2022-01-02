@@ -35,3 +35,7 @@ ApplicationContext上下文体系学习
 ## 303.springbootdemo303-BeanPostProcessor
 BeanPostProcessor后处理程序
 
+## 304.springbootdemo304-Starter
+Springboot自动配置原理简单学习
+- 自定义Starter实现
+

@@ -1,0 +1,6 @@
+test:
+  config:
+    enable: true
+    user: qin
+    password: 111111
+    salt: fewoijkjikgr
