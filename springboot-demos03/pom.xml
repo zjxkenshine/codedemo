@@ -26,6 +26,7 @@
         <module>springbootdemo215-JavaParser</module>
         <module>springbootdemo216-Javacc</module>
         <module>springbootdemo217-FastUtil</module>
+        <module>springbootdemo218-Koloboke</module>
     </modules>
 
     <packaging>pom</packaging>
