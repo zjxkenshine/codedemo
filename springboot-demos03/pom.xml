@@ -27,6 +27,7 @@
         <module>springbootdemo216-Javacc</module>
         <module>springbootdemo217-FastUtil</module>
         <module>springbootdemo218-Koloboke</module>
+        <module>springbootdemo219-SpringShell</module>
     </modules>
 
     <packaging>pom</packaging>
