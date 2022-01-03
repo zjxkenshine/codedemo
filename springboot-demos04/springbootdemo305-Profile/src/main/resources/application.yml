@@ -1,0 +1,5 @@
+spring:
+  profiles:
+    # 通过maven属性来指定profile
+    active: @spring.profiles.active@
+    # active: dev
