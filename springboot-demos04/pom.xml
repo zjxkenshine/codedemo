@@ -15,6 +15,7 @@
         <module>springbootdemo303-BeanPostProcessor</module>
         <module>springbootdemo304-Starter</module>
         <module>springbootdemo304-StarterTest</module>
+        <module>springbootdemo305-Profile</module>
     </modules>
 
     <properties>
