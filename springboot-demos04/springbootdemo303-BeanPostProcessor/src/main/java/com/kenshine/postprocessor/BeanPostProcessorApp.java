@@ -1,5 +1,6 @@
 package com.kenshine.postprocessor;
 
+import org.springframework.beans.factory.config.CustomEditorConfigurer;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -12,6 +13,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  */
 @SpringBootApplication
 public class BeanPostProcessorApp {
+
     public static void main(String[] args) {
         SpringApplication.run(BeanPostProcessorApp.class,args);
     }

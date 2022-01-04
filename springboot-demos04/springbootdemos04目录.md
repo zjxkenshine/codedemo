@@ -33,7 +33,8 @@ HttpServletResponseWrapper修改Response对象实现Gzip压缩
 ApplicationContext上下文体系学习
 
 ## 303.springbootdemo303-BeanPostProcessor
-BeanPostProcessor后处理程序
+- BeanPostProcessor
+- BeanFactoryPostProcessor
 
 ## 304.springbootdemo304-Starter
 Springboot自动配置原理简单学习
