@@ -18,6 +18,7 @@
         <module>springbootdemo305-Profile</module>
         <module>springbootdemo306-ImportSelector</module>
         <module>springbootdemo307-AnnotationMetadata</module>
+        <module>springbootdemo308-Resource</module>
     </modules>
 
     <properties>
