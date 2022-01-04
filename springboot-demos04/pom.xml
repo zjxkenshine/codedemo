@@ -17,6 +17,7 @@
         <module>springbootdemo304-StarterTest</module>
         <module>springbootdemo305-Profile</module>
         <module>springbootdemo306-ImportSelector</module>
+        <module>springbootdemo307-AnnotationMetadata</module>
     </modules>
 
     <properties>

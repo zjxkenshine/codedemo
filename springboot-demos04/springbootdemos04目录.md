@@ -42,7 +42,11 @@ Springboot自动配置原理简单学习
 ## 305.springbootdemo305-Profile
 spring profile及实现原理
 
-## 305.springbootdemo306-ImportSelector
+## 306.springbootdemo306-ImportSelector
+- @Import使用相关
 - ImportSelector导入外部配置
 - ImportBeanDefinitionRegistrar动态注册bean
+
+## 307.springbootdemo307-AnnotationMetadata
+- AnnotationMetadata,MethodMetadata,MetadataReader
 
