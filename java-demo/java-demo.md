@@ -12,7 +12,10 @@ guava的demo
 java8新特性demo
 
 ## java-base-demo
-java基础demo(泛型，反射，注解等)
+java基础demo摘录
+
+## java-io-demo
+io包使用demo
 
 ## javax-demo
 javax扩展包使用demo
