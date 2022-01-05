@@ -5,6 +5,7 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.kenshine.jackson.pojo.User;
+import com.kenshine.jackson.pojo.UserNew;
 import com.kenshine.jackson.pojo.UserView;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -124,6 +125,28 @@ public class JacksonTestController {
         userView.setAge(25);
         userView.setSex("男");
         return userView;
+    }
+
+    /**
+     * @JsonProperty的access属性指定访问策略
+     */
+    @RequestMapping("/testAccess")
+    public UserNew testAccess(){
+        UserNew user = new UserNew();
+        user.setName("kenshine");
+        user.setAge("18");
+        return user;
+    }
+
+    /**
+     * localhost:8080/testAccessRead?name=kenshine&age=18
+     * @param userNew
+     * @return
+     */
+    @GetMapping("/testAccessRead")
+    public UserNew testAccess(UserNew userNew){
+        System.out.println(userNew);
+        return userNew;
     }
 
 
