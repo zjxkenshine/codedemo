@@ -19,6 +19,7 @@
         <module>springbootdemo306-ImportSelector</module>
         <module>springbootdemo307-AnnotationMetadata</module>
         <module>springbootdemo308-Resource</module>
+        <module>springbootdemo309-TypeFilter</module>
     </modules>
 
     <properties>

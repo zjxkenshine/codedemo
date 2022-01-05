@@ -54,3 +54,6 @@ spring profile及实现原理
 ## 308.springbootdemo308-Resource
 - Resource相关接口学习
 - Springboot访问加载类路径（classpath）中的文件内容的多种方法
+
+## 309.springbootdemo309-TypeFilter
+TypeFilter指定过滤规则
