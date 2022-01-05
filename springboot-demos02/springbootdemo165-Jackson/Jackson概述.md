@@ -16,6 +16,7 @@
 
 # 4.Jackson相关注解
 - `@JsonProperty("userName")`：作用在属性上，用来为JSON Key指定一个别名
+    - `@JsonProperty(access = JsonProperty.Access.WRITE_ONLY)`：仅在写入的时候反序列化
 - `@JsonIgnore`：作用在属性上，用来忽略此属性
 - `@JsonIgnoreProperties`：忽略一组属性，作用于类上
     ```
