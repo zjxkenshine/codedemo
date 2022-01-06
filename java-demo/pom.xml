@@ -18,6 +18,7 @@
         <module>javax-demo</module>
         <module>java-base-demo</module>
         <module>java-io-demo</module>
+        <module>design-pattern-demo</module>
     </modules>
 
     <dependencies>
