@@ -1,4 +1,4 @@
-package com.kenshine.io.Test05_FilterInputStream;
+package com.kenshine.io.Test05_Filter;
 
 import org.junit.Test;
 
@@ -16,7 +16,7 @@ import java.io.*;
  * 3. PushBackInputStream回退输入流, java中读取数据的方式是顺序读取,如果某个数据不需要读取,需要程序处理.PushBackInputStream就可以将某些不需要的数据回退到缓冲中
  *
  */
-public class FilterInputStreamTest {
+public class FilterInputOutputStreamTest {
 
     /**
      * DataInputStream/DataOutputStream 数据流

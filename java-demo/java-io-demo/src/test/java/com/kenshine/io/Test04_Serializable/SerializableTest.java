@@ -21,6 +21,13 @@ import java.io.*;
  * 如果该对象的serialVersionUID与对应持久化时的类不同，那么反序列化的过程中将会导致InvalidClassException异常
  *
  * 序列化是指把对象转换为字节序列的过程，反序列化相反
+ *
+ * static关键字：
+ *  - 静态关键字（优先于非静态加载到内存中）
+ *  - 修饰的字段或方法不能进行序列化
+ *
+ * transient：瞬态关键字
+ *  - 被transient关键字修饰的成员变量不能序列化（与static相同）
  */
 public class SerializableTest {
 
