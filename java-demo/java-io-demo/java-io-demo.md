@@ -40,6 +40,29 @@
 - DigestInputStream/DigestOutputStream
 ## Test15_Cipher 加密流
 - CipherInputStream/CipherOutputStream
-
+## Test16_Sequence 顺序合并流
+- SequenceInputStream
+## Test17_StringReader 字符串流
+- StringBufferInputStream
+- StringReader
+## Test18_LineNumber 行流
+- LineNumberInputStream
+- LineNumberReader
+## Test19_PushBack
+- PushBackInputStream
+- PushBackReader
+## Test20_ProgressMonitor
+- ProgressMonitorInputStream
+## Test21_RandomAccessFile
+- RandomAccessFile 随机文件访问
+## Test22_Inflater_Deflater
+- Delate压缩，Inflate解压缩
+## Test23_Gzip
+- GzipInputStream/GzipOutputStream
+## Test24_Zip
+- ZipInputStream/ZipOutputStream
+## Test25_Jar
+- JarInputStream/JarOutputStream
+- JarFile
 
 
