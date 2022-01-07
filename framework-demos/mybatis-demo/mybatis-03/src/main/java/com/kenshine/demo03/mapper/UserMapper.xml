@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kenshine.demo03.mapper.UserMapper">
+    <!--结果集映射-->
+    <resultMap id="userMap" type="User">
+        <result column="pwd" property="password"></result>
+    </resultMap>
+
+
+    <!--使用配置的typeAlias @Alias注解-->
+    <select id="getUserList" resultType="user">
+        select * from user
+   </select>
+
+    <!--resultMap结果集映射-->
+    <select id="getUserById" resultMap="userMap">
+        select * from user where id=#{id}
+    </select>
+
+</mapper>

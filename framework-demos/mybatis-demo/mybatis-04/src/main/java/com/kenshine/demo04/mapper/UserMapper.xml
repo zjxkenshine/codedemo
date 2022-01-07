@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kenshine.demo04.mapper.UserMapper">
+
+    <select id="getUserList" resultType="com.kenshine.demo04.pojo.User">
+        select * from user
+   </select>
+
+    <select id="getUserByLimit" resultType="com.kenshine.demo04.pojo.User">
+        select * from mybatis.user limit #{startIndex},#{pageSize}
+    </select>
+
+    <select id="getUserByRowBounds" resultType="com.kenshine.demo04.pojo.User">
+        select * from user
+    </select>
+
+</mapper>

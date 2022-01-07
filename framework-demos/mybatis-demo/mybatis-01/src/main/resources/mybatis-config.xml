@@ -12,7 +12,7 @@
                 <property name="driver" value="com.mysql.cj.jdbc.Driver"/>
                 <property name="url" value="jdbc:mysql://localhost:3306/mybatis?userSSL=true&amp;useUnicode=true&amp;characterEncoding=UTF-8&amp;serverTimezone=UTC"/>
                 <property name="username" value="root"/>
-                <property name="password" value="zjx1754294529"/>
+                <property name="password" value="zjx123456"/>
             </dataSource>
         </environment>
     </environments>

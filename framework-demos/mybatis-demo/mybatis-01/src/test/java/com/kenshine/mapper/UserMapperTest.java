@@ -1,7 +1,8 @@
 package com.kenshine.mapper;
 
-import com.kenshine.pojo.User;
-import com.kenshine.utils.MybatisUtils;
+import com.kenshine.demo01.mapper.UserMapper;
+import com.kenshine.demo01.pojo.User;
+import com.kenshine.demo01.utils.MybatisUtils;
 import org.apache.ibatis.session.SqlSession;
 import org.junit.Test;
 
