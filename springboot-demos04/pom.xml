@@ -20,6 +20,7 @@
         <module>springbootdemo307-AnnotationMetadata</module>
         <module>springbootdemo308-Resource</module>
         <module>springbootdemo309-TypeFilter</module>
+        <module>springbootdemo310-Scope</module>
     </modules>
 
     <properties>
