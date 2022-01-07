@@ -2,6 +2,9 @@
 ## aes-cmac-demo
 aes-cmac 加密的demo
 
+## design-pattern-demo
+偶尔写点设计模式
+
 ## guava-demo
 guava的demo
 
