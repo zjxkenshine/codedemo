@@ -19,6 +19,7 @@
         <module>java-base-demo</module>
         <module>java-io-demo</module>
         <module>design-pattern-demo</module>
+        <module>java-basic-demo</module>
     </modules>
 
     <dependencies>
