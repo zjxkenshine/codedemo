@@ -1,4 +1,4 @@
-package com.kenshine.designpattern.gof01_factory.test01;
+package com.kenshine.designpattern.gof03_factory.test01;
 
 /**
  * @author ：kenshine
