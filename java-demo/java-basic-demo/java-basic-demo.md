@@ -11,4 +11,6 @@ _01_base：基础知识复习
    - test09_StringBuilderBuffer：String,StringBuilder,StringBuffer
    - test10_DateCalendar：Date类和Calendar类
    - test11_DoubleFor：跳出外层for循环
-
+   - test12_DynamicParams：动态参数
+_02_generic：泛型
+_03_generic_reflect：泛型反射
