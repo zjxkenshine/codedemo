@@ -14,4 +14,8 @@ _01_base：基础知识复习
    - test12_DynamicParams：动态参数
 _02_generic：泛型(具体目录在里面)
 _03_reflect：反射基础
-_04_
+_04_Annotation：注解
+_05_ServiceLoader：ServiceLoader服务加载器
+_06_Regex：正则
+_07_JavaDoc：JavaDoc
+_08_JDBC：JDBC

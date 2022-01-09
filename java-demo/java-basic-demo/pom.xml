@@ -11,5 +11,12 @@
 
     <artifactId>java-basic-demo</artifactId>
 
-
+    <dependencies>
+        <!--JDBC需要的依赖-->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.11</version>
+        </dependency>
+    </dependencies>
 </project>
