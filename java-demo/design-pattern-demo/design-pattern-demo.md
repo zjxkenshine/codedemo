@@ -6,8 +6,11 @@
 ## gof02_Prototype 原型模式
 - test01：简历复制，原型模式，clone
 
-## gof03_factory 简单工厂模式
-- test01：创建不同的数据库连接对象Mysql,SQLserver,Oracle
+## gof03_Factory 简单工厂模式
+- test01：创建不同的数据库连接对象Mysql,SQLServer,Oracle
+
+## gof04_FactoryMethod 工厂方法模式
+- test01：模拟需要生成中国食物A，中国食物B，美国食物A，美国食物B
 
 
 
