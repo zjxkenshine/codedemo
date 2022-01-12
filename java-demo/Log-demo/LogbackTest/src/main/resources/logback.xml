@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+    <!--集中管理属性
+        可以直接使用该属性的value值
+    -->
+    <property name="LOG_HOME" value="c:/log" />
+    <property name="pattern" value="%d{HH:mm:ss.SSS} [%thread] %-5level %logger{50} - %msg%n" />
+    <!--日志输出格式
+        %-5level ：级别
+        %d{yyyy-MM-dd HH:mm:ss.SSS} ：日期
+        %c类的完整名称
+        %M：method方法
+        %L：行号
+        %thread：线程名称
+        %m或者%msg：信息
+        %n：换行
+    -->
+    <!-- 控制台输出 -->
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <Encoding>UTF-8</Encoding>
+        <!--<layout class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">-->
+        <layout class="ch.qos.logback.classic.PatternLayout">
+            <pattern>${pattern}
+            </pattern>
+        </layout>
+    </appender>
+
+    <!-- 按照每天生成日志文件 -->
+    <appender name="FILE"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <Encoding>UTF-8</Encoding>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <FileNamePattern>${LOG_HOME}/myApp.log.%d{yyyy-MM-dd}.log</FileNamePattern>
+            <MaxHistory>30</MaxHistory>
+        </rollingPolicy>
+        <layout class="ch.qos.logback.classic.PatternLayout">
+            <pattern>${pattern}
+            </pattern>
+        </layout>
+    </appender>
+
+    <!--日志文件输出的appender,写法二-->
+    <appender name="FILE1" class="ch.qos.logback.core.FileAppender">
+        <!--保存路径-->
+        <file>${LOG_HOME}/logback.log</file>
+        <!--日志消息格式配置-->
+        <encoder class="ch.qos.logback.core.FileAppender">
+            <pattern>${pattern}</pattern>
+        </encoder>
+    </appender>
+
+    <!--html格式日志文件输出的appender-->
+    <appender name="FILE2" class="ch.qos.logback.core.FileAppender">
+        <!--保存路径-->
+        <file>${LOG_HOME}/logback.html</file>
+        <!--html消息格式配置-->
+        <encoder class="ch.qos.logback.core.encoder.LayoutWrappingEncoder">
+            <layout class="ch.qos.logback.classic.html.HTMLLayout">
+                <pattern>${pattern}</pattern>
+            </layout>
+        </encoder>
+    </appender>
+
+    <!--日志拆分和归档压缩的appender对象-->
+    <appender name="FILE3" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <!--日志文件保存路径-->
+        <file>${LOG_HOME}/logback.html</file>
+        <!--日志消息格式配置-->
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <pattern>${pattern}</pattern>
+        </encoder>
+        <!--指定拆分规则-->
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <!--按照时间和拆分格式声明拆分的文件名-->
+            <FileNamePattern>${LOG_HOME}/rolling.%d{yyyy-MM-dd-HH}.log%i.gz</FileNamePattern>
+            <!--按照大小来拆分-->
+            <maxFileSize>1MB</maxFileSize>
+        </rollingPolicy>
+
+        <!--日志级别过滤器-->
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <!--日志过滤规则-->
+            <level>ERROR</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+    </appender>
+
+    <!--异步日志-->
+    <appender name="ASYNC" class="ch.qos.logback.classic.AsyncAppender">
+        <!--指定某个具体的appender-->
+        <appender-ref ref="FILE3"></appender-ref>
+    </appender>
+
+    <!-- root logger配置 -->
+    <root level="DEBUG">
+        <appender-ref ref="STDOUT" />
+<!--        <appender-ref ref="FILE" />-->
+    </root>
+
+    <!--自定义logger对象-->
+    <!--additivity表示自定义的logger是否继承rootLogger-->
+    <logger name="com.kenshine.logback" level="info" additivity="false">
+        <appender-ref ref="STDOUT" />
+    </logger>
+</configuration>

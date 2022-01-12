@@ -20,6 +20,7 @@
         <module>java-io-demo</module>
         <module>design-pattern-demo</module>
         <module>java-basic-demo</module>
+        <module>Log-demo</module>
     </modules>
 
     <dependencies>
