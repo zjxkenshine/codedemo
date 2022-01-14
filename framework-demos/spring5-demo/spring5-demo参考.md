@@ -19,3 +19,5 @@ B站小伙伴笔记
     - bean4.xml：生命周期
     - bean5.xml：自动配置
     - bean6.xml：外部配置文件druid
+- spring5-demo02：SpringIOC 配置实现
+- spring5-demo03：AOP

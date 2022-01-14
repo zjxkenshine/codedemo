@@ -49,4 +49,28 @@ Spring自动装配，不需要使用property标签
 - `@Configuration` //作为配置类，替代 xml 配置文件
 - `@ComponentScan(basePackages = {"com.kenshine.demo02"})`
 
+# 2.AOP 面向切面编程
+AOP底层原理
+- AOP 底层使用动态代理，两种情况
+    - 有接口情况，使用 JDK 动态代理
+    - 没有接口情况，使用 CGLIB 动态代理.
+
+AOP术语
+- a）连接点：类里面哪些方法可以被增强，这些方法称为连接点
+- b）切入点：实际被真正增强的方法称为切入点
+- c）通知（增强）：实际增强的逻辑部分称为通知，且分为以下五种类型：
+- 1）前置通知 2）后置通知 3）环绕通知 4）异常通知 5）最终通知
+- d）切面：把通知应用到切入点过程
+
+Spring 框架一般都是基于 AspectJ 实现 AOP 操作
+
+相关注解：
+- @Aspect：生成代理对象
+- @Pointcut：切入点表达式
+- @Before：前置通知
+- @AfterReturning：后置返回
+- @After：最终通知
+- @AfterThrowing：异常通知
+- @Around：环绕通知
+
 
