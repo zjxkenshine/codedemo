@@ -34,8 +34,19 @@ Spring自动装配，不需要使用property标签
 
 ## 1.2 注解方式管理Bean
 创建Bean实例的四个注解：
-- （1）@Component
-- （2）@Service
-- （3）@Controller
-- （4）@Repository
+- @Component
+- @Service
+- @Controller
+- @Repository
+
+相关注解：
+- `@Autowired`：根据属性类型进行自动装配
+- `@Qualifier`：根据名称进行注入，这个@Qualifier 注解的使用，和上面@Autowired 一起使用
+- `@Resource`：可以根据类型注入，也可以根据名称注入（它属于javax包下的注解，不推荐使用！）
+- `@Value`：注入普通类型属性
+
+完全注解开发：创建配置类，替代 xml 配置文件
+- `@Configuration` //作为配置类，替代 xml 配置文件
+- `@ComponentScan(basePackages = {"com.kenshine.demo02"})`
+
 
