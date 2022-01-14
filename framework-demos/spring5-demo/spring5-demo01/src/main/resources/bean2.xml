@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--内部bean-->
+    <bean id="emp" class="com.kenshine.demo01.model.Emp">
+        <!--设置两个普通属性-->
+        <property name="ename" value="Andy"></property>
+        <property name="gender" value="女"></property>
+        <!--设置对象类型属性-->
+        <property name="dept">
+            <bean id="dept" class="com.kenshine.demo01.model.Dept"><!--内部bean赋值-->
+                <property name="dname" value="宣传部门"></property>
+            </bean>
+        </property>
+    </bean>
+
+    <!--方式一：级联赋值-->
+    <bean id="emp1" class="com.kenshine.demo01.model.Emp">
+        <!--设置两个普通属性-->
+        <property name="ename" value="Andy"></property>
+        <property name="gender" value="女"></property>
+        <!--级联赋值-->
+        <property name="dept" ref="dept1"></property>
+    </bean>
+    <bean id="dept1" class="com.kenshine.demo01.model.Dept">
+        <property name="dname" value="公关部门"></property>
+    </bean>
+
+    <!--级联赋值2-->
+    <bean id="emp2" class="com.kenshine.demo01.model.Emp">
+        <!--设置两个普通属性-->
+        <property name="ename" value="jams"></property>
+        <property name="gender" value="男"></property>
+        <!--级联赋值-->
+        <property name="dept" ref="dept2"></property>
+        <property name="dept.dname" value="技术部门"></property>
+    </bean>
+    <bean id="dept2" class="com.kenshine.demo01.model.Dept">
+    </bean>
+
+</beans>

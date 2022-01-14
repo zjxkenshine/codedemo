@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+      xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--1 配置User对象创建-->
+    <bean id="user" class="com.kenshine.demo01.model.User"></bean>
+
+    <!--spring方式： set方法注入属性-->
+    <bean id="book" class="com.kenshine.demo01.model.Book">
+        <!--使用property完成属性注入
+            name：类里面属性名称
+            value：向属性注入的值
+        -->
+        <property name="bname" value="Hello"></property>
+        <property name="bauthor" value="World"></property>
+    </bean>
+
+    <!--spring方式：有参数构造注入属性-->
+    <bean id="orders" class="com.kenshine.demo01.model.Orders">
+        <constructor-arg name="oname" value="Hello"></constructor-arg>
+        <constructor-arg name="address" value="China！"></constructor-arg>
+    </bean>
+
+
+    <!-- p空间注入-->
+    <bean id="book2" class="com.kenshine.demo01.model.Book" p:bname="very" p:bauthor="good">
+    </bean>
+
+    <!--注入空值与符号-->
+    <bean id="book3" class="com.kenshine.demo01.model.Book">
+        <!--（1）null值-->
+<!--        <property name="address">-->
+<!--            <null/>&lt;!&ndash;属性里边添加一个null标签&ndash;&gt;-->
+<!--        </property>-->
+
+        <!--（2）特殊符号赋值-->
+        <!--属性值包含特殊符号
+          a 把<>进行转义 &lt; &gt;
+          b 把带特殊符号内容写到CDATA
+         -->
+        <property name="address">
+            <value><![CDATA[<<南京>>]]></value>
+        </property>
+    </bean>
+
+    <!--1 service和dao对象创建-->
+    <bean id="userService" class="com.kenshine.demo01.service.UserService">
+        <!--注入userDao对象
+            name属性：类里面属性名称
+            ref属性：创建userDao对象bean标签id值
+        -->
+        <property name="userDao" ref="userDaoImpl"></property>
+    </bean>
+    <bean id="userDaoImpl" class="com.kenshine.demo01.dao.UserDaoImpl"></bean>
+
+
+
+</beans>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--配置文件的bean参数配置 bean生命周期-->
+    <bean id="orders" class="com.kenshine.demo01.model.Orders" init-method="initMethod" destroy-method="destroyMethod">	<!--配置初始化方法和销毁方法-->
+        <property name="oname" value="手机"></property><!--这里就是通过set方式（注入属性）赋值-->
+    </bean>
+    <!--配置后置处理器-->
+    <bean id="myBeanPost" class="com.kenshine.demo01.factorybean.MyBeanPost"></bean>
+
+</beans>

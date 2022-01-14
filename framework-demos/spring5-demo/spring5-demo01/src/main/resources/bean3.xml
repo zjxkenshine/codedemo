@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/util https://www.springframework.org/schema/util/spring-util.xsd">
+    <!--（2）在 spring 配置文件进行配置-->
+    <bean id="stu" class="com.kenshine.demo01.model.Stu">
+        <!--数组类型属性注入-->
+        <property name="courses">
+            <array>
+                <value>java课程</value>
+                <value>数据库课程</value>
+            </array>
+        </property>
+        <!--list类型属性注入-->
+        <property name="list">
+            <list>
+                <value>张三</value>
+                <value>小三</value>
+            </list>
+        </property>
+        <!--map类型属性注入-->
+        <property name="maps">
+            <map>
+                <entry key="JAVA" value="java"></entry>
+                <entry key="PHP" value="php"></entry>
+            </map>
+        </property>
+        <!--set类型属性注入-->
+        <property name="sets">
+            <set>
+                <value>MySQL</value>
+                <value>Redis</value>
+            </set>
+        </property>
+
+        <!--注入list集合类型，值是对象-->
+        <property name="courseList">
+            <list>
+                <ref bean="course1"></ref>
+                <ref bean="course2"></ref>
+            </list>
+        </property>
+    </bean>
+
+
+    <!--对象集合注入-->
+    <!--创建多个course对象-->
+    <bean id="course1" class="com.kenshine.demo01.model.Course">
+        <property name="cname" value="Spring5框架"></property>
+    </bean>
+    <bean id="course2" class="com.kenshine.demo01.model.Course">
+        <property name="cname" value="MyBatis框架"></property>
+    </bean>
+
+
+
+    <!--工厂Bean配置-->
+    <bean id="myBean" class="com.kenshine.demo01.factorybean.MyBean">
+    </bean>
+
+    <!--第二步：使用 util 标签完成 list 集合注入提取-->
+    <!--把集合注入部分提取出来-->
+    <!--1 提取list集合类型属性注入-->
+    <util:list id="bookList">
+        <value>易筋经</value>
+        <value>九阴真经</value>
+        <value>九阳神功</value>
+    </util:list>
+
+    <!--2 提取list集合类型属性注入使用-->
+    <bean id="book" class="com.kenshine.demo01.model.Book" scope="prototype">
+        <property name="list" ref="bookList"></property>
+    </bean>
+</beans>
