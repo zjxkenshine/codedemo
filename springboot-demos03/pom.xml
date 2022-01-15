@@ -29,6 +29,7 @@
         <module>springbootdemo218-Koloboke</module>
         <module>springbootdemo219-SpringShell</module>
         <module>springbootdemo220-QDox</module>
+        <module>springbootdemo221-JsonLib</module>
     </modules>
 
     <packaging>pom</packaging>
