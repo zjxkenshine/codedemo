@@ -21,3 +21,4 @@ B站小伙伴笔记
     - bean6.xml：外部配置文件druid
 - spring5-demo02：SpringIOC 配置实现
 - spring5-demo03：AOP
+- spring5-demo04：jdbcTemplate
