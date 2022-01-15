@@ -31,6 +31,7 @@
         <module>springbootdemo220-QDox</module>
         <module>springbootdemo221-JsonLib</module>
         <module>springbootdemo222-EZMorph</module>
+        <module>springbootdemo223-AsyncTool</module>
     </modules>
 
     <packaging>pom</packaging>
@@ -76,6 +77,11 @@
             <optional>true</optional>
         </dependency>
 
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.13.2</version>
+        </dependency>
     </dependencies>
 
     <dependencyManagement>
