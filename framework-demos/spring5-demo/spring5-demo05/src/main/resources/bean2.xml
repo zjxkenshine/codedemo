@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context" xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd http://www.springframework.org/schema/aop https://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <!--连接池配置-->
+    <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource"
+          destroy-method="close">
+        <property name="url" value="jdbc:mysql://localhost:3306/user_db?serverTimezone=UTC&amp;useUnicode=true&amp;characterEncoding=utf-8&amp;useSSL=false" />
+        <property name="username" value="root" />
+        <property name="password" value="zjx123456" />
+        <property name="driverClassName" value="com.mysql.cj.jdbc.Driver" />
+    </bean>
+
+    <!-- JdbcTemplate 对象 -->
+    <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+        <!--注入 dataSource-->
+        <property name="dataSource" ref="dataSource"></property><!--set方式注入-->
+    </bean>
+
+    <!-- 组件扫描 -->
+    <context:component-scan base-package="com.kenshine.demo05"></context:component-scan>
+
+    <!--1 创建事务管理器-->
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <!--注入数据源-->
+        <property name="dataSource" ref="dataSource"></property>
+    </bean>
+    <!--2 配置通知-->
+    <tx:advice id="txadvice">
+        <!--配置事务参数-->
+        <tx:attributes>
+            <!--指定哪种规则的方法上面添加事务-->
+            <tx:method name="transferMoney" propagation="REQUIRED"/>
+            <!--<tx:method name="account*"/>-->
+        </tx:attributes>
+    </tx:advice>
+    <!--3 配置切入点和切面-->
+    <aop:config>
+        <!--配置切入点-->
+        <aop:pointcut id="pt" expression="execution(* com.kenshine.demo05.service.UserService.*(..))"/>
+        <!--配置切面-->
+        <aop:advisor advice-ref="txadvice" pointcut-ref="pt"/>
+    </aop:config>
+
+</beans>

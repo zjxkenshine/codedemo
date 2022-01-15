@@ -11,6 +11,12 @@ B站小伙伴笔记
 6. https://blog.csdn.net/weixin_45496190/article/details/107103027
 7. https://blog.csdn.net/weixin_45496190/article/details/107121416
 
+Spring事务传播行为详解
+- https://segmentfault.com/a/1190000013341344
+
+《深入浅出springboot2.x》摘录 - 第6章 聊聊数据库事务
+- https://blog.csdn.net/qq_24732379/article/details/99705815
+
 # 代码目录
 - spring5-demo01：SpringIOC XML实现方式
     - bean1.xml：基础配置
@@ -22,3 +28,7 @@ B站小伙伴笔记
 - spring5-demo02：SpringIOC 配置实现
 - spring5-demo03：AOP
 - spring5-demo04：jdbcTemplate
+- spring5-demo05：事务
+    - bean1.xml：XML方式开启注解事务管理
+    - bean2.xml：XML方式管理事务
+    - TxConfig：完全注解开发配置
