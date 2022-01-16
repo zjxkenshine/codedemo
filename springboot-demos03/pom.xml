@@ -34,6 +34,7 @@
         <module>springbootdemo223-AsyncTool</module>
         <module>springbootdemo224-Slice</module>
         <module>springbootdemo225-Pinyin4j</module>
+        <module>springbootdemo226-Airline</module>
     </modules>
 
     <packaging>pom</packaging>
