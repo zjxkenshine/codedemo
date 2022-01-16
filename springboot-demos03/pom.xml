@@ -33,6 +33,7 @@
         <module>springbootdemo222-EZMorph</module>
         <module>springbootdemo223-AsyncTool</module>
         <module>springbootdemo224-Slice</module>
+        <module>springbootdemo225-Pinyin4j</module>
     </modules>
 
     <packaging>pom</packaging>
