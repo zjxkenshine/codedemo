@@ -126,4 +126,11 @@ https://blog.csdn.net/qq_24732379/article/details/99705815
     - 幻读针对多条记录，而可重复读是针对单条记录
 - 串行化（Serializable）：数据库最高的隔离级别，它会要求所有的 SQL 都会按照顺序执行
 
+# 4.Spring5新特性
+- Spring 5.0 框架自带了通用的日志封装
+- Spring5 框架核心容器支持@Nullable 注解
+- Spring5 核心容器支持函数式风格
+    - GenericApplicationContext
+- 支持整合Junit5框架
+- Webflux响应式编程框架
 
