@@ -12,5 +12,8 @@
 ## gof04_FactoryMethod 工厂方法模式
 - test01：模拟需要生成中国食物A，中国食物B，美国食物A，美国食物B
 
+## gof05_AbstractFactory 抽象工厂模式
+- test01：创建Intel Cpu,主板 以及AMD Cpu,主板
+
 
 
