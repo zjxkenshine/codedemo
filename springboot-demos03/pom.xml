@@ -32,6 +32,7 @@
         <module>springbootdemo221-JsonLib</module>
         <module>springbootdemo222-EZMorph</module>
         <module>springbootdemo223-AsyncTool</module>
+        <module>springbootdemo224-Slice</module>
     </modules>
 
     <packaging>pom</packaging>

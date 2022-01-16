@@ -71,3 +71,6 @@ EZMorph复制Bean
 
 ## 223.springbootdemo223-AsyncTool
 京东并行框架asyncTool了解
+
+## 224.springbootdemo224-Slice
+Slice处理Java堆外内存
