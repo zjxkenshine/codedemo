@@ -36,6 +36,7 @@
         <module>springbootdemo225-Pinyin4j</module>
         <module>springbootdemo226-Airline</module>
         <module>springbootdemo227-PCollections</module>
+        <module>springbootdemo228-Javassist</module>
     </modules>
 
     <packaging>pom</packaging>
