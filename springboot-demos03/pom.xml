@@ -37,6 +37,7 @@
         <module>springbootdemo226-Airline</module>
         <module>springbootdemo227-PCollections</module>
         <module>springbootdemo228-Javassist</module>
+        <module>springbootdemo229-Commons-Bcel</module>
     </modules>
 
     <packaging>pom</packaging>
