@@ -38,6 +38,7 @@
         <module>springbootdemo227-PCollections</module>
         <module>springbootdemo228-Javassist</module>
         <module>springbootdemo229-Commons-Bcel</module>
+        <module>springbootdemo230-Commons-Weaver</module>
     </modules>
 
     <packaging>pom</packaging>

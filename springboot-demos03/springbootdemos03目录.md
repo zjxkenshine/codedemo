@@ -92,3 +92,7 @@ Java 字节码处理类库 Javassist 入门学习
 
 ## 229.springbootdemo229-Commons-Bcel
 Commons-Bcel 字节码引擎库入门
+
+## 230.springbootdemo230-Commons-Weaver
+Commons-Weaver 字节码生成库学习
+
