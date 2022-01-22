@@ -96,3 +96,5 @@ Commons-Bcel 字节码引擎库入门
 ## 230.springbootdemo230-Commons-Weaver
 Commons-Weaver 字节码生成库学习
 
+## 231.springbootdemo231-ByteBuddy
+ByteBuddy 动态生成java class类

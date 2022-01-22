@@ -39,6 +39,7 @@
         <module>springbootdemo228-Javassist</module>
         <module>springbootdemo229-Commons-Bcel</module>
         <module>springbootdemo230-Commons-Weaver</module>
+        <module>springbootdemo231-ByteBuddy</module>
     </modules>
 
     <packaging>pom</packaging>
