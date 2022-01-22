@@ -40,6 +40,7 @@
         <module>springbootdemo229-Commons-Bcel</module>
         <module>springbootdemo230-Commons-Weaver</module>
         <module>springbootdemo231-ByteBuddy</module>
+        <module>springbootdemo232-Msgpack</module>
     </modules>
 
     <packaging>pom</packaging>

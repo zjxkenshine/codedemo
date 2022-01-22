@@ -98,3 +98,6 @@ Commons-Weaver 字节码生成库学习
 
 ## 231.springbootdemo231-ByteBuddy
 ByteBuddy 动态生成java class类
+
+## 232.springbootdemo232-Msgpack
+msgpack-java 序列化与反序列化
