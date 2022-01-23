@@ -52,6 +52,12 @@ Selector作用：配合一个线程来管理多个 channel
     - write - 数据可写出时触发，有因为发送能力弱，数据暂不能写出的情况
 - 事件发生后，要么处理，要么取消（cancel），不能什么都不做，否则下次该事件仍会触发
 
+ByteBuffer的大小分配
+- ByteBuffer 不能被多个 channel 共同使用，因此需要为每个 channel（连接） 维护一个独立的 ByteBuffer
+- 大小可变的 ByteBuffer
+    - 4k不够，分配8K，拷贝
+    - 多个数组组成 buffer，一个数组不够，把多出来的内容写入新的数组，避免拷贝
+
 # 5.NIO与BIO
 https://nyimac.gitee.io/2021/04/18/Netty%E5%AD%A6%E4%B9%A0%E4%B9%8BNIO%E5%9F%BA%E7%A1%80/#%E5%9B%9B%E3%80%81NIO%E4%B8%8EBIO
 
