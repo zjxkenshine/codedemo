@@ -11,7 +11,7 @@ import java.util.concurrent.TimeUnit;
  * @description：
  * @modified By：
  * @version: $
- * 一般会使用EventLoopGroup，而不是时间循环组
+ * 一般会使用EventLoopGroup，而不是单独使用EventLoop
  */
 public class TestEventLoop {
     public static void main(String[] args) {
