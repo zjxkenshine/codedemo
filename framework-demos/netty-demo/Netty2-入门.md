@@ -1,3 +1,4 @@
+(详细看别人笔记，很多细节懒得抄)
 # 1.概述
 Netty 是一个异步的、基于事件驱动的网络应用框架，用于快速开发可维护、高性能的网络服务器和客户端
 
@@ -55,4 +56,49 @@ handler需要放入通道的pipeline中，才能根据放入顺序来使用handl
 
 EmbeddedChannel可以用于测试各个handler
 
+## 3.5 ByteBuf
+### 直接内存与堆内存：
+- 直接内存创建和销毁的代价昂贵，但读写性能高（少一次内存复制），适合配合池化功能一起用
+- 直接内存对 GC 压力小，因为这部分内存不受 JVM 垃圾回收的管理，但也要注意及时主动释放
+
+### 池化与非池化
+- 没有池化，则每次都得创建新的 ByteBuf 实例，这个操作对直接内存代价昂贵，就算是堆内存，也会增加 GC 压力
+- 有了池化，则可以重用池中 ByteBuf 实例，并且采用了与 jemalloc 类似的内存分配算法提升分配效率
+- 高并发时，池化功能更节约内存，减少内存溢出的可能
+- 参数：`-Dio.netty.allocator.type={unpooled|pooled}`
+
+### ByteBuf组成
+![](netty-demo02/img/ByteBuf结构.jpg)
+- 读与写分为两个指针，不用flip操作
+- 自动扩容
+
+### 写入
+WriteXXX()
+
+### 读取
+readByte()
+
+### 释放
+由于 Netty 中有堆外内存（直接内存）的 ByteBuf 实现，堆外内存最好是手动来释放，而不是等 GC 垃圾回收
+- UnpooledHeapByteBuf 使用的是 JVM 内存，只需等 GC 回收内存即可
+- UnpooledDirectByteBuf 使用的就是直接内存了，需要特殊的方法来回收内存
+- PooledByteBuf 和它的子类使用了池化机制，需要更复杂的规则来回收内存
+
+Netty 这里采用了引用计数法来控制回收内存，每个 ByteBuf 都实现了 ReferenceCounted 接口
+
+释放规则
+- 基本规则是，谁是最后使用者，谁负责 release
+
+### 切片
+- ByteBuf切片是【零拷贝】的体现之一，对原始 ByteBuf 进行切片成多个 ByteBuf
+- 切片后的 ByteBuf 并没有发生内存复制，还是使用原始 ByteBuf 的内存，切片后的 ByteBuf 维护独立的 read，write 指针
+
+### ByteBuf优势
+- 池化思想 - 可以重用池中 ByteBuf 实例，更节约内存，减少内存溢出的可能
+- 读写指针分离，不需要像 ByteBuffer 一样切换读写模式
+- 可以自动扩容
+- 支持链式调用，使用更流畅
+- 很多地方体现零拷贝，例如
+    - slice、duplicate、CompositeByteBuf
+    - Unpooled 的 WrappedBuffer 方法
 
