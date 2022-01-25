@@ -15,5 +15,6 @@
 ## gof05_AbstractFactory 抽象工厂模式
 - test01：创建Intel Cpu,主板 以及AMD Cpu,主板
 
-
+## gof06_ConfigFactory 配置工厂模式
+- test01：
 
