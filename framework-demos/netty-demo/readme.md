@@ -15,4 +15,5 @@ B站小伙伴笔记
     - demo04：Future&Promise
     - demo05：Handle&Pipeline
     - demo06：ByteBuf
+- netty-demo03：netty 应用 半包与粘包
 
