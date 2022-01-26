@@ -11,6 +11,7 @@
         <module>netty-demo01</module>
         <module>netty-demo02</module>
         <module>netty-demo03</module>
+        <module>netty-demo04</module>
     </modules>
     <name>netty-demo</name>
     <description>Netty学习Demo</description>

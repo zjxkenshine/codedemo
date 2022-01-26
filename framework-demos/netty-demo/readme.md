@@ -16,4 +16,8 @@ B站小伙伴笔记
     - demo05：Handle&Pipeline
     - demo06：ByteBuf
 - netty-demo03：netty 应用 半包与粘包
-
+- netty-demo04：netty 应用 协议设计与解析
+    - demo01：Redis
+    - demo02：Http
+    - demo03：自定义协议
+- netty-demo05：netty 应用 在线聊天室案例
