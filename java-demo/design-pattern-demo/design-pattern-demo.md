@@ -16,5 +16,9 @@
 - test01：创建Intel Cpu,主板 以及AMD Cpu,主板
 
 ## gof06_ConfigFactory 配置工厂模式
-- test01：
+- test01：通过配置文件创建不同类型的car
+
+## gof07_Builder构建者模式
+- test01：构建者模式创建Computer
+
 
