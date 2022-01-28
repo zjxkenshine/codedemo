@@ -18,7 +18,10 @@
 ## gof06_ConfigFactory 配置工厂模式
 - test01：通过配置文件创建不同类型的car
 
-## gof07_Builder构建者模式
+## gof07_Builder 构建者模式
 - test01：构建者模式创建Computer
+
+## gof08_Adapter 适配器模式
+- test01：类适配器模式 ps2接口转USB接口
 
 
