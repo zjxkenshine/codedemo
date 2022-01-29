@@ -21,6 +21,7 @@
         <module>design-pattern-demo</module>
         <module>java-basic-demo</module>
         <module>Log-demo</module>
+        <module>hm-juc-demo</module>
     </modules>
 
     <dependencies>
@@ -36,6 +37,8 @@
             <version>1.18.16</version>
             <scope>compile</scope>
         </dependency>
+
+
     </dependencies>
 
     <properties>
