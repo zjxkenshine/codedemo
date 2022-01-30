@@ -24,4 +24,7 @@
 ## gof08_Adapter 适配器模式
 - test01：类适配器模式 ps2接口转USB接口
 
+## gof09_Bridge 桥接模式
+- test01：汽车与轮胎
+
 
