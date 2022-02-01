@@ -27,4 +27,6 @@
 ## gof09_Bridge 桥接模式
 - test01：汽车与轮胎
 
+## gof10_Filter 过滤器模式
+- test01：过滤用户
 
