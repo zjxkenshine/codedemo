@@ -8,4 +8,5 @@ B站同学笔记
 # 目录
 - chapter00-demo：章节代码
     - chapter02：第二章
+    - chapter03：第三章
 - chapter02-performance：第二章，多线程与单线程JMH测试
