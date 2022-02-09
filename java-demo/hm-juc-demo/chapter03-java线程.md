@@ -13,3 +13,22 @@ https://zhangc233.github.io/2021/05/21/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E4%B8%8E%E9%A
 - stop()：停止线程运行。
 - suspend() ：挂起（暂停）线程运行。
 - resume()：恢复线程运行
+
+# 线程状态
+## 五种状态 操作系统的层面
+![](img/线程5种状态.jpg)
+- 初始状态
+- 可运行状态(就绪状态)
+- 运行状态
+- 阻塞状态
+- 终止状态
+
+## 六种状态 Java API 层面
+![](img/线程6种状态.jpg)
+- NEW
+- RUNNABLE
+- BLOCKED
+- WAITING
+- TIMED_WAITING
+- TERMINATED
+
