@@ -15,6 +15,7 @@
         <module>chapter00-demo</module>
         <module>chapter02-performance</module>
         <module>chapter03-twoparse</module>
+        <module>chapter04_01-EliminateLocks</module>
     </modules>
 
     <dependencies>
