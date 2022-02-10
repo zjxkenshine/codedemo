@@ -94,6 +94,91 @@ MarkWord结构：
  
 ## 5.5 锁消除
 JIT会对synchronized进行优化，消除一些不必要的同步锁
-- `-XX:+EliminateLocks`
-  
+- `-XX:+EliminateLocks`开启锁消除
 
+# 6. Wait/notify
+![](img/Monitor.jpg)
+## 6.1 wait 和 notify
+- obj.wait () 让进入 object 监视器的线程到 waitSet 等待。
+- obj.notify () 在 object 上正在 waitSet 等待的线程中挑一个唤醒。
+- obj.notifyAll () 让 object 上正在 waitSet 等待的线程全部唤醒。
+
+## 6.2 Wait 与 Sleep 的区别
+- Sleep 是 Thread 类的静态方法，Wait 是 Object 的方法，Object 又是所有类的父类，所以所有类都有 Wait 方法。
+- Sleep 在阻塞的时候不会释放锁，而 Wait 在阻塞的时候会释放锁，它们都会释放 CPU 资源。
+- Sleep 不需要与 synchronized 一起使用，而 Wait 需要与 synchronized 一起使用（对象被锁以后才能使用）
+- 使用 wait 一般需要搭配 notify 或者 notifyAll 来使用，不然会让线程一直等待。
+
+# 7.保护性暂停 GuardedObject
+用于一个线程等待另一个线程的执行结果时 
+- 有一个结果需要从一个线程传递到另一个线程，让他们关联同一个 GuardedObject
+- 如果有结果不断从一个线程到另一个线程那么可以使用消息队列（见生产者 / 消费者）
+- Future，join的实现原理
+
+示意图：
+![](img/保护性暂停模式.jpg)
+
+# 8.生产者/消费者模式 
+示意图： Test09_Productor
+![](img/生产者消费者模式.jpg)
+- 与前面的保护性暂停中的 GuardObject 不同，不需要产生结果和消费结果的线程一一对应。
+- 消费队列可以用来平衡生产和消费的线程资源。
+- 生产者仅负责产生结果数据，不关心数据该如何处理，而消费者专心处理结果数据。
+- 消息队列是有容量限制的，满时不会再加入数据，空时不会再消耗数据。
+- JDK 中各种阻塞队列，采用的就是这种模式
+
+# 9.LockSupport
+park & unpark 是 LockSupport 线程通信工具类的静态方法
+- LockSupport.park(); // 暂停当前线程
+- LockSupport.unpark; // 恢复某个线程的运行
+ 
+park unpark原理：
+每个线程都有自己的一个 Parker 对象，由三部分组成 _counter， _cond 和 _mutex
+- _counter：0为阻塞，1为唤醒
+- _cond：等待队列
+- _mutex：互斥锁
+
+![](img/park方法.jpg)
+- 当前线程调用 Unsafe.park()方法；
+- 检查 _counter，本情况为 0，这时获得 _mutex 互斥锁 (mutex 对象有个等待队列 _cond)；
+- 线程进入 _cond 条件变量阻塞；
+- 设置 _counter = 0。
+
+![](img/unpark方法.jpg)
+- 调用 Unsafe.unpark (Thread_0) 方法，设置 _counter 为 1；
+- 唤醒 _cond 条件变量中的 Thread_0；
+- Thread_0 恢复运行；
+- 设置 _counter 为 0
+
+# 9.线程状态转换
+![](img/线程状态转换.jpg)
+1. NEW –> RUNNABLE：start方法
+2. RUNNABLE <–> WAITING
+    - wait方法，t 线程从 RUNNABLE –> WAITING
+    - 调用 obj.notify() ， obj.notifyAll() ， t.interrupt() 时，出现竞争
+        - 竞争锁成功，t线程从 WAITING –> RUNNABLE
+        - 竞争锁失败，t线程从 WAITING –> BLOCKED
+3. RUNNABLE <–> WAITING
+    - join方法，当前线程从 RUNNABLE –> WAITING
+    - t 线程运行结束，或调用了当前线程的 interrupt () 时，当前线程从 WAITING –> RUNNABLE
+4. RUNNABLE <–> WAITING
+    - LockSupport.park()
+    - LockSupport.unpark(t1)，或调用了当前线程的 interrupt () 时
+5. RUNNABLE <–> TIMED_WAITING
+    - wait (long n)
+    - t 线程等待时间超过了 n 毫秒，或调用 obj.notify()，obj.notifyAll()， t.interrupt()
+        - 竞争锁成功，t 线程从 TIMED_WAITING –> RUNNABLE
+        - 竞争锁失败，t 线程从 TIMED_WAITING –> BLOCKED
+6. RUNNABLE <–> TIMED_WAITING
+    - join (long n)
+    - 线程等待时间超过了 n 毫秒，或 t 线程运行结束，或调用了当前线程的 interrupt () 时
+7. RUNNABLE <–> TIMED_WAITING
+    - Thread.sleep (long n) 
+    - 当前线程等待时间超过了 n 毫秒
+8. RUNNABLE <–> TIMED_WAITING
+    -  LockSupport.parkNanos (long nanos) 或 LockSupport.parkUntil (long millis)
+    -  LockSupport.unpark(t1) 或调用了线程 的 interrupt () ，或是等待超时
+9. RUNNABLE <–> BLOCKED
+    - t 线程用 synchronized (obj) 获取了对象锁时如果竞争失败
+10. RUNNABLE <–> TERMINATED
+    - 当前线程所有代码运行完毕，进入 TERMINATED
