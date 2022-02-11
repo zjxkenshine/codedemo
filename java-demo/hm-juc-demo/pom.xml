@@ -16,6 +16,7 @@
         <module>chapter02-performance</module>
         <module>chapter03-twoparse</module>
         <module>chapter04_01-EliminateLocks</module>
+        <module>chapter05-JCStressOrdering</module>
     </modules>
 
     <dependencies>
