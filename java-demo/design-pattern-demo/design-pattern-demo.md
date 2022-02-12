@@ -32,3 +32,6 @@
 
 ## gof11_Composite 组合模式
 - test01：透明组合模式
+
+## gof12_Decorator 装饰器模式
+- test01：对房子进行装饰
