@@ -30,3 +30,5 @@
 ## gof10_Filter 过滤器模式
 - test01：过滤用户
 
+## gof11_Composite 组合模式
+- test01：透明组合模式
