@@ -22,6 +22,7 @@
         <module>java-basic-demo</module>
         <module>Log-demo</module>
         <module>hm-juc-demo</module>
+        <module>algorithm-demo</module>
     </modules>
 
     <dependencies>

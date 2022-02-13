@@ -2,6 +2,9 @@
 ## aes-cmac-demo
 aes-cmac 加密的demo
 
+## algorithm-demo
+左神算法demo
+
 ## design-pattern-demo
 偶尔写点设计模式
 
