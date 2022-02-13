@@ -38,3 +38,6 @@
 
 ## gof13_Facade 门面模式
 - test01：模拟代码生成
+
+## gof14_Flyweight 享元模式
+- test01：典型代码
