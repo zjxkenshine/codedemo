@@ -35,3 +35,6 @@
 
 ## gof12_Decorator 装饰器模式
 - test01：对房子进行装饰
+
+## gof13_Facade 门面模式
+- test01：模拟代码生成
