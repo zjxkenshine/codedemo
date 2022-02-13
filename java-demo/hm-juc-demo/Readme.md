@@ -15,6 +15,7 @@ B站同学笔记
     - chapter07：第七章
     - chapter08：第八章
     - chapter09：第九章
+    - chapter10：第十章
 - chapter02-performance：第二章，多线程与单线程JMH测试
 - chapter03-twoparse：第三章，线程两阶段终止
 - chapter04_01-EliminateLocks：第四章，锁消除
