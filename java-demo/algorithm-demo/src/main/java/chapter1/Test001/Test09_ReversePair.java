@@ -2,54 +2,59 @@ package chapter1.Test001;
 
 /**
  * @author ：kenshine
- * @date ：Created in 2022/2/15 19:40
- * @description：小和问题
+ * @date ：Created in 2022/2/15 21:05
+ * @description：逆序对问题
  * @modified By：
  * @version: $
- * 1 3 4 2 5
- * ↑
- * a
- * 位置a右移 计算每次左侧比该数小的数之和
- * - a=1 0
- * - a=3 1
- * - a=4 4
- * - a=2 1
- * - a=5 10
- * - 小和：16
- *
- * 要求：算法时间复杂度为O(n*logn)
+ * 一个数组中，如果左边的数比右边的数大，则这两个数构成一对逆序对，求数组中所有逆序对(非相邻也可)
+ * 如：3 2 4 5 0
+ * 包含的逆序对为：
+ * - 3-2 3-0
+ * - 2-0
+ * - 4-0
+ * - 5-0
+ * <p>
+ * 要求：时间复杂度O(n*logn)
+ * 暴力解法：遍历两遍
+ * <p>
+ * 归并扩展：
  * 思路：
- * - a=1 右边有4个数比1大，产生小和4
- * - a=3 右边有2个数比3大，产生小和6
- * - a=4 右边有1个数比4大，产生小和4
- * - a=2 右边有1个数比2大，产生小和2
- * - a=5 右边没有数比5大，产生小和0
- * - 小和：16
+ * 2 3 4|0 5
+ * ↑   ↑ ↑
+ * a   p1b
+ * ## 最外层循环
+ *b比a小，则b比a之后所有数都小，加上 p1-a+1个数，b右移
+ *b与a相同，a右移，不加数
+ *b比a大，a右移，不加数
+ *边界：b超出边界，不加数
+ *      a超出边界，不加数
  *
- * 引入归并思想：
- * 将数组归并排序，在归并排序比较大小时顺带计算小和
- * 如:
- * 1 3 4|2 5
- * ↑     ↑
- * a     b
- *
- * ## 这是最外面一轮，往下递归，其他轮次相同
- * a=1 b比a大 则右侧两个数都比1大 添加2个1=2，通过下标计算，而不是遍历
- * a右移=3 b比a小 b右移 b比a大 添加一个3
- * a右移=4 b比a大 添加一个4
- * 合并，得到总数 3+4+2=9
- * ## 下面的一轮 1 3|4
- * 得到总数 1+3=4
- * ## 2|5
- * 得到总数 2
- * ## 1|3
- * 得到总数1
- *
- * 将所有总数相加，得到：9+4+2+1=16
- * 注意：如果左侧=右侧，则右侧下标右移，不产生小和
+ *  3|2|4|5|0
+ *  \/    \/
+ *  23|4|05     2个
+ *   \/
+ *  234|05      0个
+ *   \/
+ *  23405       3个
+ *  总数：5个
  */
-public class Test08_SmallSum {
-    public static int smallSum(int[] arr) {
+public class Test09_ReversePair {
+
+    // 暴力解法
+    public static int comparator(int[] arr) {
+        int len = arr.length;
+        int sum = 0;
+        for (int i = 0; i < len; i++) {
+            for (int j = i; j < len; j++) {
+                if (arr[i] > arr[j]) {
+                    sum++;
+                }
+            }
+        }
+        return sum;
+    }
+
+    public static int reversePair(int[] arr) {
         if (arr == null || arr.length < 2) {
             return 0;
         }
@@ -66,46 +71,50 @@ public class Test08_SmallSum {
                 + merge(arr, l, mid, r);
     }
 
+    // 归并排序
+    // arr数组 l左边位置，m中间位置，r右边位置
     public static int merge(int[] arr, int l, int m, int r) {
-        // 复制数组
+        // 复制的数组
         int[] help = new int[r - l + 1];
+        // 逆序对数量
+        int sum = 0;
         // help数组下标
         int i = 0;
         // 左侧初始位置
         int p1 = l;
         // 右侧初始位置
         int p2 = m + 1;
-        // 求这个部分的小和
-        int res = 0;
 
+        // 都处在边界内
         while (p1 <= m && p2 <= r) {
-            res += arr[p1] < arr[p2] ? (r - p2 + 1) * arr[p1] : 0;
-            help[i++] = arr[p1] < arr[p2] ? arr[p1++] : arr[p2++];
+            // 左>右
+            if (arr[p1] > arr[p2]) {
+                // 将arr[p2]放入help数组,p2右移
+                help[i++] = arr[p2++];
+                // 添加逆序对 (num-p1+1)
+                sum += (m-p1+1);
+            } else{
+                // 将arr[p1] p1右移
+                help[i++] = arr[p1++];
+            }
         }
+
+        // 左侧处在边界内 右侧超出边界，添加剩余的数
         while (p1 <= m) {
             help[i++] = arr[p1++];
         }
+
+        // 右侧处在边界内 左侧超出边界，添加剩余的数
         while (p2 <= r) {
             help[i++] = arr[p2++];
         }
+
+        // 复制数组
         for (i = 0; i < help.length; i++) {
             arr[l + i] = help[i];
         }
-        return res;
-    }
 
-    // 暴力解法
-    public static int comparator(int[] arr) {
-        if (arr == null || arr.length < 2) {
-            return 0;
-        }
-        int res = 0;
-        for (int i = 1; i < arr.length; i++) {
-            for (int j = 0; j < i; j++) {
-                res += arr[j] < arr[i] ? arr[j] : 0;
-            }
-        }
-        return res;
+        return sum ;
     }
 
     // for test
@@ -130,25 +139,6 @@ public class Test08_SmallSum {
     }
 
     // for test
-    public static boolean isEqual(int[] arr1, int[] arr2) {
-        if ((arr1 == null && arr2 != null) || (arr1 != null && arr2 == null)) {
-            return false;
-        }
-        if (arr1 == null && arr2 == null) {
-            return true;
-        }
-        if (arr1.length != arr2.length) {
-            return false;
-        }
-        for (int i = 0; i < arr1.length; i++) {
-            if (arr1[i] != arr2[i]) {
-                return false;
-            }
-        }
-        return true;
-    }
-
-    // for test
     public static void printArray(int[] arr) {
         if (arr == null) {
             return;
@@ -161,6 +151,11 @@ public class Test08_SmallSum {
 
     // for test
     public static void main(String[] args) {
+        //int[] arr = {3, 2, 4, 5, 0,0};
+        int[] arr = {-71,-2,-32,-78,57,7,-5,-4,34,6,39,-4,72,-27,-33,7,5,-49,8,52,-6,-42,0,-18,1,-27,24,-76,15,-1,12,-5};
+        System.out.println(comparator(arr));
+        System.out.println(reversePair(arr));
+
         int testTime = 500000;
         int maxSize = 100;
         int maxValue = 100;
@@ -168,9 +163,11 @@ public class Test08_SmallSum {
         for (int i = 0; i < testTime; i++) {
             int[] arr1 = generateRandomArray(maxSize, maxValue);
             int[] arr2 = copyArray(arr1);
-            if (smallSum(arr1) != comparator(arr2)) {
+            if (reversePair(arr1) != comparator(arr2)) {
                 succeed = false;
+                System.out.println(reversePair(arr1));
                 printArray(arr1);
+                System.out.println(comparator(arr2));
                 printArray(arr2);
                 break;
             }
