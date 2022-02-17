@@ -14,5 +14,9 @@
         - Test07_MergeSort：归并排序
         - Test08_SmallSum：归并扩展，小和问题求解
         - Test09_ReversePair：归并扩展，逆序对问题求解
+        - Test10_SmallNumLeft：快排基础，数组分区
+        - Test11_DutchNationalFlag：快排基础，荷兰国旗问题
+        - Test12_QuickSort：快排代码示例
+
 
 

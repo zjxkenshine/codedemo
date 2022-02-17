@@ -23,20 +23,20 @@ package chapter1.Test001;
  * ↑   ↑ ↑
  * a   p1b
  * ## 最外层循环
- *b比a小，则b比a之后所有数都小，加上 p1-a+1个数，b右移
- *b与a相同，a右移，不加数
- *b比a大，a右移，不加数
- *边界：b超出边界，不加数
- *      a超出边界，不加数
- *
- *  3|2|4|5|0
- *  \/    \/
- *  23|4|05     2个
- *   \/
- *  234|05      0个
- *   \/
- *  23405       3个
- *  总数：5个
+ * b比a小，则b比a之后所有数都小，加上 p1-a+1个数，b右移
+ * b与a相同，a右移，不加数
+ * b比a大，a右移，不加数
+ * 边界：b超出边界，不加数
+ * a超出边界，不加数
+ * <p>
+ * 3|2|4|5|0
+ * \/    \/
+ * 23|4|05     2个
+ * \/
+ * 234|05      0个
+ * \/
+ * 23405       3个
+ * 总数：5个
  */
 public class Test09_ReversePair {
 
@@ -92,8 +92,8 @@ public class Test09_ReversePair {
                 // 将arr[p2]放入help数组,p2右移
                 help[i++] = arr[p2++];
                 // 添加逆序对 (num-p1+1)
-                sum += (m-p1+1);
-            } else{
+                sum += (m - p1 + 1);
+            } else {
                 // 将arr[p1] p1右移
                 help[i++] = arr[p1++];
             }
@@ -114,10 +114,10 @@ public class Test09_ReversePair {
             arr[l + i] = help[i];
         }
 
-        return sum ;
+        return sum;
     }
 
-    // for test
+    // 生成随机数组
     public static int[] generateRandomArray(int maxSize, int maxValue) {
         int[] arr = new int[(int) ((maxSize + 1) * Math.random())];
         for (int i = 0; i < arr.length; i++) {
@@ -126,7 +126,7 @@ public class Test09_ReversePair {
         return arr;
     }
 
-    // for test
+    // 拷贝数组
     public static int[] copyArray(int[] arr) {
         if (arr == null) {
             return null;
@@ -149,10 +149,10 @@ public class Test09_ReversePair {
         System.out.println();
     }
 
-    // for test
+    // main方法
     public static void main(String[] args) {
         //int[] arr = {3, 2, 4, 5, 0,0};
-        int[] arr = {-71,-2,-32,-78,57,7,-5,-4,34,6,39,-4,72,-27,-33,7,5,-49,8,52,-6,-42,0,-18,1,-27,24,-76,15,-1,12,-5};
+        int[] arr = {-71, -2, -32, -78, 57, 7, -5, -4, 34, 6, 39, -4, 72, -27, -33, 7, 5, -49, 8, 52, -6, -42, 0, -18, 1, -27, 24, -76, 15, -1, 12, -5};
         System.out.println(comparator(arr));
         System.out.println(reversePair(arr));
 

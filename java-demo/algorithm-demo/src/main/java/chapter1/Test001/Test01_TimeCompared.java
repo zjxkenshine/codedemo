@@ -7,7 +7,7 @@ package chapter1.Test001;
  * @modified By：
  * @version: $
  */
-public class Test01 {
+public class Test01_TimeCompared {
     public static void process1(){
         int N = 1000;
         int a = 0;
