@@ -17,6 +17,11 @@
         - Test10_SmallNumLeft：快排基础，数组分区
         - Test11_DutchNationalFlag：快排基础，荷兰国旗问题
         - Test12_QuickSort：快排代码示例
+        - Test13_HeapSort：堆排序示例
+        - Test14_HeapSortExtend：堆排序扩展，小根堆
+        - Test15_Comparator：比较器示例
+        - Test16_CountSort：桶排序——计数排序
+        - Test17_RadixSort：桶排序——基数排序
 
 
 
