@@ -1,75 +1,32 @@
-package chapter1.Test001;
+package chapter1.Test01_Sort;
 
 import java.util.Arrays;
 
 /**
  * @author ：kenshine
- * @date ：Created in 2022/2/17 17:42
- * @description：堆排序
+ * @date ：Created in 2022/2/14 23:18
+ * @description： 插入排序
  * @modified By：
  * @version: $
  */
-public class Test13_HeapSort {
-    public static void heapSort(int[] arr) {
-        // 堆大小于2
+public class Test05_InsertSort {
+    public static void insertionSort(int[] arr) {
         if (arr == null || arr.length < 2) {
             return;
         }
-        // 构建堆
-        for (int i = 0; i < arr.length; i++) {
-            heapInsert(arr, i);
-        }
-        // size
-        int size = arr.length;
-        // 1.交换堆顶和最后一个数，0~n-1继续堆化
-        swap(arr, 0, --size);
-        while (size > 0) {
-            heapify(arr, 0, size);
-            swap(arr, 0, --size);
-        }
-    }
-
-    // 插入数据到大根堆
-    public static void heapInsert(int[] arr, int index) {
-        // 比顶点大
-        while (arr[index] > arr[(index - 1) / 2]) {
-            // 交换这个数据和顶点
-            swap(arr, index, (index - 1) /2);
-            // 当前顶点移动到父节点
-            index = (index - 1)/2 ;
-        }
-    }
-
-    /**
-     * 堆化
-     * @param arr 数组
-     * @param index 索引
-     * @param HeapSize 堆长度
-     */
-    public static void heapify(int[] arr, int index, int HeapSize) {
-        // 左孩子下标
-        int left = index * 2 + 1;
-        // 下方还有孩子时 左孩子比右孩子下标小
-        while (left < HeapSize) {
-            // 两个孩子中大的值
-            int largest = left + 1 < HeapSize && arr[left + 1] > arr[left] ? left + 1 : left;
-            // 父节点与孩子之间较大值的下标
-            largest = arr[largest] > arr[index] ? largest : index;
-            // 父节点大，结束
-            if (largest == index) {
-                break;
+        for (int i = 1; i < arr.length; i++) {
+            for (int j = i - 1; j >= 0 && arr[j] > arr[j + 1]; j--) {
+                swap(arr, j, j + 1);
             }
-            swap(arr, largest, index);
-            index = largest;
-            left = index * 2 + 1;
         }
     }
 
     public static void swap(int[] arr, int i, int j) {
-        int tmp = arr[i];
-        arr[i] = arr[j];
-        arr[j] = tmp;
+        arr[i] = arr[i] ^ arr[j];
+        arr[j] = arr[i] ^ arr[j];
+        arr[i] = arr[i] ^ arr[j];
     }
+
 
     // for test
     public static void comparator(int[] arr) {
@@ -127,7 +84,7 @@ public class Test13_HeapSort {
         System.out.println();
     }
 
-    // 测试
+    // for test
     public static void main(String[] args) {
         int testTime = 500000;
         int maxSize = 100;
@@ -136,7 +93,7 @@ public class Test13_HeapSort {
         for (int i = 0; i < testTime; i++) {
             int[] arr1 = generateRandomArray(maxSize, maxValue);
             int[] arr2 = copyArray(arr1);
-            heapSort(arr1);
+            insertionSort(arr1);
             comparator(arr2);
             if (!isEqual(arr1, arr2)) {
                 succeed = false;
@@ -147,7 +104,7 @@ public class Test13_HeapSort {
 
         int[] arr = generateRandomArray(maxSize, maxValue);
         printArray(arr);
-        heapSort(arr);
+        insertionSort(arr);
         printArray(arr);
     }
 }

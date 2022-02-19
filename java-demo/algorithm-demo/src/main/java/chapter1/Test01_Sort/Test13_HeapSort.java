@@ -1,37 +1,74 @@
-package chapter1.Test001;
+package chapter1.Test01_Sort;
 
 import java.util.Arrays;
 
 /**
  * @author ：kenshine
- * @date ：Created in 2022/2/18 15:22
- * @description：计数排序
+ * @date ：Created in 2022/2/17 17:42
+ * @description：堆排序
  * @modified By：
  * @version: $
  */
-public class Test16_CountSort {
-    // arr中只有0~200的值
-    public static void countSort(int[] arr) {
+public class Test13_HeapSort {
+    public static void heapSort(int[] arr) {
+        // 堆大小于2
         if (arr == null || arr.length < 2) {
             return;
         }
-        // 数组中的最大值
-        int max = Integer.MIN_VALUE;
+        // 构建堆
         for (int i = 0; i < arr.length; i++) {
-            max = Math.max(max, arr[i]);
+            heapInsert(arr, i);
         }
-        // 200长度的桶
-        int[] bucket = new int[max + 1];
-        // 对应桶下标数值加一
-        for (int i = 0; i < arr.length; i++) {
-            bucket[arr[i]]++;
+        // size
+        int size = arr.length;
+        // 1.交换堆顶和最后一个数，0~n-1继续堆化
+        swap(arr, 0, --size);
+        while (size > 0) {
+            heapify(arr, 0, size);
+            swap(arr, 0, --size);
         }
-        int i = 0;
-        for (int j = 0; j < bucket.length; j++) {
-            while (bucket[j]-- > 0) {
-                arr[i++] = j;
+    }
+
+    // 插入数据到大根堆
+    public static void heapInsert(int[] arr, int index) {
+        // 比顶点大
+        while (arr[index] > arr[(index - 1) / 2]) {
+            // 交换这个数据和顶点
+            swap(arr, index, (index - 1) /2);
+            // 当前顶点移动到父节点
+            index = (index - 1)/2 ;
+        }
+    }
+
+    /**
+     * 堆化
+     * @param arr 数组
+     * @param index 索引
+     * @param HeapSize 堆长度
+     */
+    public static void heapify(int[] arr, int index, int HeapSize) {
+        // 左孩子下标
+        int left = index * 2 + 1;
+        // 下方还有孩子时 左孩子比右孩子下标小
+        while (left < HeapSize) {
+            // 两个孩子中大的值
+            int largest = left + 1 < HeapSize && arr[left + 1] > arr[left] ? left + 1 : left;
+            // 父节点与孩子之间较大值的下标
+            largest = arr[largest] > arr[index] ? largest : index;
+            // 父节点大，结束
+            if (largest == index) {
+                break;
             }
+            swap(arr, largest, index);
+            index = largest;
+            left = index * 2 + 1;
         }
+    }
+
+    public static void swap(int[] arr, int i, int j) {
+        int tmp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = tmp;
     }
 
     // for test
@@ -39,16 +76,16 @@ public class Test16_CountSort {
         Arrays.sort(arr);
     }
 
-    // 生成随机数组
+    // for test
     public static int[] generateRandomArray(int maxSize, int maxValue) {
         int[] arr = new int[(int) ((maxSize + 1) * Math.random())];
         for (int i = 0; i < arr.length; i++) {
-            arr[i] = (int) ((maxValue + 1) * Math.random());
+            arr[i] = (int) ((maxValue + 1) * Math.random()) - (int) (maxValue * Math.random());
         }
         return arr;
     }
 
-    // 复制数组
+    // for test
     public static int[] copyArray(int[] arr) {
         if (arr == null) {
             return null;
@@ -60,7 +97,7 @@ public class Test16_CountSort {
         return res;
     }
 
-    // 是否相同
+    // for test
     public static boolean isEqual(int[] arr1, int[] arr2) {
         if ((arr1 == null && arr2 != null) || (arr1 != null && arr2 == null)) {
             return false;
@@ -79,7 +116,7 @@ public class Test16_CountSort {
         return true;
     }
 
-    // 打印数组
+    // for test
     public static void printArray(int[] arr) {
         if (arr == null) {
             return;
@@ -94,17 +131,15 @@ public class Test16_CountSort {
     public static void main(String[] args) {
         int testTime = 500000;
         int maxSize = 100;
-        int maxValue = 150;
+        int maxValue = 100;
         boolean succeed = true;
         for (int i = 0; i < testTime; i++) {
             int[] arr1 = generateRandomArray(maxSize, maxValue);
             int[] arr2 = copyArray(arr1);
-            countSort(arr1);
+            heapSort(arr1);
             comparator(arr2);
             if (!isEqual(arr1, arr2)) {
                 succeed = false;
-                printArray(arr1);
-                printArray(arr2);
                 break;
             }
         }
@@ -112,8 +147,7 @@ public class Test16_CountSort {
 
         int[] arr = generateRandomArray(maxSize, maxValue);
         printArray(arr);
-        countSort(arr);
+        heapSort(arr);
         printArray(arr);
-
     }
 }

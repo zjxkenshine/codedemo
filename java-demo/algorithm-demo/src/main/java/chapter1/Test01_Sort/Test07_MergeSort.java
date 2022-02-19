@@ -1,85 +1,38 @@
-package chapter1.Test001;
+package chapter1.Test01_Sort;
+
+import java.util.Arrays;
 
 /**
  * @author ：kenshine
- * @date ：Created in 2022/2/15 19:40
- * @description：小和问题
+ * @date ：Created in 2022/2/15 18:22
+ * @description：归并排序
  * @modified By：
  * @version: $
- * 1 3 4 2 5
- * ↑
- * a
- * 位置a右移 计算每次左侧比该数小的数之和
- * - a=1 0
- * - a=3 1
- * - a=4 4
- * - a=2 1
- * - a=5 10
- * - 小和：16
- *
- * 要求：算法时间复杂度为O(n*logn)
- * 思路：
- * - a=1 右边有4个数比1大，产生小和4
- * - a=3 右边有2个数比3大，产生小和6
- * - a=4 右边有1个数比4大，产生小和4
- * - a=2 右边有1个数比2大，产生小和2
- * - a=5 右边没有数比5大，产生小和0
- * - 小和：16
- *
- * 引入归并思想：
- * 将数组归并排序，在归并排序比较大小时顺带计算小和
- * 如:
- * 1 3 4|2 5
- * ↑     ↑
- * a     b
- *
- * ## 这是最外面一轮，往下递归，其他轮次相同
- * a=1 b比a大 则右侧两个数都比1大 添加2个1=2，通过下标计算，而不是遍历
- * a右移=3 b比a小 b右移 b比a大 添加一个3
- * a右移=4 b比a大 添加一个4
- * 合并，得到总数 3+4+2=9
- * ## 下面的一轮 1 3|4
- * 得到总数 1+3=4
- * ## 2|5
- * 得到总数 2
- * ## 1|3
- * 得到总数1
- *
- * 将所有总数相加，得到：9+4+2+1=16
- * 注意：如果左侧=右侧，则右侧下标右移，不产生小和
  */
-public class Test08_SmallSum {
-    public static int smallSum(int[] arr) {
+public class Test07_MergeSort {
+    public static void mergeSort(int[] arr) {
         if (arr == null || arr.length < 2) {
-            return 0;
+            return;
         }
-        return mergeSort(arr, 0, arr.length - 1);
+        mergeSort(arr, 0, arr.length - 1);
     }
 
-    public static int mergeSort(int[] arr, int l, int r) {
+    public static void mergeSort(int[] arr, int l, int r) {
         if (l == r) {
-            return 0;
+            return;
         }
         int mid = l + ((r - l) >> 1);
-        return mergeSort(arr, l, mid)
-                + mergeSort(arr, mid + 1, r)
-                + merge(arr, l, mid, r);
+        mergeSort(arr, l, mid);
+        mergeSort(arr, mid + 1, r);
+        merge(arr, l, mid, r);
     }
 
-    public static int merge(int[] arr, int l, int m, int r) {
-        // 复制数组
+    public static void merge(int[] arr, int l, int m, int r) {
         int[] help = new int[r - l + 1];
-        // help数组下标
         int i = 0;
-        // 左侧初始位置
         int p1 = l;
-        // 右侧初始位置
         int p2 = m + 1;
-        // 求这个部分的小和
-        int res = 0;
-
         while (p1 <= m && p2 <= r) {
-            res += arr[p1] < arr[p2] ? (r - p2 + 1) * arr[p1] : 0;
             help[i++] = arr[p1] < arr[p2] ? arr[p1++] : arr[p2++];
         }
         while (p1 <= m) {
@@ -91,21 +44,11 @@ public class Test08_SmallSum {
         for (i = 0; i < help.length; i++) {
             arr[l + i] = help[i];
         }
-        return res;
     }
 
-    // 暴力解法
-    public static int comparator(int[] arr) {
-        if (arr == null || arr.length < 2) {
-            return 0;
-        }
-        int res = 0;
-        for (int i = 1; i < arr.length; i++) {
-            for (int j = 0; j < i; j++) {
-                res += arr[j] < arr[i] ? arr[j] : 0;
-            }
-        }
-        return res;
+    // for test
+    public static void comparator(int[] arr) {
+        Arrays.sort(arr);
     }
 
     // for test
@@ -168,7 +111,9 @@ public class Test08_SmallSum {
         for (int i = 0; i < testTime; i++) {
             int[] arr1 = generateRandomArray(maxSize, maxValue);
             int[] arr2 = copyArray(arr1);
-            if (smallSum(arr1) != comparator(arr2)) {
+            mergeSort(arr1);
+            comparator(arr2);
+            if (!isEqual(arr1, arr2)) {
                 succeed = false;
                 printArray(arr1);
                 printArray(arr2);
@@ -176,5 +121,10 @@ public class Test08_SmallSum {
             }
         }
         System.out.println(succeed ? "Nice!" : "Fucking fucked!");
+
+        int[] arr = generateRandomArray(maxSize, maxValue);
+        printArray(arr);
+        mergeSort(arr);
+        printArray(arr);
     }
 }

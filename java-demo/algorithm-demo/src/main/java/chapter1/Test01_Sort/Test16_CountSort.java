@@ -1,33 +1,37 @@
-package chapter1.Test001;
+package chapter1.Test01_Sort;
 
 import java.util.Arrays;
 
 /**
  * @author ：kenshine
- * @date ：Created in 2022/2/14 15:55
- * @description： 选择排序算法
+ * @date ：Created in 2022/2/18 15:22
+ * @description：计数排序
  * @modified By：
  * @version: $
  */
-public class Test02_SelectionSort {
-    public static void selectionSort(int[] arr) {
-        // 排除干扰条件
+public class Test16_CountSort {
+    // arr中只有0~200的值
+    public static void countSort(int[] arr) {
         if (arr == null || arr.length < 2) {
             return;
         }
-        for (int i = 0; i < arr.length - 1; i++) {
-            int minIndex = i;
-            for (int j = i + 1; j < arr.length; j++) {
-                minIndex = arr[j] < arr[minIndex] ? j : minIndex;
-            }
-            swap(arr, i, minIndex);
+        // 数组中的最大值
+        int max = Integer.MIN_VALUE;
+        for (int i = 0; i < arr.length; i++) {
+            max = Math.max(max, arr[i]);
         }
-    }
-
-    public static void swap(int[] arr, int i, int j) {
-        int tmp = arr[i];
-        arr[i] = arr[j];
-        arr[j] = tmp;
+        // 200长度的桶
+        int[] bucket = new int[max + 1];
+        // 对应桶下标数值加一
+        for (int i = 0; i < arr.length; i++) {
+            bucket[arr[i]]++;
+        }
+        int i = 0;
+        for (int j = 0; j < bucket.length; j++) {
+            while (bucket[j]-- > 0) {
+                arr[i++] = j;
+            }
+        }
     }
 
     // for test
@@ -35,16 +39,16 @@ public class Test02_SelectionSort {
         Arrays.sort(arr);
     }
 
-    // for test
+    // 生成随机数组
     public static int[] generateRandomArray(int maxSize, int maxValue) {
         int[] arr = new int[(int) ((maxSize + 1) * Math.random())];
         for (int i = 0; i < arr.length; i++) {
-            arr[i] = (int) ((maxValue + 1) * Math.random()) - (int) (maxValue * Math.random());
+            arr[i] = (int) ((maxValue + 1) * Math.random());
         }
         return arr;
     }
 
-    // for test
+    // 复制数组
     public static int[] copyArray(int[] arr) {
         if (arr == null) {
             return null;
@@ -56,7 +60,7 @@ public class Test02_SelectionSort {
         return res;
     }
 
-    // for test
+    // 是否相同
     public static boolean isEqual(int[] arr1, int[] arr2) {
         if ((arr1 == null && arr2 != null) || (arr1 != null && arr2 == null)) {
             return false;
@@ -75,7 +79,7 @@ public class Test02_SelectionSort {
         return true;
     }
 
-    // for test
+    // 打印数组
     public static void printArray(int[] arr) {
         if (arr == null) {
             return;
@@ -86,16 +90,16 @@ public class Test02_SelectionSort {
         System.out.println();
     }
 
-    // for test
+    // 测试
     public static void main(String[] args) {
         int testTime = 500000;
         int maxSize = 100;
-        int maxValue = 100;
+        int maxValue = 150;
         boolean succeed = true;
         for (int i = 0; i < testTime; i++) {
             int[] arr1 = generateRandomArray(maxSize, maxValue);
             int[] arr2 = copyArray(arr1);
-            selectionSort(arr1);
+            countSort(arr1);
             comparator(arr2);
             if (!isEqual(arr1, arr2)) {
                 succeed = false;
@@ -105,9 +109,11 @@ public class Test02_SelectionSort {
             }
         }
         System.out.println(succeed ? "Nice!" : "Fucking fucked!");
+
         int[] arr = generateRandomArray(maxSize, maxValue);
         printArray(arr);
-        selectionSort(arr);
+        countSort(arr);
         printArray(arr);
+
     }
 }
