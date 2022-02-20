@@ -30,6 +30,7 @@
         - Test05_IsPalindrom3：判断一个链表是否是回文结构
         - Test06_SmallerEqualBigger：将单向链表按某值划分成左边小、中间相等、右边大的形式
         - Test07_CopyListWithRandom：复制含有随机指针节点的链表
+        - Test08_FindFirstIntersectNode：找到两个链表第一个相交的节点
 
 
 

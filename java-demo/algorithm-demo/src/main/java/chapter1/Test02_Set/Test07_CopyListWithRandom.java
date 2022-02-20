@@ -1,5 +1,7 @@
 package chapter1.Test02_Set;
 
+import java.util.HashMap;
+
 /**
  * @author ：kenshine
  * @date ：Created in 2022/2/19 19:02
@@ -40,158 +42,113 @@ public class Test07_CopyListWithRandom {
     public static class Node {
         public int value;
         public Node next;
+        public Node rand;
 
         public Node(int data) {
             this.value = data;
         }
     }
 
-    public static Node getIntersectNode(Node head1, Node head2) {
-        if (head1 == null || head2 == null) {
-            return null;
+    public static Node copyListWithRand1(Node head) {
+        HashMap<Node, Node> map = new HashMap<Node, Node>();
+        Node cur = head;
+        while (cur != null) {
+            map.put(cur, new Node(cur.value));
+            cur = cur.next;
         }
-        Node loop1 = getLoopNode(head1);
-        Node loop2 = getLoopNode(head2);
-        if (loop1 == null && loop2 == null) {
-            return noLoop(head1, head2);
+        cur = head;
+        while (cur != null) {
+            map.get(cur).next = map.get(cur.next);
+            map.get(cur).rand = map.get(cur.rand);
+            cur = cur.next;
         }
-        if (loop1 != null && loop2 != null) {
-            return bothLoop(head1, loop1, head2, loop2);
-        }
-        return null;
+        return map.get(head);
     }
 
-    public static Node getLoopNode(Node head) {
-        if (head == null || head.next == null || head.next.next == null) {
+    public static Node copyListWithRand2(Node head) {
+        if (head == null) {
             return null;
         }
-        Node n1 = head.next; // n1 -> slow
-        Node n2 = head.next.next; // n2 -> fast
-        while (n1 != n2) {
-            if (n2.next == null || n2.next.next == null) {
-                return null;
-            }
-            n2 = n2.next.next;
-            n1 = n1.next;
+        Node cur = head;
+        Node next = null;
+        // copy node and link to every node
+        while (cur != null) {
+            next = cur.next;
+            cur.next = new Node(cur.value);
+            cur.next.next = next;
+            cur = next;
         }
-        n2 = head; // n2 -> walk again from head
-        while (n1 != n2) {
-            n1 = n1.next;
-            n2 = n2.next;
+        cur = head;
+        Node curCopy = null;
+        // set copy node rand
+        while (cur != null) {
+            next = cur.next.next;
+            curCopy = cur.next;
+            curCopy.rand = cur.rand != null ? cur.rand.next : null;
+            cur = next;
         }
-        return n1;
+        Node res = head.next;
+        cur = head;
+        // split
+        while (cur != null) {
+            next = cur.next.next;
+            curCopy = cur.next;
+            cur.next = next;
+            curCopy.next = next != null ? next.next : null;
+            cur = next;
+        }
+        return res;
     }
 
-    public static Node noLoop(Node head1, Node head2) {
-        if (head1 == null || head2 == null) {
-            return null;
+    public static void printRandLinkedList(Node head) {
+        Node cur = head;
+        System.out.print("order: ");
+        while (cur != null) {
+            System.out.print(cur.value + " ");
+            cur = cur.next;
         }
-        Node cur1 = head1;
-        Node cur2 = head2;
-        int n = 0;
-        while (cur1.next != null) {
-            n++;
-            cur1 = cur1.next;
+        System.out.println();
+        cur = head;
+        System.out.print("rand:  ");
+        while (cur != null) {
+            System.out.print(cur.rand == null ? "- " : cur.rand.value + " ");
+            cur = cur.next;
         }
-        while (cur2.next != null) {
-            n--;
-            cur2 = cur2.next;
-        }
-        if (cur1 != cur2) {
-            return null;
-        }
-        cur1 = n > 0 ? head1 : head2;
-        cur2 = cur1 == head1 ? head2 : head1;
-        n = Math.abs(n);
-        while (n != 0) {
-            n--;
-            cur1 = cur1.next;
-        }
-        while (cur1 != cur2) {
-            cur1 = cur1.next;
-            cur2 = cur2.next;
-        }
-        return cur1;
-    }
-
-    public static Node bothLoop(Node head1, Node loop1, Node head2, Node loop2) {
-        Node cur1 = null;
-        Node cur2 = null;
-        if (loop1 == loop2) {
-            cur1 = head1;
-            cur2 = head2;
-            int n = 0;
-            while (cur1 != loop1) {
-                n++;
-                cur1 = cur1.next;
-            }
-            while (cur2 != loop2) {
-                n--;
-                cur2 = cur2.next;
-            }
-            cur1 = n > 0 ? head1 : head2;
-            cur2 = cur1 == head1 ? head2 : head1;
-            n = Math.abs(n);
-            while (n != 0) {
-                n--;
-                cur1 = cur1.next;
-            }
-            while (cur1 != cur2) {
-                cur1 = cur1.next;
-                cur2 = cur2.next;
-            }
-            return cur1;
-        } else {
-            cur1 = loop1.next;
-            while (cur1 != loop1) {
-                if (cur1 == loop2) {
-                    return loop1;
-                }
-                cur1 = cur1.next;
-            }
-            return null;
-        }
+        System.out.println();
     }
 
     public static void main(String[] args) {
-        // 1->2->3->4->5->6->7->null
-        Node head1 = new Node(1);
-        head1.next = new Node(2);
-        head1.next.next = new Node(3);
-        head1.next.next.next = new Node(4);
-        head1.next.next.next.next = new Node(5);
-        head1.next.next.next.next.next = new Node(6);
-        head1.next.next.next.next.next.next = new Node(7);
+        Node head = null;
+        Node res1 = null;
+        Node res2 = null;
+        printRandLinkedList(head);
+        res1 = copyListWithRand1(head);
+        printRandLinkedList(res1);
+        res2 = copyListWithRand2(head);
+        printRandLinkedList(res2);
+        printRandLinkedList(head);
+        System.out.println("=========================");
 
-        // 0->9->8->6->7->null
-        Node head2 = new Node(0);
-        head2.next = new Node(9);
-        head2.next.next = new Node(8);
-        head2.next.next.next = head1.next.next.next.next.next; // 8->6
-        System.out.println(getIntersectNode(head1, head2).value);
+        head = new Node(1);
+        head.next = new Node(2);
+        head.next.next = new Node(3);
+        head.next.next.next = new Node(4);
+        head.next.next.next.next = new Node(5);
+        head.next.next.next.next.next = new Node(6);
 
-        // 1->2->3->4->5->6->7->4...
-        head1 = new Node(1);
-        head1.next = new Node(2);
-        head1.next.next = new Node(3);
-        head1.next.next.next = new Node(4);
-        head1.next.next.next.next = new Node(5);
-        head1.next.next.next.next.next = new Node(6);
-        head1.next.next.next.next.next.next = new Node(7);
-        head1.next.next.next.next.next.next = head1.next.next.next; // 7->4
+        head.rand = head.next.next.next.next.next; // 1 -> 6
+        head.next.rand = head.next.next.next.next.next; // 2 -> 6
+        head.next.next.rand = head.next.next.next.next; // 3 -> 5
+        head.next.next.next.rand = head.next.next; // 4 -> 3
+        head.next.next.next.next.rand = null; // 5 -> null
+        head.next.next.next.next.next.rand = head.next.next.next; // 6 -> 4
 
-        // 0->9->8->2...
-        head2 = new Node(0);
-        head2.next = new Node(9);
-        head2.next.next = new Node(8);
-        head2.next.next.next = head1.next; // 8->2
-        System.out.println(getIntersectNode(head1, head2).value);
-
-        // 0->9->8->6->4->5->6..
-        head2 = new Node(0);
-        head2.next = new Node(9);
-        head2.next.next = new Node(8);
-        head2.next.next.next = head1.next.next.next.next.next; // 8->6
-        System.out.println(getIntersectNode(head1, head2).value);
+        printRandLinkedList(head);
+        res1 = copyListWithRand1(head);
+        printRandLinkedList(res1);
+        res2 = copyListWithRand2(head);
+        printRandLinkedList(res2);
+        printRandLinkedList(head);
+        System.out.println("=========================");
     }
 }
