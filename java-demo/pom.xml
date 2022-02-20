@@ -23,6 +23,7 @@
         <module>Log-demo</module>
         <module>hm-juc-demo</module>
         <module>algorithm-demo</module>
+        <module>jsoup-demo</module>
     </modules>
 
     <dependencies>
