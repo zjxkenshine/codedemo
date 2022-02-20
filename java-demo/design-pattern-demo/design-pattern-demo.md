@@ -41,3 +41,6 @@
 
 ## gof14_Flyweight 享元模式
 - test01：典型代码
+
+## gof15_Proxy 代理模式
+- test01：静态代理模式
