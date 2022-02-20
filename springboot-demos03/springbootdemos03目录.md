@@ -101,3 +101,6 @@ ByteBuddy 动态生成java class类
 
 ## 232.springbootdemo232-Msgpack
 msgpack-java 序列化与反序列化
+
+## 233.springbootdemo233-JavaSizeOf
+java-sizeof 计算对象占用

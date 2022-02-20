@@ -41,6 +41,7 @@
         <module>springbootdemo230-Commons-Weaver</module>
         <module>springbootdemo231-ByteBuddy</module>
         <module>springbootdemo232-Msgpack</module>
+        <module>springbootdemo233-JavaSizeOf</module>
     </modules>
 
     <packaging>pom</packaging>
