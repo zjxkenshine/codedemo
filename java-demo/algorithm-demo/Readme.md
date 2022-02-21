@@ -31,6 +31,16 @@
         - Test06_SmallerEqualBigger：将单向链表按某值划分成左边小、中间相等、右边大的形式
         - Test07_CopyListWithRandom：复制含有随机指针节点的链表
         - Test08_FindFirstIntersectNode：找到两个链表第一个相交的节点
-
+    - Test03_Tree：树
+        - Test01_PreInPosTraversal：先，中，后序遍历的递归/非递归实现
+        - Test02_PrintBinaryTree：打印二叉树方法
+        - Test03_TreeMaxWidth：二叉树的最大宽度
+        - Test04_IsBST：是否是二叉搜索树
+        - Test05_IsCBT：是否是完全二叉树
+        - Test06_IsFBT：是否是满二叉树
+        - Test07_IsAVL：是否平衡二叉树
+        - Test08_LowestCommonAncestor：给定两个二叉树的节点node1和node2，找到他们的最低公共祖先节点
+        - Test09_LowestCommonAncestor02：最低公共祖先节点 使用map和Set
+        
 
 
