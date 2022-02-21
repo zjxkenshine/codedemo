@@ -44,3 +44,6 @@
 
 ## gof15_Proxy 代理模式
 - test01：静态代理模式
+
+## gof16_Template 模板方法模式
+- test01：末班
