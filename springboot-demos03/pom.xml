@@ -42,6 +42,7 @@
         <module>springbootdemo231-ByteBuddy</module>
         <module>springbootdemo232-Msgpack</module>
         <module>springbootdemo233-JavaSizeOf</module>
+        <module>springbootdemo234-JOL</module>
     </modules>
 
     <packaging>pom</packaging>
