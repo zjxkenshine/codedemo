@@ -46,4 +46,8 @@
 - test01：静态代理模式
 
 ## gof16_Template 模板方法模式
-- test01：末班
+- test01：通用代码
+
+## gof17_Strategy 策略模式
+- test01：收费策略
+
