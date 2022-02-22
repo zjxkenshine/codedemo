@@ -41,6 +41,7 @@
         - Test07_IsAVL：是否平衡二叉树
         - Test08_LowestCommonAncestor：给定两个二叉树的节点node1和node2，找到他们的最低公共祖先节点
         - Test09_LowestCommonAncestor02：最低公共祖先节点 使用map和Set
-        
+        - Test10_SuccessorNode：求后继节点
+        - Test11_SerializeAndReconstructTree：二叉树序列化和反序列化
 
 
