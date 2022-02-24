@@ -48,6 +48,14 @@
         - Test02_DFS：深度优先遍历
         - Test03_TopologySort：拓扑排序
         - Test04_Kruskal：Kruskal算法 最小生成树
-        - Test05_Kruskal02：Kruskal算法
+        - Test05_Kruskal02：Kruskal算法 最小生成树
         - Test06_Prim：Prim算法 最小生成树
         - Test07_Dijkstra：Dijkstra算法 最短路径
+    - Test05_TrieAndGreedy：前缀树与贪心算法
+        - Test01_TrieTree：前缀树(1)
+        - Test02_TrieTree：前缀树(2)
+        - Test03_BestArrange：会议室最多会议分配问题
+        - Test04_LowestLexicography：字符串最小字典序问题
+        - Test05_LessMoneySplitGold：最少代价分金条问题
+        - Test06_IPO：项目花费与利润
+        - Test07_MadianQuick：中位数
