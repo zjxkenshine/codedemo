@@ -51,3 +51,5 @@
 ## gof17_Strategy 策略模式
 - test01：收费策略
 
+## gof18_Observer 观察者模式
+- test01：示例代码
