@@ -85,19 +85,27 @@ public class Test07_Dijkstra {
             return size == 0;
         }
 
+        /**
+         * @param node
+         * @param distance 新发现节点的距离
+         */
         public void addOrUpdateOrIgnore(Node node, int distance) {
+            // 在堆上
             if (inHeap(node)) {
                 distanceMap.put(node, Math.min(distanceMap.get(node), distance));
                 insertHeapify(node, heapIndexMap.get(node));
             }
+            // 未进入堆
             if (!isEntered(node)) {
                 nodes[size] = node;
                 heapIndexMap.put(node, size);
                 distanceMap.put(node, distance);
+                // 添加时堆化
                 insertHeapify(node, size++);
             }
         }
 
+        // 弹出方法
         public NodeRecord pop() {
             NodeRecord nodeRecord = new NodeRecord(nodes[0], distanceMap.get(nodes[0]));
             swap(0, size - 1);
