@@ -6,6 +6,7 @@ package chapter2.Test02_Set;
  * @description：KMP算法实现
  * @modified By：
  * @version: $
+ * 具体流程见笔记
  */
 public class Test03_KMP {
     public static int getIndexOf(String s, String m) {

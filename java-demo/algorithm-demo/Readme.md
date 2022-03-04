@@ -58,4 +58,23 @@
         - Test04_LowestLexicography：字符串最小字典序问题
         - Test05_LessMoneySplitGold：最少代价分金条问题
         - Test06_IPO：项目花费与利润
-        - Test07_MadianQuick：中位数
+        - Test07_MadianQuick：快速获取中位数的数据结构
+     - Test06_ForceRec：暴力递归
+        - Test01_NQueens：N皇后问题
+        - Test02_Hanoi：汉诺塔转移问题
+        - Test03_PrintAllSubsquences：打印所有字符串子序列
+        - Test04_PrintAllPermutations：打印所有字符串排列
+        - Test05_CardsInLine：拿纸牌问题
+        - Test06_ReverseStack：逆序栈
+        - Test07_ConvertToLetterString：数字字符串转字符串
+        - Test08_Knapsack：背包问题
+- chapter02:基础提升
+    - Test01_Hash：哈希表与哈希码
+        - Test01_HashMap：Hashmap
+        - Test02_RandomPool：实现一个随机返回一个数的结构
+        - Test03_BitMap：位图
+    - Test02_Set：并查集、KMP
+        - Test01_Islands：岛问题
+        - Test02_UnionFind：并查集
+        - Test03_KMP：KMP算法
+    
