@@ -43,6 +43,7 @@
         <module>springbootdemo232-Msgpack</module>
         <module>springbootdemo233-JavaSizeOf</module>
         <module>springbootdemo234-JOL</module>
+        <module>springbootdemo235-OpenCV</module>
     </modules>
 
     <packaging>pom</packaging>
@@ -54,6 +55,8 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <spring-boot.version>2.3.7.RELEASE</spring-boot.version>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
     </properties>
 
     <parent>
@@ -79,6 +82,7 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
+            <version>1.18.20</version>
         </dependency>
 
         <!--配置文件提示-->
