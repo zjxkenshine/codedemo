@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<plugin>
+    <id>com.fr.plugin.bigScreen.v10</id>
+    <name><![CDATA[扩展图表]]></name>
+    <active>yes</active>
+    <version>4.5.1</version>
+    <env-version>10.0</env-version>
+    <jartime>2019-12-10</jartime>
+    <vendor>finereport.chart</vendor>
+    <description><![CDATA[扩展图表]]></description>
+    <change-notes><![CDATA[
+    <p>[2021-03-15]<a>修复一些已知问题</a></p>
+    <p>[2021-02-04]<a>新增轮播饼图&新增开场效果</a></p>
+    <p>[2020-12-31]<a>新增轮播条形图&新增轮播目录齿轮图调节颜色大小功能</a></p>
+    <p>[2020-12-12]<a>修复4.3插件IE下预览普通图表报错&场景地图交互优化&lic国际化</a></p>
+    <p>[2020-12-06]<a>新增像素点图和特殊形状柱形图&智慧树图交互优化</a></p>
+    <p>[2020-11-25]<a>修复场景地图数据丢失问题</a></p>
+    <p>[2020-11-07]<a>新增智慧树图迭代&场景地图钻取目录支持超链&开放场景切换接口&json自动简化</a></p>
+    <p>[2020-9-24]<a>新增颜色大小迭代&设计器中缩略图国际化</a></p>
+    <p>[2020-9-8]<a>新增场景切换地图&水球图国际化问题</a></p>
+    <p>[2020-7-30]<a>新增扩展图表自动刷新功能&扩展图表版本授权问题&轮播gis点地图前端报错等bug</a></p>
+	<p>[2020-6-24]<a>新增水球图负数显示功能&修复扩展图表内存泄漏&插件注册问题等bug</a></p>
+    <p>[2020-2-7]<a>修复轮播夜光仪表盘指标值显示异常&联动水球图抛错与占用内存问题等bug</a></p>
+	<p>[2019-12-6]<a>修改指标卡无背景报错问题&适配10.0.4</a></p>
+    <p>[2019-9-16]<a>修复轮播三维组合地图数据顺序问题&自定义json展示等bug</a></p>
+    <p>[2019-4-26]<a>新增三维轮播组合地图</a></p>
+    <p>[2019-3-13]<a>新增弧形柱形图&水球图&实现自动播放的功能</a></p>
+    <p>[2018-11-5]<a>修复部署到tomcat上插件加载失败的问题</a></p>
+    <p>[2018-8-8]10.0适配</p>
+    ]]></change-notes>
+
+    <extra-core>
+        <WebService class="com.fr.plugin.chart.u3d.MapGet3dJSONService"/>
+        <WebService class="com.fr.plugin.chart.ChartGetVideoService"/>
+        <WebService class="com.fr.plugin.chart.openvideo.GetOpenVideoSettingsService"/>
+        <LocaleFinder class="com.fr.plugin.chart.locale.EChartFinder"/>
+        <JavaScriptFileHandler class="com.fr.plugin.chart.BigScreenJSFileHandler"/>
+        <IOFileAttrMark class="com.fr.plugin.chart.openvideo.OpenVideoSettings"/>
+    </extra-core>
+
+    <extra-form>
+        <JavaScriptFileHandler class="com.fr.plugin.chart.openvideo.OpenVideoJSHandler"/>
+        <CssFileHandler class="com.fr.plugin.chart.openvideo.OpenVideoCSSHandler"/>
+    </extra-form>
+
+    <extra-designer>
+        <MenuHandler class="com.fr.plugin.chart.openvideo.FormOpenVideoHandler"/>
+    </extra-designer>
+
+    <function-recorder class="com.fr.plugin.chart.AbstractECharts"/>
+
+    <extra-chart>
+        <ChartTypeProvider class="com.fr.plugin.chart.u3d.geoland.UGeoLandChartType"
+                           chartID="UGeoLandChart"/>
+        <IndependentChartProvider class="com.fr.plugin.chart.globe.GlobeMainType"
+                                  plotID="GLOBE_MAIN_TYPE"/>
+        <IndependentChartProvider class="com.fr.plugin.chart.map.MapMainType"
+                                  plotID="MAP_MAIN_TYPE"/>
+        <IndependentChartProvider class="com.fr.plugin.chart.meter.MeterMainType"
+                                  plotID="METER_MAIN_TYPE"/>
+        <IndependentChartProvider class="com.fr.plugin.chart.kpi.KPIMainType"
+                                  plotID="KPI_MAIN_TYPE"/>
+        <IndependentChartProvider class="com.fr.plugin.chart.time.TimeMainType"
+                                  plotID="TIME_MAIN_TYPE"/>
+        <IndependentChartProvider class="com.fr.plugin.chart.column.ColumnMainType"
+                                  plotID="COLUMN_MAIN_TYPE"/>
+        <IndependentChartProvider class="com.fr.plugin.chart.pie.PieMainType"
+                                  plotID="PIE_MAIN_TYPE"/>
+        <IndependentChartProvider class="com.fr.plugin.chart.catalog.CatalogMainType"
+                                  plotID="CATALOG_MAIN_TYPE"/>
+    </extra-chart>
+
+    <extra-chart-designer>
+        <IndependentChartUIProvider class="com.fr.plugin.chart.u3d.designer.geoland.UGeoLandChartTypeUI"
+                             chartID="UGeoLandChart"/>
+        <IndependentChartUIProvider class="com.fr.plugin.chart.designer.globe.GlobeMainTypeUI"
+                                    plotID="GLOBE_MAIN_TYPE"/>
+        <IndependentChartUIProvider class="com.fr.plugin.chart.designer.map.MapMainTypeUI"
+                                    plotID="MAP_MAIN_TYPE"/>
+        <IndependentChartUIProvider class="com.fr.plugin.chart.designer.meter.MeterMainTypeUI"
+                                    plotID="METER_MAIN_TYPE"/>
+        <IndependentChartUIProvider class="com.fr.plugin.chart.designer.kpi.KPIMainTypeUI"
+                                    plotID="KPI_MAIN_TYPE"/>
+        <IndependentChartUIProvider class="com.fr.plugin.chart.designer.time.TimeMainTypeUI"
+                                    plotID="TIME_MAIN_TYPE"/>
+        <IndependentChartUIProvider class="com.fr.plugin.chart.designer.column.ColumnMainTypeUI"
+                                    plotID="COLUMN_MAIN_TYPE"/>
+        <IndependentChartUIProvider class="com.fr.plugin.chart.designer.pie.PieMainTypeUI"
+                                    plotID="PIE_MAIN_TYPE"/>
+        <IndependentChartUIProvider class="com.fr.plugin.chart.designer.catalog.CatalogMainTypeUI"
+                                    plotID="CATALOG_MAIN_TYPE"/>
+    </extra-chart-designer>
+
+</plugin>

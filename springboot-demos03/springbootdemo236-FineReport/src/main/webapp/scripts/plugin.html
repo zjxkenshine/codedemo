@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <title>Title</title>
+    <link href="${resourceURL}/scripts/css/lib/bootstrap.min.css" rel="stylesheet">
+    <link href="${resourceURL}/scripts/css/shop.css" rel="stylesheet">
+    <script type="text/javascript" src="${resourceURL}/scripts/js/lib/jquery-3.5.1.js"></script>
+    <!--[if lte IE 7]>
+    <link rel="stylesheet" type="text/css" href="${resourceURL}/scripts/store/web/css/notsupport.css"/>
+    <![endif]-->
+    <!--[if lte IE 9]>
+    <script type="text/javascript" src="${resourceURL}/scripts/store/web/js/lib/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="scrollable">
+<div class="container-fluid">
+    <div class="row">
+        <div class="mainView" id="main">
+            <div class="panel panel-default">
+                <div class="panel-heading" id="app-shop-header">
+                    <!--
+                                        <div class="online-states-bar pull-right"></div>
+                    -->
+                </div>
+                <div class="panel-body" id="panel-body">
+                    <div class="product-info-panel-body">
+                        <div class="row">
+                            <div class="nav-group">
+                                <div class="row first-row nav-seller">
+                                    <div class="items-head" id = "items-head-businesses"></div>
+                                    <div class="head-line"></div>
+                                    <div class="items-body">
+                                        <div class="items">
+                                            <a href="#" class="item" id="seller-finereport"></a>
+                                            <a href="#" class="item" id="seller-developer"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row nav-fee">
+                                    <div class="items-head" id="items-head-fee"></div>
+                                    <div class="head-line"></div>
+                                    <div class="items-body">
+                                        <div class="items">
+                                            <a href="#" class="item" id="fee-charge"></a>
+                                            <a href="#" class="item" id="fee-free"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row nav-language" style="display:none" id="nav-language">
+                                    <div class="items-head" id="items-head-language"></div>
+                                    <div class="head-line"></div>
+                                    <div class="items-body">
+                                        <div class="items">
+                                            <a href="#" class="item" id="language-zh_CN"></a>
+                                            <a href="#" class="item" id="language-zh_TW"></a>
+                                            <a href="#" class="item" id="language-en_US"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row last-row nav-category">
+                                    <div class="items-head" id= "items-head-class"></div>
+                                    <div class="items-body">
+                                        <div class="items extra-items category-items">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row nav-category">
+                                    <div class="items-body">
+                                        <div class="items category-items">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row status-bar">
+                            <div class="tags pull-left clearfix">
+                                <div class="recommend-item pull-left" id="recommend-tag"></div>
+                            </div>
+                            <div class="fr-search pull-right">
+                                <div class="fr-search-img"></div>
+                                <div contenteditable="true" class="fr-search-query fr-search-query-online" id="fr-online-search"></div>
+                            </div>
+                        </div>
+                        <div class="row product-board">
+                            <div class="transition"></div>
+                            <div class="row product-row" id="product-row"></div>
+                        </div>
+                    </div>
+                    <div class="install-btn-group">
+                        <div class="btn-group pull-right">
+                            <button id="install-plugin-btn" disabled></button>
+                            <button id="install-plugin-from-disk"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sideView" id="side">
+            <div class="panel panel-default">
+                <div class="panel-heading" id="local-plugins">
+                    <div class="installed-states-bar pull-right"></div>
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="fr-search pull-left">
+                            <div class="fr-search-img"></div>
+                            <div contenteditable="true" class="fr-search-query fr-search-query-local" id="fr-local-search"></div>
+                        </div>
+                        <div class="installed-count pull-right" id="installed-plugin-count"></div>
+                    </div>
+                    <div class="row installed-row" id="installed-row">
+
+                    </div>
+                    <div class="installed-btn-group">
+                        <div class="btn-group pull-left">
+                            <button id="disable-plugin-btn" disabled></button>
+                            <button id="delete-plugin-btn" disabled></button>
+                        </div>
+                        <div class="btn-group pull-right">
+                            <button id="update-all-plugin-btn"></button>
+                            <button id="update-plugin-from-disk"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="login-dlg">
+            <div class="login-content">
+                <div class="transition"></div>
+                <div class="default-login">
+                    <div class="login-close"></div>
+                    <div class="login-title" id="login_title">帆软通行证登录</div>
+                    <input class="user-info" type="text" placeholder="用户名/邮箱/手机号" autofocus="autofocus" id="username"/>
+                    <input id="password" class="password" type="password" placeholder="密码"/>
+                    <label class="error-msg"></label>
+                    <input class="login-btn" type='button' value="登录"/>
+                    <ul>
+                        <li><span id="no_account_tip">还没有账号？| </span><a id="register" class="register">立即注册</a></li>
+                        <li><a id="forget" class="forget">忘记密码？</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="qqLoginIframe">
+        <div class="qq-dialog-close"></div>
+        <iframe id="qqlogin" frameborder=0 width=700 height=450 marginheight=0 marginwidth=0 scrolling=no src=""></iframe>
+    </div>
+</div>
+
+<!--[if lte IE 7]>
+<div class="error-ns-bg">
+    <img src="${resourceURL}?op=resource&resource=/com/fr/fs/plugin/op/web/store/img/notsupported.png">
+    <div class="error-ns-btn-group">
+        <button>FR-Plugin-Store_Install_From_Local</button>
+        <form id="error-ns-install-form" enctype="multipart/form-data" style="padding:0" method="post">
+            <input id="error-ns-install" name="install-from-disk" size="35" type="file" accept="application/zip"/>
+        </form>
+        <button>FR-Plugin-Store_Update_From_Local</button>
+        <form id="error-ns-update-form" enctype="multipart/form-data" style="padding:0" method="post">
+            <input id="error-ns-update" name="update-from-disk" size="35" type="file" accept="application/zip"/>
+        </form>
+    </div>
+</div>
+<![endif]-->
+<div id="install-from-disk" style="position:absolute"></div>
+<div id="update-from-disk" style="position:absolute"></div>
+<script type="text/javascript"  charset="UTF-8" src="${resourceURL}/scripts/js/lib/bootstrap.min.js"></script>
+<script type="text/javascript"  charset="UTF-8" src="${resourceURL}/scripts/js/component/delayToolTip.js"></script>
+<script type="text/javascript"  charset="UTF-8" src="${resourceURL}/scripts/js/component/plugin.web.utils.js"></script>
+<script type="text/javascript"  charset="UTF-8" src="${resourceURL}/scripts/js/store.js"></script>
+<!--留作兼容老版本的jar包，需要添加一个参数防止缓存，在某些Edge版本下可能会导致乱码-->
+<script type="text/javascript" charset="UTF-8" src="${resourceURL}/scripts/locale/plugin_zh_CN.js?_=compatible"></script>
+<script type="text/javascript" charset="UTF-8" src="${resourceURL}/scripts/locale/plugin_${language}.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        PluginHelper.getPackInfo(function () {
+            Store.resourceUrl = "${resourceURL}";
+            Store.buildNO = "${buildNO}";
+            Store.build();
+        });
+    });
+    if ("${language}" == "zh_CN") {
+        $("#nav-language").hide();
+    } else {
+        $("#nav-language").show();
+    }
+</script>
+</body>
+</html>

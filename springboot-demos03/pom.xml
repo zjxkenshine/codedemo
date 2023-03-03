@@ -44,6 +44,7 @@
         <module>springbootdemo233-JavaSizeOf</module>
         <module>springbootdemo234-JOL</module>
         <module>springbootdemo235-OpenCV</module>
+        <module>springbootdemo236-FineReport</module>
     </modules>
 
     <packaging>pom</packaging>

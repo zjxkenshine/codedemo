@@ -1,0 +1,16 @@
+<html>  
+  <head>  
+  <title>FineReport Demo</title>  
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />  
+  <script language="javascript">
+    function autoLoad(){
+      var addr = "/webroot/decision/view/report?viewlet=GettingStarted.cpt&"+encodeURIComponent("地区")+"="+encodeURIComponent("华东");
+      document.getElementById("reportFrame").src = addr;
+    }
+    window.onload = autoLoad; 
+  </script>
+  </head>  
+  <body>  
+    <iframe id="reportFrame" width="900" height="400" ></iframe>  
+  </body>
+</html>

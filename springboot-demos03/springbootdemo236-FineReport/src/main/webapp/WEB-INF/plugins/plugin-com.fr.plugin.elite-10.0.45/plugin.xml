@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<plugin>
+    <id>com.fr.plugin.elite</id>
+    <name><![CDATA[数知鸟]]></name>
+    <active>yes</active>
+    <version>10.0.45</version>
+    <env-version>10.0~11.0</env-version>
+    <auto-update>true</auto-update>
+    <jartime>2019-11-07</jartime>
+    <vendor>finereport</vendor>
+    <description><![CDATA[在FineReport/FineBI系统内集成数知鸟平台，打通平台的连接，让用户在FineReport/FineBI系统内单点登录数知鸟平台，使用数知鸟平台进行需求反馈、分析和落地等需求管理流程。并提供「指标管理」、「报表管理」功能，支撑用户完成报表资产的全生命管理。]]></description>
+    <change-notes><![CDATA[
+      [2019-12-09]初始化。<br/>
+      [2019-12-19]用户部门同步,以BI用户名进行单点登录<br/>
+      [2019-12-23]使用分批同步用户的方式,每次同步500个用户,减少同步失败的可能性<br/>
+      [2019-12-30]Edge浏览器window.onload不执行的问题,去掉onload<br/>
+      [2020-04-15]支持同步目录树到数知鸟&视觉优化<br/>
+      [2020-05-07]单点登录没有配置issuer时不进行issuer的校验<br/>
+      [2020-05-21]修复Windows上中文用户id单点登录失败<br/>
+      [2020-07-08]用户同步支持手机号和职务信息<br/>
+      [2020-07-09]优化全量导入用户的性能<br/>
+      [2020-12-19]支持手机号匹配<br/>
+      [2021-02-24]更名为数知鸟<br/>
+      [2021-04-28]单点优化&支持在报表页直接提交需求<br/>
+      [2021-05-12]目录树权限<br/>
+      [2021-05-26]目录树权限优化<br/>
+      [2021-07-14]支持查看报表关联需求<br/>
+      [2021-07-28]支持查看报表关联指标 && 非目录树报表也可以提交需求<br/>
+      [2021-09-14]新手引导<br/>
+      [2021-12-22]支持查看报表访问量<br/>
+      [2021-12-24]不支持IE浏览器<br/>
+      [2021-12-29]适配jdk1.8高版本SSL协议<br/>
+      [2022-03-02]需求反馈窗口优化<br/>
+      [2022-05-18]简化集成<br/>
+      [2022-05-30]修复插件在部分版本不可用的问题<br/>
+      [2022-06-02]集成BI数据集<br/>
+      [2022-06-30]适配BI6.0<br/>
+      [2022-12-01]定时调度支持推送到数知鸟<br/>
+    ]]></change-notes>
+    <extra-core>
+        <LocaleFinder class="com.fr.plugin.elite.MyLocaleFinder"/>
+    </extra-core>
+    <extra-decision>
+        <WebResourceProvider class="com.fr.plugin.elite.assistant.JsBridge"/>
+        <WebResourceProvider class="com.fr.plugin.elite.js.JsVersionBridge"/>
+        <WebResourceProvider class="com.fr.plugin.elite.report.ReportJsBridge"/>
+        <HttpHandlerProvider class="com.fr.plugin.elite.SsoRequestHandlerBridge"/>
+        <URLAliasProvider class="com.fr.plugin.elite.EliteURLAliasBridge"/>
+        <SystemOptionProvider class="com.fr.plugin.elite.EliteOption"/>
+        <ControllerRegisterProvider class="com.fr.plugin.elite.api.OpenApiControllerRegisterProvider"/>
+        <DecisionDBAccessProvider class="com.fr.plugin.elite.schedule.DBAccessProvider"/>
+    </extra-decision>
+    <extra-report>
+        <!--<JavaScriptPlaceHolder class="com.fr.plugin.elite.report.ReportJsDebug"/>-->
+    </extra-report>
+    <function-recorder class="com.fr.plugin.elite.sso.SsoHttpHandler"/>
+    <lifecycle-monitor class="com.fr.plugin.elite.EliteInitializeMonitor"/>
+</plugin>

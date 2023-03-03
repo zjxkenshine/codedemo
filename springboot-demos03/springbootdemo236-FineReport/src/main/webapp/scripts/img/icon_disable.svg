@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_extend "http://ns.adobe.com/Extensibility/1.0/">
+	<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">
+	<!ENTITY ns_graphs "http://ns.adobe.com/Graphs/1.0/">
+	<!ENTITY ns_vars "http://ns.adobe.com/Variables/1.0/">
+	<!ENTITY ns_imrep "http://ns.adobe.com/ImageReplacement/1.0/">
+	<!ENTITY ns_sfw "http://ns.adobe.com/SaveForWeb/1.0/">
+	<!ENTITY ns_custom "http://ns.adobe.com/GenericCustomNamespace/1.0/">
+	<!ENTITY ns_adobe_xpath "http://ns.adobe.com/XPath/1.0/">
+]>
+<svg version="1.1" id="图层_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 46 46"
+	 style="enable-background:new 0 0 46 46;" xml:space="preserve">
+<style type="text/css">
+	.st0{opacity:0.05;}
+	.st1{clip-path:url(#SVGID_2_);}
+	.st2{fill:#FFFFFF;}
+	.st3{clip-path:url(#SVGID_4_);fill:url(#SVGID_5_);}
+	.st4{fill:#A82C4C;}
+	.st5{fill:#9E1F15;}
+	.st6{opacity:0.1;}
+	.st7{clip-path:url(#SVGID_7_);}
+	.st8{fill:#CCCCCC;}
+	.st9{fill:#6699EE;}
+	.st10{fill:#4582EE;}
+	.st11{opacity:0.3;}
+	.st12{clip-path:url(#SVGID_9_);fill:#6699EE;}
+	.st13{clip-path:url(#SVGID_11_);fill:#4582EE;}
+	.st14{clip-path:url(#SVGID_13_);fill:url(#SVGID_14_);}
+	.st15{fill:#647382;}
+	.st16{fill:#283746;}
+</style>
+<metadata>
+	<sfw  xmlns="&ns_sfw;">
+		<slices></slices>
+		<sliceSourceBounds  height="130.321" width="517.161" x="-10.161" y="-120.16" bottomLeftOrigin="true"></sliceSourceBounds>
+	</sfw>
+</metadata>
+<g>
+	<defs>
+		<polygon id="SVGID_12_" points="26,0 0,26 0,44 44,0 		"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_12_"  style="overflow:visible;"/>
+	</clipPath>
+	
+		<linearGradient id="SVGID_4_" gradientUnits="userSpaceOnUse" x1="-196.4888" y1="83.0744" x2="-195.4888" y2="83.0744" gradientTransform="matrix(7.7775 31.7765 31.7765 -7.7775 -1094.0559 6893.7393)">
+		<stop  offset="0" style="stop-color:#AAB9C8"/>
+		<stop  offset="1" style="stop-color:#788796"/>
+	</linearGradient>
+	<polygon style="clip-path:url(#SVGID_2_);fill:url(#SVGID_4_);" points="41.513,-10.161 54.161,41.513 2.487,54.16 -10.161,2.487 	
+		"/>
+</g>
+<g>
+	<path class="st2" d="M8.42,21.432l-0.579-0.58l0.657-0.656l0.579,0.578l1.011-1.01l0.608,0.607l-1.012,1.011l0.043,0.042
+		c0.487-0.135,1.004-0.254,1.555-0.354l0.177,0.898c-0.509-0.043-0.926-0.064-1.251-0.064l1.103,1.104l-0.657,0.656l-1.117-1.116
+		c0.17,0.706,0.221,1.393,0.162,2.042L8.78,24.406c0.184-0.777,0.22-1.52,0.106-2.227l-1.039,1.039l-0.608-0.607L8.42,21.432z
+		 M15.077,19.664l0.58,0.58l-4.812,4.812l-0.58-0.58L15.077,19.664z M11.346,18.506l-0.579-0.58l0.657-0.656l0.579,0.578
+		l1.216-1.215l0.608,0.607l-0.955,0.954c0.623,0.142,1.344,0.127,2.162-0.07l0.106,0.968c-0.806,0.014-1.54-0.084-2.212-0.318
+		l1.314,1.314l-0.657,0.658L12.3,19.459c0.255,0.777,0.375,1.52,0.368,2.234l-0.94-0.191c0.127-0.749,0.121-1.463-0.021-2.142
+		l-0.728,0.728L10.37,19.48L11.346,18.506z M16.688,20.089l0.607,0.607l-2.558,2.558l1.265,1.266c0.41,0.41,0.389,0.842-0.063,1.293
+		l-0.657,0.657l-0.742-0.474c0.227-0.17,0.438-0.354,0.621-0.537c0.143-0.142,0.149-0.289,0.016-0.424l-1.109-1.109l-2.764,2.764
+		l-0.607-0.607L16.688,20.089z M13.714,25.565c0.092,0.841,0.049,1.718-0.148,2.622l-0.955-0.121
+		c0.213-0.848,0.291-1.66,0.234-2.451L13.714,25.565z M18.66,22.004l0.205,0.953c-0.968-0.021-1.837,0.071-2.606,0.276l-0.164-0.841
+		C16.929,22.152,17.777,22.025,18.66,22.004z"/>
+	<path class="st2" d="M22.8,18.854l-0.976,0.057c-0.184-1.031-0.734-2.021-1.653-2.969l-3.463-3.463l5.42-5.42l5.322,5.321
+		c0.529,0.53,0.523,1.074-0.014,1.611l-0.812,0.812l-0.834-0.48c0.297-0.254,0.564-0.495,0.805-0.735
+		c0.227-0.227,0.205-0.488-0.07-0.764l-1.053-1.053l-1.754,1.753l2.016,2.015l-0.679,0.678l-2.015-2.014l-1.66,1.66
+		C22.186,16.84,22.658,17.836,22.8,18.854z M18.036,12.45l1.061,1.061l1.626-1.626l-1.061-1.061L18.036,12.45z M20.793,15.207
+		l1.626-1.626L21.337,12.5l-1.625,1.625L20.793,15.207z M22.093,8.394l-1.752,1.753l1.061,1.061l1.752-1.753L22.093,8.394z
+		 M23.769,10.068l-1.753,1.754l1.081,1.08l1.753-1.752L23.769,10.068z"/>
+</g>
+<polygon class="st15" points="44,0 42,2 46,2 "/>
+<polygon class="st16" points="0,44 2,46 2,42 "/>
+</svg>

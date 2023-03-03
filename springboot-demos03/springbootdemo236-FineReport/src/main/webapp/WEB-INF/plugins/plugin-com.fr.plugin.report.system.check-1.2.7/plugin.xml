@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<plugin>
+    <id>com.fr.plugin.report.system.check</id>
+    <name><![CDATA[系统检查]]></name>
+    <active>yes</active>
+    <version>1.2.7</version>
+    <auto-update>true</auto-update>
+    <env-version>10.0~10.0</env-version>
+    <jartime>2022-07-15</jartime>
+    <vendor email="bryant@fanruan.com">fanruan.bryant</vendor>
+    <description><![CDATA[帮助用户检查系统中的各项配置是否合理，以辅助用户优化配置，更好地防止宕机情况的发生]]></description>
+    <change-notes><![CDATA[
+		[2022-02-28]插件国际化完善<br/>
+        [2021-10-25]插件国际化完善<br/>
+		[2021-07-21]插件国际化完善<br/>
+        [2020-05-14]系统配置检查<br/>
+        [2021-05-14]插件国际化<br/>
+    ]]></change-notes>
+    <!--主包-->
+    <main-package>com.fr.plugin.report.system.check</main-package>
+    <!--全局入口和出口-->
+    <lifecycle-monitor class="com.fr.plugin.report.system.check.SystemCheckLifecycle"/>
+    <extra-core>
+        <LocaleFinder class="com.fr.plugin.report.system.check.SystemCheckLocaleFinder"/>
+        <ClusterTicketProvider class="com.fr.plugin.report.system.check.cluster.SystemCheckTicket"/>
+    </extra-core>
+    <extra-decision>
+        <SystemOptionProvider class="com.fr.plugin.report.system.check.SystemCheckOption"/>
+        <ControllerRegisterProvider class="com.fr.plugin.report.system.check.SystemCheckControllerRegister"/>
+    </extra-decision>
+    <function-recorder class="com.fr.plugin.report.system.check.SystemCheckOption"/>
+</plugin>

@@ -1,0 +1,23 @@
+<html>
+  <head>  
+  <title>FineReport自定义导出</title>  
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />  
+  </head>  
+  <body>
+ 
+    <fieldset>
+    <div id="toolbar">       
+    <button type="button"  onclick="document.getElementById('reportFrame').contentWindow.contentPane.exportReportToPDF()">导出[PDF]</button>  
+    <button type="button"  onclick="document.getElementById('reportFrame').contentWindow.contentPane.exportReportToExcel('page')">导出[Excel](分页)</button>       
+    <button type="button"  onclick="document.getElementById('reportFrame').contentWindow.contentPane.exportReportToExcel('simple')">导出[Excel](原样)</button>       
+    <button type="button"  onclick="document.getElementById('reportFrame').contentWindow.contentPane.exportReportToExcel('sheet')">导出[Excel](分页分sheet)</button>
+    <button type="button"  onclick="document.getElementById('reportFrame').contentWindow.contentPane.exportReportToExcel('page_isExcel2003')">导出[Excel](分页导出xls格式)</button>      
+    <button type="button"  onclick="document.getElementById('reportFrame').contentWindow.contentPane.exportReportToExcel('simple_isExcel2003')">导出[Excel](原样导出xls格式)</button>       
+    <button type="button"  onclick="document.getElementById('reportFrame').contentWindow.contentPane.exportReportToExcel('sheet_isExcel2003')">导出[Excel](分页分sheet导出xls格式)</button> 
+    <button type="button"  onclick="document.getElementById('reportFrame').contentWindow.contentPane.exportReportToImage('png')">导出[图片]</button>  
+    <button type="button"  onclick="document.getElementById('reportFrame').contentWindow.contentPane.exportReportToWord()">导出[Word]</button>              
+    </div>  
+    </fieldset>
+    <iframe id="reportFrame" width="100%" height="100%" src='/webroot/decision/view/report?viewlet=doc/Primary/DetailReport/Details.cpt' ></iframe>  
+  </body>  
+</html>

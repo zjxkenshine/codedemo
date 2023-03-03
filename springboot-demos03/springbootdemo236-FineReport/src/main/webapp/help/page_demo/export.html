@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FineReport自定义导出</title>
+</head>
+<script type="text/javascript">
+    var reportlets = "[{reportlet: '/doc/Primary/Parameter/Parameter.cpt',地区: '华北'}, {reportlet: '/doc/Primary/CrossReport/Cross.cpt'}]"
+    function clickEvent() {
+        window.open(encodeURI('/webroot/decision/view/report?reportlets=' + reportlets + '&format=excel'));
+    }
+</script>
+<body>
+<button
+        type="button"
+        onclick= clickEvent()>导出[Excel]
+</button>
+</body>
+</html>

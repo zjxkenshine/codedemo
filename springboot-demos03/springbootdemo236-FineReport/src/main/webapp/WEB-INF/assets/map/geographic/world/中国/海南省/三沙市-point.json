@@ -1,0 +1,44 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.34894289360146,
+                    9.242201109185956
+                ]
+            },
+            "properties": {
+                "name": "南沙群岛"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.92786619245697,
+                    16.060527638692538
+                ]
+            },
+            "properties": {
+                "name": "中沙群岛"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    112.03493584379996,
+                    16.464824318130898
+                ]
+            },
+            "properties": {
+                "name": "西沙群岛"
+            },
+            "type": "Feature"
+        }
+    ]
+}
