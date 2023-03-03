@@ -45,6 +45,7 @@
         <module>springbootdemo234-JOL</module>
         <module>springbootdemo235-OpenCV</module>
         <module>springbootdemo236-FineReport</module>
+        <module>springbootdemo237-JimuReport</module>
     </modules>
 
     <packaging>pom</packaging>

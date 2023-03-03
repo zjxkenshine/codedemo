@@ -114,5 +114,5 @@ java整合OpenCV做图像切割
 ## 236.springbootdemo236-FineReport
 springboot 整合FineReport报表设计
 
-## 237.springbootdemo236-JimuReport
+## 237.springbootdemo237-JimuReport
 springboot 整合积木报表
