@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flow>
+    <!--流程入参测试 future-->
+    <chain name="future1" id="future1">
+        THEN(ctx1, ctx2, c);
+    </chain>
+
+</flow>

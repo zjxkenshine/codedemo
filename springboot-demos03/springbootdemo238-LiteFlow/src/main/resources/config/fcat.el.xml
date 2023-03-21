@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flow>
+    <!--2.10.0新功能-->
+    <!--如果a组件出现异常并抛出，则不会执行b组件，会直接执行c组件-->
+    <chain name="ca1">
+    CATCH(
+        THEN(a,b)
+    ).DO(c)
+    </chain>
+        <!--不管a,b有没有抛出异常，最终总会执行c-->
+        <chain name="ca2">
+        THEN(
+            CATCH(
+                THEN(a,b)
+            ),
+            c
+        )
+        </chain>
+
+        <!--在b组件中达成某一个条件就不执行c，继续循环，那么你可以借助CATCH语法-->
+        <chain name="ca3">
+            FOR(for2).DO(
+                CATCH(
+                    THEN(a,b,c)
+                )
+            )
+        </chain>
+</flow>

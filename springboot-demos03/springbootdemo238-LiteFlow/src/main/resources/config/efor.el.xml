@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flow>
+    <!--a->b链路循环5次-->
+    <chain name="for1">
+        FOR(5).DO(THEN(a, b));
+    </chain>
+
+    <!--次数循环组件-->
+    <chain name="for2">
+        FOR(for2).DO(THEN(a, b));
+    </chain>
+
+    <!--while循环组件-->
+    <chain name="for3">
+        WHILE(for3).DO(THEN(a, b));
+    </chain>
+
+    <!--迭代循环组件-->
+    <chain name="for4">
+        ITERATOR(for4).DO(THEN(a, b));
+    </chain>
+
+    <!--退出循环 其中for5这个节点需要为退出循环组件，返回一个布尔值，为true则退出循环-->
+    <chain name="for5">
+        FOR(for2).DO(THEN(a, b)).BREAK(for5);
+    </chain>
+
+</flow>

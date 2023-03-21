@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flow>
+<!--    &lt;!&ndash;复杂流程拆分，子流程定义&ndash;&gt;-->
+<!--    <chain name="mainChain">-->
+<!--        THEN(-->
+<!--            A, B,-->
+<!--            WHEN(chain1, D, chain2),-->
+<!--            SWITCH(X).to(M, N, chain3),-->
+<!--            z-->
+<!--        );-->
+<!--    </chain>-->
+
+<!--    &lt;!&ndash;子流程1&ndash;&gt;-->
+<!--    <chain name="chain1">-->
+<!--    THEN(C, WHEN(J, K));-->
+<!--    </chain>-->
+
+<!--    &lt;!&ndash;子流程2&ndash;&gt;-->
+<!--    <chain name="chain2">-->
+<!--    THEN(H, I);-->
+<!--    </chain>-->
+
+<!--    &lt;!&ndash;子流程3&ndash;&gt;-->
+<!--    <chain name="chain3">-->
+<!--    WHEN(Q, THEN(P, R)).id("w01");-->
+<!--    </chain>-->
+
+
+<!--    &lt;!&ndash;使用子变量&ndash;&gt;-->
+<!--    <chain>-->
+<!--        t1 = THEN(C, WHEN(J, K));-->
+<!--        w1 = WHEN(Q, THEN(P, R)).id("w01");-->
+<!--        t2 = THEN(H, I);-->
+
+<!--        THEN(-->
+<!--        A, B,-->
+<!--        WHEN(t1, D, t2),-->
+<!--        SWITCH(X).to(M, N, w1),-->
+<!--        Z-->
+<!--        );-->
+<!--    </chain>-->
+</flow>

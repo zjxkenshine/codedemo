@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--串行编排-->
+<flow>
+    <chain name="chuan1" id="chuan1">
+        THEN(a, b, c);
+    </chain>
+</flow>

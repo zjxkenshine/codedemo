@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flow>
+    <!--传参测试-->
+    <chain name="ctx1" id="ctx1">
+        THEN(ctx1, ctx2, c);
+    </chain>
+</flow>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flow>
+    <!--为真，执行a，为假，执行b-->
+    <chain name="if1" id="if1">
+        IF(if1, a, b);
+    </chain>
+
+    <!--为真的情况下，执行链路就为x->a->b，为假链路就为x->b-->
+    <chain name="if2">
+        THEN(
+        IF(if1, a),
+        b
+        );
+    </chain>
+
+    <!--等同于if三元表达式-->
+    <chain name="if3">
+        IF(if1, a).ELSE(b);
+    </chain>
+
+    <!--ELIF表达式-->
+<!--    <chain name="chain1">-->
+<!--        IF(x1, a).ELIF(x2, b).ELIF(x3, c).ELIF(x4, d).ELSE(THEN(m, n));-->
+<!--    </chain>-->
+
+
+
+
+</flow>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--并行编排-->
+<flow>
+    <chain name="bin1" id="bin1">
+        WHEN(a, b, c);
+    </chain>
+
+    <!--串行与并排一起-->
+    <chain name="bin2" id="bin2">
+        THEN(
+        a,
+        WHEN(b, THEN(c, d)),
+        e
+        );
+    </chain>
+
+    <!--忽略错误 ignoreError-->
+    <chain name="bin3">
+        THEN(
+        a,
+        WHEN(b, c, d).ignoreError(true),
+        e
+        );
+    </chain>
+
+    <!--并行流程中，任一条分支先执行完就会执行f any关键字，默认为false-->
+    <chain name="bin4">
+        THEN(
+        a,
+        WHEN(b, THEN(c, d), e).any(true),
+        f
+        );
+    </chain>
+</flow>

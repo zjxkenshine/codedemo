@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--选择编排-->
+<flow>
+    <chain name="xuan1" id="xuan1">
+        SWITCH(select1).to(b, c);
+    </chain>
+
+    <!--根据id选择分支-->
+    <chain name="xuan2">
+        SWITCH(select2).to(b, WHEN(c,d).id("w1"));
+    </chain>
+
+    <!--根据tag选择分支-->
+    <chain name="xuan3">
+        SWITCH(select3).to(
+        b.tag("cat"),
+        d.tag("dog"),
+        c.tag("dog")
+        );
+    </chain>
+
+
+
+
+</flow>
