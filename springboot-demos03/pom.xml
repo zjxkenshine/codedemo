@@ -48,6 +48,7 @@
         <module>springbootdemo237-JimuReport</module>
         <module>springbootdemo238-LiteFlow</module>
         <module>springbootdemo239-Sigar</module>
+        <module>springbootdemo240-Junrar</module>
     </modules>
 
     <packaging>pom</packaging>
