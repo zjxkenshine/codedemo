@@ -47,6 +47,7 @@
         <module>springbootdemo236-FineReport</module>
         <module>springbootdemo237-JimuReport</module>
         <module>springbootdemo238-LiteFlow</module>
+        <module>springbootdemo239-Sigar</module>
     </modules>
 
     <packaging>pom</packaging>
