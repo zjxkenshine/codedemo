@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>springbootdemo249-Sigar</artifactId>
+    <artifactId>springbootdemo239-Sigar</artifactId>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
