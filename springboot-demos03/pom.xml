@@ -49,6 +49,7 @@
         <module>springbootdemo238-LiteFlow</module>
         <module>springbootdemo239-Sigar</module>
         <module>springbootdemo240-Junrar</module>
+        <module>springbootdemo241-Sevenzipjbinding</module>
     </modules>
 
     <packaging>pom</packaging>

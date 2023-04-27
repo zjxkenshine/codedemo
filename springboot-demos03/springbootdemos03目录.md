@@ -120,8 +120,13 @@ springboot 整合积木报表
 ## 238.springbootdemo238-LiteFlow
 springboot 整合 LiteFlow 规则引擎
 
-## springbootdemo239-Sigar
+## 239.springbootdemo239-Sigar
 springboot 整合 sigar 获取系统信息
 
-## springbootdemo240-Junrar
-Junrar实现rar文件解压缩
+## 240.springbootdemo240-Junrar
+Junrar实现rar4文件解压缩
+
+## 241.springbootdemo241-Sevenzipjbinding
+7zip文件压缩解压(不再推荐)，rar5格式支持
+
+
