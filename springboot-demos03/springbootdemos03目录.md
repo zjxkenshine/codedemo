@@ -129,4 +129,7 @@ Junrar实现rar4文件解压缩
 ## 241.springbootdemo241-Sevenzipjbinding
 7zip文件压缩解压(不再推荐)，rar5格式支持
 
+## 242.springbootdemo242-Rome
+java整合Rome实现RSS订阅,解析RSS
+
 
