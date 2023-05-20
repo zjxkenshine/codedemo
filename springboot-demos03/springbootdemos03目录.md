@@ -132,4 +132,6 @@ Junrar实现rar4文件解压缩
 ## 242.springbootdemo242-Rome
 java整合Rome实现RSS订阅,解析RSS
 
+## 243.springbootdemo243-Icu4j
+icu4j识别文件编码
 

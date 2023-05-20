@@ -51,6 +51,7 @@
         <module>springbootdemo240-Junrar</module>
         <module>springbootdemo241-Sevenzipjbinding</module>
         <module>springbootdemo242-Rome</module>
+        <module>springbootdemo243-Icu4j</module>
     </modules>
 
     <packaging>pom</packaging>
