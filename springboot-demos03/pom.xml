@@ -52,6 +52,7 @@
         <module>springbootdemo241-Sevenzipjbinding</module>
         <module>springbootdemo242-Rome</module>
         <module>springbootdemo243-Icu4j</module>
+        <module>springbootdemo244-Dwg2Pdf</module>
     </modules>
 
     <packaging>pom</packaging>
