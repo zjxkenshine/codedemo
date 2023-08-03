@@ -53,6 +53,7 @@
         <module>springbootdemo242-Rome</module>
         <module>springbootdemo243-Icu4j</module>
         <module>springbootdemo244-Dwg2Pdf</module>
+        <module>springbootdemo245-Lock4j</module>
     </modules>
 
     <packaging>pom</packaging>

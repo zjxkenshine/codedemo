@@ -1,0 +1,8 @@
+spring:
+  # redis地址
+  redis:
+    host: localhost
+    port: 6379
+    database: 1
+server:
+  port: 9090
