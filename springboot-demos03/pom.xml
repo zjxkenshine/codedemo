@@ -57,6 +57,7 @@
         <module>springbootdemo246-ip2region</module>
         <module>springbootdemo247-telnet</module>
         <module>springbootdemo248-spring-vault</module>
+        <module>springbootdemo249-Loki</module>
     </modules>
 
     <packaging>pom</packaging>
