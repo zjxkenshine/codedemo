@@ -54,6 +54,7 @@
         <module>springbootdemo243-Icu4j</module>
         <module>springbootdemo244-Dwg2Pdf</module>
         <module>springbootdemo245-Lock4j</module>
+        <module>springbootdemo246-ip2region</module>
     </modules>
 
     <packaging>pom</packaging>
