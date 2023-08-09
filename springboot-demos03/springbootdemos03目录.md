@@ -144,4 +144,7 @@ springboot整合lock4j分布式锁
 ## 246.springbootdemo246-ip2region
 ip2region 离线ip显示
 
+## springbootdemo247-telnet
+springboot整合commons-net操作telnet
+
 
