@@ -1,0 +1,19 @@
+server:
+  http_listen_port: 9080
+  grpc_listen_port: 0
+
+positions:
+  filename: D:/Java/practice/loki/config/positions.yaml
+
+clients:
+  - url: http://127.0.0.1:3100/loki/api/v1/push
+    tenant_id: tenant1
+
+scrape_configs:
+  - job_name: system
+    pipeline_stages:
+    static_configs:
+      - labels:
+          job: eisp  # A `job` label is fairly standard in prometheus and useful for linking metrics and logs.
+          host: 172.20.108.138 # A `host` label will help identify logs from this machine vs others
+          __path__: D:/Java/practice/loki/logs/*.out

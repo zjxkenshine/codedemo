@@ -1,0 +1,1 @@
+./promtail-windows-amd64.exe --config.file=promtail-local-config.yaml
