@@ -58,6 +58,7 @@
         <module>springbootdemo247-telnet</module>
         <module>springbootdemo248-spring-vault</module>
         <module>springbootdemo249-PLG</module>
+        <module>springbootdemo250-Jcseg</module>
     </modules>
 
     <packaging>pom</packaging>

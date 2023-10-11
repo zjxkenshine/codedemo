@@ -150,5 +150,8 @@ springboot整合commons-net操作telnet
 ## 248.springbootdemo248-spring-vault
 springboot整合spring-vault加密
 
-## 249.springbootdemo248-PLG
+## 249.springbootdemo249-PLG
 Loki+Promtail+Grafana 实现日志采集
+
+## 250.springbootdemo250—Jcseg
+springboot整合Jcseg中文分词器
