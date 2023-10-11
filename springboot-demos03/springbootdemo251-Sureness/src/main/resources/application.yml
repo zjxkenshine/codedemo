@@ -1,0 +1,42 @@
+server:
+  port: 8081
+spring:
+  profiles:
+    active: dev
+
+jasypt:
+  encryptor:
+    password: iscas
+
+---
+spring:
+  profiles: dev
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: ENC(PAsCWMdQo8k5JP6E4LL1sQ==)
+    url: jdbc:mysql://127.0.0.1:3306/sureness?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai
+    platform: mysql
+    schema: classpath:db/schema.sql
+    data: classpath:db/data.sql
+    # 每次重启都会根据data.sql schema.sql重建表数据, 设置 NEVER 就不启动重建
+    initialization-mode: always
+  jpa:
+    database: mysql
+    show-sql: true
+
+---
+spring:
+  profiles: prod
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: ENC(PAsCWMdQo8k5JP6E4LL1sQ==)
+    url: jdbc:mysql://127.0.0.1:3306/sureness?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai
+    platform: mysql
+    schema: classpath:db/schema.sql
+    data: classpath:db/data.sql
+    initialization-mode: always
+  jpa:
+    database: mysql
+    show-sql: true

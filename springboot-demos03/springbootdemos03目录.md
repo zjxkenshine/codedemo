@@ -155,3 +155,6 @@ Loki+Promtail+Grafana 实现日志采集
 
 ## 250.springbootdemo250—Jcseg
 springboot整合Jcseg中文分词器
+
+## 251.springbootdemo251-Sureness
+springboot整合Sureness鉴权框架(数据库来源)
