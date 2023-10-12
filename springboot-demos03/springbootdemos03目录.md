@@ -165,3 +165,7 @@ springboot整合Jnotify文件实时监控
 ## 253.springbootdemo253-Galimatias
 Galimatias URL解析
 
+## 254.springbootdemo254-Cpdetector
+Cpdetector 文件编码识别
+
+

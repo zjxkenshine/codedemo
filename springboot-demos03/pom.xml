@@ -62,6 +62,7 @@
         <module>springbootdemo251-Sureness</module>
         <module>springbootdemo252-Jnotify</module>
         <module>springbootdemo253-Galimatias</module>
+        <module>springbootdemo254-Cpdetector</module>
     </modules>
 
     <packaging>pom</packaging>
