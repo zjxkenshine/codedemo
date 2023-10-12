@@ -60,6 +60,7 @@
         <module>springbootdemo249-PLG</module>
         <module>springbootdemo250-Jcseg</module>
         <module>springbootdemo251-Sureness</module>
+        <module>springbootdemo252-Jnotify</module>
     </modules>
 
     <packaging>pom</packaging>

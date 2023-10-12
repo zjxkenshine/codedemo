@@ -158,3 +158,6 @@ springboot整合Jcseg中文分词器
 
 ## 251.springbootdemo251-Sureness
 springboot整合Sureness鉴权框架(数据库来源)
+
+## 252.springbootdemo252-Jnotify
+springboot整合Jnotify文件实时监控
