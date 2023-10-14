@@ -171,3 +171,6 @@ Cpdetector 文件编码识别
 ## 255.springbootdemo255-Xk-time
 springboot 整合Xk-time 时间处理
 
+## 256.springbootdemo256-Oshi
+springboot 整合 Oshi 获取操作系统和硬件信息
+

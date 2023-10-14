@@ -64,6 +64,7 @@
         <module>springbootdemo253-Galimatias</module>
         <module>springbootdemo254-Cpdetector</module>
         <module>springbootdemo255-Xk-time</module>
+        <module>springbootdemo256-Oshi</module>
     </modules>
 
     <packaging>pom</packaging>
