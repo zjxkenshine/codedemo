@@ -63,6 +63,7 @@
         <module>springbootdemo252-Jnotify</module>
         <module>springbootdemo253-Galimatias</module>
         <module>springbootdemo254-Cpdetector</module>
+        <module>springbootdemo255-Xk-time</module>
     </modules>
 
     <packaging>pom</packaging>
