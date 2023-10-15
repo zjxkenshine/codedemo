@@ -176,3 +176,6 @@ springboot 整合 Oshi 获取操作系统和硬件信息
 
 ## 257.springbootdemo257-Jsch
 springboot 整合 jsch 实现SSH 客户端
+
+## 258.springbootdemo258-Ttl
+springboot 整合 TransmittableThreadLocal 跨线程传值
