@@ -67,6 +67,7 @@
         <module>springbootdemo256-Oshi</module>
         <module>springbootdemo257-Jsch</module>
         <module>springbootdemo258-Ttl</module>
+        <module>springbootdemo259-Lunar</module>
     </modules>
 
     <packaging>pom</packaging>
