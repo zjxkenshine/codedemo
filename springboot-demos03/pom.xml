@@ -65,6 +65,7 @@
         <module>springbootdemo254-Cpdetector</module>
         <module>springbootdemo255-Xk-time</module>
         <module>springbootdemo256-Oshi</module>
+        <module>springbootdemo257-Jsch</module>
     </modules>
 
     <packaging>pom</packaging>
