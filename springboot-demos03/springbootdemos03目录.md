@@ -188,3 +188,6 @@ springboot 整合 Crane4j 数据填充框架
 
 ## 261.springbootdemo261-Jbcrypt
 springboot 整合 Jbcrypt 密码管理
+
+## 262.springbootdemo262-Retrofit
+springboot 整合 Retrofit 实现 HTTP 调用
