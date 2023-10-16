@@ -71,6 +71,7 @@
         <module>springbootdemo260-Crane4j</module>
         <module>springbootdemo261-Jbcrypt</module>
         <module>springbootdemo262-Retrofit</module>
+        <module>springbootdemo263-Cron-Utils</module>
     </modules>
 
     <packaging>pom</packaging>
