@@ -1,0 +1,15 @@
+crane4j:
+  # 扫描枚举包路径
+  # container-enum-packages: cn.demo.constant.enums
+
+  # 是否只加载被@ContainerEnum注解的枚举
+  # only-load-annotated-enum: true
+
+  # 扫描常量包路径
+  # container-constant-packages: cn.demo.constant
+
+  # 将命名空间为 container-namespace 的容器包装为缓存容器，并使用了指定的缓存名称 cache-name
+  cache-containers:
+    cache-name: container-namespace
+
+

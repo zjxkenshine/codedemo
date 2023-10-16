@@ -68,6 +68,7 @@
         <module>springbootdemo257-Jsch</module>
         <module>springbootdemo258-Ttl</module>
         <module>springbootdemo259-Lunar</module>
+        <module>springbootdemo260-Crane4j</module>
     </modules>
 
     <packaging>pom</packaging>
