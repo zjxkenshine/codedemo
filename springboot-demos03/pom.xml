@@ -69,6 +69,7 @@
         <module>springbootdemo258-Ttl</module>
         <module>springbootdemo259-Lunar</module>
         <module>springbootdemo260-Crane4j</module>
+        <module>springbootdemo261-Jbcrypt</module>
     </modules>
 
     <packaging>pom</packaging>
