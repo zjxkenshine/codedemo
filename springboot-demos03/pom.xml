@@ -77,6 +77,7 @@
         <module>springbootdemo266-ReflectASM</module>
         <module>springbootdemo267-Avro</module>
         <module>springbootdemo268-Jsoniter</module>
+        <module>springbootdemo269-Reflections</module>
     </modules>
 
     <packaging>pom</packaging>
