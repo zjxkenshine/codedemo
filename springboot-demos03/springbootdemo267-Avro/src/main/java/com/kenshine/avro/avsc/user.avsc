@@ -1,0 +1,14 @@
+{
+  // 数据类型: record
+  "type": "record",
+  // 包名
+  "namespace": "com.kenshine.avro.pojo",
+  // 类名
+  "name": "User",
+  // 属性名
+  "fields": [
+    {"name": "name", "type": "string", "doc": "姓名"},
+    {"name": "age",  "type": ["int", "null"],"doc": "年龄"},
+    {"name": "sex", "type": ["string", "null"],"doc": "性别"}
+  ]
+}

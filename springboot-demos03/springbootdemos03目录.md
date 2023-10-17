@@ -203,3 +203,7 @@ OperatingSystemMXBean 获取CPU使用率、内存使用率
 
 ## 266.springbootdemo266-ReflectASM
 ReflectASM Java高性能反射工具类使用
+
+## 267.springbootdemo267-Avro
+springboot 整合 Avro 对象序列化/反序列化
+

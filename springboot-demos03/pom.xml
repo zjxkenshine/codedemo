@@ -75,6 +75,7 @@
         <module>springbootdemo264-AspectJ</module>
         <module>springbootdemo265-OperatingSystemMXBean</module>
         <module>springbootdemo266-ReflectASM</module>
+        <module>springbootdemo267-Avro</module>
     </modules>
 
     <packaging>pom</packaging>
