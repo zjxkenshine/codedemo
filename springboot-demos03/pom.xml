@@ -72,6 +72,7 @@
         <module>springbootdemo261-Jbcrypt</module>
         <module>springbootdemo262-Retrofit</module>
         <module>springbootdemo263-Cron-Utils</module>
+        <module>springbootdemo264-AspectJ</module>
     </modules>
 
     <packaging>pom</packaging>
