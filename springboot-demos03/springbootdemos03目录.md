@@ -198,3 +198,6 @@ springboot 整合 cron-utils 解析 cron 表达式
 ## 264.springbootdemo264-AspectJ
 AspectJ 实现 AOP
 
+## 265.springbootdemo265-OperatingSystemMXBean
+OperatingSystemMXBean 获取CPU使用率、内存使用率
+

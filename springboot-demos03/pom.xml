@@ -73,6 +73,7 @@
         <module>springbootdemo262-Retrofit</module>
         <module>springbootdemo263-Cron-Utils</module>
         <module>springbootdemo264-AspectJ</module>
+        <module>springbootdemo265-OperatingSystemMXBean</module>
     </modules>
 
     <packaging>pom</packaging>
