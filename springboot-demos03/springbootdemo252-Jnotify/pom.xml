@@ -20,7 +20,7 @@
         <!--本地jar包引入-->
         <dependency>
             <groupId>com.sun.jdmk</groupId>
-            <artifactId>jmxtools</artifactId>
+            <artifactId>jnotify</artifactId>
             <scope>system</scope>
             <systemPath>${project.basedir}/lib/jnotify-0.94.jar</systemPath>
         </dependency>

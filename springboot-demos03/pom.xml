@@ -78,6 +78,7 @@
         <module>springbootdemo267-Avro</module>
         <module>springbootdemo268-Jsoniter</module>
         <module>springbootdemo269-Reflections</module>
+        <module>springbootdemo270-Clamshell-Cli</module>
     </modules>
 
     <packaging>pom</packaging>
