@@ -74,6 +74,7 @@
         <module>springbootdemo263-Cron-Utils</module>
         <module>springbootdemo264-AspectJ</module>
         <module>springbootdemo265-OperatingSystemMXBean</module>
+        <module>springbootdemo266-ReflectASM</module>
     </modules>
 
     <packaging>pom</packaging>
