@@ -76,6 +76,7 @@
         <module>springbootdemo265-OperatingSystemMXBean</module>
         <module>springbootdemo266-ReflectASM</module>
         <module>springbootdemo267-Avro</module>
+        <module>springbootdemo268-Jsoniter</module>
     </modules>
 
     <packaging>pom</packaging>

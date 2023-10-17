@@ -207,3 +207,5 @@ ReflectASM Java高性能反射工具类使用
 ## 267.springbootdemo267-Avro
 springboot 整合 Avro 对象序列化/反序列化
 
+## 268.springbootdemo268-Jsoniter
+springboot 整合 Jsoniter JSON 解析
