@@ -222,3 +222,5 @@ Classmate java泛型解析框架
 ## 272.springbootdemo272-ClassFinal
 Springboot 整合 ClassFinal 代码混淆，字节码加密
 
+## 273.springbootdemo273-Spi
+java spi机制
