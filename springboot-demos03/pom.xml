@@ -85,6 +85,7 @@
         <module>springbootdemo274-SilverSpi</module>
         <module>springbootdemo275-IdGenerator1</module>
         <module>springbootdemo276-IdGenerator2</module>
+        <module>springbootdemo277-IpLimiter1</module>
     </modules>
 
     <packaging>pom</packaging>
