@@ -227,3 +227,6 @@ java spi机制
 
 ## 274.springbootdemo274-SilverSpi
 Springboot 整合spi框架 SilverSpi
+
+## 275.springbootdemo275-IdGenerator1
+coderush/id-generator 分布式ID生成器
