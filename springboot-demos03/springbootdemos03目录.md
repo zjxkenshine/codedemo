@@ -219,3 +219,6 @@ Clamshell-Cli 构建命令行程序
 ## 271.springbootdemo271-Classmate
 Classmate java泛型解析框架
 
+## 272.springbootdemo272-ClassFinal
+Springboot 整合 ClassFinal 代码混淆，字节码加密
+

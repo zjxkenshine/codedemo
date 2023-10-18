@@ -80,6 +80,7 @@
         <module>springbootdemo269-Reflections</module>
         <module>springbootdemo270-Clamshell-Cli</module>
         <module>springbootdemo271-Classmate</module>
+        <module>springbootdemo272-ClassFinal</module>
     </modules>
 
     <packaging>pom</packaging>
