@@ -224,3 +224,6 @@ Springboot 整合 ClassFinal 代码混淆，字节码加密
 
 ## 273.springbootdemo273-Spi
 java spi机制
+
+## 274.springbootdemo274-SilverSpi
+Springboot 整合spi框架 SilverSpi
