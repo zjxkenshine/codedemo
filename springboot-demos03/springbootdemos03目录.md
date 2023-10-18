@@ -230,3 +230,6 @@ Springboot 整合spi框架 SilverSpi
 
 ## 275.springbootdemo275-IdGenerator1
 coderush/id-generator 分布式ID生成器
+
+## 276.springbootdemo276-IdGenerator2
+lxm23/id-generator 分布式ID生成器

@@ -84,6 +84,7 @@
         <module>springbootdemo273-Spi</module>
         <module>springbootdemo274-SilverSpi</module>
         <module>springbootdemo275-IdGenerator1</module>
+        <module>springbootdemo276-IdGenerator2</module>
     </modules>
 
     <packaging>pom</packaging>
