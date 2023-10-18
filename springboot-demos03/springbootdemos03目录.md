@@ -216,4 +216,6 @@ springboot 整合 Reflections 反射框架
 ## 270.springbootdemo270-Clamshell-Cli
 Clamshell-Cli 构建命令行程序
 
+## 271.springbootdemo271-Classmate
+Classmate java泛型解析框架
 
