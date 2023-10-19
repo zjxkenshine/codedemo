@@ -90,6 +90,7 @@
         <module>springbootdemo279-Assertj</module>
         <module>springbootdemo280-Nginxparser</module>
         <module>springbootdemo281-Snack3</module>
+        <module>springbootdemo282-Dsl-Json</module>
     </modules>
 
     <packaging>pom</packaging>
