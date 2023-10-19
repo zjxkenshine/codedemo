@@ -87,6 +87,7 @@
         <module>springbootdemo276-IdGenerator2</module>
         <module>springbootdemo277-IpLimiter1</module>
         <module>springbootdemo278-Jason</module>
+        <module>springbootdemo279-Assertj</module>
     </modules>
 
     <packaging>pom</packaging>

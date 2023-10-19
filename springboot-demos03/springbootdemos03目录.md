@@ -239,3 +239,6 @@ DDAaTao/ip-limiter IP限流
 
 ## 278.springbootdemo278-Jason
 springboot 整合 Jason 高性能json解析
+
+## 279.springbootdemo279-Assertj
+Assertj断言测试
