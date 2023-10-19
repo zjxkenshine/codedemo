@@ -88,6 +88,7 @@
         <module>springbootdemo277-IpLimiter1</module>
         <module>springbootdemo278-Jason</module>
         <module>springbootdemo279-Assertj</module>
+        <module>springbootdemo280-Nginxparser</module>
     </modules>
 
     <packaging>pom</packaging>
