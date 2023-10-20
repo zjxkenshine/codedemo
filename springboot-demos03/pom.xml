@@ -96,6 +96,7 @@
         <module>springbootdemo285-Milo</module>
         <module>springbootdemo286-WordGo</module>
         <module>springbootdemo287-Light-Json</module>
+        <module>springbootdemo288-Wast</module>
     </modules>
 
     <packaging>pom</packaging>

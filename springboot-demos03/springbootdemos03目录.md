@@ -267,3 +267,6 @@ springboot 整合 WordGo 生成word文档
 
 ## 287.springbootdemo287-Light-Json
 springboot 整合 Light-Json 解析 json
+
+## 288.springbootdemo288-Wast
+springboot 整合 Wast 操作json、yaml、表达式引擎、jdbc
