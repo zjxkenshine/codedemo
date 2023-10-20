@@ -258,3 +258,6 @@ springboot 整合 dsl-json 高性能 json 解析
 
 ## 284.springbootdemo284-Plc4x-OpcUa
 springboot 整合 Plc4x-OpcUa 连接 OpcUa
+
+## 285.springbootdemo285-Milo
+springboot 整合 Milo 连接 OpcUa

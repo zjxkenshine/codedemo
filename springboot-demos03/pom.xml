@@ -93,6 +93,7 @@
         <module>springbootdemo282-Dsl-Json</module>
         <module>springbootdemo283-Velocity</module>
         <module>springbootdemo284-Plc4x-OpcUa</module>
+        <module>springbootdemo285-Milo</module>
     </modules>
 
     <packaging>pom</packaging>
