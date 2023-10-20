@@ -255,3 +255,6 @@ springboot 整合 dsl-json 高性能 json 解析
 ## 283.springbootdemo283-Velocity
 - springboot2.X 编译源码支持 Velocity 模板引擎
 - Velocity模板引擎使用
+
+## 284.springbootdemo284-Plc4x-OpcUa
+springboot 整合 Plc4x-OpcUa 连接 OpcUa
