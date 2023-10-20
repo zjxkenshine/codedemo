@@ -261,3 +261,6 @@ springboot 整合 Plc4x-OpcUa 连接 OpcUa
 
 ## 285.springbootdemo285-Milo
 springboot 整合 Milo 连接 OpcUa
+
+## 286.springbootdemo286-WordGo
+springboot 整合 WordGo 生成word文档

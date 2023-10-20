@@ -94,6 +94,7 @@
         <module>springbootdemo283-Velocity</module>
         <module>springbootdemo284-Plc4x-OpcUa</module>
         <module>springbootdemo285-Milo</module>
+        <module>springbootdemo286-WordGo</module>
     </modules>
 
     <packaging>pom</packaging>
