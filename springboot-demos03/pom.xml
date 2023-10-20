@@ -99,6 +99,7 @@
         <module>springbootdemo288-Wast</module>
         <module>springbootdemo289-Jsoup</module>
         <module>springbootdemo290-Fel</module>
+        <module>springbootdemo291-Commons-Jxel</module>
     </modules>
 
     <packaging>pom</packaging>
