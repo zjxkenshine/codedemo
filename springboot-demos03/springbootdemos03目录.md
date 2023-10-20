@@ -274,3 +274,6 @@ springboot 整合 Wast 操作json、yaml、表达式引擎、jdbc
 ## 289.springbootdemo289-Jsoup
 Jsoup 解析 HTML
 
+## 290.springbootdemo290-Fel
+springboot 整合 Fel 表达式引擎
+
