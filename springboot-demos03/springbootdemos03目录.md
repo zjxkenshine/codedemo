@@ -264,3 +264,6 @@ springboot 整合 Milo 连接 OpcUa
 
 ## 286.springbootdemo286-WordGo
 springboot 整合 WordGo 生成word文档
+
+## 287.springbootdemo287-Light-Json
+springboot 整合 Light-Json 解析 json

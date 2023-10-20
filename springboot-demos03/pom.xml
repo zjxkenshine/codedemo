@@ -95,6 +95,7 @@
         <module>springbootdemo284-Plc4x-OpcUa</module>
         <module>springbootdemo285-Milo</module>
         <module>springbootdemo286-WordGo</module>
+        <module>springbootdemo287-Light-Json</module>
     </modules>
 
     <packaging>pom</packaging>
