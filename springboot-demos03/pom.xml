@@ -100,6 +100,7 @@
         <module>springbootdemo289-Jsoup</module>
         <module>springbootdemo290-Fel</module>
         <module>springbootdemo291-Commons-Jxel</module>
+        <module>springbootdemo292-Json-Smart</module>
     </modules>
 
     <packaging>pom</packaging>
