@@ -282,3 +282,6 @@ springboot 整合 Jxel 表达式引擎
 
 ## 292.springbootdemo292-Json-Smart
 springboot 整合 Json-Smart 解析 Json
+
+## 293.springbootdemo293-AutoService
+springboot 整合 AutoService APT/SPI框架
