@@ -285,3 +285,6 @@ springboot 整合 Json-Smart 解析 Json
 
 ## 293.springbootdemo293-AutoService
 springboot 整合 AutoService APT/SPI框架
+
+## 294.springbootdemo294-JavaPoet
+JavaPoet 生成java代码

@@ -102,6 +102,7 @@
         <module>springbootdemo291-Commons-Jxel</module>
         <module>springbootdemo292-Json-Smart</module>
         <module>springbootdemo293-AutoService</module>
+        <module>springbootdemo294-JavaPoet</module>
     </modules>
 
     <packaging>pom</packaging>
