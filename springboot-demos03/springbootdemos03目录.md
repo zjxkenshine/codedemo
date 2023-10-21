@@ -288,3 +288,6 @@ springboot 整合 AutoService APT/SPI框架
 
 ## 294.springbootdemo294-JavaPoet
 JavaPoet 生成java代码
+
+## 295.springbootdemo295-HttpUnit
+HttpUnit 模拟浏览器数据采集
