@@ -1,0 +1,10 @@
+!com.kenshine.yamlbeans.Cat
+name: "\u55b5\u55b5"
+age: 2
+list: !java.util.Arrays$ArrayList
+- "\u6349\u8001\u9f20"
+- "\u5403\u9c7c"
+map: 
+   k1: v1
+   k2: v2
+   k3: v3
