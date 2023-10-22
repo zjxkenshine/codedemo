@@ -294,3 +294,6 @@ HttpUnit 模拟浏览器数据采集
 
 ## 296.springbootdemo296-Ice
 springboot 整合 ice 规则引擎
+
+## 297.springbootdemo297-Jieba
+springboot 整合 Jieba 分词器

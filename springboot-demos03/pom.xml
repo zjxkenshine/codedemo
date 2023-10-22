@@ -105,6 +105,7 @@
         <module>springbootdemo294-JavaPoet</module>
         <module>springbootdemo295-HttpUnit</module>
         <module>springbootdemo296-Ice</module>
+        <module>springbootdemo297-Jieba</module>
     </modules>
 
     <packaging>pom</packaging>
