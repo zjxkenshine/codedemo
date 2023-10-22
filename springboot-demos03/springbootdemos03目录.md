@@ -300,3 +300,6 @@ springboot 整合 Jieba 分词器
 
 ## 298.springbootdemo298-Jackson-Yaml
 springboot 整合 jackson-dataformat-ymal 操作yaml
+
+## 299.springbootdemo299-Jyaml
+springboot 整合 Jyaml 操作yaml

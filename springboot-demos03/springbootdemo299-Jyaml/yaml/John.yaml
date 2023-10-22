@@ -1,0 +1,30 @@
+--- &0 !com.kenshine.jyaml.model.Person
+age: 37
+children: &2 !com.kenshine.jyaml.model.Person[]
+  - !com.kenshine.jyaml.model.Person
+    age: 3
+    name: boy
+  - !com.kenshine.jyaml.model.Person
+    age: 1
+    name: girl
+name: Michael Corleone
+spouse: !com.kenshine.jyaml.model.Person
+  age: 24
+  children: *2
+  name: Floveria Edie
+  spouse: *0
+--- &9 !com.kenshine.jyaml.model.Person
+age: 38
+children: &11 !com.kenshine.jyaml.model.Person[]
+  - !com.kenshine.jyaml.model.Person
+    age: 3
+    name: boy
+  - !com.kenshine.jyaml.model.Person
+    age: 1
+    name: girl
+name: Michael Corleone
+spouse: !com.kenshine.jyaml.model.Person
+  age: 24
+  children: *11
+  name: Floveria Edie
+  spouse: *9

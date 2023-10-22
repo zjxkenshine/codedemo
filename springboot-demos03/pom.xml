@@ -107,6 +107,7 @@
         <module>springbootdemo296-Ice</module>
         <module>springbootdemo297-Jieba</module>
         <module>springbootdemo298-Jackson-Yaml</module>
+        <module>springbootdemo299-Jyaml</module>
     </modules>
 
     <packaging>pom</packaging>
