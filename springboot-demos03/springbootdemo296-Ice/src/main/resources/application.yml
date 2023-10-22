@@ -1,0 +1,9 @@
+ice: #ice client配置
+  app: 1 #与后台配置app对应
+  #  server: zookeeper:localhost:2181,localhost:2182,localhost:2183 #server高可用配置
+  server: 127.0.0.1:18121 #server 地址(serverHost:serverPort)
+  scan: com.kenshine.ice #用于扫描叶子节点，多个包用','分隔(默认扫描全部，扫描全部会拖慢应用启动速度)
+  pool: #线程池配置(用于并发关系节点)
+    parallelism: -1 #默认-1,≤0表示采用默认配置
+
+environment: dev

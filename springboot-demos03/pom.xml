@@ -104,6 +104,7 @@
         <module>springbootdemo293-AutoService</module>
         <module>springbootdemo294-JavaPoet</module>
         <module>springbootdemo295-HttpUnit</module>
+        <module>springbootdemo296-Ice</module>
     </modules>
 
     <packaging>pom</packaging>

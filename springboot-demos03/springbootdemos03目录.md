@@ -291,3 +291,6 @@ JavaPoet 生成java代码
 
 ## 295.springbootdemo295-HttpUnit
 HttpUnit 模拟浏览器数据采集
+
+## 296.springbootdemo296-Ice
+springboot 整合 ice 规则引擎
