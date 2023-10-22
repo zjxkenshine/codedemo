@@ -297,3 +297,6 @@ springboot 整合 ice 规则引擎
 
 ## 297.springbootdemo297-Jieba
 springboot 整合 Jieba 分词器
+
+## 298.springbootdemo298-Jackson-Yaml
+springboot 整合 jackson-dataformat-ymal 操作yaml
