@@ -11,6 +11,7 @@
     <modules>
         <module>springbootdemo400-Yamlbeans</module>
         <module>springbootdemo401-Org.Json</module>
+        <module>springbootdemo402-Noson</module>
     </modules>
 
     <name>springboot-demos03</name>
