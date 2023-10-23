@@ -13,6 +13,7 @@
         <module>springbootdemo401-Org.Json</module>
         <module>springbootdemo402-Noson</module>
         <module>springbootdemo403-Jsonassert</module>
+        <module>springbootdemo404-Zip4j</module>
     </modules>
 
     <name>springboot-demos03</name>
