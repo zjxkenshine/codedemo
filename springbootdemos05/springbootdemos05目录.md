@@ -14,3 +14,6 @@ Jsonassert json转换、比对、测试
 ## 404.springbootdemo404-Zip4j
 springboot 整合 Zip4j 压缩解压
 
+## 405.springbootdemo405-AutoValue
+springboot 整合 AutoValue 实体类生成
+
