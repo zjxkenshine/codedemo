@@ -26,4 +26,7 @@ springboot 整合 Plc4x 连接 S7 和 Modbus 测试
 ## 408.springbootdemo408-Brother
 java Socket 连接 brother 兄弟机床
 
+## 409.springbootdemo409-Fanuc
+focas 连接发那科
+
 

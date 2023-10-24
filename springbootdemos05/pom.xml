@@ -18,6 +18,7 @@
         <module>springbootdemo406-AutoFactory</module>
         <module>springbootdemo407-Plc4x-S7-Modbus</module>
         <module>springbootdemo408-Brother</module>
+        <module>springbootdemo409-Fanuc</module>
     </modules>
 
     <name>springboot-demos03</name>
