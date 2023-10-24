@@ -15,6 +15,7 @@
         <module>springbootdemo403-Jsonassert</module>
         <module>springbootdemo404-Zip4j</module>
         <module>springbootdemo405-AutoValue</module>
+        <module>springbootdemo406-AutoFactory</module>
     </modules>
 
     <name>springboot-demos03</name>

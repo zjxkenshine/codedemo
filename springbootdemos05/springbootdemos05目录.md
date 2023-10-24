@@ -17,3 +17,6 @@ springboot 整合 Zip4j 压缩解压
 ## 405.springbootdemo405-AutoValue
 springboot 整合 AutoValue 实体类生成
 
+## 406.springbootdemo406-AutoFactory
+springboot 整合 AutoFactory 生成工厂类代码
+

@@ -5,6 +5,7 @@ AutoValue简介
 AutoValue使用那点事
 - https://blog.csdn.net/wangxiaotongfan/article/details/81486952
 
+AutoValue只能用于抽象类
 
 # 扩展
 - auto-value-parcel：安卓Parcelable序列化反序列化
