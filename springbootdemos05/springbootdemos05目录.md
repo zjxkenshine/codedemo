@@ -23,5 +23,7 @@ springboot 整合 AutoFactory 生成工厂类代码
 ## 407.springbootdemo407-Plc4x-S7-Modbus
 springboot 整合 Plc4x 连接 S7 和 Modbus 测试
 
+## 408.springbootdemo408-Brother
+java Socket 连接 brother 兄弟机床
 
 

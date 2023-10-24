@@ -17,6 +17,7 @@
         <module>springbootdemo405-AutoValue</module>
         <module>springbootdemo406-AutoFactory</module>
         <module>springbootdemo407-Plc4x-S7-Modbus</module>
+        <module>springbootdemo408-Brother</module>
     </modules>
 
     <name>springboot-demos03</name>
