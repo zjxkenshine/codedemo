@@ -16,6 +16,7 @@
         <module>springbootdemo404-Zip4j</module>
         <module>springbootdemo405-AutoValue</module>
         <module>springbootdemo406-AutoFactory</module>
+        <module>springbootdemo407-Plc4x-S7-Modbus</module>
     </modules>
 
     <name>springboot-demos03</name>
