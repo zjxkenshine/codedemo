@@ -29,4 +29,7 @@ java Socket 连接 brother 兄弟机床
 ## 409.springbootdemo409-Fanuc
 focas 连接发那科
 
+## 410.springbootdemo410-BitIO
+springboot 整合 bitio 位操作
+
 

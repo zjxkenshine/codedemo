@@ -19,6 +19,7 @@
         <module>springbootdemo407-Plc4x-S7-Modbus</module>
         <module>springbootdemo408-Brother</module>
         <module>springbootdemo409-Fanuc</module>
+        <module>springbootdemo410-BitIO</module>
     </modules>
 
     <name>springboot-demos03</name>
