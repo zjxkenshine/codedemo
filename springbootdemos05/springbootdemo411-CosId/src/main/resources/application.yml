@@ -1,0 +1,82 @@
+spring:
+  application:
+    name: testCosid
+  # 配置数据源
+  datasource:
+    # 数据源类型，使用druid连接池
+    type: com.alibaba.druid.pool.DruidDataSource
+    # 数据库驱动，这里配置高版本mysql驱动
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/springboot05?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf8&autoReconnect=true&allowMultiQueries=true&useSSL=false
+    username: root
+    password: 123456
+  # spring3 data redis 配置方式
+  data:
+    redis:
+      url: redis://127.0.0.1:6379
+
+# 详细 https://cosid.ahoo.me/config
+cosid:
+  # 隔离不同应用
+  namespace: ${spring.application.name}
+  # redis分配机器码
+  #stable	boolean	是否为稳定的实例,稳定实例将不回收机器号	false
+  #port	Integer	端口号	进程ID（PID）
+  #instanceId	String	应用实例编号(全局唯一)	应用IP:PID
+  #machineBit	int	机器位数	10
+  #stateStorage	StateStorage	机器状态存储
+  #distributor	Distributor	机器号分发器
+  #guarder	Guarder	机器号(心跳)守护
+  #clock-backwards	ClockBackwards	时钟回拨配置
+  machine:
+    distributor:
+      type: redis
+    enabled: true
+    guarder:
+      enabled: true
+  # SnowflakeId 配置
+  snowflake:
+    enabled: true
+    # 时区
+    zone-id: Asia/Shanghai
+    epoch: 1577203200000
+    # 共享ID生成器配置
+    share:
+      clock-sync: true
+      friendly: true
+    # 多ID生成器配置
+    provider:
+      short_id:
+        converter:
+          prefix: cosid_
+          type: radix
+          radix:
+            char-size: 11
+            pad-start: false
+      safe-js:
+        machine-bit: 3
+        sequence-bit: 9
+  # segment 配置
+  segment:
+    enabled: false
+    mode: chain
+    chain:
+      safe-distance: 5
+      prefetch-worker:
+        core-pool-size: 2
+        prefetch-period: 1s
+    distributor:
+      type: redis
+    share:
+      offset: 0
+      step: 100
+      converter:
+        prefix: cosid_
+        type: radix
+        radix:
+          char-size: 6
+          pad-start: false
+    provider:
+      order:
+        offset: 10000
+        step: 100

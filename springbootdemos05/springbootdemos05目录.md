@@ -32,4 +32,6 @@ focas 连接发那科
 ## 410.springbootdemo410-BitIO
 springboot 整合 bitio 位操作
 
+## 411.springbootdemo411-CosId
+springboot 整合 CosId 分布式id生成器
 
