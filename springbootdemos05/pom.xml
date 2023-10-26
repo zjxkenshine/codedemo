@@ -24,6 +24,7 @@
         <module>springbootdemo412-Leaf</module>
         <module>springbootdemo413-Perf4j</module>
         <module>springbootdemo414-MyPerf4j</module>
+        <module>springbootdemo415-Largtext</module>
     </modules>
 
     <name>springboot-demos03</name>
