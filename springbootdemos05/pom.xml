@@ -25,6 +25,7 @@
         <module>springbootdemo413-Perf4j</module>
         <module>springbootdemo414-MyPerf4j</module>
         <module>springbootdemo415-Largtext</module>
+        <module>springbootdemo416-Vjkit</module>
     </modules>
 
     <name>springboot-demos03</name>
