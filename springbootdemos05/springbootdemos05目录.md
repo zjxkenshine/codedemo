@@ -55,3 +55,6 @@ springboot 整合 visual-qr-code 生成背景图二维码
 
 ## 418.springbootdemo418-Redtimer
 Redtimer 定时任务框架
+
+## 419.springbootdemo419-Jdring
+jdring 定时任务
