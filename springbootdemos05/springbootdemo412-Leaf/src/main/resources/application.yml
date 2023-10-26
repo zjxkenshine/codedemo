@@ -1,0 +1,13 @@
+server:
+  port: 8081
+
+wssnail:
+  mt:
+    leaf:
+      segment-enable: true
+      jdbc-username: root
+      jdbc-password: 123456
+      jdbc-url: jdbc:mysql://127.0.0.1:3306/springboot05?useUnicode=true&&useSSL=false&characterEncoding=UTF-8&rewriteBatchedStatements=true&allowMultiQueries=true&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true
+      snowflake-enable: false
+      snowflake-zk-address: 192.168.139.184
+      snowflake-port: 2181

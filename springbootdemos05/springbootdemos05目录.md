@@ -35,3 +35,6 @@ springboot 整合 bitio 位操作
 ## 411.springbootdemo411-CosId
 springboot 整合 CosId 分布式id生成器
 
+## 412.springbootdemo412-Leaf
+springboot 整合 Leaf 美团分布式id生成器
+
