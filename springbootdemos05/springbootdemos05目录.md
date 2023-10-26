@@ -50,3 +50,6 @@ Largetext 超大文件读取
 ## 416.springbootdemo416-Vjkit
 springboot 整合 Vjkit 工具集
 
+## 417.springbootdemo417-VisualQrCode
+springboot 整合 visual-qr-code 生成背景图二维码
+

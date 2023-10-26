@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>springbootdemos05</artifactId>
+        <groupId>com.kenshine</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>springbootdemo417-VisualQrCode</artifactId>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.vsc</groupId>
+            <artifactId>Qrcode</artifactId>
+            <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${basedir}/lib/Qrcode.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>com.vsc</groupId>
+            <artifactId>visual-qr-code</artifactId>
+            <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${basedir}/lib/visual-qr-code-1.0.jar</systemPath>
+        </dependency>
+    </dependencies>
+</project>
