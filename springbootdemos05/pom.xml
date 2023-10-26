@@ -22,6 +22,7 @@
         <module>springbootdemo410-BitIO</module>
         <module>springbootdemo411-CosId</module>
         <module>springbootdemo412-Leaf</module>
+        <module>springbootdemo413-Perf4j</module>
     </modules>
 
     <name>springboot-demos03</name>
