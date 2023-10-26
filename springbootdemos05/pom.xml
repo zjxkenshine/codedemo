@@ -27,6 +27,7 @@
         <module>springbootdemo415-Largtext</module>
         <module>springbootdemo416-Vjkit</module>
         <module>springbootdemo417-VisualQrCode</module>
+        <module>springbootdemo418-Redtimer</module>
     </modules>
 
     <name>springboot-demos03</name>
