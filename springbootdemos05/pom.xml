@@ -29,6 +29,7 @@
         <module>springbootdemo417-VisualQrCode</module>
         <module>springbootdemo418-Redtimer</module>
         <module>springbootdemo419-Jdring</module>
+        <module>springbootdemo420-Jconch</module>
     </modules>
 
     <name>springboot-demos03</name>
