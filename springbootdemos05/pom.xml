@@ -33,6 +33,8 @@
         <module>springbootdemo421-Rafiki</module>
         <module>springbootdemo422-Nryaml</module>
         <module>springbootdemo423-Javatuples</module>
+        <module>springbootdemo424-Base64Util</module>
+        <module>springbootdemo425-Ansj</module>
     </modules>
 
     <name>springboot-demos03</name>
