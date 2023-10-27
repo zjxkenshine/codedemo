@@ -35,6 +35,7 @@
         <module>springbootdemo423-Javatuples</module>
         <module>springbootdemo424-Base64Util</module>
         <module>springbootdemo425-Ansj</module>
+        <module>springbootdemo426-Word</module>
     </modules>
 
     <name>springboot-demos03</name>
