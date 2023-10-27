@@ -67,3 +67,6 @@ springboot 整合 Rafiki 定时任务框架
 
 ## 422.springbootdemo422-Nryaml
 springboot 整合 Nryaml 读取 yml
+
+## 423.springbootdemo423-Javatuples
+java 线程安全元组 Javatuples

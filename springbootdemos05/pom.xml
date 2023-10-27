@@ -32,6 +32,7 @@
         <module>springbootdemo420-Jconch</module>
         <module>springbootdemo421-Rafiki</module>
         <module>springbootdemo422-Nryaml</module>
+        <module>springbootdemo423-Javatuples</module>
     </modules>
 
     <name>springboot-demos03</name>
