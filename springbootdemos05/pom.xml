@@ -30,6 +30,7 @@
         <module>springbootdemo418-Redtimer</module>
         <module>springbootdemo419-Jdring</module>
         <module>springbootdemo420-Jconch</module>
+        <module>springbootdemo421-Rafiki</module>
     </modules>
 
     <name>springboot-demos03</name>
