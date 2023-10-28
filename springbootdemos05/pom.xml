@@ -40,6 +40,7 @@
         <module>springbootdemo428-Speed4j</module>
         <module>springbootdemo429-Nanohttpd</module>
         <module>springbootdemo430-OkapiBarcode</module>
+        <module>springbootdemo431-Fluent-hc</module>
     </modules>
 
     <name>springboot-demos03</name>
