@@ -95,3 +95,5 @@ OkapiBarcode 条形码/二维码生成
 ## 431.springbootdemo431-Fluent-hc
 springboot 整合 fluent-hc 构建Http客户端
 
+## 432.springbootdemo432-Failsafe
+Failsafe 容错框架

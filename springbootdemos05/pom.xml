@@ -41,6 +41,7 @@
         <module>springbootdemo429-Nanohttpd</module>
         <module>springbootdemo430-OkapiBarcode</module>
         <module>springbootdemo431-Fluent-hc</module>
+        <module>springbootdemo432-Failsafe</module>
     </modules>
 
     <name>springboot-demos03</name>
