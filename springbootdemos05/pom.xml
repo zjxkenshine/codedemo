@@ -37,6 +37,7 @@
         <module>springbootdemo425-Ansj</module>
         <module>springbootdemo426-Word</module>
         <module>springbootdemo427-TestCoordinator</module>
+        <module>springbootdemo428-Speed4j</module>
     </modules>
 
     <name>springboot-demos03</name>

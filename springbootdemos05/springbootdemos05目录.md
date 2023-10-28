@@ -82,3 +82,6 @@ Word 中文分词
 
 ## 427.springbootdemo427-TestCoordinator
 Jconch TestCoordinator重写，异步测试
+
+## 428.springbootdemo428-Speed4j
+springboot 整合 Speed4j 方法性能测试
