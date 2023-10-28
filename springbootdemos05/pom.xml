@@ -39,6 +39,7 @@
         <module>springbootdemo427-TestCoordinator</module>
         <module>springbootdemo428-Speed4j</module>
         <module>springbootdemo429-Nanohttpd</module>
+        <module>springbootdemo430-OkapiBarcode</module>
     </modules>
 
     <name>springboot-demos03</name>
