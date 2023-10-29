@@ -97,3 +97,6 @@ springboot 整合 fluent-hc 构建Http客户端
 
 ## 432.springbootdemo432-Failsafe
 Failsafe 容错框架
+
+## 433.springbootdemo433-Opentest4j
+opentest4j JVM平台测试标准异常
