@@ -45,6 +45,7 @@
         <module>springbootdemo433-Opentest4j</module>
         <module>springbootdemo434-Xz</module>
         <module>springbootdemo435-Jmustache</module>
+        <module>springbootdemo436-Chardet4j</module>
     </modules>
 
     <name>springboot-demos03</name>

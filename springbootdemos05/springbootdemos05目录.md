@@ -106,3 +106,6 @@ xz 数据压缩
 
 ## 435.springbootdemo435-Jmustache
 Jmustache模板引擎生成代码
+
+## 436.springbootdemo436-Chardet4j
+chardet4j 文件编码检测
