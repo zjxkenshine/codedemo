@@ -43,6 +43,7 @@
         <module>springbootdemo431-Fluent-hc</module>
         <module>springbootdemo432-Failsafe</module>
         <module>springbootdemo433-Opentest4j</module>
+        <module>springbootdemo434-Xz</module>
     </modules>
 
     <name>springboot-demos03</name>

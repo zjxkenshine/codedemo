@@ -100,3 +100,6 @@ Failsafe 容错框架
 
 ## 433.springbootdemo433-Opentest4j
 opentest4j JVM平台测试标准异常
+
+## 434.springbootdemo434-Xz
+xz 数据压缩
