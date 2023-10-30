@@ -48,6 +48,7 @@
         <module>springbootdemo436-Chardet4j</module>
         <module>springbootdemo437-Charts4j</module>
         <module>springbootdemo438-Mcache</module>
+        <module>springbootdemo439-Qrext4j</module>
     </modules>
 
     <name>springboot-demos03</name>

@@ -115,3 +115,6 @@ Charts4j 调用谷歌API 生成图表
 
 ## 438.springbootdemo438-Mcache
 springboot 整合 Mcache 统一缓存管理
+
+## 439.springbootdemo439-Qrext4j
+springboot 整合 Qrext4j 动态二维码生成
