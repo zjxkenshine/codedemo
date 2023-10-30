@@ -112,3 +112,6 @@ chardet4j 文件编码检测
 
 ## 437.springbootdemo437-Charts4j
 Charts4j 调用谷歌API 生成图表
+
+## 438.springbootdemo438-Mcache
+springboot 整合 Mcache 统一缓存管理
