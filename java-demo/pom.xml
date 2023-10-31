@@ -25,6 +25,7 @@
         <module>algorithm-demo</module>
         <module>jsoup-demo</module>
         <module>java17-demo</module>
+        <module>gc-demo</module>
     </modules>
 
     <dependencies>
