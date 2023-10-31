@@ -1,0 +1,191 @@
+
+<html>
+<head>
+<title>Java Concurrency Stress test report</title>
+ <style type="text/css">
+   * { font-family: Arial; }
+   table { font-size: 9pt; }
+   a { color: #000000; }
+   .progress { padding: 0px; }
+   .header { text-align: left; }
+   .section1 { font-size: 12pt; background-color: #BDB76B; color: #000000; font-weight: bold;}
+   .section2 { font-size: 12pt; background-color: #F0E68C; color: #000000; font-weight: bold;}
+   .cell1 { background-color: #FAFAD2; }
+   .cell2 { background-color: #EEE8AA; }
+   .passedProgress { background-color: #00AA00; color: #FFFFFF; text-align: center; font-weight: bold; }
+   .failedProgress { background-color: #FF0000; color: #FFFFFF; text-align: center; font-weight: bold; }
+   .passed { color: #00AA00; text-align: center; font-weight: bold; }
+   .failed { color: #FF0000; text-align: center; font-weight: bold; }
+   .interesting { color: #0000FF; text-align: center; font-weight: bold; }
+   .spec { color: #AAAA00; text-align: center; font-weight: bold; }
+   .endResult { font-size: 48pt; text-align: center; font-weight: bold; }
+ </style>
+</head>
+<body>
+<h1>com.kenshine.jcstress.TestJCStress</h1>
+<h3>Description and references</h3>
+<p>null</p>
+<h3>Environment</h3>
+<table>
+<tr>
+<td nowrap>java.specification.name</td>
+<td nowrap>Java Platform API Specification</td>
+</tr>
+<tr>
+<td nowrap>java.specification.vendor</td>
+<td nowrap>Oracle Corporation</td>
+</tr>
+<tr>
+<td nowrap>java.specification.version</td>
+<td nowrap>1.8</td>
+</tr>
+<tr>
+<td nowrap>java.vendor</td>
+<td nowrap>Oracle Corporation</td>
+</tr>
+<tr>
+<td nowrap>java.version</td>
+<td nowrap>1.8.0_241</td>
+</tr>
+<tr>
+<td nowrap>java.vm.name</td>
+<td nowrap>Java HotSpot(TM) 64-Bit Server VM</td>
+</tr>
+<tr>
+<td nowrap>java.vm.vendor</td>
+<td nowrap>Oracle Corporation</td>
+</tr>
+<tr>
+<td nowrap>java.vm.version</td>
+<td nowrap>25.241-b07</td>
+</tr>
+<tr>
+<td nowrap>os.arch</td>
+<td nowrap>amd64</td>
+</tr>
+<tr>
+<td nowrap>os.name</td>
+<td nowrap>Windows 10</td>
+</tr>
+<tr>
+<td nowrap>os.version</td>
+<td nowrap>10.0</td>
+</tr>
+</table>
+<h3>Results</h3>
+<table cellpadding=5 border=1>
+<tr>
+<th>Compilation Mode</th>
+<th>Scheduling Class</th>
+<th>Java Options</th>
+<th>Status</th>
+<th colspan=3>Observed States</th>
+</tr>
+<tr>
+<th colspan=4></th>
+<th nowrap align='center'>0</th>
+<th nowrap align='center'>1</th>
+<th nowrap align='center'>4</th>
+</tr>
+<tr>
+<td colspan=4></td>
+<td>Interesting</td>
+<td>Acceptable</td>
+<td>Acceptable</td>
+</tr>
+<tr>
+<td colspan=4></td>
+<td>这是不期待的结果</td>
+<td>这是期待的结果</td>
+<td>这是期待的结果</td>
+</tr>
+<tr>
+<td nowrap valign=top width=10><pre>unified across all actors
+</pre></td>
+<td nowrap valign=top width=10><pre>    method: package group free, core group free
+    method2: package group free, core group free
+</pre></td>
+<td        valign=top width=10>
+<pre>[-Dfile.encoding=UTF-8, -XX:+UseBiasedLocking, -XX:-TieredCompilation]</pre>
+</td>
+<td align='center' bgColor='green '>OK</td>
+<td align='right' width='33.333333333333336%' bgColor=#00ffff>714563</td>
+<td align='right' width='33.333333333333336%' bgColor=#00ff00>1077547649</td>
+<td align='right' width='33.333333333333336%' bgColor=#00ff00>1121758894</td>
+</tr>
+<tr>
+<td nowrap valign=top width=10><pre>unified across all actors
+</pre></td>
+<td nowrap valign=top width=10><pre>    method: package group free, core group free
+    method2: package group free, core group free
+</pre></td>
+<td        valign=top width=10>
+<pre>[-Dfile.encoding=UTF-8, -XX:+UseBiasedLocking, -XX:TieredStopAtLevel=1]</pre>
+</td>
+<td align='center' bgColor='green '>OK</td>
+<td align='right' width='33.333333333333336%' bgColor=#c0c0c0>0</td>
+<td align='right' width='33.333333333333336%' bgColor=#00ff00>93172787</td>
+<td align='right' width='33.333333333333336%' bgColor=#00ff00>92046304</td>
+</tr>
+<tr>
+<td nowrap valign=top width=10><pre>unified across all actors
+</pre></td>
+<td nowrap valign=top width=10><pre>    method: package group free, core group free
+    method2: package group free, core group free
+</pre></td>
+<td        valign=top width=10>
+<pre>[-Dfile.encoding=UTF-8, -XX:+UseBiasedLocking, -Xint]</pre>
+</td>
+<td align='center' bgColor='green '>OK</td>
+<td align='right' width='33.333333333333336%' bgColor=#c0c0c0>0</td>
+<td align='right' width='33.333333333333336%' bgColor=#00ff00>2193531</td>
+<td align='right' width='33.333333333333336%' bgColor=#00ff00>13789080</td>
+</tr>
+<tr>
+<td nowrap valign=top width=10><pre>unified across all actors
+</pre></td>
+<td nowrap valign=top width=10><pre>    method: package group free, core group free
+    method2: package group free, core group free
+</pre></td>
+<td        valign=top width=10>
+<pre>[-Dfile.encoding=UTF-8, -XX:-UseBiasedLocking, -XX:-TieredCompilation]</pre>
+</td>
+<td align='center' bgColor='green '>OK</td>
+<td align='right' width='33.333333333333336%' bgColor=#00ffff>651925</td>
+<td align='right' width='33.333333333333336%' bgColor=#00ff00>1146073996</td>
+<td align='right' width='33.333333333333336%' bgColor=#00ff00>1197412945</td>
+</tr>
+<tr>
+<td nowrap valign=top width=10><pre>unified across all actors
+</pre></td>
+<td nowrap valign=top width=10><pre>    method: package group free, core group free
+    method2: package group free, core group free
+</pre></td>
+<td        valign=top width=10>
+<pre>[-Dfile.encoding=UTF-8, -XX:-UseBiasedLocking, -XX:TieredStopAtLevel=1]</pre>
+</td>
+<td align='center' bgColor='green '>OK</td>
+<td align='right' width='33.333333333333336%' bgColor=#c0c0c0>0</td>
+<td align='right' width='33.333333333333336%' bgColor=#00ff00>83543352</td>
+<td align='right' width='33.333333333333336%' bgColor=#00ff00>82782939</td>
+</tr>
+<tr>
+<td nowrap valign=top width=10><pre>unified across all actors
+</pre></td>
+<td nowrap valign=top width=10><pre>    method: package group free, core group free
+    method2: package group free, core group free
+</pre></td>
+<td        valign=top width=10>
+<pre>[-Dfile.encoding=UTF-8, -XX:-UseBiasedLocking, -Xint]</pre>
+</td>
+<td align='center' bgColor='green '>OK</td>
+<td align='right' width='33.333333333333336%' bgColor=#c0c0c0>0</td>
+<td align='right' width='33.333333333333336%' bgColor=#00ff00>2047294</td>
+<td align='right' width='33.333333333333336%' bgColor=#00ff00>12952277</td>
+</tr>
+</table>
+<h3>Messages</h3>
+<h3>VM Output Streams</h3>
+<h3>VM Error Streams</h3>
+</body>
+</html>
