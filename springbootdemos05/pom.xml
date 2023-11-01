@@ -53,6 +53,7 @@
         <module>springbootdemo441-Gctoolkit</module>
         <module>springbootdemo442-JCStress</module>
         <module>springbootdemo443-CuckooFilter4J</module>
+        <module>springbootdemo444-Datafaker</module>
     </modules>
 
     <name>springboot-demos03</name>

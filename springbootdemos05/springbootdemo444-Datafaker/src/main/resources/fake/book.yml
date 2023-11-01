@@ -1,0 +1,6 @@
+# coding: utf-8
+zh-CN:
+  faker:
+    books:
+      names: ['代码整洁之道', 'Java 编程思想', 'Java 编程从入门到入土']
+      authors: ['马丁(Robert C. Martin)', 'Bruce Eckel', 'aabond']
