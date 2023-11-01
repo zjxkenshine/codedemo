@@ -54,6 +54,7 @@
         <module>springbootdemo442-JCStress</module>
         <module>springbootdemo443-CuckooFilter4J</module>
         <module>springbootdemo444-Datafaker</module>
+        <module>springbootdemo445-Json-Util</module>
     </modules>
 
     <name>springboot-demos03</name>
