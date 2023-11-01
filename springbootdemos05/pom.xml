@@ -52,6 +52,7 @@
         <module>springbootdemo440-Cron4j</module>
         <module>springbootdemo441-Gctoolkit</module>
         <module>springbootdemo442-JCStress</module>
+        <module>springbootdemo443-CuckooFilter4J</module>
     </modules>
 
     <name>springboot-demos03</name>
