@@ -55,6 +55,7 @@
         <module>springbootdemo443-CuckooFilter4J</module>
         <module>springbootdemo444-Datafaker</module>
         <module>springbootdemo445-Json-Util</module>
+        <module>springbootdemo446-BeanUtils</module>
     </modules>
 
     <name>springboot-demos03</name>

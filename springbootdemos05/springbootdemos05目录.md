@@ -136,3 +136,6 @@ Datafaker 虚拟测试数据生成
 
 ## 445.springbootdemo445-Json-Util
 json-util json工具类统一API
+
+## 446.springbootdemo446-BeanUtils
+BeanUtils 对象拷贝
