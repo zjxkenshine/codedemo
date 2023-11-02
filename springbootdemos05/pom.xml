@@ -60,6 +60,7 @@
         <module>springbootdemo448-Imcache</module>
         <module>springbootdemo449-HugeCollections-OLD</module>
         <module>springbootdemo450-Pngj</module>
+        <module>springbootdemo451-Sshj</module>
     </modules>
 
     <name>springboot-demos03</name>
