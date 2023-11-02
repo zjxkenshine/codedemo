@@ -139,3 +139,6 @@ json-util json工具类统一API
 
 ## 446.springbootdemo446-BeanUtils
 BeanUtils 对象拷贝
+
+## 447.springbootdemo447-Wordfilter
+Wordfilter 敏感词过滤
