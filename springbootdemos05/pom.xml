@@ -57,6 +57,7 @@
         <module>springbootdemo445-Json-Util</module>
         <module>springbootdemo446-BeanUtils</module>
         <module>springbootdemo447-Wordfilter</module>
+        <module>springbootdemo448-Imcache</module>
     </modules>
 
     <name>springboot-demos03</name>

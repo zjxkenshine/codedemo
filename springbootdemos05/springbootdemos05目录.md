@@ -142,3 +142,6 @@ BeanUtils 对象拷贝
 
 ## 447.springbootdemo447-Wordfilter
 Wordfilter 敏感词过滤
+
+## 448.springbootdemo448-Imcache
+Imcache 缓存/堆外缓存/索引查询
