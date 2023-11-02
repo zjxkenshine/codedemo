@@ -58,6 +58,7 @@
         <module>springbootdemo446-BeanUtils</module>
         <module>springbootdemo447-Wordfilter</module>
         <module>springbootdemo448-Imcache</module>
+        <module>springbootdemo449-HugeCollections-OLD</module>
     </modules>
 
     <name>springboot-demos03</name>
