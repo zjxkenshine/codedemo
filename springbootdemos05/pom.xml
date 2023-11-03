@@ -63,6 +63,7 @@
         <module>springbootdemo451-Sshj</module>
         <module>springbootdemo452-BeeCP</module>
         <module>springbootdemo453-Cache2k</module>
+        <module>springbootdemo454-Ohc</module>
     </modules>
 
     <name>springboot-demos03</name>
