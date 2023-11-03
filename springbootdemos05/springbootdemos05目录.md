@@ -154,3 +154,6 @@ Pngj 高效PNG编码/APNG支持
 
 ## 451.springbootdemo451-Sshj
 Sshj 实现javaSSH客户端连接
+
+## 452.springbootdemo452-BeeCP
+Springboot 整合 BeeCP 连接池
