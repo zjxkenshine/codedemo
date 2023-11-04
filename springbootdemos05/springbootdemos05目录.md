@@ -169,3 +169,6 @@ org.jetbrains.annotations 编译期非空校验
 
 ## 456.springbootdemo456-Apiguardian
 Apiguardian api注解规范
+
+## 457.springbootdemo457-Image-Similarity
+Image-Similarity 图片相似度计算
