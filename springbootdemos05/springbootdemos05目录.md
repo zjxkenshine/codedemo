@@ -178,3 +178,6 @@ GEO geohash工具类
 
 ## 459.springbootdemo459-Rtree
 Rtree 空间数据索引/判断点在多边形内
+
+## 460.springbootdemo460-NlpHanziSimilar
+nlp-hanzi-similar 汉字相似度计算
