@@ -172,3 +172,6 @@ Apiguardian api注解规范
 
 ## 457.springbootdemo457-Image-Similarity
 Image-Similarity 图片相似度计算
+
+## 458.springbootdemo458-Geo
+GEO geohash工具类
