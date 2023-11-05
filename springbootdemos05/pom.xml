@@ -68,6 +68,7 @@
         <module>springbootdemo456-Apiguardian</module>
         <module>springbootdemo457-Image-Similarity</module>
         <module>springbootdemo458-Geo</module>
+        <module>springbootdemo459-Rtree</module>
     </modules>
 
     <name>springboot-demos03</name>
