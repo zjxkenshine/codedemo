@@ -72,6 +72,7 @@
         <module>springbootdemo460-NlpHanziSimilar</module>
         <module>springbootdemo461-AutoLog</module>
         <module>springbootdemo462-Resubmit</module>
+        <module>springbootdemo463-LombokExtensions</module>
     </modules>
 
     <name>springboot-demos03</name>

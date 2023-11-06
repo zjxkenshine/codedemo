@@ -187,3 +187,6 @@ springboot 整合 auto-log 自动日志输出框架
 
 ## 462.springbootdemo462-Resubmit
 springboot 整合 Resubmit 防重复提交
+
+## 463.springbootdemo463-LombokExtensions
+LombokExtensions 扩展方法
