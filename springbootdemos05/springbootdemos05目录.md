@@ -181,3 +181,6 @@ Rtree 空间数据索引/判断点在多边形内
 
 ## 460.springbootdemo460-NlpHanziSimilar
 nlp-hanzi-similar 汉字相似度计算
+
+## 461.springbootdemo461-AutoLog
+springboot 整合 auto-log 自动日志输出框架

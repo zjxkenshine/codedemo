@@ -70,6 +70,7 @@
         <module>springbootdemo458-Geo</module>
         <module>springbootdemo459-Rtree</module>
         <module>springbootdemo460-NlpHanziSimilar</module>
+        <module>springbootdemo461-AutoLog</module>
     </modules>
 
     <name>springboot-demos03</name>
