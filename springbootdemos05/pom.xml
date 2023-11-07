@@ -73,6 +73,7 @@
         <module>springbootdemo461-AutoLog</module>
         <module>springbootdemo462-Resubmit</module>
         <module>springbootdemo463-LombokExtensions</module>
+        <module>springbootdemo464-RateLimit</module>
     </modules>
 
     <name>springboot-demos03</name>

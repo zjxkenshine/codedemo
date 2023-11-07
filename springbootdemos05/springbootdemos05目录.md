@@ -190,3 +190,6 @@ springboot 整合 Resubmit 防重复提交
 
 ## 463.springbootdemo463-LombokExtensions
 LombokExtensions 扩展方法
+
+## 464.springbootdemo464-RateLimit
+springboot 整合 RateLimit 渐进式限流
