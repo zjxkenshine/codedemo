@@ -74,6 +74,7 @@
         <module>springbootdemo462-Resubmit</module>
         <module>springbootdemo463-LombokExtensions</module>
         <module>springbootdemo464-RateLimit</module>
+        <module>springbootdemo465-DataFactory</module>
     </modules>
 
     <name>springboot-demos03</name>

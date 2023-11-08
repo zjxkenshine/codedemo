@@ -193,3 +193,6 @@ LombokExtensions 扩展方法
 
 ## 464.springbootdemo464-RateLimit
 springboot 整合 RateLimit 渐进式限流
+
+## 465.springbootdemo465-DataFactory
+DataFactory 测试对象生成
