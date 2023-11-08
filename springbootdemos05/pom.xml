@@ -75,6 +75,7 @@
         <module>springbootdemo463-LombokExtensions</module>
         <module>springbootdemo464-RateLimit</module>
         <module>springbootdemo465-DataFactory</module>
+        <module>springbootdemo466-Sisyphus</module>
     </modules>
 
     <name>springboot-demos03</name>

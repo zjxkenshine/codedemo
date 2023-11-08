@@ -196,3 +196,6 @@ springboot 整合 RateLimit 渐进式限流
 
 ## 465.springbootdemo465-DataFactory
 DataFactory 测试对象生成
+
+## 466.springbootdemo466-Sisyphus
+springboot 整合 Sisyphus 重试框架
