@@ -199,3 +199,6 @@ DataFactory 测试对象生成
 
 ## 466.springbootdemo466-Sisyphus
 springboot 整合 Sisyphus 重试框架
+
+## 467.springbootdemo467-Lombok-Ex
+lombok-ex lombok扩展
