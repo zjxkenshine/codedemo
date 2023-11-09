@@ -77,6 +77,7 @@
         <module>springbootdemo465-DataFactory</module>
         <module>springbootdemo466-Sisyphus</module>
         <module>springbootdemo467-Lombok-Ex</module>
+        <module>springbootdemo468-Opencc4j</module>
     </modules>
 
     <name>springboot-demos03</name>
