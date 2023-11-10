@@ -79,6 +79,7 @@
         <module>springbootdemo467-Lombok-Ex</module>
         <module>springbootdemo468-Opencc4j</module>
         <module>springbootdemo469-Word-Checker</module>
+        <module>springbootdemo470-Junitperf</module>
     </modules>
 
     <name>springboot-demos03</name>

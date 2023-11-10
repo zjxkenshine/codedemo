@@ -208,3 +208,7 @@ Opencc4j 简繁写转换
 
 ## 469.springbootdemo469-Word-Checker
 word-checker 拼写检查
+
+## 470.springbootdemo470-Junitperf
+Junitperf 测试报告生成
+
