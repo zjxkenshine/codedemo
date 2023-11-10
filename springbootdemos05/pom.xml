@@ -81,6 +81,7 @@
         <module>springbootdemo469-Word-Checker</module>
         <module>springbootdemo470-Junitperf</module>
         <module>springbootdemo471-MarkdownToc</module>
+        <module>springbootdemo472-Word-Cloud</module>
     </modules>
 
     <name>springboot-demos03</name>

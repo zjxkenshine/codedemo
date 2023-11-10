@@ -214,3 +214,6 @@ Junitperf 测试报告生成
 
 ## 471.springbootdemo471-MarkdownToc
 Markdown-Toc 生成markdown目录
+
+## 472.springbootdemo472-Word-Cloud
+Word-Cloud 词云生成
