@@ -29,13 +29,43 @@
             <artifactId>lombok</artifactId>
         </dependency>
 
-        <!--sensitive 日志脱敏-->
+        <!--com.kenshine.sensitive 日志脱敏-->
+<!--        <dependency>-->
+<!--            <groupId>com.github.houbb</groupId>-->
+<!--            <artifactId>com.kenshine.sensitive-core</artifactId>-->
+<!--            <version>0.0.13</version>-->
+<!--        </dependency>-->
         <dependency>
             <groupId>com.github.houbb</groupId>
             <artifactId>sensitive-core</artifactId>
-            <version>0.0.13</version>
+            <version>1.6.0</version>
         </dependency>
 
+        <!--log4j2-->
+        <dependency>
+            <groupId>com.github.houbb</groupId>
+            <artifactId>sensitive-log4j2</artifactId>
+            <version>1.6.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+        </dependency>
+
+        <!--log4j2-->
+        <dependency>
+            <groupId>com.github.houbb</groupId>
+            <artifactId>sensitive-logback</artifactId>
+            <version>1.6.0</version>
+        </dependency>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+        </dependency>
     </dependencies>
 
 </project>

@@ -19,6 +19,7 @@ public class ConditionFooPassword implements ICondition {
             Field field = context.getCurrentField();
             final Object currentObj = context.getCurrentObject();
             final String password = (String) field.get(currentObj);
+            // 只有当密码不是 123456 时密码脱敏策略才会生效
             return !password.equals("123456");
         } catch (IllegalAccessException e) {
             throw new RuntimeException(e);

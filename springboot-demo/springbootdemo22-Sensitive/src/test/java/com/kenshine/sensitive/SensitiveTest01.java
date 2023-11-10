@@ -1,4 +1,4 @@
-package sensitive;
+package com.kenshine.sensitive;
 
 import com.github.houbb.sensitive.api.IStrategy;
 import com.github.houbb.sensitive.core.api.SensitiveUtil;
@@ -12,8 +12,10 @@ import org.junit.Test;
  * @description：测试01
  * @modified By：
  * @version: $
+ *
+ * 0.0.13 版本测试
  */
-public class sensitiveTest01 {
+public class SensitiveTest01 {
 
     /**
      * 基本使用
@@ -25,13 +27,13 @@ public class sensitiveTest01 {
         //进行脱敏
         User sensitiveUser = SensitiveUtil.desCopy(user);
         System.out.println("脱敏对象： " + sensitiveUser);
-
         System.out.println("脱敏后原始： " + user);
     }
 
-    private User buildUser() {
+    public User buildUser() {
         User user = new User();
         user.setUsername("脱敏君");
+        // 密码123456由于自定义脱敏策略不会脱敏
         user.setPassword("123456");
         user.setEmail("12345@qq.com");
         user.setIdCard("123456190001011234");
