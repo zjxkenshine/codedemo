@@ -82,6 +82,7 @@
         <module>springbootdemo470-Junitperf</module>
         <module>springbootdemo471-MarkdownToc</module>
         <module>springbootdemo472-Word-Cloud</module>
+        <module>springbootdemo473-IdCore</module>
     </modules>
 
     <name>springboot-demos03</name>
