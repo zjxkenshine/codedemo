@@ -220,3 +220,6 @@ Word-Cloud 词云生成
 
 ## 473.springbootdemo473-IdCore
 Id-Core id生成
+
+## 474.springbootdemo474-NlpChaizi
+nlp-chaizi 拆字/自定义拆字
