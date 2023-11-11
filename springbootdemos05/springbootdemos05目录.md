@@ -223,3 +223,6 @@ Id-Core id生成
 
 ## 474.springbootdemo474-NlpChaizi
 nlp-chaizi 拆字/自定义拆字
+
+## 475.springbootdemo475-Segment
+Segment 分词

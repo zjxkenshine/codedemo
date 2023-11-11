@@ -84,6 +84,7 @@
         <module>springbootdemo472-Word-Cloud</module>
         <module>springbootdemo473-IdCore</module>
         <module>springbootdemo474-NlpChaizi</module>
+        <module>springbootdemo475-Segment</module>
     </modules>
 
     <name>springboot-demos03</name>
