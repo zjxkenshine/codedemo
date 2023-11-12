@@ -88,6 +88,7 @@
         <module>springbootdemo476-Sensitive-Word</module>
         <module>springbootdemo477-Iexcel</module>
         <module>springbootdemo478-Csv</module>
+        <module>springbootdemo479-Async</module>
     </modules>
 
     <name>springboot-demos03</name>
