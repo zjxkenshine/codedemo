@@ -89,6 +89,7 @@
         <module>springbootdemo477-Iexcel</module>
         <module>springbootdemo478-Csv</module>
         <module>springbootdemo479-Async</module>
+        <module>springbootdemo480-Jopencc</module>
     </modules>
 
     <name>springboot-demos03</name>
