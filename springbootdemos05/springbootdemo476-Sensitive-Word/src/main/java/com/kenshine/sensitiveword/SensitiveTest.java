@@ -1,9 +1,13 @@
 package com.kenshine.sensitiveword;
 
+import com.github.houbb.sensitive.word.api.IWordAllow;
+import com.github.houbb.sensitive.word.api.IWordDeny;
 import com.github.houbb.sensitive.word.api.IWordReplace;
 import com.github.houbb.sensitive.word.api.IWordResult;
 import com.github.houbb.sensitive.word.bs.SensitiveWordBs;
 import com.github.houbb.sensitive.word.core.SensitiveWordHelper;
+import com.github.houbb.sensitive.word.support.allow.WordAllows;
+import com.github.houbb.sensitive.word.support.deny.WordDenys;
 import com.github.houbb.sensitive.word.support.result.WordResultHandlers;
 import org.junit.Test;
 
@@ -88,6 +92,48 @@ public class SensitiveTest {
         final String text3 = "点击链接 www.baidu.com查看答案";
         List<String> wordList3 = SensitiveWordBs.newInstance().init().findAll(text3);
         System.out.println(wordList3);
+    }
+
+    /**
+     * SensitiveWordBs 引导接口
+     */
+    @Test
+    public void test04(){
+        // 系统敏感词
+        SensitiveWordBs wordBs = SensitiveWordBs.newInstance()
+                .wordDeny(WordDenys.defaults())
+                .wordAllow(WordAllows.defaults())
+                .init();
+        final String text = "五星红旗迎风飘扬，毛主席的画像屹立在天安门前。";
+        System.out.println(wordBs.findAll(text));
+    }
+
+    /**
+     * 自定义敏感词
+     */
+    @Test
+    public void test05(){
+        String text = "这是一个测试，我的自定义敏感词。";
+        SensitiveWordBs wordBs = SensitiveWordBs.newInstance()
+                .wordDeny(new MyWordDeny())
+                .wordAllow(new MyWordAllow())
+                .init();
+        System.out.println(wordBs.findAll(text).toString());
+    }
+
+    /**
+     * 链式敏感词
+     */
+    @Test
+    public void test06(){
+        String text = "这是一个测试。我的自定义敏感词。";
+        IWordDeny wordDeny = WordDenys.chains(WordDenys.defaults(), new MyWordDeny());
+        IWordAllow wordAllow = WordAllows.chains(WordAllows.defaults(), new MyWordAllow());
+        SensitiveWordBs wordBs = SensitiveWordBs.newInstance()
+                .wordDeny(wordDeny)
+                .wordAllow(wordAllow)
+                .init();
+        System.out.println(wordBs.findAll(text).toString());
     }
 
 }
