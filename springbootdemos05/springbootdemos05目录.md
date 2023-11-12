@@ -226,3 +226,6 @@ nlp-chaizi 拆字/自定义拆字
 
 ## 475.springbootdemo475-Segment
 Segment 分词
+
+## 476.springbootdemo476-Sensitive-Word
+Sensitive-Word 敏感词过滤
