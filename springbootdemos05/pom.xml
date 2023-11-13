@@ -91,6 +91,7 @@
         <module>springbootdemo479-Async</module>
         <module>springbootdemo480-Jopencc</module>
         <module>springbootdemo481-Generex</module>
+        <module>springbootdemo482-One-Nio</module>
     </modules>
 
     <name>springboot-demos03</name>
