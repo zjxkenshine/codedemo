@@ -241,3 +241,6 @@ springboot 整合 Async 异步线程池
 
 ## 480.springbootdemo480-Jopencc
 jopencc 简繁写转换
+
+## 481.springbootdemo481-Generex
+Generex 根据正则表达式生成字符串

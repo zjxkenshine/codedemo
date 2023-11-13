@@ -90,6 +90,7 @@
         <module>springbootdemo478-Csv</module>
         <module>springbootdemo479-Async</module>
         <module>springbootdemo480-Jopencc</module>
+        <module>springbootdemo481-Generex</module>
     </modules>
 
     <name>springboot-demos03</name>
