@@ -22,5 +22,10 @@
             <artifactId>one-nio</artifactId>
             <version>1.6.0</version>
         </dependency>
+
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+        </dependency>
     </dependencies>
 </project>
