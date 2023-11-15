@@ -1,0 +1,13 @@
+namespace src.main.java.com.kenshine.fbs;
+
+table Monster {
+  name: string;
+  hp: short;
+  pos: Vec3;
+}
+
+struct Vec3 {
+  x: float;
+  y: float;
+  z: float;
+}

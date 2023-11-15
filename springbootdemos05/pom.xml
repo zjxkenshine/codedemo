@@ -92,6 +92,7 @@
         <module>springbootdemo480-Jopencc</module>
         <module>springbootdemo481-Generex</module>
         <module>springbootdemo482-One-Nio</module>
+        <module>springbootdemo483-Flatbuffers</module>
     </modules>
 
     <name>springboot-demos03</name>

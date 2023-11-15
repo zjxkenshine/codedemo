@@ -247,3 +247,6 @@ Generex 根据正则表达式生成字符串
 
 ## 482.springbootdemo482-One-Nio
 One-nio 非常规IO库
+
+## 483.springbootdemo483-Flatbuffers
+Flatbuffers 序列化，用于游戏和其他内存受限的应用
