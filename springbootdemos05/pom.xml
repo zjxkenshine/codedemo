@@ -97,6 +97,7 @@
         <module>springbootdemo485-MutabilityDetector</module>
         <module>springbootdemo486-Nlp2cron</module>
         <module>springbootdemo487-Pinyin2hanzi</module>
+        <module>springbootdemo488-Pdfcompare</module>
     </modules>
 
     <name>springboot-demos03</name>

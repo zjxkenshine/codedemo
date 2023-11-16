@@ -263,3 +263,5 @@ Nlp2cron 自然语言转Cron表达式
 ## 487.springbootdemo487-Pinyin2hanzi
 pinyin2hanzi 基于隐马尔可夫(HMM)模型的拼音转汉字
 
+## 488.springbootdemo488-Pdfcompare
+pdfcompare 比较pdf文件
