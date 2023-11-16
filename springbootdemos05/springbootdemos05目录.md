@@ -259,3 +259,7 @@ MutabilityDetector 可变性检测测试
 
 ## 486.springbootdemo486-Nlp2cron
 Nlp2cron 自然语言转Cron表达式
+
+## 487.springbootdemo487-Pinyin2hanzi
+pinyin2hanzi 基于隐马尔可夫(HMM)模型的拼音转汉字
+
