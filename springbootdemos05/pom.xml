@@ -94,6 +94,7 @@
         <module>springbootdemo482-One-Nio</module>
         <module>springbootdemo483-Flatbuffers</module>
         <module>springbootdemo484-JCTools</module>
+        <module>springbootdemo485-MutabilityDetector</module>
     </modules>
 
     <name>springboot-demos03</name>
