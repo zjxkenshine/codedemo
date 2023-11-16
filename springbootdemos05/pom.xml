@@ -99,6 +99,7 @@
         <module>springbootdemo487-Pinyin2hanzi</module>
         <module>springbootdemo488-Pdfcompare</module>
         <module>springbootdemo489-Juel</module>
+        <module>springbootdemo490-Reb4j</module>
     </modules>
 
     <name>springboot-demos03</name>
