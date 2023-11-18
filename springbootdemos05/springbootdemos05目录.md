@@ -280,3 +280,6 @@ Java-Runtime-Compiler java运行时编译
 
 ## 493.springbootdemo493-JD-Lib
 jd-lib java反编译
+
+## 494.springbootdemo494-Jd-Core
+Jd-Core java反编译

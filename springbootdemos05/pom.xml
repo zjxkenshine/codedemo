@@ -103,6 +103,7 @@
         <module>springbootdemo491-Javers</module>
         <module>springbootdemo492-Compiler</module>
         <module>springbootdemo493-JD-Lib</module>
+        <module>springbootdemo494-Jd-Core</module>
     </modules>
 
     <name>springboot-demos03</name>
