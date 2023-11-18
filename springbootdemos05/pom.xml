@@ -101,6 +101,7 @@
         <module>springbootdemo489-Juel</module>
         <module>springbootdemo490-Reb4j</module>
         <module>springbootdemo491-Javers</module>
+        <module>springbootdemo492-Compiler</module>
     </modules>
 
     <name>springboot-demos03</name>

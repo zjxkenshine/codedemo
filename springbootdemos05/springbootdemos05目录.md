@@ -274,3 +274,6 @@ Reb4j 构建正则表达式
 
 ## 491.springbootdemo491-Javers
 javers 跟踪对象变化，对象审计
+
+## 492.springbootdemo492-Compiler
+Java-Runtime-Compiler java运行时编译
