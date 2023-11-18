@@ -286,3 +286,6 @@ Jd-Core java反编译
 
 ## 495.springbootdemo495-Lambda-String
 Lambda-String 将toString方法注入Lambda
+
+## 496.springbootdemo496-Tacoco
+Tacoco 集成软件分析框架
