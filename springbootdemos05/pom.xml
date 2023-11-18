@@ -104,6 +104,7 @@
         <module>springbootdemo492-Compiler</module>
         <module>springbootdemo493-JD-Lib</module>
         <module>springbootdemo494-Jd-Core</module>
+        <module>springbootdemo495-Lambda-String</module>
     </modules>
 
     <name>springboot-demos03</name>

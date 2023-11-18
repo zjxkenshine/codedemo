@@ -283,3 +283,6 @@ jd-lib java反编译
 
 ## 494.springbootdemo494-Jd-Core
 Jd-Core java反编译
+
+## 495.springbootdemo495-Lambda-String
+Lambda-String 将toString方法注入Lambda
