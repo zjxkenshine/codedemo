@@ -1,0 +1,13 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: hawtio,jolokia
+spring:
+  jmx:
+    enabled: true
+  security:
+    user:
+      name: hawtio
+      password: hawtio
+      roles: admin,viewer

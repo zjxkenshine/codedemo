@@ -106,6 +106,7 @@
         <module>springbootdemo494-Jd-Core</module>
         <module>springbootdemo495-Lambda-String</module>
         <module>springbootdemo496-Tacoco</module>
+        <module>springbootdemo497-Hawtio</module>
     </modules>
 
     <name>springboot-demos03</name>
