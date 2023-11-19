@@ -108,6 +108,7 @@
         <module>springbootdemo496-Tacoco</module>
         <module>springbootdemo497-Hawtio</module>
         <module>springbootdemo498-Jolokia</module>
+        <module>springbootdemo499-Ziptrack</module>
     </modules>
 
     <name>springboot-demos03</name>

@@ -1,0 +1,60 @@
+Data race on field account.BankAccount.Balance:
+    Write in thread 13
+      > at account.Account.Service(Account.java:97)
+        at account.BankAccount.Action(BankAccount.java:41)
+        at account.BankAccount.run(BankAccount.java:56)
+    Thread 13 created by thread 1
+        at account.Account.go(Account.java:46)
+
+    Read in thread 1
+      > at account.Account.go(Account.java:67)
+        at account.Account.main(Account.java:30)
+    Thread 1 is the main thread
+
+
+Data race on field account.Account.Bank_Total:
+    Write in thread 13
+      > at account.Account.Service(Account.java:98)
+        at account.BankAccount.Action(BankAccount.java:41)
+        at account.BankAccount.run(BankAccount.java:56)
+    Thread 13 created by thread 1
+        at account.Account.go(Account.java:46)
+
+    Read in thread 14
+      > at account.Account.Service(Account.java:98)
+        at account.BankAccount.Action(BankAccount.java:41)
+        at account.BankAccount.run(BankAccount.java:56)
+    Thread 14 created by thread 1
+        at account.Account.go(Account.java:46)
+
+
+Data race on field account.Account.Bank_Total:
+    Write in thread 13
+      > at account.Account.Service(Account.java:98)
+        at account.BankAccount.Action(BankAccount.java:41)
+        at account.BankAccount.run(BankAccount.java:56)
+    Thread 13 created by thread 1
+        at account.Account.go(Account.java:46)
+
+    Read in thread 1
+      > at account.Account.checkResult(Account.java:75)
+        at account.Account.go(Account.java:70)
+        at account.Account.main(Account.java:30)
+    Thread 1 is the main thread
+
+
+Data race on field account.Account.Bank_Total:
+    Write in thread 13
+      > at account.Account.Service(Account.java:98)
+        at account.BankAccount.Action(BankAccount.java:41)
+        at account.BankAccount.run(BankAccount.java:56)
+    Thread 13 created by thread 1
+        at account.Account.go(Account.java:46)
+
+    Read in thread 1
+      > at account.Account.checkResult(Account.java:76)
+        at account.Account.go(Account.java:70)
+        at account.Account.main(Account.java:30)
+    Thread 1 is the main thread
+
+

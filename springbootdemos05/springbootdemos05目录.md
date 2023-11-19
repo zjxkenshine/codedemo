@@ -295,3 +295,6 @@ springboot 整合 Hawtio 监控平台
 
 ## 498.springbootdemo498-Jolokia
 springboot 整合 Jolokia 监控
+
+## 499.springbootdemo499-Ziptrack
+Ziptrack 压缩路径竞争检测
