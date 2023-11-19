@@ -292,3 +292,6 @@ Tacoco 集成软件分析框架
 
 ## 497.springbootdemo497-Hawtio
 springboot 整合 Hawtio 监控平台
+
+## 498.springbootdemo498-Jolokia
+springboot 整合 Jolokia 监控
