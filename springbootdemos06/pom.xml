@@ -10,6 +10,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>springbootdemo500-RvPredict</module>
+        <module>springbootdemo501-Soot</module>
     </modules>
 
     <properties>
