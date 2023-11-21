@@ -30,6 +30,11 @@ Soot提供以下分析
         - Local链：body中的局部变量列表
         - Trap：捕获异常
         - Unit：语句本身
+    
+## 添加属性到class文件
+- soot.tagkit包，定义原数据功能，包含host与tag
+- TagAggregator：将语句上的Tags转换为可以在类文件中写出来的代码属性
+
 
 
 
