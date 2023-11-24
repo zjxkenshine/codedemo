@@ -34,6 +34,18 @@ Soot提供以下分析
 ## 添加属性到class文件
 - soot.tagkit包，定义原数据功能，包含host与tag
 - TagAggregator：将语句上的Tags转换为可以在类文件中写出来的代码属性
+- 相关类：
+    - Host：保存tags
+    - AbstractHost：默认host实现
+    - Tag：注释
+    - Attribute：它保证关联的标记具有类似属性的数据，这些数据可以作为字节数组进行读写
+    - TagAggregator：Tag集合
+    - Base64
+    - JasminAttribute：解析键值对
+    - CodeAttribute：JasminAttribute实现
+    - GenericAttribute：Java描述了如何创建其他三种类型的属性:属性可以与方法、字段和类以及代码相关联。Soot通过GenericAttribute类支持这些属性
+
+## 向应用程序添加分析指令
 
 
 
