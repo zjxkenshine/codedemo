@@ -12,6 +12,7 @@
         <module>springbootdemo500-RvPredict</module>
         <module>springbootdemo501-Soot</module>
         <module>springbootdemo502-GracefulResponse</module>
+        <module>springbootdemo503-HeapLib</module>
     </modules>
 
     <properties>
