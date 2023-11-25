@@ -11,6 +11,7 @@
     <modules>
         <module>springbootdemo500-RvPredict</module>
         <module>springbootdemo501-Soot</module>
+        <module>springbootdemo502-GracefulResponse</module>
     </modules>
 
     <properties>

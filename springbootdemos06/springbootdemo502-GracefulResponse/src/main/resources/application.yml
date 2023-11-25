@@ -1,0 +1,6 @@
+graceful-response:
+  response-style: 1
+  response-class-full-name: com.kenshine.gracefulresponse.response.CustomResponseImpl
+  # 例外处理
+  exclude-packages:
+    - com.kenshine.gracefulresponse.exclude.*
