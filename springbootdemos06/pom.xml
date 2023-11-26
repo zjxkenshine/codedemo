@@ -13,6 +13,7 @@
         <module>springbootdemo501-Soot</module>
         <module>springbootdemo502-GracefulResponse</module>
         <module>springbootdemo503-HeapLib</module>
+        <module>springbootdemo504-CDK</module>
     </modules>
 
     <properties>
