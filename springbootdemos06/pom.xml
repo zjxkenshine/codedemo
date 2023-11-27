@@ -16,6 +16,7 @@
         <module>springbootdemo504-CDK</module>
         <module>springbootdemo505-Jxls</module>
         <module>springbootdemo506-Rayin</module>
+        <module>springbootdemo507-Hamcrest</module>
     </modules>
 
     <properties>
