@@ -17,6 +17,7 @@
         <module>springbootdemo505-Jxls</module>
         <module>springbootdemo506-Rayin</module>
         <module>springbootdemo507-Hamcrest</module>
+        <module>springbootdemo508-Jpinyin</module>
     </modules>
 
     <properties>
