@@ -16,3 +16,6 @@ CDK 化学开发工具包简单学习
 
 ## 505.springbootdemo505-Jxls
 jxls-poi Excel报表
+
+## 506.springbootdemo506-Rayin
+Rayin HTML转PDF

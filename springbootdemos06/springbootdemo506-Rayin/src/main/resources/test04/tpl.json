@@ -1,0 +1,6 @@
+{
+  "templateName":"数据绑定模板",
+  "elements":[
+    {"elementPath":"test01/testdata.html"}
+  ]
+}

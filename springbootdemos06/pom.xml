@@ -15,6 +15,7 @@
         <module>springbootdemo503-HeapLib</module>
         <module>springbootdemo504-CDK</module>
         <module>springbootdemo505-Jxls</module>
+        <module>springbootdemo506-Rayin</module>
     </modules>
 
     <properties>

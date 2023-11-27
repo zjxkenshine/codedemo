@@ -1,0 +1,7 @@
+{
+  "templateName":"第一个模板",
+  "elements":[
+    {"elementPath":"test01/element1.html"},
+    {"elementPath":"test01/element2.html"}
+  ]
+}
