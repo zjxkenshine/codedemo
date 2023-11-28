@@ -20,6 +20,7 @@
         <module>springbootdemo508-Jpinyin</module>
         <module>springbootdemo509-SM2</module>
         <module>springbootdemo510-SM2Manage</module>
+        <module>springbootdemo511-Jargs</module>
     </modules>
 
     <properties>
