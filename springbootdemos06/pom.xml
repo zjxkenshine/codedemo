@@ -19,6 +19,7 @@
         <module>springbootdemo507-Hamcrest</module>
         <module>springbootdemo508-Jpinyin</module>
         <module>springbootdemo509-SM2</module>
+        <module>springbootdemo510-SM2Manage</module>
     </modules>
 
     <properties>
