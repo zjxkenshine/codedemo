@@ -18,6 +18,7 @@
         <module>springbootdemo506-Rayin</module>
         <module>springbootdemo507-Hamcrest</module>
         <module>springbootdemo508-Jpinyin</module>
+        <module>springbootdemo509-SM2</module>
     </modules>
 
     <properties>
