@@ -21,6 +21,7 @@
         <module>springbootdemo509-SM2</module>
         <module>springbootdemo510-SM2Manage</module>
         <module>springbootdemo511-Jargs</module>
+        <module>springbootdemo512-LevelDB</module>
     </modules>
 
     <properties>

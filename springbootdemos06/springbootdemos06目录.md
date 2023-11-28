@@ -34,3 +34,6 @@ SM2Manage SM2秘钥对生成
 
 ## 511.springbootdemo511-Jargs
 Jargs 用于Java的GNU getopt风格命令行参数解析器
+
+## 512.springbootdemo512-LevelDB
+LevelDBJni 操作 LevelDB 数据库
