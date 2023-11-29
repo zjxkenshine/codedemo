@@ -23,6 +23,7 @@
         <module>springbootdemo511-Jargs</module>
         <module>springbootdemo512-LevelDB</module>
         <module>springbootdemo513-Validator</module>
+        <module>springbootdemo514-Javalin</module>
     </modules>
 
     <properties>

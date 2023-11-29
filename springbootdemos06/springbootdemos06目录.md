@@ -40,3 +40,6 @@ LevelDBJni 操作 LevelDB 数据库
 
 ## 513.springbootdemo513-Validator
 Validator 流式校验
+
+## 514.springbootdemo514-Javalin
+Javalin 轻量级web框架
