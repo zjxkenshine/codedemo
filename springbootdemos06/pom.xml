@@ -22,6 +22,7 @@
         <module>springbootdemo510-SM2Manage</module>
         <module>springbootdemo511-Jargs</module>
         <module>springbootdemo512-LevelDB</module>
+        <module>springbootdemo513-Validator</module>
     </modules>
 
     <properties>
