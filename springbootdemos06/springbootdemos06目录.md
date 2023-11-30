@@ -46,3 +46,6 @@ Javalin 轻量级web框架
 
 ## 515.springbootdemo515-Akali
 springboot 整合 Akali 热点、降级处理
+
+## 516.springbootdemo516-Kumo
+Kumo 词云生成

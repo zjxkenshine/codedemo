@@ -25,6 +25,7 @@
         <module>springbootdemo513-Validator</module>
         <module>springbootdemo514-Javalin</module>
         <module>springbootdemo515-Akali</module>
+        <module>springbootdemo516-Kumo</module>
     </modules>
 
     <properties>
