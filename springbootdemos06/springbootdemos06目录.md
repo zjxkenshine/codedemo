@@ -49,3 +49,6 @@ springboot 整合 Akali 热点、降级处理
 
 ## 516.springbootdemo516-Kumo
 Kumo 词云生成
+
+## 517.springbootdemo517-Jsymspell
+Jsymspell 拼写检查/拼写纠正
