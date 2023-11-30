@@ -43,3 +43,6 @@ Validator 流式校验
 
 ## 514.springbootdemo514-Javalin
 Javalin 轻量级web框架
+
+## 515.springbootdemo515-Akali
+springboot 整合 Akali 热点、降级处理

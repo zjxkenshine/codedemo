@@ -24,6 +24,7 @@
         <module>springbootdemo512-LevelDB</module>
         <module>springbootdemo513-Validator</module>
         <module>springbootdemo514-Javalin</module>
+        <module>springbootdemo515-Akali</module>
     </modules>
 
     <properties>

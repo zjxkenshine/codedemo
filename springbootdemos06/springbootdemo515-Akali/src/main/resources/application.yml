@@ -1,0 +1,5 @@
+akali:
+  # 只在热点场景下生效，表示热点缓存多久
+  hot-cache-seconds: 60
+  # 触发热点或者触发降级后，要不要输出日志来提醒，默认为开
+  enable-log: true
