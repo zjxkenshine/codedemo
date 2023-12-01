@@ -1,0 +1,171 @@
+
+import java.util.*;
+import java.io.*;
+import java_cup.runtime.*;
+
+action code
+	{:
+	Hashtable< String, Integer > table = new Hashtable< String, Integer >();
+	:};
+
+parser code
+	{:
+	private Yylex lexer;
+	private File file;
+
+	public MyParser( File file ) {
+		this();
+		this.file = file;
+		try {
+			lexer = new Yylex( new FileReader( file ) );
+			}
+		catch ( IOException exception ) {
+			throw new Error( "Unable to open file \"" + file + "\"" );
+			}
+		}
+
+
+
+	public void report_error( String message, Object info ) {
+		System.err.println( file + " ( " + lexer.lineNumber() + " ): " + message );
+		try {
+			if ( info instanceof Symbol ) {
+				Symbol symbol = ( Symbol ) info;
+				printText( symbol.left, symbol.right );
+				}
+			}
+		catch ( IOException e ) {
+			}
+		}
+
+	private void printText( int left, int right ) throws IOException {
+		Reader sourceReader = new FileReader( file );
+		int veryLeft = Math.max( left - 50, 0 ),
+			veryRight = Math.min( right + 20, 
+				( int ) file.length() );
+		char[] text = new char[ veryRight - veryLeft ];
+		char[] underline = new char[ veryRight - veryLeft ];
+		sourceReader.skip( veryLeft );
+		sourceReader.read( text );
+		for ( int i = 0; i < text.length; i++ ) {
+			if ( text[ i ] < ' ' ) {
+				text[ i ] = '|';
+				underline[ i ] = '|';
+				}
+			else
+				underline[ i ] = ' ';
+			if ( left <= veryLeft + i && veryLeft + i < right )
+				underline[ i ] = '^';
+			}
+		printLine( text );
+		printLine( underline );
+		}
+
+	private static void printLine( char[] text ) {
+		for ( int i = 0; i < text.length; i++ )
+			System.err.print( text[ i ] );
+		System.err.println();
+		}
+
+	public void syntax_error( Symbol currToken ) {
+		report_error( "Syntax Error", currToken );
+		}
+	:};
+
+scan with
+	{:
+	return  lexer.yylex();
+	:};
+
+terminal LEFT, RIGHT, NEWLINE, PLUS, MINUS, TIMES, DIVIDE, ASSIGN;
+terminal String NUMBER;
+terminal String IDENT;
+
+nonterminal StmtList, Stmt;
+nonterminal Integer Expr, Term, Factor;
+
+start with StmtList;
+
+StmtList::=
+
+	|
+		StmtList Stmt 
+	;
+
+Stmt::=
+		IDENT:ident ASSIGN Expr:expr NEWLINE
+		{:
+		table.put( ident, expr );
+		:}
+	|
+		Expr:expr NEWLINE
+		{:
+		System.out.println( expr.intValue() );
+		:}
+	|
+		error NEWLINE
+	|
+		NEWLINE
+	;
+
+Expr::=
+		Expr:expr PLUS Term:term
+		{:
+		RESULT = new Integer( expr.intValue() + term.intValue() );
+		:}
+	|
+		Expr:expr MINUS Term:term
+		{:
+		RESULT = new Integer( expr.intValue() - term.intValue() );
+		:}
+	|
+		MINUS Term:term
+		{:
+		RESULT = new Integer( - term.intValue() );
+		:}
+	|
+		Term:term
+		{:
+		RESULT = term;
+		:}
+	;
+
+Term::=
+		Term:term TIMES Factor:factor
+		{:
+		RESULT = new Integer( term.intValue() * factor.intValue() );
+		:}
+	|
+		Term:term DIVIDE Factor:factor
+		{:
+		RESULT = new Integer( term.intValue() / factor.intValue() );
+		:}
+	|
+		Factor:factor
+		{:
+		RESULT = factor;
+		:}
+	;
+
+Factor::=
+		LEFT Expr:expr RIGHT
+		{:
+		RESULT = expr;
+		:}
+	|
+		NUMBER:value
+		{:
+		RESULT = new Integer( value );
+		:}
+	|
+		IDENT:ident
+		{:
+		Integer value = ( Integer ) table.get( ident );
+		if ( value == null ) {
+			parser.report_error( "Undeclared Identifier " + ident, 
+			new Symbol( MySymbol.IDENT, identleft, identright, ident ) );
+			value = new Integer( 0 );
+			}
+		RESULT = value;
+		:}
+	;
