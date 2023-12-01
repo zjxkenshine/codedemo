@@ -31,6 +31,7 @@
         <module>springbootdemo519-JFlex</module>
         <module>springbootdemo520-SmartLicense</module>
         <module>springbootdemo521-Obj-Compare</module>
+        <module>springbootdemo522-Exchange-Core</module>
     </modules>
 
     <properties>
