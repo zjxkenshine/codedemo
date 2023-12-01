@@ -29,6 +29,7 @@
         <module>springbootdemo517-Jsymspell</module>
         <module>springbootdemo518-JavaCup</module>
         <module>springbootdemo519-JFlex</module>
+        <module>springbootdemo520-SmartLicense</module>
     </modules>
 
     <properties>

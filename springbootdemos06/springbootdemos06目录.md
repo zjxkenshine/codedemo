@@ -59,3 +59,6 @@ JavaCup Cup解析器生成器
 ## 519.springbootdemo519-JFlex
 JFlex 具有完整Unicode支持的Java快速扫描器生成器
 JFlex + Javacup语法解析
+
+## 520.springbootdemo520-SmartLicense
+SmartLicense 授权管理
