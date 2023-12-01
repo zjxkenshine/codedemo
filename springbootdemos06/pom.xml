@@ -27,6 +27,7 @@
         <module>springbootdemo515-Akali</module>
         <module>springbootdemo516-Kumo</module>
         <module>springbootdemo517-Jsymspell</module>
+        <module>springbootdemo518-JavaCup</module>
     </modules>
 
     <properties>
