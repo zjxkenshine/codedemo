@@ -35,6 +35,7 @@
         <module>springbootdemo523-Sim-Search</module>
         <module>springbootdemo524-HdrHistogram</module>
         <module>springbootdemo525-Openhtmltopdf</module>
+        <module>springbootdemo526-Rapid</module>
     </modules>
 
     <properties>

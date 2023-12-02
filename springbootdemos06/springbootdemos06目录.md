@@ -77,3 +77,6 @@ HdrHistogram 直方图统计
 
 ## 525.springbootdemo525-Openhtmltopdf
 Openhtmltopdf html转pdf
+
+## 526.springbootdemo526-Rapid
+Rapid 并发程序分析框架
