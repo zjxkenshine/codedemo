@@ -1,0 +1,25 @@
+# 参考地址
+- https://github.com/d-michail/jheaps
+- http://www.jheaps.org/
+
+# 简介
+- array包：使用数组表示的堆
+    - BinaryArrayHeap：二进制数组堆
+    - DaryArrayHeap：基于数组的d元堆
+    - MinMaxBinaryArrayDoubleEndedHeap：一个基于二进制的最小最大值堆的数组
+    - ...
+- dag包：HollowHeap中空堆
+- monotone包：单调堆
+    - BigIntegerRadixHeap：BigInteger基数堆
+    - DoubleRadixHeap：Double基数堆
+    - IntegerRadixHeap：integer基数堆
+    - LongRadixHeap：long基数堆
+    - ...
+- tree：树表示的堆
+    - BinaryTreeSoftAddressableHeap：二叉树可寻址堆
+    - DaryTreeAddressableHeap：D元树可寻址堆
+    - LeftistHeap：左派堆
+    - PairingHeap：配对堆
+    - RankPairingHeap：排序配对(type-1)可合并和可寻址堆
+    - SkewHeap：斜堆
+    - ...

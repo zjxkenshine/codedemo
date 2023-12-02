@@ -36,6 +36,7 @@
         <module>springbootdemo524-HdrHistogram</module>
         <module>springbootdemo525-Openhtmltopdf</module>
         <module>springbootdemo526-Rapid</module>
+        <module>springbootdemo527-JHeaps</module>
     </modules>
 
     <properties>
