@@ -1,0 +1,16 @@
+sim-search:
+  # #索引存储器 默认为内存 [memory,memory-fs,base-fs,nio-fs]
+  ##内存富裕的情况下使用memory，如果是百万以上数据量选用fs系列
+  saver: memory
+  #索引位置，saver!=memory时需配置
+  dir: /data/indexlocation
+  #创建索引的核心线程数量，根据cpu自行决定，可不填，默认为5
+  thread-core-size: 5
+  #创建索引的最大线程数量，根据cpu自行决定，可不填，默认为200
+  thread-max-size: 200
+  #创建索引的线程队列容量，自行决定，可不填，默认为200000
+  thread-queue-size: 200000
+  #重启时是否要对之前的索引进行删除，默认为false
+  index-init: false
+  #最大返回的搜索结果数量
+  result-size: 50
