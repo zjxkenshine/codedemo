@@ -33,6 +33,7 @@
         <module>springbootdemo521-Obj-Compare</module>
         <module>springbootdemo522-Exchange-Core</module>
         <module>springbootdemo523-Sim-Search</module>
+        <module>springbootdemo524-HdrHistogram</module>
     </modules>
 
     <properties>
