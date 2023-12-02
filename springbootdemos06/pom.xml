@@ -34,6 +34,7 @@
         <module>springbootdemo522-Exchange-Core</module>
         <module>springbootdemo523-Sim-Search</module>
         <module>springbootdemo524-HdrHistogram</module>
+        <module>springbootdemo525-Openhtmltopdf</module>
     </modules>
 
     <properties>

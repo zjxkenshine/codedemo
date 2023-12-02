@@ -74,3 +74,6 @@ springboot 整合 sim-search 搜索引擎/索引构建
 
 ## 524.springbootdemo524-HdrHistogram
 HdrHistogram 直方图统计
+
+## 525.springbootdemo525-Openhtmltopdf
+Openhtmltopdf html转pdf
