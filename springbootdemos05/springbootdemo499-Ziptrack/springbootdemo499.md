@@ -18,7 +18,7 @@ rv-predict 详见 springbootdemo500-RvPredict
 - 使用jar包 java -jar 方式
 
 ```
-java -classpath ziptrack/lib/*:ziptrack.jar PrintTrace -p=F:\IDEAworkespace\codedemo\springbootdemos05\springbootdemo499-Ziptrack\file\rv-predict -f=rv -m=F:\IDEAworkespace\codedemo\springbootdemos05\springbootdemo499-Ziptrack\file\rv-predict\map.txt > F:\IDEAworkespace\codedemo\springbootdemos05\springbootdemo499-Ziptrack\file\rv-predict\trace.txt 
+java -classpath ziptrack/lib/*;ziptrack.jar PrintTrace -p=F:\IDEAworkespace\codedemo\springbootdemos05\springbootdemo499-Ziptrack\file\rv-predict -f=rv -m=F:\IDEAworkespace\codedemo\springbootdemos05\springbootdemo499-Ziptrack\file\rv-predict\map.txt > F:\IDEAworkespace\codedemo\springbootdemos05\springbootdemo499-Ziptrack\file\rv-predict\trace.txt 
 ```
 
 # 源码类说明
