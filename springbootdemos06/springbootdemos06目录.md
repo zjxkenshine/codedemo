@@ -83,3 +83,6 @@ Rapid 并发程序分析框架
 
 ## 527.springbootdemo527-JHeaps
 JHeaps java堆实现
+
+## 528.springbootdemo528-Distream
+Distream List扩展库，用于list对象流式处理
