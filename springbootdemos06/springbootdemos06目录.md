@@ -86,3 +86,7 @@ JHeaps java堆实现
 
 ## 528.springbootdemo528-Distream
 Distream List扩展库，用于list对象流式处理
+
+## 529.springbootdemo529-Imgscalr
+Imgscalr-lib 图像处理\以图搜图
+

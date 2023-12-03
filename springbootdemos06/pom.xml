@@ -38,6 +38,7 @@
         <module>springbootdemo526-Rapid</module>
         <module>springbootdemo527-JHeaps</module>
         <module>springbootdemo528-Distream</module>
+        <module>springbootdemo529-Imgscalr</module>
     </modules>
 
     <properties>
