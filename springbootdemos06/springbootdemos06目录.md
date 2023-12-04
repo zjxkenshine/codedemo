@@ -95,3 +95,6 @@ Exiftool-lib 图片信息读取工具
 
 ## 531.springbootdemo531-MediaUtil
 MediaUtil 读取/修改图片exif信息
+
+## 532.springbootdemo532-Metadata-Extractor
+Metadata-Extractor 图片、视频信息读取
