@@ -104,3 +104,6 @@ springboot 整合 Multimedia-Utils 图片、视频处理
 
 ## 534.springbootdemo534-SimForkJoin
 springboot 整合 SimForkJoin forkjoin并行任务注解
+
+## 535.springbootdemo535-Disroute
+springboot 整合 Disroute 状态分发处理工具改写 if-else
