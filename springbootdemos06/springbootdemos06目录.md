@@ -98,3 +98,6 @@ MediaUtil 读取/修改图片exif信息
 
 ## 532.springbootdemo532-Metadata-Extractor
 Metadata-Extractor 图片、视频信息读取
+
+## 533.springbootdemo533-Multimedia-Utils
+springboot 整合 Multimedia-Utils 图片、视频处理
