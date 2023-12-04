@@ -107,3 +107,6 @@ springboot 整合 SimForkJoin forkjoin并行任务注解
 
 ## 535.springbootdemo535-Disroute
 springboot 整合 Disroute 状态分发处理工具改写 if-else
+
+## 536.springbootdemo536-Jasmin
+Jasmin java汇编器

@@ -45,6 +45,7 @@
         <module>springbootdemo533-Multimedia-Utils</module>
         <module>springbootdemo534-SimForkJoin</module>
         <module>springbootdemo535-Disroute</module>
+        <module>springbootdemo536-Jasmin</module>
     </modules>
 
     <properties>
