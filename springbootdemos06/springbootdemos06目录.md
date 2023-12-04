@@ -92,3 +92,6 @@ Imgscalr-lib 图像处理\以图搜图
 
 ## 530.springbootdemo530-Exiftool
 Exiftool-lib 图片信息读取工具
+
+## 531.springbootdemo531-MediaUtil
+MediaUtil 读取/修改图片exif信息

@@ -40,6 +40,7 @@
         <module>springbootdemo528-Distream</module>
         <module>springbootdemo529-Imgscalr</module>
         <module>springbootdemo530-Exiftool</module>
+        <module>springbootdemo531-MediaUtil</module>
     </modules>
 
     <properties>
