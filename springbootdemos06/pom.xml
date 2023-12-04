@@ -43,6 +43,7 @@
         <module>springbootdemo531-MediaUtil</module>
         <module>springbootdemo532-Metadata-Extractor</module>
         <module>springbootdemo533-Multimedia-Utils</module>
+        <module>springbootdemo534-SimForkJoin</module>
     </modules>
 
     <properties>
