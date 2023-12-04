@@ -110,3 +110,6 @@ springboot 整合 Disroute 状态分发处理工具改写 if-else
 
 ## 536.springbootdemo536-Jasmin
 Jasmin java汇编器
+
+## 537.springbootdemo537-Polyglot
+Polyglot java编译器/可扩展编译框架

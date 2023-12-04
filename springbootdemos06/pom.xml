@@ -46,6 +46,7 @@
         <module>springbootdemo534-SimForkJoin</module>
         <module>springbootdemo535-Disroute</module>
         <module>springbootdemo536-Jasmin</module>
+        <module>springbootdemo537-Polyglot</module>
     </modules>
 
     <properties>
