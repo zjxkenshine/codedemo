@@ -48,6 +48,7 @@
         <module>springbootdemo536-Jasmin</module>
         <module>springbootdemo537-Polyglot</module>
         <module>springbootdemo538-Xmpcore</module>
+        <module>springbootdemo539-Signatures</module>
     </modules>
 
     <properties>
