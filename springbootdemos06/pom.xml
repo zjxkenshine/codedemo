@@ -50,6 +50,7 @@
         <module>springbootdemo538-Xmpcore</module>
         <module>springbootdemo539-Signatures</module>
         <module>springbootdemo540-Jlof</module>
+        <module>springbootdemo541-Jxlss</module>
     </modules>
 
     <properties>
