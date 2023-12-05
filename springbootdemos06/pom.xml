@@ -47,6 +47,7 @@
         <module>springbootdemo535-Disroute</module>
         <module>springbootdemo536-Jasmin</module>
         <module>springbootdemo537-Polyglot</module>
+        <module>springbootdemo538-Xmpcore</module>
     </modules>
 
     <properties>

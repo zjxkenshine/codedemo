@@ -1,0 +1,35 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:xmp="http://ns.adobe.com/xap/1.0/"
+         xmlns:xe="http://ns.adobe.com/xmp-example/">
+    <rdf:Description rdf:about="">
+        <dc:source>
+            <rdf:Description>
+                <rdf:value>Adobe XMP Specification, April 2010</rdf:value>
+                <xe:qualifier>artificial example</xe:qualifier>
+            </rdf:Description>
+        </dc:source>
+        <xmp:BaseURL>
+            <rdf:Description>
+                <rdf:value rdf:resource="http://www.adobe.com/"/>
+                <xe:qualifier>artificial example</xe:qualifier>
+            </rdf:Description>
+        </xmp:BaseURL>
+        <dc:subject>
+            <rdf:Bag>
+                <rdf:li>XMP</rdf:li>
+                <rdf:li>
+                    <rdf:Description>
+                        <rdf:value>metadata</rdf:value>
+                        <xe:qualifier>artificial example</xe:qualifier>
+                    </rdf:Description>
+                </rdf:li>
+                <rdf:li>
+                    <rdf:Description>
+                    <rdf:value>ISO standard</rdf:value>
+                    </rdf:Description>
+                </rdf:li>
+            </rdf:Bag>
+        </dc:subject>
+    </rdf:Description>
+</rdf:RDF>
