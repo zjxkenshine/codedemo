@@ -51,6 +51,7 @@
         <module>springbootdemo539-Signatures</module>
         <module>springbootdemo540-Jlof</module>
         <module>springbootdemo541-Jxlss</module>
+        <module>springbootdemo542-Fest-Reflect</module>
     </modules>
 
     <properties>
