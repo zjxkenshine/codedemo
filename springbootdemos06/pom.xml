@@ -49,6 +49,7 @@
         <module>springbootdemo537-Polyglot</module>
         <module>springbootdemo538-Xmpcore</module>
         <module>springbootdemo539-Signatures</module>
+        <module>springbootdemo540-Jlof</module>
     </modules>
 
     <properties>
