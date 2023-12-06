@@ -131,3 +131,6 @@ Fest-Reflect 反射库
 
 ## 543.springbootdemo543-TypeBuilder
 TypeBuilder 用Builder生成泛型
+
+## 544.springbootdemo544-Stream-Utils
+Stream-Utils 提供java8之外的Stream操作

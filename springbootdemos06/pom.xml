@@ -53,6 +53,7 @@
         <module>springbootdemo541-Jxlss</module>
         <module>springbootdemo542-Fest-Reflect</module>
         <module>springbootdemo543-TypeBuilder</module>
+        <module>springbootdemo544-Stream-Utils</module>
     </modules>
 
     <properties>
