@@ -128,3 +128,6 @@ Jxlss 基于jxls生成excel文件
 
 ## 542.springbootdemo542-Fest-Reflect
 Fest-Reflect 反射库
+
+## 543.springbootdemo543-TypeBuilder
+TypeBuilder 用Builder生成泛型

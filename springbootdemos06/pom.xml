@@ -52,6 +52,7 @@
         <module>springbootdemo540-Jlof</module>
         <module>springbootdemo541-Jxlss</module>
         <module>springbootdemo542-Fest-Reflect</module>
+        <module>springbootdemo543-TypeBuilder</module>
     </modules>
 
     <properties>
