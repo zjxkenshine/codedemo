@@ -134,3 +134,6 @@ TypeBuilder 用Builder生成泛型
 
 ## 544.springbootdemo544-Stream-Utils
 Stream-Utils 提供java8之外的Stream操作
+
+## 545.springbootdemo545-QuickPerf
+quickperf java性能测试库
