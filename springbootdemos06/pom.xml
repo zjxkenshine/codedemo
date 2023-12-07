@@ -57,6 +57,7 @@
         <module>springbootdemo545-QuickPerf</module>
         <module>springbootdemo546-QuickPerf-Live</module>
         <module>springbootdemo547-Fliptables</module>
+        <module>springbootdemo548-Jeuclid</module>
     </modules>
 
     <properties>
