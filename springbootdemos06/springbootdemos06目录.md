@@ -137,3 +137,6 @@ Stream-Utils 提供java8之外的Stream操作
 
 ## 545.springbootdemo545-QuickPerf
 quickperf java性能测试库
+
+## 546.springbootdemo546-QuickPerf-Live
+QuickPerf-Live Springboot2整合quickperf

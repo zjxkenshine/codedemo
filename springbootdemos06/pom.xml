@@ -55,6 +55,7 @@
         <module>springbootdemo543-TypeBuilder</module>
         <module>springbootdemo544-Stream-Utils</module>
         <module>springbootdemo545-QuickPerf</module>
+        <module>springbootdemo546-QuickPerf-Live</module>
     </modules>
 
     <properties>
