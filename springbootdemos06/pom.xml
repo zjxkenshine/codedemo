@@ -56,6 +56,7 @@
         <module>springbootdemo544-Stream-Utils</module>
         <module>springbootdemo545-QuickPerf</module>
         <module>springbootdemo546-QuickPerf-Live</module>
+        <module>springbootdemo547-Fliptables</module>
     </modules>
 
     <properties>

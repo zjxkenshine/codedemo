@@ -140,3 +140,6 @@ quickperf java性能测试库
 
 ## 546.springbootdemo546-QuickPerf-Live
 QuickPerf-Live Springboot2整合quickperf
+
+## 547.springbootdemo547-Fliptables
+fliptables 表格打印
