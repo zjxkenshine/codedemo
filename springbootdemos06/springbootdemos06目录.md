@@ -152,3 +152,6 @@ Snuggletex Letex渲染库
 
 ## 550.springbootdemo550-Vecmath
 javax.Vecmath 向量计算库
+
+## 551.springbootdemo551-Jing
+Jing Java中的RELAX NG验证器

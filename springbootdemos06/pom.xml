@@ -60,6 +60,7 @@
         <module>springbootdemo548-Jeuclid</module>
         <module>springbootdemo549-Snuggletex</module>
         <module>springbootdemo550-Vecmath</module>
+        <module>springbootdemo551-Jing</module>
     </modules>
 
     <properties>
