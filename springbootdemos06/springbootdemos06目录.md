@@ -149,3 +149,6 @@ Jeuclid MathML渲染器
 
 ## 549.springbootdemo549-Snuggletex 
 Snuggletex Letex渲染库
+
+## 550.springbootdemo550-Vecmath
+javax.Vecmath 向量计算库
