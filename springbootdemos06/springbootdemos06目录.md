@@ -146,3 +146,6 @@ fliptables 表格打印
 
 ## 548.springbootdemo548-Jeuclid
 Jeuclid MathML渲染器
+
+## 549.springbootdemo549-Snuggletex 
+Snuggletex Letex渲染库
