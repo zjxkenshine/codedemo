@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/book"
+        elementFormDefault="qualified">
+    <element name="书架">
+        <complexType>
+            <sequence maxOccurs="unbounded">
+                <element name="书">
+                    <complexType>
+                        <sequence>
+                            <element name="书名" type="string" />
+                            <element name="作者" type="string" />
+                            <element name="售价" type="string" />
+                        </sequence>
+                    </complexType>
+                </element>
+            </sequence>
+        </complexType>
+    </element>
+</schema>

@@ -174,3 +174,6 @@ Cryptacular 加密库
 
 ## 557.springbootdemo557-Vt-Password
 vt-password 密码规则校验
+
+## 558.springbootdemo558-Isorelax
+Isorelax 使用schema校验xml

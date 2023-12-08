@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<书架 xmlns="http://www.example.org/book" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.example.org/book testSchema.xsd">
+    <书>
+        <书名>book1</书名>
+        <作者>author1</作者>
+        <售价>100</售价>
+    </书>
+</书架>
