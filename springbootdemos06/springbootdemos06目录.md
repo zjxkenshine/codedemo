@@ -171,3 +171,6 @@ Passay 密码安全策略库
 
 ## 556.springbootdemo556-Cryptacular
 Cryptacular 加密库
+
+## 557.springbootdemo557-Vt-Password
+vt-password 密码规则校验

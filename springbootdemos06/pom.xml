@@ -66,6 +66,7 @@
         <module>springbootdemo554-Zxcvbn4j</module>
         <module>springbootdemo555-Passay</module>
         <module>springbootdemo556-Cryptacular</module>
+        <module>springbootdemo557-Vt-Password</module>
     </modules>
 
     <properties>
