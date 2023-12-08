@@ -63,6 +63,7 @@
         <module>springbootdemo551-Jing</module>
         <module>springbootdemo552-Cryptomator</module>
         <module>springbootdemo553-Activation</module>
+        <module>springbootdemo554-Zxcvbn4j</module>
     </modules>
 
     <properties>

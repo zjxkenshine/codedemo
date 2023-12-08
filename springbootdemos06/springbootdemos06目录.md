@@ -162,3 +162,6 @@ Jing Java中的RELAX NG验证器
 
 ## 553.springbootdemo553-Activation
 javax.Activation 用于处理MIME数据的Java扩展库
+
+## 554.springbootdemo554-Zxcvbn4j
+Zxcvbn4j 密码强度验证
