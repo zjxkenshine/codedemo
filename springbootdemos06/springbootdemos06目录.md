@@ -155,3 +155,9 @@ javax.Vecmath 向量计算库
 
 ## 551.springbootdemo551-Jing
 Jing Java中的RELAX NG验证器
+
+## 552.springbootdemo552-Cryptomator
+Cryptomator 云文件加密
+
+## 553.springbootdemo553-Activation
+javax.Activation 用于处理MIME数据的Java扩展库

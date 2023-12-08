@@ -61,6 +61,8 @@
         <module>springbootdemo549-Snuggletex</module>
         <module>springbootdemo550-Vecmath</module>
         <module>springbootdemo551-Jing</module>
+        <module>springbootdemo552-Cryptomator</module>
+        <module>springbootdemo553-Activation</module>
     </modules>
 
     <properties>
