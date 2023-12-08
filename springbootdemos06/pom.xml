@@ -65,6 +65,7 @@
         <module>springbootdemo553-Activation</module>
         <module>springbootdemo554-Zxcvbn4j</module>
         <module>springbootdemo555-Passay</module>
+        <module>springbootdemo556-Cryptacular</module>
     </modules>
 
     <properties>

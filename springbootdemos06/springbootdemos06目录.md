@@ -168,3 +168,6 @@ Zxcvbn4j 密码强度验证
 
 ## 555.springbootdemo555-Passay
 Passay 密码安全策略库
+
+## 556.springbootdemo556-Cryptacular
+Cryptacular 加密库
