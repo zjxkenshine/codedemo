@@ -165,3 +165,6 @@ javax.Activation 用于处理MIME数据的Java扩展库
 
 ## 554.springbootdemo554-Zxcvbn4j
 Zxcvbn4j 密码强度验证
+
+## 555.springbootdemo555-Passay
+Passay 密码安全策略库
