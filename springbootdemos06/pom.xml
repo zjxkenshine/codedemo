@@ -69,6 +69,7 @@
         <module>springbootdemo557-Vt-Password</module>
         <module>springbootdemo558-Isorelax</module>
         <module>springbootdemo559-Pixelmed</module>
+        <module>springbootdemo560-GraphicCR</module>
     </modules>
 
     <properties>
