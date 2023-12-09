@@ -1,0 +1,21 @@
+dromara:
+  x-file-storage: #文件存储配置
+    default-platform: minio-1 #默认使用的存储平台
+    minio:
+      - platform: minio-1 # 存储平台标识
+        enable-storage: true  # 启用存储
+        access-key: T1GPy0VvSf4sv68vZA5h
+        secret-key: tdP5LsiMUMvS2mOInbE80R3G3JhEkBdVo95jYtj7
+        end-point: http://192.168.0.251:9001
+        bucket-name: cookbook
+        domain: http://192.168.0.251:9001/cookbook/ # 访问域名，注意“/”结尾，例如：http://minio.abc.com/abc/
+        base-path: test/ # 基础路径
+
+spring:
+  # 配置数据源
+  datasource:
+    # 数据库驱动，这里配置高版本mysql驱动
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/springboot05?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf8&autoReconnect=true&allowMultiQueries=true&useSSL=false
+    username: root
+    password: 123456

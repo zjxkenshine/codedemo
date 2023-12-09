@@ -186,3 +186,6 @@ GraphicCR 图像验证码识别
 
 ## 561.springbootdemo561-Boxable
 Boxable 在PDF中创建表格
+
+## 562.springbootdemo562-X-File-Storage
+springboot 整合 X-File-Storage 文件存储
