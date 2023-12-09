@@ -192,3 +192,6 @@ springboot 整合 X-File-Storage 文件存储
 
 ## 563.springbootdemo563-SimpleXml-Safe
 simple-xml-safe xml序列化与反序列化
+
+## 564.springbootdemo564-GraphWalker
+Graphwalker 基于模型的测试工具

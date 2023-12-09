@@ -73,6 +73,7 @@
         <module>springbootdemo561-Boxable</module>
         <module>springbootdemo562-X-File-Storage</module>
         <module>springbootdemo563-SimpleXml-Safe</module>
+        <module>springbootdemo564-GraphWalker</module>
     </modules>
 
     <properties>
