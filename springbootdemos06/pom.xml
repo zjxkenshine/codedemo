@@ -70,6 +70,7 @@
         <module>springbootdemo558-Isorelax</module>
         <module>springbootdemo559-Pixelmed</module>
         <module>springbootdemo560-GraphicCR</module>
+        <module>springbootdemo561-Boxable</module>
     </modules>
 
     <properties>
