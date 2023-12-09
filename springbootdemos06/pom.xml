@@ -72,6 +72,7 @@
         <module>springbootdemo560-GraphicCR</module>
         <module>springbootdemo561-Boxable</module>
         <module>springbootdemo562-X-File-Storage</module>
+        <module>springbootdemo563-SimpleXml-Safe</module>
     </modules>
 
     <properties>

@@ -189,3 +189,6 @@ Boxable 在PDF中创建表格
 
 ## 562.springbootdemo562-X-File-Storage
 springboot 整合 X-File-Storage 文件存储
+
+## 563.springbootdemo563-SimpleXml-Safe
+simple-xml-safe xml序列化与反序列化
