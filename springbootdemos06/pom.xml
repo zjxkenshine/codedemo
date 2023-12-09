@@ -74,6 +74,7 @@
         <module>springbootdemo562-X-File-Storage</module>
         <module>springbootdemo563-SimpleXml-Safe</module>
         <module>springbootdemo564-GraphWalker</module>
+        <module>springbootdemo565-Graphml4j</module>
     </modules>
 
     <properties>
