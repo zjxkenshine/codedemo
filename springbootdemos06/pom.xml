@@ -75,6 +75,7 @@
         <module>springbootdemo563-SimpleXml-Safe</module>
         <module>springbootdemo564-GraphWalker</module>
         <module>springbootdemo565-Graphml4j</module>
+        <module>springbootdemo566-FunctionalJava</module>
     </modules>
 
     <properties>

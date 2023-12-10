@@ -198,3 +198,6 @@ Graphwalker 基于模型的测试工具
 
 ## 565.springbootdemo565-Graphml4j
 Graphml4j 为yed生成GraphML文件
+
+## 566.springbootdemo566-FunctionalJava
+Functionaljava java函数式编程库
