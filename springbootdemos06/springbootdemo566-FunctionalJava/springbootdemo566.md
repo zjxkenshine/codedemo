@@ -33,3 +33,12 @@ ImmutableTest：不可变类
 - test07Tree：玫瑰树
 - test08TreeMap：红黑树实现的Map
 - test09PriorityQueue：优先队列
+
+OtherTest：其他类
+- test01Monoid：Monoid幺半群
+- test02Semigroup：Semigroup半群
+- test03Natural：自然数
+- test04LcgRng：随机数
+- test05ReaderWriterState：Reader/Writer/State
+- test06IO：io/IOFunctions
+- 其他：类型转换等
