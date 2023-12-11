@@ -76,6 +76,7 @@
         <module>springbootdemo564-GraphWalker</module>
         <module>springbootdemo565-Graphml4j</module>
         <module>springbootdemo566-FunctionalJava</module>
+        <module>springbootdemo567-StreamEX</module>
     </modules>
 
     <properties>

@@ -201,3 +201,6 @@ Graphml4j 为yed生成GraphML文件
 
 ## 566.springbootdemo566-FunctionalJava
 Functionaljava java函数式编程库
+
+## 567.springbootdemo567-StreamEX
+StreamEX  Java Stream扩展
