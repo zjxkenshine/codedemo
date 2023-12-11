@@ -207,3 +207,6 @@ StreamEX  Java Stream扩展
 
 ## 568.springbootdemo568-Immutator
 Immutator 创建对象运行时的不可变版本
+
+## 569.springbootdemo569-Jipsy
+Jipsy 注释生成Spi

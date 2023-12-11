@@ -78,6 +78,7 @@
         <module>springbootdemo566-FunctionalJava</module>
         <module>springbootdemo567-StreamEX</module>
         <module>springbootdemo568-Immutator</module>
+        <module>springbootdemo569-Jipsy</module>
     </modules>
 
     <properties>
