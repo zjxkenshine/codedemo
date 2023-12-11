@@ -22,3 +22,14 @@ BasicTest：基本接口使用
 - test07Option：0或1个值
 - test08Either：两个值之一
 - test09Validation：验证
+
+ImmutableTest：不可变类
+- test01Array：Array
+- test02List：List
+- test03Stream：Stream不可变惰性单链表
+- test04FingerTrees：2-3指树
+- test05HList：异构列表
+- test06Set：Set
+- test07Tree：玫瑰树
+- test08TreeMap：红黑树实现的Map
+- test09PriorityQueue：优先队列
