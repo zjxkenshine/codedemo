@@ -79,6 +79,7 @@
         <module>springbootdemo567-StreamEX</module>
         <module>springbootdemo568-Immutator</module>
         <module>springbootdemo569-Jipsy</module>
+        <module>springbootdemo570-CollectorsUtils</module>
     </modules>
 
     <properties>

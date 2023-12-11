@@ -210,3 +210,6 @@ Immutator 创建对象运行时的不可变版本
 
 ## 569.springbootdemo569-Jipsy
 Jipsy 注释生成Spi
+
+## 570.springbootdemo570-CollectorsUtils
+CollectorsUtils 为java8 Stream API提供collect收集器
