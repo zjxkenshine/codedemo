@@ -77,6 +77,7 @@
         <module>springbootdemo565-Graphml4j</module>
         <module>springbootdemo566-FunctionalJava</module>
         <module>springbootdemo567-StreamEX</module>
+        <module>springbootdemo568-Immutator</module>
     </modules>
 
     <properties>
