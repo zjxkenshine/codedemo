@@ -81,6 +81,7 @@
         <module>springbootdemo569-Jipsy</module>
         <module>springbootdemo570-CollectorsUtils</module>
         <module>springbootdemo571-RedisX</module>
+        <module>springbootdemo572-JSap</module>
     </modules>
 
     <properties>
