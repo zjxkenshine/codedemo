@@ -219,3 +219,6 @@ RedisX 轻量级Redis客户端
 
 ## 572.springbootdemo572-JSap
 JSap 简单参数解析器
+
+## 573.springbootdemo573-Sux4j
+Sux4j java简易数据结构

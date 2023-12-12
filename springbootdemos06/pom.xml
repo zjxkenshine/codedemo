@@ -82,6 +82,7 @@
         <module>springbootdemo570-CollectorsUtils</module>
         <module>springbootdemo571-RedisX</module>
         <module>springbootdemo572-JSap</module>
+        <module>springbootdemo573-Sux4j</module>
     </modules>
 
     <properties>
