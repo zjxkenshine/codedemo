@@ -213,3 +213,6 @@ Jipsy 注释生成Spi
 
 ## 570.springbootdemo570-CollectorsUtils
 CollectorsUtils 为java8 Stream API提供collect收集器
+
+## 571.springbootdemo571-RedisX
+RedisX 轻量级Redis客户端

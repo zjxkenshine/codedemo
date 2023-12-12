@@ -80,6 +80,7 @@
         <module>springbootdemo568-Immutator</module>
         <module>springbootdemo569-Jipsy</module>
         <module>springbootdemo570-CollectorsUtils</module>
+        <module>springbootdemo571-RedisX</module>
     </modules>
 
     <properties>

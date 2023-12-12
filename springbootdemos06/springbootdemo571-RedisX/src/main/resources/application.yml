@@ -1,0 +1,4 @@
+redisx:
+  server: localhost:6379
+  user: root
+  db: 2
