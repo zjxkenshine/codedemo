@@ -83,6 +83,7 @@
         <module>springbootdemo571-RedisX</module>
         <module>springbootdemo572-JSap</module>
         <module>springbootdemo573-Sux4j</module>
+        <module>springbootdemo574-Jscc</module>
     </modules>
 
     <properties>
