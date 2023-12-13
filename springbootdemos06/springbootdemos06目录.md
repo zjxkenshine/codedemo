@@ -225,3 +225,6 @@ Sux4j java简易数据结构
 
 ## 574.springbootdemo574-Jscc
 Jscc java编译器
+
+## 575.springbootdemo575-Djcproxy
+Djcproxy java动态类代理
