@@ -90,6 +90,7 @@
         <module>springbootdemo578-Rest-Assured</module>
         <module>springbootdemo579-Moco</module>
         <module>springbootdemo580-Tagsoup</module>
+        <module>springbootdemo581-CyberNeko</module>
     </modules>
 
     <properties>
