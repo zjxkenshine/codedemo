@@ -1,0 +1,17 @@
+<itemRecord>
+    <value>
+        <longValue>12345</longValue>
+    </value>
+    <value>
+        <stringValue number='false'>this is a string value
+        </stringValue>
+    </value>
+    <value>
+        <moneyValue number='true' currencyId="USD" text="123.45">104.95
+        </moneyValue>
+    </value>
+    <value>
+        <moneyValue currencyId="USD">104.95
+        </moneyValue>
+    </value>
+</itemRecord>

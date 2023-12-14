@@ -91,6 +91,7 @@
         <module>springbootdemo579-Moco</module>
         <module>springbootdemo580-Tagsoup</module>
         <module>springbootdemo581-CyberNeko</module>
+        <module>springbootdemo582-NekoPull</module>
     </modules>
 
     <properties>
