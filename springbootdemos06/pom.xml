@@ -89,6 +89,7 @@
         <module>springbootdemo577-Wiremock</module>
         <module>springbootdemo578-Rest-Assured</module>
         <module>springbootdemo579-Moco</module>
+        <module>springbootdemo580-Tagsoup</module>
     </modules>
 
     <properties>
