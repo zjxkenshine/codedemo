@@ -86,6 +86,7 @@
         <module>springbootdemo574-Jscc</module>
         <module>springbootdemo575-Djcproxy</module>
         <module>springbootdemo576-Dsiutils</module>
+        <module>springbootdemo577-Wiremock</module>
     </modules>
 
     <properties>

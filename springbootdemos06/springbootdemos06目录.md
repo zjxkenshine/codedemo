@@ -231,3 +231,6 @@ Djcproxy java动态类代理
 
 ## 576.springbootdemo576-Dsiutils
 Dsiutils 米兰大学开源工具集
+
+## 577.springbootdemo577-Wiremock
+Wiremock 模拟Web服务器测试
