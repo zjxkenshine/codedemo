@@ -234,3 +234,6 @@ Dsiutils 米兰大学开源工具集
 
 ## 577.springbootdemo577-Wiremock
 Wiremock 模拟Web服务器测试
+
+## 578.springbootdemo578-Rest-Assured
+Rest-assured RestAPI测试
