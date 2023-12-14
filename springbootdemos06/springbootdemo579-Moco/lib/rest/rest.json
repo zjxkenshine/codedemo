@@ -1,0 +1,69 @@
+[
+  {
+    "resource": {
+      "name": "targets",
+      "get": [
+        {
+          "id": "1",
+          "response": {
+            "json": {
+              "code": 1,
+              "message": "foo"
+            }
+          }
+        }
+      ],
+      "post": [
+        {
+          "response": {
+            "status": 201,
+            "headers" : {
+              "Location": "/targets/123"
+            }
+          }
+        }
+      ],
+      "put": [
+        {
+          "id": 1,
+          "response": {
+            "status": 200,
+          }
+        }
+      ],
+      "delete": [
+        {
+          "id": 1,
+          "response": {
+            "status": 200,
+          }
+        }
+      ],
+      "patch": [
+        {
+          "id": 1,
+          "response": {
+            "status": 200,
+          }
+        }
+      ],
+      "resource": [
+        {
+          "id": "1",
+          "name": "subs",
+          "get": [
+            {
+              "id": "1",
+              "response": {
+                "json": {
+                  "code": 3,
+                  "message": "sub"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

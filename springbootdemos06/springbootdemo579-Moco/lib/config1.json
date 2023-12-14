@@ -1,0 +1,5 @@
+[
+  {"include":"lib\\index.json"},
+  {"include":"lib\\moco.json"},
+  {"include":"lib\\moco-get.json"}
+]

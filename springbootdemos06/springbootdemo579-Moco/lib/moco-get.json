@@ -1,0 +1,48 @@
+[
+  {
+    "description": "一个简单的get请求",
+    "request": {
+      "method": "get",
+      "uri": "/login"
+    },
+    "response": {
+      "text": "我是login get method",
+      "headers":{
+        "Content-Type":"text/html;charset=utf-8"
+      }
+    }
+  },
+  {
+    "description": "带参数的get请求，p1和p2是两个参数",
+    "request": {
+      "method": "get",
+      "uri": "/reg",
+      "queries": {
+        "p1": "v1",
+        "p2": "v2"
+      }
+    },
+    "response": {
+      "text": "带参数的get请求",
+      "headers":{
+        "Content-Type":"text/html;charset=utf-8"
+      }
+    }
+  },
+  {
+    "description": "get请求返回json类型数据",
+    "request": {
+      "method": "get",
+      "uri": "/login_json"
+    },
+    "response": {
+      "json": {
+        "key":"value",
+        "请求方式是get":"响应结果为json类型"
+      },
+      "headers": {
+        "Content-Type": "application/json;charset=utf-8"
+      }
+    }
+  }
+]

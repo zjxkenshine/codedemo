@@ -237,3 +237,6 @@ Wiremock 模拟Web服务器测试
 
 ## 578.springbootdemo578-Rest-Assured
 Rest-assured RestAPI测试
+
+## 579.springbootdemo579-Moco
+Moco stub测试框架

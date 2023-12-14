@@ -1,0 +1,7 @@
+[
+  {"include":"index.json"},
+  {"include":"moco.json"},
+  {"include":"moco-get.json"},
+  {"include":"moco-post.json"},
+  {"include":"moco-redirect.json"}
+]

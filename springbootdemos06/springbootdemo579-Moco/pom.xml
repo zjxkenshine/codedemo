@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>springboot-demos06</artifactId>
+        <groupId>com.kenshine</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>springbootdemo579-Moco</artifactId>
+
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>moco</groupId>
+            <artifactId>moco</artifactId>
+            <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${basedir}/lib/moco-runner-1.5.0-standalone.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>com.garrettheel</groupId>
+            <artifactId>moco-maven-plugin</artifactId>
+            <version>0.9.3</version>
+            <type>maven-plugin</type>
+        </dependency>
+        <dependency>
+            <groupId>com.github.dreamhead</groupId>
+            <artifactId>moco-core</artifactId>
+            <version>1.5.0</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>com.garrettheel</groupId>
+                <artifactId>moco-maven-plugin</artifactId>
+                <version>0.9.3</version>
+                <configuration>
+                    <port>8081</port>
+                    <configFile>${basedir}/lib/moco-get.json</configFile>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>

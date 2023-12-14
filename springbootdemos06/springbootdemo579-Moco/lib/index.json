@@ -1,0 +1,12 @@
+[
+  {
+    "description": "index",
+    "request": {
+      "method": "get",
+      "uri": "/index"
+    },
+    "response": {
+      "text": "Hello home"
+    }
+  }
+]

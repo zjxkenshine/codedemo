@@ -1,0 +1,53 @@
+[
+  {
+    "description": "Moco Demo",
+    "request": {
+      "method": "get",
+      "uri": "/demo"
+    },
+    "response": {
+      "text": "Hello Moco"
+    }
+  },
+  {
+    "description": "users",
+    "request": {
+      "method": "get",
+      "uri": "/users"
+    },
+    "response": {
+      "headers": {
+        "Content-Type": "application/json;charset=utf-8"
+      },
+      "json": {
+        "code": 200,
+        "msg": "success",
+        "data": [
+          {
+            "id": 1,
+            "username": "张三"
+          },
+          {
+            "id": 2,
+            "username": "李四"
+          },
+          {
+            "id": 3,
+            "username": "王五"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "description": "这是一个get请求,不带参数",
+    "request": {
+      "uri": "/goods",
+      "method": "get"
+    },
+    "response": {
+      "text": "这是一个GET请求，不带参数",
+      "status": "200"
+    }
+  }
+]

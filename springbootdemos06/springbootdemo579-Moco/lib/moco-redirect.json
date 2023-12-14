@@ -1,0 +1,8 @@
+{
+  "description":"重定向到指定网站",
+  "request":{
+    "method":"get",
+    "uri":"/login_redirect"
+  },
+  "redirectTo":"https://www.baidu.com"
+}

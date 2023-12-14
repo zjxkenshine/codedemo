@@ -1,0 +1,15 @@
+{
+  "websocket": {
+    "uri": "/ws",
+    "sessions": [
+      {
+        "request": {
+          "text": "foo"
+        },
+        "response": {
+          "text": "bar"
+        }
+      }
+    ]
+  }
+}

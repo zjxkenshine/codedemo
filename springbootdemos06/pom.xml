@@ -88,6 +88,7 @@
         <module>springbootdemo576-Dsiutils</module>
         <module>springbootdemo577-Wiremock</module>
         <module>springbootdemo578-Rest-Assured</module>
+        <module>springbootdemo579-Moco</module>
     </modules>
 
     <properties>

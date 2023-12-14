@@ -1,0 +1,100 @@
+[
+  {
+    "description": "定义请求方式，通过method参数定义",
+    "request": {
+      "uri": "/index",
+      "method": "post"
+    },
+    "response": {
+      "text": "hello world"
+    }
+  },
+
+  {
+    "description": "定义请求参数，通过queries参数定义",
+    "request": {
+      "uri": "/index",
+      "method": "get",
+      "queries": {
+        "area": "010",
+        "kw": "hello"
+      }
+    },
+    "response": {
+      "text": "hello world"
+    }
+  },
+  {
+    "description": "定义请求头，通过headers参数定义",
+    "request": {
+      "uri": "/login",
+      "method": "post",
+      "headers": {
+        "area": "010"
+      }
+    },
+    "response": {
+      "text": "hello world"
+    }
+  },
+  {
+    "description": "定义表单请求体，通过forms参数定义",
+    "request": {
+      "uri": "/login",
+      "method": "post",
+      "forms": {
+        "username": "tom",
+        "password": "123456"
+      }
+    },
+    "response": {
+      "text": "login success"
+    }
+  },
+  {
+    "description": "定义JSON请求体，通过json参数定义",
+    "request": {
+      "uri": "/login",
+      "method": "post",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "json": {
+        "username": "tom",
+        "password": "123456"
+      }
+    },
+    "response": {
+      "text": "hello world66666"
+    }
+  },
+  {
+    "description": "定义HTTP响应状态码，通过status参数定义",
+    "request": {
+      "uri": "/index2"
+    },
+    "response": {
+      "status": 500,
+      "text": "error"
+    }
+  },
+  {
+    "description": "定义JSON响应数据，通过json参数定义",
+    "request": {
+      "uri": "/login"
+    },
+    "response": {
+      "headers": {
+        "Content-Type": "application/json;charset=UTF-8"
+      },
+      "json": {
+        "code": "10000",
+        "msg": "操作成功",
+        "data": {
+          "uid": 2,
+          "token": "xxx"
+        }
+      }
+    }
+  }
+]
