@@ -255,3 +255,6 @@ ExTree 从字节码构建AST语法树
 
 ## 584.springbootdemo584-License-Tool
 License-Tool 分析和操作开源的许可证标头的工具
+
+## 585.springbootdemo585-Sfx4j
+Sfx4j 打包jar到一个class文件
