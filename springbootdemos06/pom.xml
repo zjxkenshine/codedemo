@@ -97,6 +97,7 @@
         <module>springbootdemo585-Sfx4j</module>
         <module>springbootdemo586-Stripper</module>
         <module>springbootdemo587-Dtd-Parser</module>
+        <module>springbootdemo588-Dtdparser</module>
     </modules>
 
     <properties>

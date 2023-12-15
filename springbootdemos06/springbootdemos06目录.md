@@ -264,3 +264,6 @@ Stripper class文件压缩
 
 ## 587.springbootdemo587-Dtd-Parser
 Dtd-Parser DTD解析
+
+## 588.springbootdemo588-Dtdparser
+dtdparser DTD解析
