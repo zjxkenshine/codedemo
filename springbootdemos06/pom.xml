@@ -98,6 +98,7 @@
         <module>springbootdemo586-Stripper</module>
         <module>springbootdemo587-Dtd-Parser</module>
         <module>springbootdemo588-Dtdparser</module>
+        <module>springbootdemo589-Parallel-Junit</module>
     </modules>
 
     <properties>

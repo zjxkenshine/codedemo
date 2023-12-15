@@ -267,3 +267,6 @@ Dtd-Parser DTD解析
 
 ## 588.springbootdemo588-Dtdparser
 dtdparser DTD解析
+
+## 589.springbootdemo589-Parallel-Junit
+Parallel-Junit 并发Junit测试
