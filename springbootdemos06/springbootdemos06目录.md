@@ -270,3 +270,7 @@ dtdparser DTD解析
 
 ## 589.springbootdemo589-Parallel-Junit
 Parallel-Junit 并发Junit测试
+
+## 590.springbootdemo590-Buildtest
+Buildtest 构建测试工具集
+
