@@ -95,6 +95,7 @@
         <module>springbootdemo583-ExTree</module>
         <module>springbootdemo584-License-Tool</module>
         <module>springbootdemo585-Sfx4j</module>
+        <module>springbootdemo586-Stripper</module>
     </modules>
 
     <properties>

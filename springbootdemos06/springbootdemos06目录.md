@@ -258,3 +258,6 @@ License-Tool 分析和操作开源的许可证标头的工具
 
 ## 585.springbootdemo585-Sfx4j
 Sfx4j 打包jar到一个class文件
+
+## 586.springbootdemo586-Stripper
+Stripper class文件压缩
