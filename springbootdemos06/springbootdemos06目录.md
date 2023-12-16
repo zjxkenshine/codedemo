@@ -282,3 +282,6 @@ Mimepull 解析Mime
 
 ## 593.springbootdemo593-Which4j
 Which4j 在类路径或任何ClassLoader中查找类
+
+## 594.springbootdemo594-Stax-Ex
+stax-ex StAX扩展API
