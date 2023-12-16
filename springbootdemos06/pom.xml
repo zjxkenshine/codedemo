@@ -104,6 +104,7 @@
         <module>springbootdemo592-Mimepull</module>
         <module>springbootdemo593-Which4j</module>
         <module>springbootdemo594-Stax-Ex</module>
+        <module>springbootdemo595-NoMoreTears</module>
     </modules>
 
     <properties>
