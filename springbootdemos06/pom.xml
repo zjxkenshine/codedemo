@@ -102,6 +102,7 @@
         <module>springbootdemo590-Buildtest</module>
         <module>springbootdemo591-Args4j</module>
         <module>springbootdemo592-Mimepull</module>
+        <module>springbootdemo593-Which4j</module>
     </modules>
 
     <properties>
