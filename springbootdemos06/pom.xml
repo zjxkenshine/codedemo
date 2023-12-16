@@ -101,6 +101,7 @@
         <module>springbootdemo589-Parallel-Junit</module>
         <module>springbootdemo590-Buildtest</module>
         <module>springbootdemo591-Args4j</module>
+        <module>springbootdemo592-Mimepull</module>
     </modules>
 
     <properties>

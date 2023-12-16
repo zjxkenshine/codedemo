@@ -1,0 +1,13 @@
+------=_kenshine
+Content-Type: text/xml; charset=UTF-8
+Content-Transfer-Encoding: binary
+Content-Id: <139912840220.1065629194743.IBM.WEBSERVICES@ibm-7pr28r4m35k>
+Content-Description:   ahsdfjhdf\nsdkhjkdf\tjsdkfh\r kdjfkdjf
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><soapenv:Body><ProductDetails xmlns="http://www.ws-i.org/SampleApplications/SupplyChainManagement/2003-07/Catalog.xsd"><Weight>18</Weight><WeightUnit>lb</WeightUnit><Dimensions><Height>23</Height><Width>26</Width><Depth>18</Depth></Dimensions><DimensionsUnit>in</DimensionsUnit></ProductDetails><Picture href="cid:1371339872796.1065629194743.IBM.WEBSERVICES@ibm-7pr28r4m35k" xmlns="http://www.ws-i.org/SampleApplications/SupplyChainManagement/2003-07/Catalog.xsd"/><SpecSheet href="cid:1381257592348.1065629194743.IBM.WEBSERVICES@ibm-7pr28r4m35k" xmlns="http://www.ws-i.org/SampleApplications/SupplyChainManagement/2003-07/Catalog.xsd"/></soapenv:Body></soapenv:Envelope>
+------=_kenshine
+Content-Type: image/jpeg
+Content-Transfer-Encoding: binary
+Content-Id: <1351327060508.1065629194423.IBM.WEBSERVICES@ibm-7pr28r4m35k>
+
+------=_kenshine--

@@ -277,3 +277,5 @@ Buildtest 构建测试工具集
 ## 591.springbootdemo591-Args4j
 Args4j 参数解析器
 
+## 592.springbootdemo592-Mimepull
+Mimepull 解析Mime
