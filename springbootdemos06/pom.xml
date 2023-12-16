@@ -100,6 +100,7 @@
         <module>springbootdemo588-Dtdparser</module>
         <module>springbootdemo589-Parallel-Junit</module>
         <module>springbootdemo590-Buildtest</module>
+        <module>springbootdemo591-Args4j</module>
     </modules>
 
     <properties>
