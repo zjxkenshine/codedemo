@@ -105,6 +105,7 @@
         <module>springbootdemo593-Which4j</module>
         <module>springbootdemo594-Stax-Ex</module>
         <module>springbootdemo595-NoMoreTears</module>
+        <module>springbootdemo596-Es6draft</module>
     </modules>
 
     <properties>

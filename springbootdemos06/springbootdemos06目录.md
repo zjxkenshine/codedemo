@@ -288,3 +288,6 @@ stax-ex StAX扩展API
 
 ## 595.springbootdemo595-NoMoreTears
 No-More-Tears 运行时符号解析
+
+## 596.springbootdemo596-Es6draft
+Es6draft es6编译与运行
