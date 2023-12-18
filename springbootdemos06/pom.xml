@@ -106,6 +106,7 @@
         <module>springbootdemo594-Stax-Ex</module>
         <module>springbootdemo595-NoMoreTears</module>
         <module>springbootdemo596-Es6draft</module>
+        <module>springbootdemo597-Catch-Exception</module>
     </modules>
 
     <properties>
