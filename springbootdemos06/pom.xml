@@ -107,6 +107,7 @@
         <module>springbootdemo595-NoMoreTears</module>
         <module>springbootdemo596-Es6draft</module>
         <module>springbootdemo597-Catch-Exception</module>
+        <module>springbootdemo598-Props2yaml</module>
     </modules>
 
     <properties>

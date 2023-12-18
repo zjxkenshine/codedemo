@@ -294,3 +294,6 @@ Es6draft es6编译与运行
 
 ## 597.springbootdemo597-Catch-Exception
 Catch-Exception 异常验证框架
+
+## 598.springbootdemo598-Props2yaml
+Props2yaml property转yaml
