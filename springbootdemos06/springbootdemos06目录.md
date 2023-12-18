@@ -297,3 +297,6 @@ Catch-Exception 异常验证框架
 
 ## 598.springbootdemo598-Props2yaml
 Props2yaml property转yaml
+
+## 599.springbootdemo599-Jfairy
+Jfairy 伪数据生成

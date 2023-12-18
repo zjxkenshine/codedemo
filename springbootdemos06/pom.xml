@@ -108,6 +108,7 @@
         <module>springbootdemo596-Es6draft</module>
         <module>springbootdemo597-Catch-Exception</module>
         <module>springbootdemo598-Props2yaml</module>
+        <module>springbootdemo599-Jfairy</module>
     </modules>
 
     <properties>
