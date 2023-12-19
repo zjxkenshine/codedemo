@@ -1,5 +1,5 @@
 # 参考地址
-snuggletex
+snuggletex Latex解析库
 - https://github.com/rototor/snuggletex
 
 useguide
