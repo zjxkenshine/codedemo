@@ -10,6 +10,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>springbootdemo600-Charles</module>
+        <module>springbootdemo601-Jvyaml</module>
     </modules>
 
     <properties>
