@@ -8,3 +8,5 @@ Jvyaml yaml解析
 ## 602.springbootdemo602-Specsy
 specsy BDD风格单元测试
 
+## 603.springbootdemo603-Jumi
+Jumi 测试运行器/Jumi-Actors 并行测试

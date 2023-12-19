@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>springbootdemos07</artifactId>
+        <groupId>org.kenshine</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>springbootdemo603-Jumi</artifactId>
+
+    <dependencies>
+        <dependency>
+            <groupId>fi.jumi</groupId>
+            <artifactId>jumi-actors</artifactId>
+            <version>1.0.270</version>
+        </dependency>
+        <dependency>
+            <groupId>fi.jumi</groupId>
+            <artifactId>jumi-core</artifactId>
+            <version>0.5.437</version>
+        </dependency>
+        <dependency>
+            <groupId>fi.jumi</groupId>
+            <artifactId>jumi-api</artifactId>
+            <version>0.5.437</version>
+        </dependency>
+        <dependency>
+            <groupId>fi.jumi</groupId>
+            <artifactId>jumi-launcher</artifactId>
+            <version>0.5.437</version>
+        </dependency>
+        <dependency>
+            <groupId>fi.jumi</groupId>
+            <artifactId>jumi-daemon</artifactId>
+            <version>0.5.437</version>
+        </dependency>
+        <dependency>
+            <groupId>fi.jumi</groupId>
+            <artifactId>simpleunit</artifactId>
+            <version>0.5.437</version>
+        </dependency>
+    </dependencies>
+
+</project>

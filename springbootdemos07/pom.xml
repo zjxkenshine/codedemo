@@ -12,6 +12,7 @@
         <module>springbootdemo600-Charles</module>
         <module>springbootdemo601-Jvyaml</module>
         <module>springbootdemo602-Specsy</module>
+        <module>springbootdemo603-Jumi</module>
     </modules>
 
     <properties>
