@@ -17,6 +17,7 @@
         <module>springbootdemo605-Easytable</module>
         <module>springbootdemo606-Classgraph</module>
         <module>springbootdemo607-Jeval</module>
+        <module>springbootdemo608-Jevaluator</module>
     </modules>
 
     <properties>
