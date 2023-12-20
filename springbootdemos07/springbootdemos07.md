@@ -19,3 +19,6 @@ Easytable pdf表格绘制
 
 ## 606.springbootdemo606-Classgraph
 Classgraph 轻量级的java类路径和模块扫描器
+
+## 607.springbootdemo607-Jeval
+Jeval 表达式解析
