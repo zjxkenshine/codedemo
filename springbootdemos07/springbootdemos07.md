@@ -10,3 +10,6 @@ specsy BDD风格单元测试
 
 ## 603.springbootdemo603-Jumi
 Jumi 测试运行器/Jumi-Actors 并行测试
+
+## 604.springbootdemo604-Pretty-Formula
+Pretty-Formula 数学公式转LeTex和图像
