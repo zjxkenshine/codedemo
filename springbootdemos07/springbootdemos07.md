@@ -16,3 +16,6 @@ Pretty-Formula 数学公式转LeTex和图像
 
 ## 605.springbootdemo605-Easytable
 Easytable pdf表格绘制
+
+## 606.springbootdemo606-Classgraph
+Classgraph 轻量级的java类路径和模块扫描器

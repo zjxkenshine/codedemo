@@ -15,6 +15,7 @@
         <module>springbootdemo603-Jumi</module>
         <module>springbootdemo604-Pretty-Formula</module>
         <module>springbootdemo605-Easytable</module>
+        <module>springbootdemo606-Classgraph</module>
     </modules>
 
     <properties>
