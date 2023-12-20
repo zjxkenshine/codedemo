@@ -18,6 +18,7 @@
         <module>springbootdemo606-Classgraph</module>
         <module>springbootdemo607-Jeval</module>
         <module>springbootdemo608-Jevaluator</module>
+        <module>springbootdemo609-Ph-Css</module>
     </modules>
 
     <properties>
