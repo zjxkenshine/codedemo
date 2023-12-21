@@ -1,14 +1,8 @@
 # 参考地址
-视频
-- https://www.bilibili.com/video/BV1QC4y1a79D?p=11
-
 主要学习
 - https://www.cnblogs.com/xyyz120/category/1695447.html
-
-springboot+jaspersoft studio6制作报表
-- https://blog.csdn.net/qq_35909525/article/details/133900430
-
-- https://blog.csdn.net/c_2333/article/details/126800234
+- https://blog.csdn.net/lichongxyz/category_8740532.html
+- https://blog.csdn.net/qq_34378595/category_11236304.html
 
 JasperReports笔记系列
 - 1、https://blog.csdn.net/qq_39826207/article/details/132198182
@@ -29,10 +23,19 @@ java8：jasperreports 6.7
 2. 编译为.jasper文件，引入项目
 3. 结合数据填充，输出各种格式报表
 
-field的description需要与map的key对应
+# 踩坑
+field的Description需要与map的key对应：
+![](img/fields.jpg)
 
-# 中文
+中文不显示
 - fonts包
 - jasperreports_extension.properties
-- https://www.mianfeiziti.com/fonts-ttfziku
 
+java.lang.NoClassDefFoundError: main_report (wrong name: main_report_...)
+- jasperreports依赖版本问题，需要与studio版本一致
+
+程序加载不到主类JasperApplication
+- 报表不能命名为main.jasper
+
+java.lang.ClassNotFoundException: com.lowagie.text.pdf.FopGlyphProcessor
+- itext版本问题，最终版本如本pom所示

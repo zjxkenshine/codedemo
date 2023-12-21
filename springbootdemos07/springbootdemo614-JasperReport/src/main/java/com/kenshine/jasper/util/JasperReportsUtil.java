@@ -23,6 +23,9 @@ import java.util.Objects;
  * @version: 1.0$
  */
 public class JasperReportsUtil {
+    public static String generateReport(String templatePath, String fileName, String fileType, Map<String, Object> parameters) throws Exception {
+        return generateReport(templatePath, fileName, fileType, parameters, new JREmptyDataSource());
+    }
     /**
      * 使用 JasperReports 生成报表文件
      * @param templatePath 模板文件路径及名称
@@ -31,13 +34,13 @@ public class JasperReportsUtil {
      * @param parameters 传递到 jrxml 模板文件中的数据参数
      * @return 返回生成的报表文件路径
      */
-    public static String generateReport(String templatePath, String fileName, String fileType, Map<String, Object> parameters) throws Exception {
+    public static String generateReport(String templatePath, String fileName, String fileType, Map<String, Object> parameters, JRDataSource dataSource) throws Exception {
         // 1、获取 jasper 模板文件【采用流的方式读取】
         ClassPathResource resource = new ClassPathResource(templatePath);
         InputStream in = resource.getStream();
         JasperReport jasperReport = (JasperReport) JRLoader.loadObject(in);
         // 2、将 parameters 数据参数填充到模板文件中
-        JasperPrint jasperPrint = JasperFillManager.fillReport(jasperReport, parameters, new JREmptyDataSource());
+        JasperPrint jasperPrint = JasperFillManager.fillReport(jasperReport, parameters, dataSource);
         // 3、按照指定的 fileType 文件类型导出报表文件
         if (fileType == null || "".equals(fileType.trim())) {
             fileType = "pdf";

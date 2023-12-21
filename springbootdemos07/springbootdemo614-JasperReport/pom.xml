@@ -20,15 +20,11 @@
         <dependency>
             <groupId>net.sf.jasperreports</groupId>
             <artifactId>jasperreports</artifactId>
-            <version>6.20.0</version>
+            <version>6.20.6</version>
             <exclusions>
-                <!--
-                    排除自带的itext依赖,因为自带的itext版本是 2.1.7.js10
-                    这个版本在中央仓库里面没有，无法下载
-                -->
                 <exclusion>
-                    <groupId>com.lowagie</groupId>
-                    <artifactId>itext</artifactId>
+                    <groupId>com.github.librepdf</groupId>
+                    <artifactId>openpdf</artifactId>
                 </exclusion>
             </exclusions>
         </dependency>
@@ -36,7 +32,12 @@
         <dependency>
             <groupId>com.lowagie</groupId>
             <artifactId>itext</artifactId>
-            <version>2.1.7</version>
+            <version>4.2.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.github.librepdf</groupId>
+            <artifactId>openpdf</artifactId>
+            <version>1.3.30</version>
         </dependency>
         <dependency>
             <groupId>org.apache.poi</groupId>
