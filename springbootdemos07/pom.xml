@@ -23,6 +23,7 @@
         <module>springbootdemo611-Jadis</module>
         <module>springbootdemo612-Pie</module>
         <module>springbootdemo613-Pecoff4j</module>
+        <module>springbootdemo614-JasperReport</module>
     </modules>
 
     <properties>
