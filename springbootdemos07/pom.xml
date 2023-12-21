@@ -21,6 +21,7 @@
         <module>springbootdemo609-Ph-Css</module>
         <module>springbootdemo610-Jlatexmath</module>
         <module>springbootdemo611-Jadis</module>
+        <module>springbootdemo612-Pie</module>
     </modules>
 
     <properties>
