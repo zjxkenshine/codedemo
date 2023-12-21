@@ -22,6 +22,7 @@
         <module>springbootdemo610-Jlatexmath</module>
         <module>springbootdemo611-Jadis</module>
         <module>springbootdemo612-Pie</module>
+        <module>springbootdemo613-Pecoff4j</module>
     </modules>
 
     <properties>
