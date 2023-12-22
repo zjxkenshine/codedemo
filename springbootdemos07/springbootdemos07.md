@@ -49,3 +49,6 @@ Random-Beans/easy-random 随机mock bean生成
 
 ## 616.springbootdemo616-Javafaker
 Javafaker 伪数据生成
+
+## 617.springbootdemo617-Beanfiller-Trace
+Beanfiller-Trace 基于tcases组合测试生成Java bean

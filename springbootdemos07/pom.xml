@@ -26,6 +26,7 @@
         <module>springbootdemo614-JasperReport</module>
         <module>springbootdemo615-Random-Beans</module>
         <module>springbootdemo616-Javafaker</module>
+        <module>springbootdemo617-Beanfiller-Trace</module>
     </modules>
 
     <properties>
