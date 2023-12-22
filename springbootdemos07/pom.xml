@@ -29,6 +29,7 @@
         <module>springbootdemo617-Beanfiller-Trace</module>
         <module>springbootdemo618-Immutables</module>
         <module>springbootdemo619-Iban4j</module>
+        <module>springbootdemo620-Jose4j</module>
     </modules>
 
     <properties>
