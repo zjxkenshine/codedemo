@@ -25,6 +25,7 @@
         <module>springbootdemo613-Pecoff4j</module>
         <module>springbootdemo614-JasperReport</module>
         <module>springbootdemo615-Random-Beans</module>
+        <module>springbootdemo616-Javafaker</module>
     </modules>
 
     <properties>

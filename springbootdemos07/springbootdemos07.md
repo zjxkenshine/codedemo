@@ -46,3 +46,6 @@ springboot 整合 JasperReport 报表制作
 
 ## 615.springbootdemo615-Random-Beans
 Random-Beans/easy-random 随机mock bean生成
+
+## 616.springbootdemo616-Javafaker
+Javafaker 伪数据生成
