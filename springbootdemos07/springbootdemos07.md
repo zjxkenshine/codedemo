@@ -43,3 +43,6 @@ Pecoff4j exe与dll文件解析/生成
 
 ## 614.springbootdemo614-JasperReport
 springboot 整合 JasperReport 报表制作
+
+## 615.springbootdemo615-Random-Beans
+Random-Beans/easy-random 随机mock bean生成
