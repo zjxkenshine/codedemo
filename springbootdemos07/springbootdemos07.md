@@ -52,3 +52,6 @@ Javafaker 伪数据生成
 
 ## 617.springbootdemo617-Beanfiller-Trace
 Beanfiller-Trace 基于tcases组合测试生成Java bean
+
+## 618.springbootdemo618-Immutables
+Immutables 不可变类

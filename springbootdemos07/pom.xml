@@ -27,6 +27,7 @@
         <module>springbootdemo615-Random-Beans</module>
         <module>springbootdemo616-Javafaker</module>
         <module>springbootdemo617-Beanfiller-Trace</module>
+        <module>springbootdemo618-Immutables</module>
     </modules>
 
     <properties>
