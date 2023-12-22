@@ -64,3 +64,6 @@ Jose4j 生成与验证JWT
 
 ## 621.springbootdemo621-Jmespath
 Jmespath 从JSON文档中提取和转换元素
+
+## 622.springbootdemo622-SparseBitSet
+SparseBitSet 稀疏bit集合
