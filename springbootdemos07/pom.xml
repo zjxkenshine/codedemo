@@ -28,6 +28,7 @@
         <module>springbootdemo616-Javafaker</module>
         <module>springbootdemo617-Beanfiller-Trace</module>
         <module>springbootdemo618-Immutables</module>
+        <module>springbootdemo619-Iban4j</module>
     </modules>
 
     <properties>
