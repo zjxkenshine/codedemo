@@ -70,3 +70,6 @@ SparseBitSet 稀疏bit集合
 
 ## 623.springbootdemo623-Fluent-Validator
 Fluent-validator 校验框架
+
+## 624.springbootdemo624-Fluent-Assert
+Fluent-assert 流式断言

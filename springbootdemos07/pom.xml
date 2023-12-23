@@ -33,6 +33,7 @@
         <module>springbootdemo621-Jmespath</module>
         <module>springbootdemo622-SparseBitSet</module>
         <module>springbootdemo623-Fluent-Validator</module>
+        <module>springbootdemo624-Fluent-Assert</module>
     </modules>
 
     <properties>
