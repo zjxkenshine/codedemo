@@ -34,6 +34,7 @@
         <module>springbootdemo622-SparseBitSet</module>
         <module>springbootdemo623-Fluent-Validator</module>
         <module>springbootdemo624-Fluent-Assert</module>
+        <module>springbootdemo625-Fluent-Mock</module>
     </modules>
 
     <properties>

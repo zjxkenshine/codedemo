@@ -73,3 +73,6 @@ Fluent-validator 校验框架
 
 ## 624.springbootdemo624-Fluent-Assert
 Fluent-assert 流式断言
+
+## 625.springbootdemo625-Fluent-Mock
+Fluent-Mock 流式Mock
