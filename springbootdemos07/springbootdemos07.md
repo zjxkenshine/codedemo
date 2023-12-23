@@ -67,3 +67,6 @@ Jmespath 从JSON文档中提取和转换元素
 
 ## 622.springbootdemo622-SparseBitSet
 SparseBitSet 稀疏bit集合
+
+## 623.springbootdemo623-Fluent-Validator
+Fluent-validator 校验框架
