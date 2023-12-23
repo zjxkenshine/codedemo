@@ -35,6 +35,7 @@
         <module>springbootdemo623-Fluent-Validator</module>
         <module>springbootdemo624-Fluent-Assert</module>
         <module>springbootdemo625-Fluent-Mock</module>
+        <module>springbootdemo626-Parboiled</module>
     </modules>
 
     <properties>
