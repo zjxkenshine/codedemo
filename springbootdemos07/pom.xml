@@ -36,6 +36,7 @@
         <module>springbootdemo624-Fluent-Assert</module>
         <module>springbootdemo625-Fluent-Mock</module>
         <module>springbootdemo626-Parboiled</module>
+        <module>springbootdemo627-Pegdown</module>
     </modules>
 
     <properties>
