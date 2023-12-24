@@ -37,6 +37,7 @@
         <module>springbootdemo625-Fluent-Mock</module>
         <module>springbootdemo626-Parboiled</module>
         <module>springbootdemo627-Pegdown</module>
+        <module>springbootdemo628-Jless</module>
     </modules>
 
     <properties>
