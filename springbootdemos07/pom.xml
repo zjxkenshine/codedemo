@@ -39,6 +39,7 @@
         <module>springbootdemo627-Pegdown</module>
         <module>springbootdemo628-Jless</module>
         <module>springbootdemo629-Diffutils</module>
+        <module>springbootdemo630-Java-Diff-Utils</module>
     </modules>
 
     <properties>
