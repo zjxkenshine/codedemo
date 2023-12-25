@@ -100,3 +100,6 @@ HtmlCleaner HTML文档解析器
 
 ## 633.springbootdemo633-Nimbus-Jose-Jwt
 springboot 整合 Nimbus-Jose-Jwt jwt对称加密
+
+## 634.springbootdemo634-Common-Random
+Common-Random 随机数据生成器
