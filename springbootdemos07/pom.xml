@@ -41,6 +41,7 @@
         <module>springbootdemo629-Diffutils</module>
         <module>springbootdemo630-Java-Diff-Utils</module>
         <module>springbootdemo631-Picketbox</module>
+        <module>springbootdemo632-HtmlCleaner</module>
     </modules>
 
     <properties>
