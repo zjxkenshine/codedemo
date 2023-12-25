@@ -97,3 +97,6 @@ Picketbox 安全框架
 
 ## 632.springbootdemo632-HtmlCleaner
 HtmlCleaner HTML文档解析器
+
+## 633.springbootdemo633-Nimbus-Jose-Jwt
+springboot 整合 Nimbus-Jose-Jwt jwt对称加密
