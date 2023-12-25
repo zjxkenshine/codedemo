@@ -1,0 +1,20 @@
+文本(T1):
+!
+version 12.3
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname lucy
+!
+boot-start-marker
+boot-end-marker
+!
+enable password cisco
+!
+username cisco password 0 cisco
+no aaa new-model
+ip subnet-zero
+!
+!
+no ip domain lookup

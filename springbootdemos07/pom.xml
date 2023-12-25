@@ -38,6 +38,7 @@
         <module>springbootdemo626-Parboiled</module>
         <module>springbootdemo627-Pegdown</module>
         <module>springbootdemo628-Jless</module>
+        <module>springbootdemo629-Diffutils</module>
     </modules>
 
     <properties>
