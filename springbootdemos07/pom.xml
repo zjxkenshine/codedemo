@@ -45,6 +45,7 @@
         <module>springbootdemo633-Nimbus-Jose-Jwt</module>
         <module>springbootdemo634-Common-Random</module>
         <module>springbootdemo635-Jakarta-ORO</module>
+        <module>springbootdemo636-Jandex</module>
     </modules>
 
     <properties>

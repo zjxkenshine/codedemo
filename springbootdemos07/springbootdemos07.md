@@ -106,3 +106,6 @@ Common-Random 随机数据生成器
 
 ## 635.springbootdemo635-Jakarta-ORO
 Jakarta-ORO 正则表达式匹配
+
+## 636.springbootdemo636-Jandex
+Jandex Java类文件索引器和离线反射库
