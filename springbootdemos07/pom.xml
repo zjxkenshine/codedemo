@@ -44,6 +44,7 @@
         <module>springbootdemo632-HtmlCleaner</module>
         <module>springbootdemo633-Nimbus-Jose-Jwt</module>
         <module>springbootdemo634-Common-Random</module>
+        <module>springbootdemo635-Jakarta-ORO</module>
     </modules>
 
     <properties>
