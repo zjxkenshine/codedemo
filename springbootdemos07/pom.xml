@@ -46,6 +46,7 @@
         <module>springbootdemo634-Common-Random</module>
         <module>springbootdemo635-Jakarta-ORO</module>
         <module>springbootdemo636-Jandex</module>
+        <module>springbootdemo637-Mutiny</module>
     </modules>
 
     <properties>
