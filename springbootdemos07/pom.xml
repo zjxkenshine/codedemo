@@ -47,6 +47,7 @@
         <module>springbootdemo635-Jakarta-ORO</module>
         <module>springbootdemo636-Jandex</module>
         <module>springbootdemo637-Mutiny</module>
+        <module>springbootdemo638-Smallrye-Health</module>
     </modules>
 
     <properties>

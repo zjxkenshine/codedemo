@@ -112,3 +112,6 @@ Jandex Java类文件索引器和离线反射库
 
 ## 637.springbootdemo637-Mutiny
 Mutiny 事件驱动响应式编程框架
+
+## 638.springbootdemo638-Smallrye-Health
+Smallrye-Health 系统健康检查框架
