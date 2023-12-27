@@ -48,6 +48,7 @@
         <module>springbootdemo636-Jandex</module>
         <module>springbootdemo637-Mutiny</module>
         <module>springbootdemo638-Smallrye-Health</module>
+        <module>springbootdemo639-Json-Schema-Validator</module>
     </modules>
 
     <properties>

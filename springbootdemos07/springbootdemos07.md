@@ -115,3 +115,6 @@ Mutiny 事件驱动响应式编程框架
 
 ## 638.springbootdemo638-Smallrye-Health
 Smallrye-Health 系统健康检查框架
+
+## 639.springbootdemo639-Json-Schema-Validator
+json-schema-validator JSON格式校验
