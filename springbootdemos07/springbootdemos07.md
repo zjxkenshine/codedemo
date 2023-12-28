@@ -118,3 +118,6 @@ Smallrye-Health 系统健康检查框架
 
 ## 639.springbootdemo639-Json-Schema-Validator
 json-schema-validator JSON格式校验
+
+## 640.springbootdemo640-Jmockit
+Jmockit mock测试框架

@@ -49,6 +49,7 @@
         <module>springbootdemo637-Mutiny</module>
         <module>springbootdemo638-Smallrye-Health</module>
         <module>springbootdemo639-Json-Schema-Validator</module>
+        <module>springbootdemo640-Jmockit</module>
     </modules>
 
     <properties>
