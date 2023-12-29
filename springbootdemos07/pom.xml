@@ -50,6 +50,7 @@
         <module>springbootdemo638-Smallrye-Health</module>
         <module>springbootdemo639-Json-Schema-Validator</module>
         <module>springbootdemo640-Jmockit</module>
+        <module>springbootdemo641-Libphonenumber</module>
     </modules>
 
     <properties>
