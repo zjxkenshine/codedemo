@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.hasor.net/sechma/main">
+    <hasor>
+        <!-- 项目所属包：减少类扫描范围 -->
+        <loadPackages>com.kenshine.hasorweb.*</loadPackages>
+        <!-- 框架启动入口 -->
+        <startup>com.kenshine.hasorweb.StartModule</startup>
+    </hasor>
+</config>

@@ -127,3 +127,6 @@ Libphonenumber 手机号码校验、运营商归属地查询
 
 ## 642.springbootdemo642-Hasor
 Hasor 插件式web框架
+
+## 643.springbootdemo643-Hasor-Web
+springboot 整合 Hasor-Web
