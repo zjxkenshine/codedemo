@@ -124,3 +124,6 @@ Jmockit mock测试框架
 
 ## 641.springbootdemo641-Libphonenumber
 Libphonenumber 手机号码校验、运营商归属地查询
+
+## 642.springbootdemo642-Hasor
+Hasor 插件式web框架

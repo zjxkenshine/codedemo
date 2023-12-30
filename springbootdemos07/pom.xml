@@ -51,6 +51,7 @@
         <module>springbootdemo639-Json-Schema-Validator</module>
         <module>springbootdemo640-Jmockit</module>
         <module>springbootdemo641-Libphonenumber</module>
+        <module>springbootdemo642-Hasor</module>
     </modules>
 
     <properties>

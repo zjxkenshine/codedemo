@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.hasor.net/sechma/main">
+    <!-- 默认要装载的模块 -->
+    <hasor.modules>
+        <module>net.hasor.web.render.RenderWebPlugin</module>
+<!--        <module>net.hasor.plugins.startup.StartupModule</module>-->
+<!--        <module>net.hasor.plugins.aop.AopModule</module>-->
+        <module>com.kenshine.hasorcore.test01_base.FirstModule</module>
+        <module>com.kenshine.hasorcore.test01_base.SecondModule</module>
+    </hasor.modules>
+</config>
