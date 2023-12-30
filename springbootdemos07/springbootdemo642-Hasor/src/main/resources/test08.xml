@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.hasor.net/sechma/main">
+    <!-- 执行事件的线程池大小 -->
+    <hasor.eventThreadPoolSize>8</hasor.eventThreadPoolSize>
+
+    <!--方式二-->
+    <hasor.environmentVar>
+        <!-- 执行事件的线程池大小 -->
+        <HASOR_LOAD_EVENT_POOL>8</HASOR_LOAD_EVENT_POOL>
+    </hasor.environmentVar>
+</config>

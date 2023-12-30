@@ -22,3 +22,24 @@ hasor官方文档
   - PojoBean：动态添加属性
   - SimplePropertyDelegate：属性委托
   - PojoBean3：全局动态属性
+- test05_scope：作用域
+  - MyModule：单例bean
+  - MyModule1：原型bean
+  - SessionScope：自定义scope
+- test06_life：生命周期
+  - PojoBean：注解初始化
+  - PojoBean1：initMethod指定初始化函数
+  - PojoBean2：启动时初始化，注解
+  - PojoBean3：启动时初始化，代码
+  - PojoBean4：销毁
+  - CustomModule：Module生命周期，SPI机制
+  - CustomModule2：Module生命周期，事件驱动
+- test07_bean：bean管理
+  - MyModule：设置Bean id
+  - MyModule1：设置Bean name
+  - TypeBean2Factory：委托方式创建Bean
+- test08_event：事件监听器
+  - MyListener：同步事件，异步事件
+  - MyListener2：只执行一次的事件
+  - ChainTest：执行链
+  - test08.xml：事件线程池设置
