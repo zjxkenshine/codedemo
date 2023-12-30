@@ -1,0 +1,73 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /
+    # 全局服务编码设置
+    encoding:
+      charset: utf-8
+      enabled: true
+      force: true
+
+# mysql 连接信息配置
+spring:
+  # mysql 数据库连接信息，本地使用 mysql 服务版本为：8.0.28
+  datasource:
+    username: root
+    password: 123456
+    url: jdbc:mysql://localhost:3306/springboot05?useSSL=false&useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai&rewriteBatchedStatements=true&allowPublicKeyRetrieval=true
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    # druid 数据连接池配置
+    druid:
+      initial-size: 3
+      min-idle: 3
+      max-active: 10
+      max-wait: 6000
+      # 配置druid监控页
+      aop-patterns: com.kenshine.dataway.* #监控springBean
+      stat-view-servlet: # 配置监控页功能
+        enabled: true # 默认开启，这里显示说明
+        login-username: admin # 登录名
+        login-password: 123456 # 登录密码
+        reset-enable: false # 禁用重置按钮
+      web-stat-filter: # 监控 web
+        enabled: true
+        url-pattern: /* # 监控所有
+        exclusions: '*.js,*.gif,*.jpg,*.png,*.css,*.ico,/druid/*'  #放行
+      filter:
+        stat: # 对上面 filters 里的 stat 的详细配置
+          slow-sql-millis: 1000 # 慢 sql 时间是毫秒单位的，执行时间 1 秒以上的为慢 SQL
+          log-slow-sql: true # 日志记录
+          enabled: true
+        wall:
+          enabled: true
+          config:
+            drop-table-allow: false # 禁用删除表的 sql
+
+# mdataway 配置
+# 是否启用 Dataway 功能（必选：默认false）
+HASOR_DATAQL_DATAWAY: true
+# 开启 ui 管理功能（注意生产环境必须要设置为 false，否则会造成严重的生产安全事故）
+HASOR_DATAQL_DATAWAY_ADMIN: true
+# dataway  API工作路径（可选，默认：/api/）
+HASOR_DATAQL_DATAWAY_API_URL: /api/
+# dataway-ui 的工作路径（可选，默认：/interface-ui/）
+HASOR_DATAQL_DATAWAY_UI_URL: /interface-ui/
+# SQL执行器方言设置（可选，建议设置）
+HASOR_DATAQL_FX_PAGE_DIALECT: mysql
+
+# 日志输出配置
+logging:
+  level:
+    root: INFO
+    org:
+      springframework:
+        security: WARN
+        web: ERROR
+    # 设置自己的 com.demo.mapper 目录 输出sql日志
+    com.kenshine.dataway.mapper: debug
+  file:
+    path: ./logs
+    name: './logs/springboot-dataway.log'
+  pattern:
+    file: '%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{50}:%L - %msg%n'
+    console: '%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{50}:%L - %msg%n'

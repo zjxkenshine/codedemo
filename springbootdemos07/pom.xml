@@ -53,6 +53,7 @@
         <module>springbootdemo641-Libphonenumber</module>
         <module>springbootdemo642-Hasor</module>
         <module>springbootdemo643-Hasor-Web</module>
+        <module>springbootdemo644-Dataway</module>
     </modules>
 
     <properties>
