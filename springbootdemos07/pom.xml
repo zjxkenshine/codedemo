@@ -54,6 +54,7 @@
         <module>springbootdemo642-Hasor</module>
         <module>springbootdemo643-Hasor-Web</module>
         <module>springbootdemo644-Dataway</module>
+        <module>springbootdemo645-Iceroot</module>
     </modules>
 
     <properties>
