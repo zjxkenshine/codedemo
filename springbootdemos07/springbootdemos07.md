@@ -136,3 +136,6 @@ springboot 整合 Hasor + Dataway + swagger2 sql映射Api
 
 ## 645.springbootdemo645-Iceroot
 Iceroot java基础工具类
+
+## 646.springbootdemo646-Staxmate
+Staxmate 流式xml处理,自动转换

@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<deliciousFoods>
+    <animals>
+        <animal name="Pig">
+            <meat>
+                <name>Prosciutto</name>
+            </meat>
+            <meat>
+                <name>Speck</name>
+            </meat>
+        </animal>
+        <animal name="Cow">
+            <meat>
+                <name>Clod</name>
+            </meat>
+            <meat>
+                <name>Brisket</name>
+            </meat>
+            <meat>
+                <name>Tri-tip</name>
+            </meat>
+        </animal>
+        <animal name="Chicken">
+            <meat>
+                <name>Drumstick</name>
+            </meat>
+        </animal>
+    </animals>
+    <vegetables>
+        <vegetable>
+            <name>Brussels sprouts</name>
+            <preparations>
+                <preparation>Sauteed</preparation>
+                <preparation>Roasted</preparation>
+                <preparation>Steamed</preparation>
+            </preparations>
+        </vegetable>
+        <vegetable>
+            <name>Kale</name>
+            <preparations>
+                <preparation>Sauteed</preparation>
+                <preparation>Salad</preparation>
+            </preparations>
+        </vegetable>
+        <vegetable>
+            <name>Arugula</name>
+            <preparations>
+                <preparation>Salad</preparation>
+                <preparation>Garnish</preparation>
+            </preparations>
+        </vegetable>
+    </vegetables>
+</deliciousFoods>
