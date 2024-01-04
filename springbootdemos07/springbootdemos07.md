@@ -142,3 +142,6 @@ Staxmate 流式xml处理,自动转换
 
 ## 647.springbootdemo647-Classmembersorter
 Classmembersorter java方法与类排序
+
+## 648.springbootdemo648-Jimfs
+Jimfs 内存文件系统

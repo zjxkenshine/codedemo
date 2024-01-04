@@ -57,6 +57,7 @@
         <module>springbootdemo645-Iceroot</module>
         <module>springbootdemo646-Staxmate</module>
         <module>springbootdemo647-Classmembersorter</module>
+        <module>springbootdemo648-Jimfs</module>
     </modules>
 
     <properties>
