@@ -148,3 +148,6 @@ Jimfs 内存文件系统
 
 ## 649.springbootdemo649-Gulava
 Gulava 关系编程库
+
+## 650.springbootdemo650-Truth
+Truth 可读性较强的断言框架

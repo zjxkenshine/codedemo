@@ -59,6 +59,7 @@
         <module>springbootdemo647-Classmembersorter</module>
         <module>springbootdemo648-Jimfs</module>
         <module>springbootdemo649-Gulava</module>
+        <module>springbootdemo650-Truth</module>
     </modules>
 
     <properties>
