@@ -58,6 +58,7 @@
         <module>springbootdemo646-Staxmate</module>
         <module>springbootdemo647-Classmembersorter</module>
         <module>springbootdemo648-Jimfs</module>
+        <module>springbootdemo649-Gulava</module>
     </modules>
 
     <properties>
