@@ -60,6 +60,7 @@
         <module>springbootdemo648-Jimfs</module>
         <module>springbootdemo649-Gulava</module>
         <module>springbootdemo650-Truth</module>
+        <module>springbootdemo651-Saturn</module>
     </modules>
 
     <properties>
