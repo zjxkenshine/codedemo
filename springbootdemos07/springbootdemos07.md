@@ -154,3 +154,6 @@ Truth 可读性较强的断言框架
 
 ## 651.springbootdemo651-Saturn
 Saturn 任务调度
+
+## 652.springbootdemo652-Mx4j
+Mx4j 实现JMX/远程JMX

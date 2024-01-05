@@ -61,6 +61,7 @@
         <module>springbootdemo649-Gulava</module>
         <module>springbootdemo650-Truth</module>
         <module>springbootdemo651-Saturn</module>
+        <module>springbootdemo652-Mx4j</module>
     </modules>
 
     <properties>

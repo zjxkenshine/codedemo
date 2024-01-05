@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE Configure PUBLIC "-//Mort Bay Consulting//DTD Configure//EN" "http://jetty.mortbay.org/configure.dtd">
+
+<Configure class="org.mortbay.jetty.Server">
+    <Call name="addListener">
+        <Arg>
+            <New class="org.mortbay.http.SunJsseListener">
+                <Set name="Port">8443</Set>
+                <Set name="PoolName">P1</Set>
+                <Set name="MaxIdleTimeMs">30000</Set>
+                <Set name="lowResources">30</Set>
+                <Set name="LowResourcePersistTimeMs">2000</Set>
+                <Set name="Keystore"><SystemProperty name="jetty.home" default="."/>/mx4j.ks</Set>
+                <Set name="Password">mx4jmx4j</Set>
+                <Set name="KeyPassword">mx4jmx4j</Set>
+
+                <Set name="HttpHandler">
+                    <New class="org.mortbay.http.handler.MsieSslHandler">
+                        <Set name="UserAgentSubString">MSIE 5</Set>
+                    </New>
+                </Set>
+            </New>
+        </Arg>
+    </Call>
+</Configure>
