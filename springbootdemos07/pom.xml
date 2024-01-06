@@ -64,6 +64,7 @@
         <module>springbootdemo652-Mx4j</module>
         <module>springbootdemo653-Jcip-Annotations</module>
         <module>springbootdemo654-Compile-Testing</module>
+        <module>springbootdemo655-Joda-Collect</module>
     </modules>
 
     <properties>
