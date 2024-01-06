@@ -62,6 +62,7 @@
         <module>springbootdemo650-Truth</module>
         <module>springbootdemo651-Saturn</module>
         <module>springbootdemo652-Mx4j</module>
+        <module>springbootdemo653-Jcip-Annotations</module>
     </modules>
 
     <properties>
