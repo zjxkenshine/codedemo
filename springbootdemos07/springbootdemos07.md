@@ -160,3 +160,6 @@ Mx4j 实现JMX/远程JMX
 
 ## 653.springbootdemo653-Jcip-Annotations
 Jcip-Annotations 并发编程注解
+
+## 654.springbootdemo654-Compile-Testing
+Compile-testing 编译测试库

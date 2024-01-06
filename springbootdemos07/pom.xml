@@ -63,6 +63,7 @@
         <module>springbootdemo651-Saturn</module>
         <module>springbootdemo652-Mx4j</module>
         <module>springbootdemo653-Jcip-Annotations</module>
+        <module>springbootdemo654-Compile-Testing</module>
     </modules>
 
     <properties>
