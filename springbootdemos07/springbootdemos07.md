@@ -172,3 +172,6 @@ Coapblaster coap服务端与客户端实现
 
 ## 657.springbootdemo657-Joda-Money
 Joda-Money 金额处理
+
+## 658.springbootdemo658-Joda-Beans
+Joda-Beans java Bean增强框架

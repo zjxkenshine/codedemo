@@ -67,6 +67,7 @@
         <module>springbootdemo655-Joda-Collect</module>
         <module>springbootdemo656-Coapblaster</module>
         <module>springbootdemo657-Joda-Money</module>
+        <module>springbootdemo658-Joda-Beans</module>
     </modules>
 
     <properties>
