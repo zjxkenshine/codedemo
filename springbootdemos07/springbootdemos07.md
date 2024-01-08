@@ -166,3 +166,6 @@ Compile-testing 编译测试库
 
 ## 655.springbootdemo655-Joda-Collect
 Joda-collect 提供JDK或Guava中没有的集合
+
+## 656.springbootdemo656-Coapblaster
+Coapblaster coap服务端与客户端实现

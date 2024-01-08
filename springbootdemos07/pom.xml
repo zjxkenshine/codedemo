@@ -65,6 +65,7 @@
         <module>springbootdemo653-Jcip-Annotations</module>
         <module>springbootdemo654-Compile-Testing</module>
         <module>springbootdemo655-Joda-Collect</module>
+        <module>springbootdemo656-Coapblaster</module>
     </modules>
 
     <properties>
