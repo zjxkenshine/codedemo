@@ -70,6 +70,7 @@
         <module>springbootdemo658-Joda-Beans</module>
         <module>springbootdemo659-Joda-Convert</module>
         <module>springbootdemo660-Joda-Primitives</module>
+        <module>springbootdemo661-CborTree</module>
     </modules>
 
     <properties>
