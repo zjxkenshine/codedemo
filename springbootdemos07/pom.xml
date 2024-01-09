@@ -71,6 +71,7 @@
         <module>springbootdemo659-Joda-Convert</module>
         <module>springbootdemo660-Joda-Primitives</module>
         <module>springbootdemo661-CborTree</module>
+        <module>springbootdemo662-CBOR-Java</module>
     </modules>
 
     <properties>

@@ -184,3 +184,6 @@ Joda-Primitives 原始类型集合
 
 ## 661.springbootdemo661-CborTree
 Cbor(CborTree) 一个用于解码、操作和编码CBOR数据项的Java库
+
+## 662.springbootdemo662-CBOR-Java
+CBOR 简明二进制对象表示的Java实现（RFC 8949）
