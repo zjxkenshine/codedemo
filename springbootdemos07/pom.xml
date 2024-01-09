@@ -72,6 +72,7 @@
         <module>springbootdemo660-Joda-Primitives</module>
         <module>springbootdemo661-CborTree</module>
         <module>springbootdemo662-CBOR-Java</module>
+        <module>springbootdemo663-Hexdump</module>
     </modules>
 
     <properties>
