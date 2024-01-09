@@ -73,6 +73,7 @@
         <module>springbootdemo661-CborTree</module>
         <module>springbootdemo662-CBOR-Java</module>
         <module>springbootdemo663-Hexdump</module>
+        <module>springbootdemo664-Jsonschema-Generator</module>
     </modules>
 
     <properties>

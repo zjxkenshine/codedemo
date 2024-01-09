@@ -190,3 +190,6 @@ CBOR 简明二进制对象表示的Java实现（RFC 8949）
 
 ## 663.springbootdemo663-Hexdump
 Hexdump 十六进制打印
+
+## 664.springbootdemo664-Jsonschema-Generator
+Jsonschema-Generator Jsonschema生成器
