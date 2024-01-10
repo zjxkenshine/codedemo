@@ -75,6 +75,7 @@
         <module>springbootdemo663-Hexdump</module>
         <module>springbootdemo664-Jsonschema-Generator</module>
         <module>springbootdemo665-Wildfly</module>
+        <module>springbootdemo666-Furious-Objectpool</module>
     </modules>
 
     <properties>

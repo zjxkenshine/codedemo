@@ -196,3 +196,6 @@ Jsonschema-Generator Jsonschema生成器
 
 ## 665.springbootdemo665-Wildfly
 Wildfly war包部署(undertow作为默认web容器)
+
+## 666.springbootdemo666-Furious-Objectpool
+Furious-Objectpool 少锁定对象池
