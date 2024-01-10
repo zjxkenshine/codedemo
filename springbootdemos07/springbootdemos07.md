@@ -199,3 +199,6 @@ Wildfly war包部署(undertow作为默认web容器)
 
 ## 666.springbootdemo666-Furious-Objectpool
 Furious-Objectpool 少锁定对象池
+
+## 667.springbootdemo667-Fast-Object-Pool
+Fast-Object-Pool 一个轻量级的分区对象池
