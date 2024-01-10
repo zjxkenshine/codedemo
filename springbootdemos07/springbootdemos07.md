@@ -202,3 +202,6 @@ Furious-Objectpool 少锁定对象池
 
 ## 667.springbootdemo667-Fast-Object-Pool
 Fast-Object-Pool 一个轻量级的分区对象池
+
+## 668.springbootdemo668-Stormpot
+Stormpot 轻量级对象池

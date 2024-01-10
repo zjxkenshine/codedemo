@@ -77,6 +77,7 @@
         <module>springbootdemo665-Wildfly</module>
         <module>springbootdemo666-Furious-Objectpool</module>
         <module>springbootdemo667-Fast-Object-Pool</module>
+        <module>springbootdemo668-Stormpot</module>
     </modules>
 
     <properties>
