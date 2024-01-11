@@ -79,6 +79,7 @@
         <module>springbootdemo667-Fast-Object-Pool</module>
         <module>springbootdemo668-Stormpot</module>
         <module>springbootdemo669-Furious-Javatester</module>
+        <module>springbootdemo670-Javaslang</module>
     </modules>
 
     <properties>

@@ -208,3 +208,6 @@ Stormpot 轻量级对象池
 
 ## 669.springbootdemo669-Furious-Javatester
 Furious-javatester Java性能测试工具
+
+## 670.springbootdemo670-Javaslang
+Javaslang 函数式编程，vavr的前身
