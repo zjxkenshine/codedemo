@@ -205,3 +205,6 @@ Fast-Object-Pool 一个轻量级的分区对象池
 
 ## 668.springbootdemo668-Stormpot
 Stormpot 轻量级对象池
+
+## 669.springbootdemo669-Furious-Javatester
+Furious-javatester Java性能测试工具
