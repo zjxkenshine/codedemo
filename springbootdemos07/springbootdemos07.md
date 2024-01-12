@@ -226,3 +226,6 @@ Matchers-Json  javax.json规范objects与arrays的Hamcrest匹配器
 
 ## 675.springbootdemo675-Json-Rules
 json-rules 使用json rule验证jsonnodes
+
+## 676.springbootdemo676-Json-Verifier
+Spring Test MockMVC + Json-Verifier json响应校验

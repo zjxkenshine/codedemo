@@ -85,6 +85,7 @@
         <module>springbootdemo673-Glassfish-Javax.json</module>
         <module>springbootdemo674-Matchers-Json</module>
         <module>springbootdemo675-Json-Rules</module>
+        <module>springbootdemo676-Json-Verifier</module>
     </modules>
 
     <properties>
