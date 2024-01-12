@@ -83,6 +83,7 @@
         <module>springbootdemo671-Yasson</module>
         <module>springbootdemo672-Parsson</module>
         <module>springbootdemo673-Glassfish-Javax.json</module>
+        <module>springbootdemo674-Matchers-Json</module>
     </modules>
 
     <properties>
