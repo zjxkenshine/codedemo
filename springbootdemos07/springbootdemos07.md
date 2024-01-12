@@ -223,3 +223,6 @@ Glassfish.Javax.json JSONP规范标准实现
 
 ## 674.springbootdemo674-Matchers-Json
 Matchers-Json  javax.json规范objects与arrays的Hamcrest匹配器
+
+## 675.springbootdemo675-Json-Rules
+json-rules 使用json rule验证jsonnodes
