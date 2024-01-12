@@ -217,3 +217,6 @@ Yasson JSONB规范(JSR-367)标准实现
 
 ## 672.springbootdemo672-Parsson
 Parsson JSONP规范标准实现
+
+## 673.springbootdemo673-Glassfish-Javax.json
+Glassfish.Javax.json JSONP规范标准实现

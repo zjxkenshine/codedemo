@@ -82,6 +82,7 @@
         <module>springbootdemo670-Javaslang</module>
         <module>springbootdemo671-Yasson</module>
         <module>springbootdemo672-Parsson</module>
+        <module>springbootdemo673-Glassfish-Javax.json</module>
     </modules>
 
     <properties>
