@@ -86,6 +86,7 @@
         <module>springbootdemo674-Matchers-Json</module>
         <module>springbootdemo675-Json-Rules</module>
         <module>springbootdemo676-Json-Verifier</module>
+        <module>springbootdemo677-Kbop</module>
     </modules>
 
     <properties>

@@ -229,3 +229,6 @@ json-rules 使用json rule验证jsonnodes
 
 ## 676.springbootdemo676-Json-Verifier
 Spring Test MockMVC + Json-Verifier json响应校验
+
+## 677.springbootdemo677-Kbop
+Kbop 线程安全、快速、轻量级的基于密钥的对象池
