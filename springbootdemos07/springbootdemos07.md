@@ -211,3 +211,6 @@ Furious-javatester Java性能测试工具
 
 ## 670.springbootdemo670-Javaslang
 Javaslang 函数式编程，vavr的前身
+
+## 671.springbootdemo671-Yasson
+Yasson JSONB规范(JSR-367)标准实现

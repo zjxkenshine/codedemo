@@ -80,6 +80,7 @@
         <module>springbootdemo668-Stormpot</module>
         <module>springbootdemo669-Furious-Javatester</module>
         <module>springbootdemo670-Javaslang</module>
+        <module>springbootdemo671-Yasson</module>
     </modules>
 
     <properties>
