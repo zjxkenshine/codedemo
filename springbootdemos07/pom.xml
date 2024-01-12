@@ -81,6 +81,7 @@
         <module>springbootdemo669-Furious-Javatester</module>
         <module>springbootdemo670-Javaslang</module>
         <module>springbootdemo671-Yasson</module>
+        <module>springbootdemo672-Parsson</module>
     </modules>
 
     <properties>
@@ -101,10 +102,10 @@
     </dependencyManagement>
 
     <dependencies>
-<!--        <dependency>-->
-<!--            <groupId>org.springframework.boot</groupId>-->
-<!--            <artifactId>spring-boot-starter-web</artifactId>-->
-<!--        </dependency>-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
