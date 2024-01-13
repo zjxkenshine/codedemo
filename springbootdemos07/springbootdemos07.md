@@ -232,3 +232,6 @@ Spring Test MockMVC + Json-Verifier json响应校验
 
 ## 677.springbootdemo677-Kbop
 Kbop 线程安全、快速、轻量级的基于密钥的对象池
+
+## 678.springbootdemo678-JavaSymbolSolver
+JavaSymbolSolver javaparser符号与类型解析

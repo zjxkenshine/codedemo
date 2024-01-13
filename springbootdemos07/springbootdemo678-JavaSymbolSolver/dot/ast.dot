@@ -1,0 +1,29 @@
+digraph {
+n0 [label="root (CompilationUnit)"];
+n1 [label="types"];
+n0 -> n1;
+n2 [label="type (ClassOrInterfaceDeclaration)"];
+n1 -> n2;
+n3 [label="isInterface='false'"];
+n2 -> n3;
+n4 [label="name (SimpleName)"];
+n2 -> n4;
+n5 [label="identifier='X'"];
+n4 -> n5;
+n6 [label="members"];
+n2 -> n6;
+n7 [label="member (FieldDeclaration)"];
+n6 -> n7;
+n8 [label="variables"];
+n7 -> n8;
+n9 [label="variable (VariableDeclarator)"];
+n8 -> n9;
+n10 [label="name (SimpleName)"];
+n9 -> n10;
+n11 [label="identifier='x'"];
+n10 -> n11;
+n12 [label="type (PrimitiveType)"];
+n9 -> n12;
+n13 [label="type='INT'"];
+n12 -> n13;
+}
