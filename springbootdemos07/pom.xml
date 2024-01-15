@@ -89,6 +89,7 @@
         <module>springbootdemo677-Kbop</module>
         <module>springbootdemo678-JavaSymbolSolver</module>
         <module>springbootdemo679-Lite-Pool</module>
+        <module>springbootdemo680-Graphviz-Java</module>
     </modules>
 
     <properties>
