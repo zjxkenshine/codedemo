@@ -235,3 +235,6 @@ Kbop 线程安全、快速、轻量级的基于密钥的对象池
 
 ## 678.springbootdemo678-JavaSymbolSolver
 JavaSymbolSolver javaparser符号与类型解析
+
+## 679.springbootdemo679-Lite-Pool
+Lite-pool 轻量级快速对象池
