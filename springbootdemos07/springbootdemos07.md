@@ -244,3 +244,6 @@ Graphviz-java java graphviz客户端
 
 ## 681.springbootdemo681-Apfloat
 Apfloat 任意精度算数库
+
+## 682.springbootdemo682-Json-Schema
+Json-schema jsonschema校验

@@ -91,6 +91,7 @@
         <module>springbootdemo679-Lite-Pool</module>
         <module>springbootdemo680-Graphviz-Java</module>
         <module>springbootdemo681-Apfloat</module>
+        <module>springbootdemo682-Json-Schema</module>
     </modules>
 
     <properties>
