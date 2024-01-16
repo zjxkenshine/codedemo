@@ -241,3 +241,6 @@ Lite-pool 轻量级快速对象池
 
 ## 680.springbootdemo680-Graphviz-Java
 Graphviz-java java graphviz客户端
+
+## 681.springbootdemo681-Apfloat
+Apfloat 任意精度算数库

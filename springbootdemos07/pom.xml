@@ -90,6 +90,7 @@
         <module>springbootdemo678-JavaSymbolSolver</module>
         <module>springbootdemo679-Lite-Pool</module>
         <module>springbootdemo680-Graphviz-Java</module>
+        <module>springbootdemo681-Apfloat</module>
     </modules>
 
     <properties>
