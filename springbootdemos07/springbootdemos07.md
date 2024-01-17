@@ -247,3 +247,6 @@ Apfloat 任意精度算数库
 
 ## 682.springbootdemo682-Json-Schema
 Json-schema jsonschema校验
+
+## 683.springbootdemo683-JDave
+JDave BDD行为测试框架
