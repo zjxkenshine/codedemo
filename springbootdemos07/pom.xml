@@ -93,6 +93,7 @@
         <module>springbootdemo681-Apfloat</module>
         <module>springbootdemo682-Json-Schema</module>
         <module>springbootdemo683-JDave</module>
+        <module>springbootdemo684-Jqwik</module>
     </modules>
 
     <properties>

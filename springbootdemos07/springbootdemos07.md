@@ -250,3 +250,6 @@ Json-schema jsonschema校验
 
 ## 683.springbootdemo683-JDave
 JDave BDD行为测试框架
+
+## 684.springbootdemo684-Jqwik
+Jqwik JUnit5平台属性基准测试(PBT)框架
