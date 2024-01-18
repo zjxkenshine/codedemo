@@ -253,3 +253,6 @@ JDave BDD行为测试框架
 
 ## 684.springbootdemo684-Jqwik
 Jqwik JUnit5平台属性基准测试(PBT)框架
+
+## 685.springbootdemo685-Fest-Util
+Fest-Util 工具类
