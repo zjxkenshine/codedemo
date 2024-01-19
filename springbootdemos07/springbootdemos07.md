@@ -256,3 +256,6 @@ Jqwik JUnit5平台属性基准测试(PBT)框架
 
 ## 685.springbootdemo685-Fest-Util
 Fest-Util 工具类
+
+## 686.springbootdemo686-Cel-Java
+cel-java 谷歌开源表达式引擎

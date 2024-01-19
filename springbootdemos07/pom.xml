@@ -95,6 +95,7 @@
         <module>springbootdemo683-JDave</module>
         <module>springbootdemo684-Jqwik</module>
         <module>springbootdemo685-Fest-Util</module>
+        <module>springbootdemo686-Cel-Java</module>
     </modules>
 
     <properties>
