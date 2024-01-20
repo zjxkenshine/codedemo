@@ -260,5 +260,8 @@ Fest-Util 工具类
 ## 686.springbootdemo686-Cel-Java
 cel-java 谷歌开源表达式引擎
 
-## 687.springbootdemo686-Commonmark
+## 687.springbootdemo687-Commonmark
 Commonmark Markdown解析
+
+## 688.springbootdemo688-Autolink
+Autolink 从文本中提取url或邮箱
