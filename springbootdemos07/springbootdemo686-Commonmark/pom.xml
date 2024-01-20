@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>springbootdemos07</artifactId>
+        <groupId>org.kenshine</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>springbootdemo686-Commonmark</artifactId>
+
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.commonmark</groupId>
+            <artifactId>commonmark</artifactId>
+            <version>0.20.0</version>
+        </dependency>
+
+        <!--表格支持-->
+        <dependency>
+            <groupId>org.commonmark</groupId>
+            <artifactId>commonmark-ext-gfm-tables</artifactId>
+            <version>0.20.0</version>
+        </dependency>
+
+        <!--autolink 链接解析支持-->
+        <dependency>
+            <groupId>org.commonmark</groupId>
+            <artifactId>commonmark-ext-autolink</artifactId>
+            <version>0.20.0</version>
+        </dependency>
+
+        <!--strikethrough 删除线渲染支持-->
+        <dependency>
+            <groupId>org.commonmark</groupId>
+            <artifactId>commonmark-ext-gfm-strikethrough</artifactId>
+            <version>0.20.0</version>
+        </dependency>
+
+        <!-- heading-anchor 标题支持 -->
+        <dependency>
+            <groupId>org.commonmark</groupId>
+            <artifactId>commonmark-ext-heading-anchor</artifactId>
+            <version>0.20.0</version>
+        </dependency>
+
+        <!--图片解析支持-->
+        <dependency>
+            <groupId>org.commonmark</groupId>
+            <artifactId>commonmark-ext-image-attributes</artifactId>
+            <version>0.20.0</version>
+        </dependency>
+
+        <!--下划线解析支持-->
+        <dependency>
+            <groupId>org.commonmark</groupId>
+            <artifactId>commonmark-ext-ins</artifactId>
+            <version>0.20.0</version>
+        </dependency>
+
+        <!--列表解析支持-->
+        <dependency>
+            <groupId>org.commonmark</groupId>
+            <artifactId>commonmark-ext-task-list-items</artifactId>
+            <version>0.20.0</version>
+        </dependency>
+
+        <!--yaml元素支持-->
+        <dependency>
+            <groupId>org.commonmark</groupId>
+            <artifactId>commonmark-ext-yaml-front-matter</artifactId>
+            <version>0.20.0</version>
+        </dependency>
+
+        <!--创建警告段落-->
+        <dependency>
+            <groupId>fr.brouillard.oss</groupId>
+            <artifactId>commonmark-ext-notifications</artifactId>
+            <version>1.1.1</version>
+        </dependency>
+    </dependencies>
+
+</project>
