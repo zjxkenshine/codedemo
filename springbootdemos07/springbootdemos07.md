@@ -268,3 +268,6 @@ Autolink 从文本中提取url或邮箱
 
 ## 689.springbootdemo689-Nashron
 Nashron java8默认js引擎
+
+## 690.springbootdemo690-Rhino
+Rhino js引擎
