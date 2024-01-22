@@ -98,6 +98,7 @@
         <module>springbootdemo686-Cel-Java</module>
         <module>springbootdemo686-Commonmark</module>
         <module>springbootdemo688-Autolink</module>
+        <module>springbootdemo689-Nashron</module>
     </modules>
 
     <properties>
