@@ -100,6 +100,7 @@
         <module>springbootdemo688-Autolink</module>
         <module>springbootdemo689-Nashron</module>
         <module>springbootdemo690-Rhino</module>
+        <module>springbootdemo691-Unbescape</module>
     </modules>
 
     <properties>
