@@ -101,6 +101,7 @@
         <module>springbootdemo689-Nashron</module>
         <module>springbootdemo690-Rhino</module>
         <module>springbootdemo691-Unbescape</module>
+        <module>springbootdemo692-Jcfl</module>
     </modules>
 
     <properties>
