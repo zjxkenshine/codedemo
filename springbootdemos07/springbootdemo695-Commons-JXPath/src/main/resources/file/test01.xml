@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<vendor>
+    <location id="store101">
+        <address>
+            <street>Orchard Road</street>
+        </address>
+    </location>
+
+    <location id="store102">
+        <address>
+            <street>Tangerine Drive</street>
+        </address>
+    </location>
+</vendor>
