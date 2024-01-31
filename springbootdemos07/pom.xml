@@ -105,6 +105,7 @@
         <module>springbootdemo693-J2V8</module>
         <module>springbootdemo694-Threetenbp</module>
         <module>springbootdemo695-Commons-JXPath</module>
+        <module>springbootdemo696-DirectMemory</module>
     </modules>
 
     <properties>
