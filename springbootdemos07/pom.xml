@@ -106,6 +106,7 @@
         <module>springbootdemo694-Threetenbp</module>
         <module>springbootdemo695-Commons-JXPath</module>
         <module>springbootdemo696-DirectMemory</module>
+        <module>springbootdemo697-Xades4j</module>
     </modules>
 
     <properties>
