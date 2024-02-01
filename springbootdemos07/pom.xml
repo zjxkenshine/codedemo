@@ -107,6 +107,7 @@
         <module>springbootdemo695-Commons-JXPath</module>
         <module>springbootdemo696-DirectMemory</module>
         <module>springbootdemo697-Xades4j</module>
+        <module>springbootdemo698-Jadler</module>
     </modules>
 
     <properties>
