@@ -295,3 +295,6 @@ Xades4j xades4j签名java库
 
 ## 698.springbootdemo698-Jadler
 Jadler Http服务模拟
+
+## 699.springbootdemo699-Cheesecakes
+Cheesecakes 基于Junit的数据驱动测试框架
