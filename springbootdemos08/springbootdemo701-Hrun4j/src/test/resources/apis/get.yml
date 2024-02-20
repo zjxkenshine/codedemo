@@ -1,0 +1,9 @@
+name: Postman Echo GET Request
+base_url: https://postman-echo.com
+variables:
+  website: http://lematech.vip_api
+  project: hrun4j_api
+  author: lematech_api
+request:
+  url: /get?website=${website}&project=${project}&author=${author}
+  method: GET

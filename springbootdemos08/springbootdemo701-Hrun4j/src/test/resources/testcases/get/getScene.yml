@@ -1,0 +1,36 @@
+config:
+  name: Postman Echo GET Request
+  base_url: https://postman-echo.com
+  variables:
+    website: http://lematech.vip
+    project: hrun4j
+    author: lematechvipVar
+teststeps:
+  - name: Postman Echo GET Request And Reference Api
+    variables:
+      author: lematech
+    setup_hooks:
+      - ${BSH('Hrun4j.bsh')}
+      - ${shFunction(page,count,type)}
+    request:
+      url: /get?website=${website}&project=${project}&author=${author}&page={page}
+      method: GET
+    extract:
+      - website: body.args.website
+    output:
+      - variables
+      - extract
+    teardown_hooks:
+      - ${tdFunction("This is a joke!")}
+    validate:
+      - equalTo: [status_code,200]
+      - equalTo: [body.args.website,http://lematech.vip]
+      - equalTo: ["${author}", lematech]
+      - equalTo: ["^website\":\"(.*?)\"$", website":"http://lematech.vip"]
+  - name: Reference Api
+    api: apis/get.yml
+    variables:
+      author: lematechvip
+      website: ${website}
+    validate:
+      - equalTo: [status_code,200]

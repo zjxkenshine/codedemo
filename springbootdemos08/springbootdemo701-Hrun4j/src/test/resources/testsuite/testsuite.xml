@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Maven access to hrun4j demo testsuite" parallel="false">
+    <listeners>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    </listeners>
+    <test name="Maven方式引入测试用例">
+        <classes>
+            <class name="vip.lematech.hrun4j.quickstartdemo.testcases.get.GetTest">
+            </class>
+
+        </classes>
+    </test>
+</suite>

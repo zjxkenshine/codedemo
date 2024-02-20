@@ -1,0 +1,6 @@
+#!/bin/java bsh.Interpreter
+print("Hrun4j.bsh文件所在路径即为项目工程路径");
+print("你好，欢迎使用Hrun4j！");
+print("官网：http://www.lematech.vip");
+print("微信公众号：lematech");
+print("技术交流微信：wytest");

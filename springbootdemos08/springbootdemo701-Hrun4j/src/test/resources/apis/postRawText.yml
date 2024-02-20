@@ -1,0 +1,8 @@
+name: Postman Echo POST Raw Text Request
+base_url: https://postman-echo.com
+variables:
+  data: "This is expected to be sent back as part of response body._api"
+request:
+  url: /post
+  method: POST
+  data: ${data}

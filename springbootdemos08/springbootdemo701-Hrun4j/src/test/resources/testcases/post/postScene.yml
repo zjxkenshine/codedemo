@@ -1,0 +1,18 @@
+config:
+  name: Postman Echo postFormData And postRawText Request
+  base_url: https://postman-echo.com
+teststeps:
+  - name: Reference postFormData Api
+    api: apis/postFormData.yml
+    variables:
+      website: http://lematech.vip
+      project: hrun4j
+      author: lematech
+    validate:
+      - equalTo: [status_code,200]
+  - name: Reference postRawText Api
+    api: apis/postRawText.yml
+    variables:
+      data: "This is expected to be sent back as part of response body."
+    validate:
+      - equalTo: [status_code,200]
