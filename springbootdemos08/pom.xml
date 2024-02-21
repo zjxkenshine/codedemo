@@ -11,6 +11,7 @@
     <modules>
         <module>springbootdemo700-Flogger</module>
         <module>springbootdemo701-Hrun4j</module>
+        <module>springbootdemo702-BeanSearcher</module>
     </modules>
 
     <properties>

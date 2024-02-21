@@ -4,3 +4,6 @@ Flogger 超轻量日志实现
 
 ## 701.springbootdemo701-Hrun4j
 Hrun4j 测试框架
+
+## 702.springbootdemo702-BeanSearcher
+springboot 整合 BeanSearcher 高级查询ORM
