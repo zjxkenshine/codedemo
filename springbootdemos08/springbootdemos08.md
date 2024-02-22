@@ -7,3 +7,6 @@ Hrun4j 测试框架
 
 ## 702.springbootdemo702-BeanSearcher
 springboot 整合 BeanSearcher 高级查询ORM
+
+## 703.springbootdemo703-Xjsonkit
+Xjsonkit 超轻量级JSON/JSONB/XML/YAML解析门面 API
