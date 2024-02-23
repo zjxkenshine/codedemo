@@ -1,0 +1,12 @@
+<foo>
+    <map>
+        <entry>
+            <key>a</key>
+            <value>1</value>
+        </entry>
+        <entry>
+            <key>b</key>
+            <value>2</value>
+        </entry>
+    </map>
+</foo>

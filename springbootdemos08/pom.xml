@@ -13,6 +13,7 @@
         <module>springbootdemo701-Hrun4j</module>
         <module>springbootdemo702-BeanSearcher</module>
         <module>springbootdemo703-Xjsonkit</module>
+        <module>springbootdemo704-Jaxb-Ri</module>
     </modules>
 
     <properties>

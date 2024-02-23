@@ -10,3 +10,6 @@ springboot 整合 BeanSearcher 高级查询ORM
 
 ## 703.springbootdemo703-Xjsonkit
 Xjsonkit 超轻量级JSON/JSONB/XML/YAML解析门面 API
+
+## 704.springbootdemo704-Jaxb-Ri
+jaxb-ri Eclipse的jaxb实现
