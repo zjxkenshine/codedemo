@@ -16,3 +16,6 @@ jaxb-ri Eclipse的jaxb实现
 
 ## 705.springbootdemo705-GraphViz
 GraphViz 操作dot文件、画图
+
+## 706.springbootdemo706-Ntru
+Ntru java ntru加密与ntru签名的实现

@@ -15,6 +15,7 @@
         <module>springbootdemo703-Xjsonkit</module>
         <module>springbootdemo704-Jaxb-Ri</module>
         <module>springbootdemo705-GraphViz</module>
+        <module>springbootdemo706-Ntru</module>
     </modules>
 
     <properties>
