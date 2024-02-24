@@ -13,3 +13,6 @@ Xjsonkit 超轻量级JSON/JSONB/XML/YAML解析门面 API
 
 ## 704.springbootdemo704-Jaxb-Ri
 jaxb-ri Eclipse的jaxb实现
+
+## 705.springbootdemo705-GraphViz
+GraphViz 操作dot文件、画图
