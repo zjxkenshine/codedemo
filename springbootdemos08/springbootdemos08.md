@@ -19,3 +19,6 @@ GraphViz 操作dot文件、画图
 
 ## 706.springbootdemo706-Ntru
 Ntru java ntru加密与ntru签名的实现
+
+## 707.springbootdemo707-Spire.Pdf
+Spire.Pdf for Java pdf操作

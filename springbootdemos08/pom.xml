@@ -16,6 +16,7 @@
         <module>springbootdemo704-Jaxb-Ri</module>
         <module>springbootdemo705-GraphViz</module>
         <module>springbootdemo706-Ntru</module>
+        <module>springbootdemo707-Spire.Pdf</module>
     </modules>
 
     <properties>
