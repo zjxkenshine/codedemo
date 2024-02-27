@@ -22,3 +22,6 @@ Ntru java ntru加密与ntru签名的实现
 
 ## 707.springbootdemo707-Spire.Pdf
 Spire.Pdf for Java pdf操作
+
+## 708.springbootdemo708-Tianai-Captcha
+springboot整合Tianai-Captcha 开源行为验证码

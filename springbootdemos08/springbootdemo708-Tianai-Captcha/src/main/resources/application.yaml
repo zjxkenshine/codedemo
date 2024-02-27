@@ -1,0 +1,24 @@
+server:
+  port: 8080
+spring:
+  thymeleaf:
+    cache: false
+    prefix: classpath:/templates/
+    suffix: .html
+    mode: HTML #LEGACYHTML5
+captcha:
+  expire:
+    default: 10000
+    # 文字点选验证码 过期时间设置大一点
+    WORD_IMAGE_CLICK: 60000
+  cache:
+    enabled: true
+    cache-size: 20
+  secondary:
+    enabled: false
+  # 不初始化默认的资源文件
+  init-default-resource: false
+cors:
+  controlAllowHeaders: "*"
+  controlAllowMethods: "*"
+  controlAllowOrigin: "*"

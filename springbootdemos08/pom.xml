@@ -17,6 +17,7 @@
         <module>springbootdemo705-GraphViz</module>
         <module>springbootdemo706-Ntru</module>
         <module>springbootdemo707-Spire.Pdf</module>
+        <module>springbootdemo708-Tianai-Captcha</module>
     </modules>
 
     <properties>
