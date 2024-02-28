@@ -25,3 +25,6 @@ Spire.Pdf for Java pdf操作
 
 ## 708.springbootdemo708-Tianai-Captcha
 springboot整合Tianai-Captcha 开源行为验证码
+
+## 709.springbootdemo709-Easy-Crypto
+Easy-Crypto 高性能的加解密文件和获取文件签名工具包

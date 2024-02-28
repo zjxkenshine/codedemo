@@ -18,6 +18,7 @@
         <module>springbootdemo706-Ntru</module>
         <module>springbootdemo707-Spire.Pdf</module>
         <module>springbootdemo708-Tianai-Captcha</module>
+        <module>springbootdemo709-Easy-Crypto</module>
     </modules>
 
     <properties>
