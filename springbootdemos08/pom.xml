@@ -21,6 +21,7 @@
         <module>springbootdemo709-Easy-Crypto</module>
         <module>springbootdemo710-Java-Testdata-Generator</module>
         <module>springbootdemo711-Java-Emoji-Converter</module>
+        <module>springbootdemo712-Jodd-Http</module>
     </modules>
 
     <properties>
