@@ -23,6 +23,7 @@
         <module>springbootdemo711-Java-Emoji-Converter</module>
         <module>springbootdemo712-Jodd-Http</module>
         <module>springbootdemo713-Jodd-Props</module>
+        <module>springbootdemo714-Jodd-Lagarto</module>
     </modules>
 
     <properties>
