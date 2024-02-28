@@ -1,0 +1,12 @@
+users.data.weight = 49.5
+users.data.height = 87.7
+users.data.age = 63
+comment=this is base property
+
+# 效果与下面方式类似
+[users.data]
+weight = 49.5
+height = 87.7
+age = 63
+[]
+comment=this is base property

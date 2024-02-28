@@ -22,6 +22,7 @@
         <module>springbootdemo710-Java-Testdata-Generator</module>
         <module>springbootdemo711-Java-Emoji-Converter</module>
         <module>springbootdemo712-Jodd-Http</module>
+        <module>springbootdemo713-Jodd-Props</module>
     </modules>
 
     <properties>

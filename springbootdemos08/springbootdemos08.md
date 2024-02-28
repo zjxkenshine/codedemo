@@ -37,3 +37,6 @@ Java-emoji-converter Emoji转换工具
 
 ## 712.springbootdemo712-Jodd-Http
 Jodd-Http 简单java HTTP客户端
+
+## 713.springbootdemo713-Jodd-Props
+Jodd-Props 配置文件读取
