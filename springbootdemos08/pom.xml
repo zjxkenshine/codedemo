@@ -20,6 +20,7 @@
         <module>springbootdemo708-Tianai-Captcha</module>
         <module>springbootdemo709-Easy-Crypto</module>
         <module>springbootdemo710-Java-Testdata-Generator</module>
+        <module>springbootdemo711-Java-Emoji-Converter</module>
     </modules>
 
     <properties>
