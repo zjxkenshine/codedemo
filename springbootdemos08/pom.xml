@@ -19,6 +19,7 @@
         <module>springbootdemo707-Spire.Pdf</module>
         <module>springbootdemo708-Tianai-Captcha</module>
         <module>springbootdemo709-Easy-Crypto</module>
+        <module>springbootdemo710-Java-Testdata-Generator</module>
     </modules>
 
     <properties>

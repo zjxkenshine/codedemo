@@ -28,3 +28,6 @@ springboot整合Tianai-Captcha 开源行为验证码
 
 ## 709.springbootdemo709-Easy-Crypto
 Easy-Crypto 高性能的加解密文件和获取文件签名工具包
+
+## 710.springbootdemo710-Java-Testdata-Generator
+Java-testdata-generator 测试数据生成
