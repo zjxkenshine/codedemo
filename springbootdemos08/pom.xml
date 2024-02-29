@@ -25,6 +25,7 @@
         <module>springbootdemo713-Jodd-Props</module>
         <module>springbootdemo714-Jodd-Lagarto</module>
         <module>springbootdemo715-Jodd-Mail</module>
+        <module>springbootdemo716-Jodd-Json</module>
     </modules>
 
     <properties>

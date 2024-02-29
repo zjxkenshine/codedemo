@@ -46,3 +46,6 @@ Jodd-Lagarto 高效，灵活的通用HTML解析器
 
 ## 715.springbootdemo715-Jodd-Mail
 Jodd-Mail 邮件收发
+
+## 716.springbootdemo716-Jodd-Json
+Jodd-Json json处理
