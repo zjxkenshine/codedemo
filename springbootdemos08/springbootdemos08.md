@@ -43,3 +43,6 @@ Jodd-Props 配置文件读取
 
 ## 714.springbootdemo714-Jodd-Lagarto
 Jodd-Lagarto 高效，灵活的通用HTML解析器
+
+## 715.springbootdemo715-Jodd-Mail
+Jodd-Mail 邮件收发
