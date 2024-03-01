@@ -49,3 +49,6 @@ Jodd-Mail 邮件收发
 
 ## 716.springbootdemo716-Jodd-Json
 Jodd-Json json处理
+
+## 717.springbootdemo717-Jodd-Util
+Jodd-Util 工具类
