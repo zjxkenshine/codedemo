@@ -27,6 +27,7 @@
         <module>springbootdemo715-Jodd-Mail</module>
         <module>springbootdemo716-Jodd-Json</module>
         <module>springbootdemo717-Jodd-Util</module>
+        <module>springbootdemo718-Jodd-Petite</module>
     </modules>
 
     <properties>

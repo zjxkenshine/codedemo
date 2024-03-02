@@ -52,3 +52,6 @@ Jodd-Json json处理
 
 ## 717.springbootdemo717-Jodd-Util
 Jodd-Util 工具类
+
+## 718.springbootdemo718-Jodd-Petite
+Jodd-Petite IOC与组件管理
