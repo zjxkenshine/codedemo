@@ -55,3 +55,6 @@ Jodd-Util 工具类
 
 ## 718.springbootdemo718-Jodd-Petite
 Jodd-Petite IOC与组件管理
+
+## 719.springbootdemo719-Jodd-Db
+Jodd-Db ORM框架简单学习

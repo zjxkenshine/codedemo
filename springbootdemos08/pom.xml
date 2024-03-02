@@ -28,6 +28,7 @@
         <module>springbootdemo716-Jodd-Json</module>
         <module>springbootdemo717-Jodd-Util</module>
         <module>springbootdemo718-Jodd-Petite</module>
+        <module>springbootdemo719-Jodd-Db</module>
     </modules>
 
     <properties>
