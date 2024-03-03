@@ -58,3 +58,6 @@ Jodd-Petite IOC与组件管理
 
 ## 719.springbootdemo719-Jodd-Db
 Jodd-Db ORM框架简单学习
+
+## 720.springbootdemo720-Jodd-Vtor
+Jodd-Vtor 参数校验

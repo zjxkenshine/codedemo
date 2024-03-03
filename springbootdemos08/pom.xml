@@ -29,6 +29,7 @@
         <module>springbootdemo717-Jodd-Util</module>
         <module>springbootdemo718-Jodd-Petite</module>
         <module>springbootdemo719-Jodd-Db</module>
+        <module>springbootdemo720-Jodd-Vtor</module>
     </modules>
 
     <properties>
