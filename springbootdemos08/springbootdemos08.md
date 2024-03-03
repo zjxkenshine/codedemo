@@ -61,3 +61,6 @@ Jodd-Db ORM框架简单学习
 
 ## 720.springbootdemo720-Jodd-Vtor
 Jodd-Vtor 参数校验
+
+## 721.springbootdemo721-Jodd-Madvoc
+Jodd-Madvoc mvc框架

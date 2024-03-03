@@ -30,6 +30,7 @@
         <module>springbootdemo718-Jodd-Petite</module>
         <module>springbootdemo719-Jodd-Db</module>
         <module>springbootdemo720-Jodd-Vtor</module>
+        <module>springbootdemo721-Jodd-Madvoc</module>
     </modules>
 
     <properties>
