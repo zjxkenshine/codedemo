@@ -26,6 +26,7 @@
         <module>jsoup-demo</module>
         <module>java17-demo</module>
         <module>gc-demo</module>
+        <module>multithread-demo</module>
     </modules>
 
     <dependencies>

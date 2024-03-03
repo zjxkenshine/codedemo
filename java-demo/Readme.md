@@ -47,3 +47,6 @@ juc使用demo
 ## Log-demo
 日志相关学习demo
 
+## multithread-demo
+《java多线程编程核心思想》笔记
+
