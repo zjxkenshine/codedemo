@@ -1,4 +1,2 @@
-参考文档:
-https://blog.csdn.net/qq_34565436/article/details/120904691
-https://blog.csdn.net/new_buff_007/article/details/109311171
-
+# 代码容量太大，已迁移
+https://gitee.com/zjxkenshine/springbootdemo-big/tree/master/springbootdemo236-FinReport
