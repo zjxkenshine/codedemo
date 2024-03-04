@@ -32,6 +32,7 @@
         <module>springbootdemo720-Jodd-Vtor</module>
         <module>springbootdemo721-Jodd-Madvoc</module>
         <module>springbootdemo722-Jodd-Proxetta</module>
+        <module>springbootdemo723-Robust-Http-Client</module>
     </modules>
 
     <properties>

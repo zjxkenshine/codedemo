@@ -67,3 +67,6 @@ Jodd-Madvoc mvc框架
 
 ## 722.springbootdemo722-Jodd-Proxetta
 Jodd-Proxetta 动态代理框架
+
+## 723.springbootdemo723-Robust-Http-Client
+Robust-Http-Client 执行HTTP下载并自动重试的小型Java库
