@@ -31,6 +31,7 @@
         <module>springbootdemo719-Jodd-Db</module>
         <module>springbootdemo720-Jodd-Vtor</module>
         <module>springbootdemo721-Jodd-Madvoc</module>
+        <module>springbootdemo722-Jodd-Proxetta</module>
     </modules>
 
     <properties>

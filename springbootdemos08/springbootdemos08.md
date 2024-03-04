@@ -64,3 +64,6 @@ Jodd-Vtor 参数校验
 
 ## 721.springbootdemo721-Jodd-Madvoc
 Jodd-Madvoc mvc框架
+
+## 722.springbootdemo722-Jodd-Proxetta
+Jodd-Proxetta 动态代理框架
