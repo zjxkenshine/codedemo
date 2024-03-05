@@ -33,6 +33,7 @@
         <module>springbootdemo721-Jodd-Madvoc</module>
         <module>springbootdemo722-Jodd-Proxetta</module>
         <module>springbootdemo723-Robust-Http-Client</module>
+        <module>springbootdemo724-Easy-Retry</module>
     </modules>
 
     <properties>

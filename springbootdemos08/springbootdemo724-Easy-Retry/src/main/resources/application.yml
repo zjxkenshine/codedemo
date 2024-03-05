@@ -1,0 +1,22 @@
+easy-retry:
+  server:
+    # 服务端的地址，若服务端集群部署则此处配置域名
+    host: 127.0.0.1
+    # 服务端netty的端口号
+    port: 1788
+  # 指定客户端IP，不配置则取本地IP
+  host: 127.0.0.1
+  # 指定客户端端口，不配置则取取本地端口
+  port: 8081
+  # 名称空间ID， 若不填为默认空间(764d604ec6fc45f68cd92514c40e9e1a)
+  namespace: 764d604ec6fc45f68cd92514c40e9e1a
+  # 批量上报滑动窗口配置
+  slidingWindow:
+    # 窗口期单位
+    chrono-unit: seconds
+    # 窗口期时间长度
+    duration: 10
+    # 总量窗口期阈值
+    total-threshold: 50
+    # 窗口数量预警
+    window-total-threshold: 150
