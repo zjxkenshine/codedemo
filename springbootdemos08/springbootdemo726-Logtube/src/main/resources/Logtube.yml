@@ -1,0 +1,4 @@
+logtube:
+  # 临时测试使用 生产建议使用Apollo 配置
+  config-file: logtube-local.properties
+  # config-file=APOLLO

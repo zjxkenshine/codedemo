@@ -76,3 +76,6 @@ Springboot 整合 Easy-Retry 可靠和快速的分布式任务重试和分布式
 
 ## 725.springbootdemo725-Easy-Enum
 Easy-Enum 简化枚举使用
+
+## 726.springbootdemo726-Logtube
+springboot 整合 Logtube 日志框架

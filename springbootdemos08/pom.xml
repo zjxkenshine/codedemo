@@ -35,6 +35,7 @@
         <module>springbootdemo723-Robust-Http-Client</module>
         <module>springbootdemo724-Easy-Retry</module>
         <module>springbootdemo725-Easy-Enum</module>
+        <module>springbootdemo726-Logtube</module>
     </modules>
 
     <properties>
