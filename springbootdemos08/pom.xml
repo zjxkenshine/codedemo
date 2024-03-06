@@ -34,6 +34,7 @@
         <module>springbootdemo722-Jodd-Proxetta</module>
         <module>springbootdemo723-Robust-Http-Client</module>
         <module>springbootdemo724-Easy-Retry</module>
+        <module>springbootdemo725-Easy-Enum</module>
     </modules>
 
     <properties>

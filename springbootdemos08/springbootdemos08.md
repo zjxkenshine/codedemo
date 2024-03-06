@@ -73,3 +73,6 @@ Robust-Http-Client 执行HTTP下载并自动重试的小型Java库
 
 ## 724.springbootdemo724-Easy-Retry
 Springboot 整合 Easy-Retry 可靠和快速的分布式任务重试和分布式任务调度平台
+
+## 725.springbootdemo725-Easy-Enum
+Easy-Enum 简化枚举使用
