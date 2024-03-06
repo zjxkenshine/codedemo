@@ -82,3 +82,9 @@ springboot 整合 Logtube 日志框架
 
 ## 727.springbootdemo727-JeroMQ
 JeroMQ Java ZMQ库实现
+
+## 728.springbootdemo728-Webgraph
+Webgraph 图压缩框架
+
+## 729.springbootdemo729-Fauxflake
+Fauxflake id生成器

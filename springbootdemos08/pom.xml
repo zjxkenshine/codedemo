@@ -37,6 +37,8 @@
         <module>springbootdemo725-Easy-Enum</module>
         <module>springbootdemo726-Logtube</module>
         <module>springbootdemo727-JeroMQ</module>
+        <module>springbootdemo728-Webgraph</module>
+        <module>springbootdemo729-Fauxflake</module>
     </modules>
 
     <properties>
