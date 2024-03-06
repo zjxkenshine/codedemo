@@ -79,3 +79,6 @@ Easy-Enum 简化枚举使用
 
 ## 726.springbootdemo726-Logtube
 springboot 整合 Logtube 日志框架
+
+## 727.springbootdemo727-JeroMQ
+JeroMQ Java ZMQ库实现

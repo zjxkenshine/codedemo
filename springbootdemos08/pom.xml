@@ -36,6 +36,7 @@
         <module>springbootdemo724-Easy-Retry</module>
         <module>springbootdemo725-Easy-Enum</module>
         <module>springbootdemo726-Logtube</module>
+        <module>springbootdemo727-JeroMQ</module>
     </modules>
 
     <properties>
