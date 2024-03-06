@@ -1,0 +1,1 @@
+[2024-03-06 09:07:54.873 +0800] [{"c":"7ed11689203030e7","s":"-","x":{"key1":"val1","key2":"val2","path":"/test01","class_line":33,"method_name":"test01","path_digest":"8f41daba51d9f7235109a58dd65839ea","thread_name":"http-nio-8080-exec-1","class_name":"com.kenshine.logtube.controller.TestController"}}] hello world
