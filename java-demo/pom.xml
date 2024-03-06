@@ -12,10 +12,8 @@
     <modules>
         <module>java8-demo</module>
         <module>guava-demo</module>
-        <module>juc-demo</module>
         <module>aes-cmac-demo</module>
         <module>hm-design-pattern-demo</module>
-        <module>javax-demo</module>
         <module>java-base-demo</module>
         <module>java-io-demo</module>
         <module>design-pattern-demo</module>
@@ -23,9 +21,6 @@
         <module>Log-demo</module>
         <module>hm-juc-demo</module>
         <module>algorithm-demo</module>
-        <module>jsoup-demo</module>
-        <module>java17-demo</module>
-        <module>gc-demo</module>
         <module>multithread-demo</module>
     </modules>
 

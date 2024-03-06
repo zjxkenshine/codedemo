@@ -6,10 +6,7 @@ aes-cmac 加密的demo
 左神算法demo
 
 ## design-pattern-demo
-偶尔写点设计模式
-
-## gc-demo
-gc相关demo
+设计模式练习demo
 
 ## guava-demo
 guava的demo
@@ -23,9 +20,6 @@ guava的demo
 ## java8-demo
 java8新特性demo
 
-## java17-demo
-java9-java17新特性
-
 ## java-base-demo
 java基础demo摘录
 
@@ -35,18 +29,9 @@ java基础复习
 ## java-io-demo
 io包使用demo
 
-## javax-demo
-javax扩展包使用demo
-
-## jsoup-demo
-jsoup使用demo
-
-## juc-demo
-juc使用demo
-
 ## Log-demo
 日志相关学习demo
 
 ## multithread-demo
-《java多线程编程核心思想》笔记
+《java多线程编程核心思想》代码笔记
 
