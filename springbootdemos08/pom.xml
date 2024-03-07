@@ -39,6 +39,7 @@
         <module>springbootdemo727-JeroMQ</module>
         <module>springbootdemo728-Webgraph</module>
         <module>springbootdemo729-Fauxflake</module>
+        <module>springbootdemo730-Openregex</module>
     </modules>
 
     <properties>
