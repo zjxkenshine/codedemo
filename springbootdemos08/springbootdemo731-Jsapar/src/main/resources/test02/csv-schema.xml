@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://jsapar.tigris.org/JSaParSchema/2.0">
+  <csvschema lineseparator="\n">
+    <line occurs="*" linetype="com.kenshine.jsapar.model.Employee" cellseparator=",">
+      <cell name="name" />
+      <cell name="employeeNumber" ><format type="integer"/></cell>
+      <cell name="birthDate" > <format type="local_date" pattern="yyyy-MM-dd"/></cell>
+      <cell name="address.street" />
+    </line>
+  </csvschema>
+</schema>

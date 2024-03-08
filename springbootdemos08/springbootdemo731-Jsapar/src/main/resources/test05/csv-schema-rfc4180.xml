@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://jsapar.tigris.org/JSaParSchema/2.0">
+  <csvschema lineseparator="\n" quotesyntax="RFC4180">
+    <line occurs="*" linetype="Person" cellseparator="," quotechar="&quot;">
+      <cell name="First name" />
+      <cell name="Last name" quotebehavior="ALWAYS"/>
+      <cell name="Address"/>
+    </line>
+  </csvschema>
+</schema>

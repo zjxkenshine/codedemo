@@ -40,6 +40,7 @@
         <module>springbootdemo728-Webgraph</module>
         <module>springbootdemo729-Fauxflake</module>
         <module>springbootdemo730-Openregex</module>
+        <module>springbootdemo731-Jsapar</module>
     </modules>
 
     <properties>
