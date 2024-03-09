@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>springbootdemos08</artifactId>
+        <groupId>com.kenshine</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>springbootdemo732-Wood</artifactId>
+
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+    </properties>
+
+    <dependencies>
+        <!-- 框架包 -->
+        <dependency>
+            <groupId>org.noear</groupId>
+            <artifactId>wood</artifactId>
+            <version>1.2.7</version>
+        </dependency>
+        <dependency>
+            <groupId>org.noear</groupId>
+            <artifactId>wood.plus</artifactId>
+            <version>1.2.7</version>
+        </dependency>
+        <!--MySql驱动依赖-->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <!-- 可选：maven 插件，用于生成Xml sql mapper接口 -->
+            <plugin>
+                <groupId>org.noear</groupId>
+                <artifactId>wood-maven-plugin</artifactId>
+                <version>1.2.7</version>
+            </plugin>
+        </plugins>
+    </build>
+</project>

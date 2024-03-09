@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//noear.org//DTD Mapper 3.0//EN" "http://noear.org/dtd/wood-mapper.dtd">
+<mapper namespace="wood_demo.xmlsql2"
+        import="com.kenshinel.wood.model.*"
+        baseMapper="User">
+    <sql id="getUser" return="User" remarks="获取用户信息">
+        SELECT * FROM user WHERE id = @{id:int}
+    </sql>
+</mapper>
