@@ -106,3 +106,6 @@ Tinylog 简单日志框架
 
 ## 735.springbootdemo735-Guava-Retrying
 Guava-Retrying Guava retry扩展，允许为任意函数调用创建可配置的重试策略
+
+## 736.springbootdemo736-Jericho-Html
+Jericho-Html HTML解析框架

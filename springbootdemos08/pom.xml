@@ -45,6 +45,7 @@
         <module>springbootdemo733-Yap4j</module>
         <module>springbootdemo734-Tinylog</module>
         <module>springbootdemo735-Guava-Retrying</module>
+        <module>springbootdemo736-Jericho-Html</module>
     </modules>
 
     <properties>
