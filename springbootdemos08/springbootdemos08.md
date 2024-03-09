@@ -103,3 +103,6 @@ Yap4j 基于POJO、注解解析CSV
 
 ## 734.springbootdemo734-Tinylog
 Tinylog 简单日志框架
+
+## 735.springbootdemo735-Guava-Retrying
+Guava-Retrying Guava retry扩展，允许为任意函数调用创建可配置的重试策略
