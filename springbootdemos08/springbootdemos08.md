@@ -100,3 +100,6 @@ wood微型ORM框架
 
 ## 733.springbootdemo733-Yap4j
 Yap4j 基于POJO、注解解析CSV
+
+## 734.springbootdemo734-Tinylog
+Tinylog 简单日志框架
