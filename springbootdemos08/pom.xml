@@ -42,6 +42,7 @@
         <module>springbootdemo730-Openregex</module>
         <module>springbootdemo731-Jsapar</module>
         <module>springbootdemo732-Wood</module>
+        <module>springbootdemo733-Yap4j</module>
     </modules>
 
     <properties>
