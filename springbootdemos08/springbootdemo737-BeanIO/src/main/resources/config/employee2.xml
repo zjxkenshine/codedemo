@@ -1,0 +1,20 @@
+<beanio xmlns="http://www.beanio.org/2012/03"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="mapping.xsd mapping.xsd">
+
+    <stream name="employeeFile" format="csv">
+        <record name="employee" class="com.kenshine.beanio.model.Employee2">
+            <field name="firstName" />
+            <field name="lastName" />
+            <field name="title" />
+            <field name="salary" />
+            <field name="hireDate" format="MMddyyyy" />
+            <segment name="mailingAddress" class="com.kenshine.beanio.model.Address">
+                <field name="street" />
+                <field name="city" />
+                <field name="state" />
+                <field name="zip" />
+            </segment>
+        </record>
+    </stream>
+</beanio>

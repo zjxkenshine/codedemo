@@ -1,0 +1,12 @@
+<beanio xmlns="http://www.beanio.org/2012/03"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="mapping.xsd mapping.xsd">
+
+    <stream name="employeeFile" format="delimited">
+        <parser>
+            <property name="delimiter" value="," />
+        </parser>
+        <record name="employee" class="com.kenshine.beanio.model.Employee3" />
+    </stream>
+
+</beanio>

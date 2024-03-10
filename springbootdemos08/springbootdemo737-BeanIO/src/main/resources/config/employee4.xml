@@ -1,0 +1,24 @@
+<beanio xmlns="http://www.beanio.org/2012/03"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="mapping.xsd mapping.xsd">
+
+    <stream name="employeeFile" format="csv">
+        <record name="header" minOccurs="1" maxOccurs="1" class="com.kenshine.beanio.model.Header">
+            <field name="recordType" rid="true" literal="Header" />
+            <field name="fileDate" format="MMddyyyy" />
+        </record>
+        <record name="employee" minOccurs="0" maxOccurs="unbounded" class="com.kenshine.beanio.model.Employee4">
+            <field name="recordType" rid="true" literal="Detail" />
+            <field name="firstName" />
+            <field name="lastName" />
+            <field name="title" />
+            <field name="salary" />
+            <field name="hireDate" format="MMddyyyy" />
+        </record>
+        <record name="trailer" minOccurs="1" maxOccurs="1" class="com.kenshine.beanio.model.Trailer">
+            <field name="recordType" rid="true" literal="Trailer" />
+            <field name="recordCount" />
+        </record>
+    </stream>
+
+</beanio>

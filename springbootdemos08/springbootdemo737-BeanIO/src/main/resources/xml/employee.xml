@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<employeeFile>
+    <employee>
+        <firstName>Joe</firstName>
+        <lastName>Smith</lastName>
+        <title>Developer</title>
+        <salary>75000</salary>
+        <hireDate>2009-10-12</hireDate>
+    </employee>
+    <employee>
+        <firstName>Jane</firstName>
+        <lastName>Doe</lastName>
+        <title>Architect</title>
+        <salary>80000</salary>
+        <hireDate>2008-01-15</hireDate>
+    </employee>
+    <employee>
+        <firstName>Jon</firstName>
+        <lastName>Andersen</lastName>
+        <title>Manager</title>
+        <salary>85000</salary>
+        <hireDate>2007-03-18</hireDate>
+    </employee>
+</employeeFile>

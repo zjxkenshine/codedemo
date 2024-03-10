@@ -46,6 +46,7 @@
         <module>springbootdemo734-Tinylog</module>
         <module>springbootdemo735-Guava-Retrying</module>
         <module>springbootdemo736-Jericho-Html</module>
+        <module>springbootdemo737-BeanIO</module>
     </modules>
 
     <properties>
