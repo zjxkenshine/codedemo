@@ -49,6 +49,7 @@
         <module>springbootdemo737-BeanIO</module>
         <module>springbootdemo738-Dbvisitor</module>
         <module>springbootdemo739-XChart</module>
+        <module>springbootdemo740-Jcabi-Http</module>
     </modules>
 
     <properties>

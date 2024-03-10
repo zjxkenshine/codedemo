@@ -118,3 +118,6 @@ DbVisitor ORM框架
 
 ## 739.springbootdemo739-XChart
 XChart 一个用于绘制数据的轻量级Java库
+
+## 740.springbootdemo740-Jcabi-Http
+Jcabi-Http Http客户端
