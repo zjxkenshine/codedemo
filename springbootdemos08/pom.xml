@@ -48,6 +48,7 @@
         <module>springbootdemo736-Jericho-Html</module>
         <module>springbootdemo737-BeanIO</module>
         <module>springbootdemo738-Dbvisitor</module>
+        <module>springbootdemo739-XChart</module>
     </modules>
 
     <properties>

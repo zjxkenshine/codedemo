@@ -115,3 +115,6 @@ BeanIO bean与文件转换
 
 ## 738.springbootdemo738-Dbvisitor
 DbVisitor ORM框架
+
+## 739.springbootdemo739-XChart
+XChart 一个用于绘制数据的轻量级Java库
