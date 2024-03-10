@@ -47,6 +47,7 @@
         <module>springbootdemo735-Guava-Retrying</module>
         <module>springbootdemo736-Jericho-Html</module>
         <module>springbootdemo737-BeanIO</module>
+        <module>springbootdemo738-Dbvisitor</module>
     </modules>
 
     <properties>

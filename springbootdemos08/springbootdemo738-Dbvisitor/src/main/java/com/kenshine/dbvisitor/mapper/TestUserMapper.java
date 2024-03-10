@@ -1,0 +1,26 @@
+package com.kenshine.dbvisitor.mapper;
+
+import com.kenshine.dbvisitor.dto.TestUser;
+import net.hasor.dbvisitor.dal.mapper.BaseMapper;
+import net.hasor.dbvisitor.dal.repository.*;
+
+import java.util.List;
+
+/**
+ * @author kenshine
+ * mapper注解
+ */
+@SimpleMapper
+public interface TestUserMapper extends BaseMapper<TestUser> {
+  @Insert("insert into `test_user` (name,age,create_time) values (#{name}, #{age}, now())")
+  int insertUser(@Param("name") String name, @Param("age") int age);
+  
+  @Update("update `test_user` set age = #{age} where id = #{id}")
+  int updateAge(@Param("id") int userId, @Param("age") int newAge);
+  
+  @Delete("delete from `test_user` where age > #{age}")
+  int deleteByAge(@Param("age") int age);
+  
+  @Query(value = "select * from `test_user` where  #{beginAge} < age and age < #{endAge}", resultType = TestUser.class)
+  List<TestUser> queryByAge(@Param("beginAge") int beginAge, @Param("endAge") int endAge);
+}
