@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<classList>
+
+    <class id="1" name="一班" >
+        <student id="1" >张三       </student>
+        <student id="2" >李四      </student>
+    </class>
+
+    <class id="2" name="二班" >
+        <student id="3" >王五</student>
+        <student id="4" >赵六</student>
+    </class>
+
+    <class id="3" name="三班" >
+        <student id="5" >小明</student>
+        <student id="6" >小高 </student>
+    </class>
+
+    <class id="4" name="四班" >
+        <student id="7" >小花</student>
+        <student id="8" >小红 </student>
+    </class>
+
+</classList>

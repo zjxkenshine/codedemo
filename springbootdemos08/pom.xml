@@ -51,6 +51,7 @@
         <module>springbootdemo739-XChart</module>
         <module>springbootdemo740-Jcabi-Http</module>
         <module>springbootdemo741-License3j</module>
+        <module>springbootdemo742-Xmlpull</module>
     </modules>
 
     <properties>

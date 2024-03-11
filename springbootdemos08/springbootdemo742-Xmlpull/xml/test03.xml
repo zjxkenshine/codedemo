@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<classList>
+
+    <class id="1" name="一班" >
+        <student id="1" >
+            <name>张三</name>
+            <sex>男</sex>
+        </student>
+        <student id="2" >
+            <name>李四</name>
+            <sex>男</sex>
+        </student>
+    </class>
+
+    <class id="2" name="二班" >
+        <student id="3" >
+            <name>王五</name>
+            <sex>男</sex>
+        </student>
+        <student id="4" >
+            <name>赵六</name>
+            <sex>男</sex>
+        </student>
+    </class>
+
+    <class id="3" name="三班" >
+        <student id="5" >
+            <name>小明</name>
+            <sex>男</sex>
+        </student>
+        <student id="6" >
+            <name>小高</name>
+            <sex>男</sex>
+        </student>
+    </class>
+
+    <class id="4" name="四班" >
+        <student id="7" >
+            <name>小花</name>
+            <sex>女</sex>
+        </student>
+        <student id="8" >
+            <name>小红</name>
+            <sex>女</sex>
+        </student>
+    </class>
+
+</classList>
