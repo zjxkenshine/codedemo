@@ -53,6 +53,7 @@
         <module>springbootdemo741-License3j</module>
         <module>springbootdemo742-Xmlpull</module>
         <module>springbootdemo743-SM2</module>
+        <module>springbootdemo744-API-Key</module>
     </modules>
 
     <properties>
