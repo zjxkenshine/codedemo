@@ -54,6 +54,7 @@
         <module>springbootdemo742-Xmlpull</module>
         <module>springbootdemo743-SM2</module>
         <module>springbootdemo744-API-Key</module>
+        <module>springbootdemo745-X-Easypdf</module>
     </modules>
 
     <properties>
