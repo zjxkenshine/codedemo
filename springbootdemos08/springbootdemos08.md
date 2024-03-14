@@ -136,3 +136,6 @@ API Key 保护SpringBoot接口安全
 
 ## 745.springbootdemo745-X-Easypdf
 X-Easypdf 一个用搭积木的方式构建pdf的框架
+
+## 746.springbootdemo746-Jcasbin
+springboot 整合 Jcasbin 访问控制
