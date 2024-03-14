@@ -56,6 +56,7 @@
         <module>springbootdemo744-API-Key</module>
         <module>springbootdemo745-X-Easypdf</module>
         <module>springbootdemo746-Jcasbin</module>
+        <module>springbootdemo747-Mmseg4j</module>
     </modules>
 
     <properties>
