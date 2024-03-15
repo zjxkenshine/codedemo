@@ -145,3 +145,6 @@ Mmseg4j 中文分词
 
 ## 748.springbootdemo748-Httpmime
 Httpmime 非web项目Http客户端
+
+## 749.springbootdemo749-JCodeModel
+JCodeModel 代码生成库,允许在运行时动态生成、操纵源代码/字节码

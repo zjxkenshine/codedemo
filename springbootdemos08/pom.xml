@@ -58,6 +58,7 @@
         <module>springbootdemo746-Jcasbin</module>
         <module>springbootdemo747-Mmseg4j</module>
         <module>springbootdemo748-Httpmime</module>
+        <module>springbootdemo749-JCodeModel</module>
     </modules>
 
     <properties>
