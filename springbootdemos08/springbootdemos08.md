@@ -142,3 +142,6 @@ springboot 整合 Jcasbin 访问控制
 
 ## 747.springbootdemo747-Mmseg4j
 Mmseg4j 中文分词
+
+## 748.springbootdemo748-Httpmime
+Httpmime 非web项目Http客户端
