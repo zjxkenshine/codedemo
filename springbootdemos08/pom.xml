@@ -59,6 +59,7 @@
         <module>springbootdemo747-Mmseg4j</module>
         <module>springbootdemo748-Httpmime</module>
         <module>springbootdemo749-JCodeModel</module>
+        <module>springbootdemo750-Re2j</module>
     </modules>
 
     <properties>
