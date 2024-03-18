@@ -61,6 +61,7 @@
         <module>springbootdemo749-JCodeModel</module>
         <module>springbootdemo750-Re2j</module>
         <module>springbootdemo751-Jsch-Agent-Proxy</module>
+        <module>springbootdemo752-Jzlib</module>
     </modules>
 
     <properties>
