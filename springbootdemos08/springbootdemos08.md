@@ -160,3 +160,6 @@ Jzlib zlib java实现
 
 ## 753.springbootdemo753-ECJ
 ECJ Eclipse Java 编译器
+
+## 754.springbootdemo754-Arquillian
+Arquillian 集成测试框架

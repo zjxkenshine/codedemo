@@ -63,6 +63,7 @@
         <module>springbootdemo751-Jsch-Agent-Proxy</module>
         <module>springbootdemo752-Jzlib</module>
         <module>springbootdemo753-ECJ</module>
+        <module>springbootdemo754-Arquillian</module>
     </modules>
 
     <properties>
