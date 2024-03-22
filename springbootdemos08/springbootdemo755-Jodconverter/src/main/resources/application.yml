@@ -1,0 +1,4 @@
+jodconverter:
+  local:
+    enabled: true
+    office-home: C:\Program Files\LibreOffice
