@@ -65,6 +65,7 @@
         <module>springbootdemo753-ECJ</module>
         <module>springbootdemo754-Arquillian</module>
         <module>springbootdemo755-Jodconverter</module>
+        <module>springbootdemo756-Jackson-Dataformat-Xml</module>
     </modules>
 
     <properties>

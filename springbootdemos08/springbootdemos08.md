@@ -166,3 +166,6 @@ Arquillian 集成测试框架
 
 ## 755.springbootdemo755-Jodconverter
 springboot+Jodconverter+LibreOffice 转换文档格式
+
+## 756.springbootdemo756-Jackson-Dataformat-Xml
+Jackson-Dataformat-Xml XML操作
