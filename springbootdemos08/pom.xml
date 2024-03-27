@@ -66,6 +66,8 @@
         <module>springbootdemo754-Arquillian</module>
         <module>springbootdemo755-Jodconverter</module>
         <module>springbootdemo756-Jackson-Dataformat-Xml</module>
+        <module>springbootdemo757-Jackson-Dataformat-CSV</module>
+        <module>springbootdemo757-Jackson-Dataformat-CSV</module>
     </modules>
 
     <properties>
