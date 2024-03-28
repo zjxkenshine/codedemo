@@ -172,3 +172,6 @@ Jackson-Dataformat-Xml XML操作
 
 ## 757.springbootdemo757-Jackson-Dataformat-CSV
 Jackson-Dataformat-Csv CSV操作
+
+## 758.springbootdemo758-Jackson-Dataformat-Yaml
+Jackson-Dataformat-Yaml YAML操作

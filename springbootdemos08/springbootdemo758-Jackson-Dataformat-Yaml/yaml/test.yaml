@@ -1,0 +1,9 @@
+name: "kenshine"
+age: 20
+hobbies:
+- "睡觉"
+- "打游戏"
+map:
+  k1: "v1"
+  k2: "v2"
+  k3: "v3"
