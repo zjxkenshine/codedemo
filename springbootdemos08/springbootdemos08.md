@@ -178,3 +178,6 @@ Jackson-Dataformat-Yaml YAML操作
 
 ## 759.springbootdemo759-Jackson-Dataformat-Ion
 Jackson-Dataformat-Ion Ion操作
+
+## 760.springbootdemo760-Jackson-Dataformat-Properties
+Jackson-Dataformat-Properties Properties操作
