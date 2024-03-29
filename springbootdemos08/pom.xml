@@ -69,6 +69,7 @@
         <module>springbootdemo757-Jackson-Dataformat-CSV</module>
         <module>springbootdemo757-Jackson-Dataformat-CSV</module>
         <module>springbootdemo758-Jackson-Dataformat-Yaml</module>
+        <module>springbootdemo759-Jackson-Dataformat-Ion</module>
     </modules>
 
     <properties>
