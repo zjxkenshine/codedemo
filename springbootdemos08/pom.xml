@@ -71,6 +71,7 @@
         <module>springbootdemo758-Jackson-Dataformat-Yaml</module>
         <module>springbootdemo759-Jackson-Dataformat-Ion</module>
         <module>springbootdemo760-Jackson-Dataformat-Properties</module>
+        <module>springbootdemo761-Jackson-Dataformat-Avor</module>
     </modules>
 
     <properties>

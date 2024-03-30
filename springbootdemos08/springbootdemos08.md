@@ -181,3 +181,6 @@ Jackson-Dataformat-Ion Ion操作
 
 ## 760.springbootdemo760-Jackson-Dataformat-Properties
 Jackson-Dataformat-Properties Properties操作
+
+## 761.springbootdemo761-Jackson-Dataformat-Avor
+Jackson-Dataformat-Avor Avor操作
