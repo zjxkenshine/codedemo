@@ -184,3 +184,6 @@ Jackson-Dataformat-Properties Properties操作
 
 ## 761.springbootdemo761-Jackson-Dataformat-Avor
 Jackson-Dataformat-Avor Avor操作
+
+## 762.springbootdemo762-Jackson-Dataformat-Toml
+Jackson-Dataformat-Toml Toml操作

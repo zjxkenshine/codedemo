@@ -1,0 +1,7 @@
+id = 1
+name = 'kenshine'
+hobbies = ['a', 'b']
+friend.id = 2
+friend.name = 'qin'
+friend.hobbies = ['c', 'd']
+friend.friend = ''
