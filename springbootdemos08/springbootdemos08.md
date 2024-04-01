@@ -187,3 +187,6 @@ Jackson-Dataformat-Avor Avor操作
 
 ## 762.springbootdemo762-Jackson-Dataformat-Toml
 Jackson-Dataformat-Toml Toml操作
+
+## 763.springbootdemo763-Jackson-Dataformat-Cbor
+Jackson-Dataformat-Cbor CBOR操作
