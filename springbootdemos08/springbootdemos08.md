@@ -190,3 +190,6 @@ Jackson-Dataformat-Toml Toml操作
 
 ## 763.springbootdemo763-Jackson-Dataformat-Cbor
 Jackson-Dataformat-Cbor CBOR操作
+
+## 764.springbootdemo764-Jackson-Dataformat-Smile
+Jackson-Dataformat-Smile Smile操作
