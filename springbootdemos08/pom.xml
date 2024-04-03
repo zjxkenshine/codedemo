@@ -75,6 +75,7 @@
         <module>springbootdemo762-Jackson-Dataformat-Toml</module>
         <module>springbootdemo763-Jackson-Dataformat-Cbor</module>
         <module>springbootdemo764-Jackson-Dataformat-Smile</module>
+        <module>springbootdemo765-Jackson-Dataformat-Protobuf</module>
     </modules>
 
     <properties>

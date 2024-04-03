@@ -193,3 +193,6 @@ Jackson-Dataformat-Cbor CBOR操作
 
 ## 764.springbootdemo764-Jackson-Dataformat-Smile
 Jackson-Dataformat-Smile Smile操作
+
+## 765.springbootdemo765-Jackson-Dataformat-Protobuf
+Jackson-Dataformat-Protobuf Protobuf操作
