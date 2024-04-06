@@ -196,3 +196,6 @@ Jackson-Dataformat-Smile Smile操作
 
 ## 765.springbootdemo765-Jackson-Dataformat-Protobuf
 Jackson-Dataformat-Protobuf Protobuf操作
+
+## 766.springbootdemo766-Protoparser
+Protoparser .proto文件解析器
