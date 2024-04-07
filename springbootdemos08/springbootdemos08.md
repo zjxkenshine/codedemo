@@ -199,3 +199,6 @@ Jackson-Dataformat-Protobuf Protobuf操作
 
 ## 766.springbootdemo766-Protoparser
 Protoparser .proto文件解析器
+
+## 767.springbootdemo767-Proxool
+springboot整合Proxool JDBC连接池

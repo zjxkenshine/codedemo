@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- the proxool configuration can be embedded within your own application's.
+     Anything outside the "proxool" tag is ignored. -->
+<something-else-entirely>
+    <proxool>
+        <alias>proxool_dbpool</alias>
+        <driver-url>jdbc:mysql://localhost:3306/springboot05?useUnicode=true&amp;characterEncoding=UTF-8&amp;useSSL=false</driver-url>
+        <driver-class>com.mysql.cj.jdbc.Driver</driver-class>
+        <driver-properties>
+            <property name="user" value="root" />
+            <property name="password" value="123456" />
+        </driver-properties>
+        <!-- 最大连接数 -->
+        <maximum-connection-count>20</maximum-connection-count>
+        <!-- 最小连接数  默认值：5个 -->
+        <minimum-connection-count>5</minimum-connection-count>
+        <!-- 最少保持的空闲连接数 -->
+        <prototype-count>5</prototype-count>
+
+        <!-- 同时创建新的最大并发连接数 -->
+        <simultaneous-build-throttle>30</simultaneous-build-throttle>
+        <!-- 最大连接生命周期（毫秒数）  默认值：4小时，此处配为15分钟 -->
+        <maximum-connection-lifetime>900000</maximum-connection-lifetime>
+
+        <!-- 最大活动时间（毫秒数）   默认值：5分钟  -->
+        <maximum-active-time>300000</maximum-active-time>
+
+        <!-- 自动侦察各个连接状态的时间间隔(毫秒),侦察到空闲的连接就马上回收,超时的销毁 -->
+        <house-keeping-sleep-time>30000</house-keeping-sleep-time>
+
+        <!-- 保持连接的测试SQL语句 -->
+        <house-keeping-test-sql>
+            select now()
+        </house-keeping-test-sql>
+
+        <test-before-use>true</test-before-use>
+    </proxool>
+</something-else-entirely>
