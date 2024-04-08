@@ -202,3 +202,6 @@ Protoparser .proto文件解析器
 
 ## 767.springbootdemo767-Proxool
 springboot整合Proxool JDBC连接池
+
+## 768.springbootdemo768-CRC16
+SpringBoot集成CRC16、CRC32校验

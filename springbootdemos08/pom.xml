@@ -78,6 +78,7 @@
         <module>springbootdemo765-Jackson-Dataformat-Protobuf</module>
         <module>springbootdemo766-Protoparser</module>
         <module>springbootdemo767-Proxool</module>
+        <module>springbootdemo768-CRC16</module>
     </modules>
 
     <properties>
