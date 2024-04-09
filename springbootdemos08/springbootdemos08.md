@@ -205,3 +205,6 @@ springboot整合Proxool JDBC连接池
 
 ## 768.springbootdemo768-CRC16
 SpringBoot集成CRC16、CRC32校验
+
+## 769.springbootdemo769-Rsa-Encrypt-Body
+Springboot整合rsa-encrypt-body-spring-boot 接口请求参数自动加解密

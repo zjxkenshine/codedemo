@@ -79,6 +79,7 @@
         <module>springbootdemo766-Protoparser</module>
         <module>springbootdemo767-Proxool</module>
         <module>springbootdemo768-CRC16</module>
+        <module>springbootdemo769-Rsa-Encrypt-Body</module>
     </modules>
 
     <properties>
