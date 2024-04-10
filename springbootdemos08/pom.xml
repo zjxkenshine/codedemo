@@ -80,6 +80,7 @@
         <module>springbootdemo767-Proxool</module>
         <module>springbootdemo768-CRC16</module>
         <module>springbootdemo769-Rsa-Encrypt-Body</module>
+        <module>springbootdemo770-Light-Security</module>
     </modules>
 
     <properties>

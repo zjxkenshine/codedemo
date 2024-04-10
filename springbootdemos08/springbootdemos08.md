@@ -208,3 +208,6 @@ SpringBoot集成CRC16、CRC32校验
 
 ## 769.springbootdemo769-Rsa-Encrypt-Body
 Springboot整合rsa-encrypt-body-spring-boot 接口请求参数自动加解密
+
+## 770.springbootdemo770-Light-Security
+Springboot整合Light-Security 安全框架

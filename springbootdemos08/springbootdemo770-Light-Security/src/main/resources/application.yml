@@ -1,0 +1,27 @@
+server:
+  port: 8009
+light-security:
+  # 权限规则配置：表示用{http-method}方法请求的{path}路径必须具备什么{expression}
+  spec-list:
+    - http-method: ANY
+      path: /login
+      expression: "anon()"
+    - http-method: ANY
+      path: /user
+      expression: "hasAnyRoles('user','admin')"
+    - http-method: ANY
+      path: /user-no-access
+      expression: "hasAllRoles('user','admin','xx')"
+    - http-method: GET
+      path: /error
+      expression: "anon()"
+    - http-method: ANY
+      path: /**
+      expression: "hasLogin()"
+  jwt:
+    # jwt sign算法
+    algorithm: hs512
+    # jwt secret
+    secret: MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvFsEiaLvij9C1Mz+oyAmt47whAaRkRu/8kePM+X8760UGU0RMwGti6Z9y3LQ0RvK6I0brXmbGB/RsN38PVnhcP8ZfxGUH26kX0RK+tlrxcrG+HkPYOH4XPAL8Q1lu1n9x3tLcIPxq8ZZtuIyKYEmoLKyMsvTviG5flTpDprT25unWgE4md1kthRWXOnfWHATVY7Y/r4obiOL1mS5bEa/iNKotQNnvIAKtjBM4RlIDWMa6dmz+lHtLtqDD2LF1qwoiSIHI75LQZ/CNYaHCfZSxtOydpNKq8eb1/PGiLNolD4La2zf0/1dlcr5mkesV570NxRmU1tFm8Zd3MZlZmyv9QIDAQAB
+    # jwt 有效时间
+    expiration-in-second: 1209600
