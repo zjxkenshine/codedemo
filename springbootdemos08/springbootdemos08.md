@@ -214,3 +214,6 @@ Springboot整合Light-Security 安全框架
 
 ## 771.springbootdemo771-Netty
 SpringBoot整合Netty实现socket通讯
+
+## 772.springbootdemo772-Bsh-Core
+springboot整合beanshell(bsh-core)公式计算

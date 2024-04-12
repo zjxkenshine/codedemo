@@ -82,6 +82,7 @@
         <module>springbootdemo769-Rsa-Encrypt-Body</module>
         <module>springbootdemo770-Light-Security</module>
         <module>springbootdemo771-Netty</module>
+        <module>springbootdemo772-Bsh-Core</module>
     </modules>
 
     <properties>
