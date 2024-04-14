@@ -83,6 +83,7 @@
         <module>springbootdemo770-Light-Security</module>
         <module>springbootdemo771-Netty</module>
         <module>springbootdemo772-Bsh-Core</module>
+        <module>springbootdemo773-J2mod</module>
     </modules>
 
     <properties>

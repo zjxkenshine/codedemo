@@ -217,3 +217,6 @@ SpringBoot整合Netty实现socket通讯
 
 ## 772.springbootdemo772-Bsh-Core
 springboot整合beanshell(bsh-core)公式计算
+
+## 773.springbootdemo773-J2mod
+J2mod 构建Modbus TCP/RTU 通讯
