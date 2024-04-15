@@ -220,3 +220,6 @@ springboot整合beanshell(bsh-core)公式计算
 
 ## 773.springbootdemo773-J2mod
 J2mod 构建Modbus TCP/RTU 通讯
+
+## 774.springbootdemo774-Jamod
+Jamod 实现Modbus TCP/UDP/Serial 通讯
