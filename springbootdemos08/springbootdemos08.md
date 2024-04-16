@@ -223,3 +223,7 @@ J2mod 构建Modbus TCP/RTU 通讯
 
 ## 774.springbootdemo774-Jamod
 Jamod 实现Modbus TCP/UDP/Serial 通讯
+
+## 775.springbootdemo775-LRC
+LRC 纵向冗余校验
+
