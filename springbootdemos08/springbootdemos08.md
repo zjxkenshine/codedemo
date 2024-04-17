@@ -227,3 +227,5 @@ Jamod 实现Modbus TCP/UDP/Serial 通讯
 ## 775.springbootdemo775-LRC
 LRC 纵向冗余校验
 
+## 776.springbootdemo776-HornetQ
+JMS连接HornetQ消息队列

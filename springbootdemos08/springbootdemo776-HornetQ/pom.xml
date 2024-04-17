@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>springbootdemos08</artifactId>
+        <groupId>com.kenshine</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>springbootdemo776-HornetQ</artifactId>
+
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.hornetq</groupId>
+            <artifactId>hornetq-jms-client</artifactId>
+            <version>2.4.7.Final</version>
+        </dependency>
+
+        <dependency>
+            <groupId>jboss</groupId>
+            <artifactId>jnp-client</artifactId>
+            <version>4.2.2.GA</version>
+        </dependency>
+
+<!--        <dependency>-->
+<!--            <groupId>org.hornetq</groupId>-->
+<!--            <artifactId>hornetq-core</artifactId>-->
+<!--            <version>2.0.0.GA</version>-->
+<!--            <scope>compile</scope>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>org.hornetq</groupId>-->
+<!--            <artifactId>hornetq-jms</artifactId>-->
+<!--            <version>2.0.0.GA</version>-->
+<!--            <scope>compile</scope>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>org.hornetq</groupId>-->
+<!--            <artifactId>hornetq-logging</artifactId>-->
+<!--            <version>2.0.0.GA</version>-->
+<!--            <scope>compile</scope>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>org.hornetq</groupId>-->
+<!--            <artifactId>hornetq-transports</artifactId>-->
+<!--            <version>2.0.0.GA</version>-->
+<!--            <scope>compile</scope>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>org.jboss.netty</groupId>-->
+<!--            <artifactId>netty</artifactId>-->
+<!--            <version>3.1.0.GA</version>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>org.jboss.javaee</groupId>-->
+<!--            <artifactId>jboss-jms-api</artifactId>-->
+<!--            <version>1.1.0.GA</version>-->
+<!--            <scope>compile</scope>-->
+<!--        </dependency>-->
+    </dependencies>
+
+</project>

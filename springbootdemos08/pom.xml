@@ -86,6 +86,7 @@
         <module>springbootdemo773-J2mod</module>
         <module>springbootdemo774-Jamod</module>
         <module>springbootdemo775-LRC</module>
+        <module>springbootdemo776-HornetQ</module>
     </modules>
 
     <properties>
