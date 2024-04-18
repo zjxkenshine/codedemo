@@ -87,6 +87,7 @@
         <module>springbootdemo774-Jamod</module>
         <module>springbootdemo775-LRC</module>
         <module>springbootdemo776-HornetQ</module>
+        <module>springbootdemo777-XSS</module>
     </modules>
 
     <properties>

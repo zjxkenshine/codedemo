@@ -229,3 +229,6 @@ LRC 纵向冗余校验
 
 ## 776.springbootdemo776-HornetQ
 JMS连接HornetQ消息队列
+
+## 777.springbootdemo777-XSS
+springboot过滤XSS攻击、SQL注入攻击
