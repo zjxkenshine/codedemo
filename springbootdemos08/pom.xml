@@ -92,6 +92,8 @@
         <module>springbootdemo778-CSRF-Attack</module>
         <module>springbootdemo779-CSRF-Referer</module>
         <module>springbootdemo780-Groovy</module>
+        <module>springbootdemo781-Btf</module>
+        <module>springbootdemo782-QRGen</module>
     </modules>
 
     <properties>

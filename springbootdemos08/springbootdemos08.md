@@ -242,3 +242,9 @@ springboot 使用 Referer 防盗链预防 CSRF 攻击
 
 ## 780.springbootdemo780-Groovy
 springboot 整合 Groovy 执行动态脚本
+
+## 781.springbootdemo781-Btf
+fge.Btf builder与freeze/thaw(冻结/解冻)模式接口
+
+## 782.springbootdemo782-QRGen
+QRGen 二维码生成
