@@ -236,3 +236,6 @@ springboot过滤XSS攻击、SQL注入攻击
 ## 778.springbootdemo778-CSRF
 SpringBoot+SpringSecurity+Thymeleaf 防御CSRF攻击
 - 778.springbootdemo778-CSRF-Attack：攻击者项目
+
+## 779.springbootdemo779-CSRF-Referer
+springboot 使用 Referer 防盗链预防 CSRF 攻击

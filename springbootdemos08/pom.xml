@@ -90,6 +90,7 @@
         <module>springbootdemo777-XSS</module>
         <module>springbootdemo778-CSRF</module>
         <module>springbootdemo778-CSRF-Attack</module>
+        <module>springbootdemo779-CSRF-Referer</module>
     </modules>
 
     <properties>
