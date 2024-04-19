@@ -239,3 +239,6 @@ SpringBoot+SpringSecurity+Thymeleaf 防御CSRF攻击
 
 ## 779.springbootdemo779-CSRF-Referer
 springboot 使用 Referer 防盗链预防 CSRF 攻击
+
+## 780.springbootdemo780-Groovy
+springboot 整合 Groovy 执行动态脚本
