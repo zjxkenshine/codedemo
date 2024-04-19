@@ -18,4 +18,4 @@ Groovy与Spring Boot整合入门教程
 
 # springboot整合两种执行方式
 - GroovyShell执行
-- 
+- GroovyClassLoader执行
