@@ -232,3 +232,7 @@ JMS连接HornetQ消息队列
 
 ## 777.springbootdemo777-XSS
 springboot过滤XSS攻击、SQL注入攻击
+
+## 778.springbootdemo778-CSRF
+SpringBoot+SpringSecurity+Thymeleaf 防御CSRF攻击
+- 778.springbootdemo778-CSRF-Attack：攻击者项目

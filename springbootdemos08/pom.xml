@@ -88,6 +88,8 @@
         <module>springbootdemo775-LRC</module>
         <module>springbootdemo776-HornetQ</module>
         <module>springbootdemo777-XSS</module>
+        <module>springbootdemo778-CSRF</module>
+        <module>springbootdemo778-CSRF-Attack</module>
     </modules>
 
     <properties>
