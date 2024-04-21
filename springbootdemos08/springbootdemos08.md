@@ -248,3 +248,6 @@ fge.Btf builder与freeze/thaw(冻结/解冻)模式接口
 
 ## 782.springbootdemo782-QRGen
 QRGen 二维码生成
+
+## 783.springbootdemo783-Msg-Simple
+Msg-Simple Java ResourceBundle的轻量级替代方案

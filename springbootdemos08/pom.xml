@@ -94,6 +94,7 @@
         <module>springbootdemo780-Groovy</module>
         <module>springbootdemo781-Btf</module>
         <module>springbootdemo782-QRGen</module>
+        <module>springbootdemo783-Msg-Simple</module>
     </modules>
 
     <properties>
