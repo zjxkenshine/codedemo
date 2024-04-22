@@ -251,3 +251,6 @@ QRGen 二维码生成
 
 ## 783.springbootdemo783-Msg-Simple
 Msg-Simple Java ResourceBundle的轻量级替代方案
+
+## 784.springbootdemo784-Uri-Template
+Uri-template URI模板的全功能Java实现（RFC6570）
