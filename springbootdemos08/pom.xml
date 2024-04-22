@@ -96,6 +96,7 @@
         <module>springbootdemo782-QRGen</module>
         <module>springbootdemo783-Msg-Simple</module>
         <module>springbootdemo784-Uri-Template</module>
+        <module>springbootdemo785-Jackson-Coreutils</module>
     </modules>
 
     <properties>

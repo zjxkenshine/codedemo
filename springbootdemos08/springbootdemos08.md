@@ -254,3 +254,6 @@ Msg-Simple Java ResourceBundle的轻量级替代方案
 
 ## 784.springbootdemo784-Uri-Template
 Uri-template URI模板的全功能Java实现（RFC6570）
+
+## 785.springbootdemo785-Jackson-Coreutils
+Jackson-Coreutils JSON指针、JSON数字等效、尾校验支持
