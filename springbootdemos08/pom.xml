@@ -98,6 +98,7 @@
         <module>springbootdemo784-Uri-Template</module>
         <module>springbootdemo785-Jackson-Coreutils</module>
         <module>springbootdemo786-Throwing-Lambdas</module>
+        <module>springbootdemo787-Allatori</module>
     </modules>
 
     <properties>

@@ -260,3 +260,6 @@ Jackson-Coreutils JSON指针、JSON数字等效、尾校验支持
 
 ## 786.springbootdemo786-Throwing-Lambdas
 Throwing-Lambdas 抛出异常的lambda
+
+## 787.springbootdemo787-Allatori
+Spring Boot 项目使用 Allatori 混淆jar包

@@ -1,0 +1,15 @@
+<config>
+    <!-- Maven属性可以在Allatori配置文件中使用. -->
+    <input>
+        <jar in="${project.build.finalName}.jar" out="${project.build.finalName}-obfuscated.jar"/>
+    </input>
+
+    <keep-names>
+        <class access="protected+">
+            <field access="protected+"/>
+            <method access="protected+"/>
+        </class>
+    </keep-names>
+
+    <property name="log-file" value="log.xml"/>
+</config>
