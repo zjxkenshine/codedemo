@@ -257,3 +257,6 @@ Uri-template URI模板的全功能Java实现（RFC6570）
 
 ## 785.springbootdemo785-Jackson-Coreutils
 Jackson-Coreutils JSON指针、JSON数字等效、尾校验支持
+
+## 786.springbootdemo786-Throwing-Lambdas
+Throwing-Lambdas 抛出异常的lambda

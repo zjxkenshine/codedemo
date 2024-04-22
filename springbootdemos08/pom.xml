@@ -97,6 +97,7 @@
         <module>springbootdemo783-Msg-Simple</module>
         <module>springbootdemo784-Uri-Template</module>
         <module>springbootdemo785-Jackson-Coreutils</module>
+        <module>springbootdemo786-Throwing-Lambdas</module>
     </modules>
 
     <properties>
