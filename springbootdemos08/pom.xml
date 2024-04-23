@@ -101,6 +101,7 @@
         <module>springbootdemo787-Allatori</module>
         <module>springbootdemo788-GenSetterCalls</module>
         <module>springbootdemo789-Swing-Clipboard</module>
+        <module>springbootdemo790-Socket-Point</module>
     </modules>
 
     <properties>
