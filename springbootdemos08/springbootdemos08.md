@@ -263,3 +263,6 @@ Throwing-Lambdas 抛出异常的lambda
 
 ## 787.springbootdemo787-Allatori
 Spring Boot 项目使用 Allatori 混淆jar包
+
+## 788.springbootdemo788-GenSetterCalls
+GenSetterCalls 自动生成Java dto的set方法调用

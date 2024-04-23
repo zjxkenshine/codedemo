@@ -99,6 +99,7 @@
         <module>springbootdemo785-Jackson-Coreutils</module>
         <module>springbootdemo786-Throwing-Lambdas</module>
         <module>springbootdemo787-Allatori</module>
+        <module>springbootdemo788-GenSetterCalls</module>
     </modules>
 
     <properties>
