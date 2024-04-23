@@ -266,3 +266,6 @@ Spring Boot 项目使用 Allatori 混淆jar包
 
 ## 788.springbootdemo788-GenSetterCalls
 GenSetterCalls 自动生成Java dto的set方法调用
+
+## 789.springbootdemo789-Swing-Clipboard
+java Swing 操作剪切板
