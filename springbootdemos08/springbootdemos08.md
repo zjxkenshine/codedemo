@@ -272,3 +272,6 @@ java Swing 操作剪切板
 
 ## 790.springbootdemo790-Socket-Point
 Socket-Point socket连接工具
+
+## 791.springbootdemo791-Kstry
+springboot 简单整合 Kstry 流程编排
