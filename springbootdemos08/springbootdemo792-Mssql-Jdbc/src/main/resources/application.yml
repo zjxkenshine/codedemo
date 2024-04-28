@@ -1,0 +1,6 @@
+spring:
+  datasource:
+    driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    url: jdbc:sqlserver://192.168.0.249:1433;DatabaseName=PLM;SelectMethod=cursor;encrypt=false;rewriteBatchedStatements=true
+    username: sa
+    password: server!@#$%6

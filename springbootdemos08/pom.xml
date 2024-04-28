@@ -103,6 +103,7 @@
         <module>springbootdemo789-Swing-Clipboard</module>
         <module>springbootdemo790-Socket-Point</module>
         <module>springbootdemo791-Kstry</module>
+        <module>springbootdemo792-Mssql-Jdbc</module>
     </modules>
 
     <properties>
