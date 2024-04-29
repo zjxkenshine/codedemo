@@ -1,0 +1,5 @@
+# MyBatis-Mapper类名	MyBatis-Mapper方法名	sql语句类型	表名
+com.kenshine.tableparser.TestMapper	deleteById	delete	test_demo01
+com.kenshine.tableparser.TestMapper	insertDemo	insert_into	test_demo01
+com.kenshine.tableparser.TestMapper	selectList	select	test_demo02
+com.kenshine.tableparser.TestMapper	selectList2	select	test_demo

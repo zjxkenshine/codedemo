@@ -1,0 +1,5 @@
+# sql语句类型	表名
+select	test_demo
+select	test_demo02
+insert_into	test_demo01
+delete	test_demo01

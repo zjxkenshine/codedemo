@@ -104,6 +104,7 @@
         <module>springbootdemo790-Socket-Point</module>
         <module>springbootdemo791-Kstry</module>
         <module>springbootdemo792-Mssql-Jdbc</module>
+        <module>springbootdemo793-Mybatis-Mysql-Table-Parser</module>
     </modules>
 
     <properties>

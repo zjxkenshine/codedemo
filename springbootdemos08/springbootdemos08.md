@@ -278,3 +278,6 @@ springboot 简单整合 Kstry 流程编排
 
 ## 792.springbootdemo792-Mssql-Jdbc
 springboot 整合 Mssql-Jdbc 连接 sqlserver
+
+## 793.springbootdemo793-Mybatis-Mysql-Table-Parser
+Mybatis-Mysql-Table-Parser  Mybatis xml文件解析
