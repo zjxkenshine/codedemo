@@ -105,6 +105,7 @@
         <module>springbootdemo791-Kstry</module>
         <module>springbootdemo792-Mssql-Jdbc</module>
         <module>springbootdemo793-Mybatis-Mysql-Table-Parser</module>
+        <module>springbootdemo794-Myexcel</module>
     </modules>
 
     <properties>
