@@ -106,6 +106,7 @@
         <module>springbootdemo792-Mssql-Jdbc</module>
         <module>springbootdemo793-Mybatis-Mysql-Table-Parser</module>
         <module>springbootdemo794-Myexcel</module>
+        <module>springbootdemo795-Converter</module>
     </modules>
 
     <properties>
