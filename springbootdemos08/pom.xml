@@ -108,6 +108,7 @@
         <module>springbootdemo794-Myexcel</module>
         <module>springbootdemo795-Converter</module>
         <module>springbootdemo796-Jackson-Sensible</module>
+        <module>springbootdemo797-Param-Parser</module>
     </modules>
 
     <properties>
