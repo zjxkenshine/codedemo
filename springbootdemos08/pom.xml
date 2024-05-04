@@ -107,6 +107,7 @@
         <module>springbootdemo793-Mybatis-Mysql-Table-Parser</module>
         <module>springbootdemo794-Myexcel</module>
         <module>springbootdemo795-Converter</module>
+        <module>springbootdemo796-Jackson-Sensible</module>
     </modules>
 
     <properties>

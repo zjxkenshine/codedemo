@@ -287,3 +287,6 @@ Myexcel Excel操作新方式
 
 ## 795.springbootdemo795-Converter
 Spring-boot-starter-converter简化Bean转换框架
+
+## 796.springbootdemo796-Jackson-Sensible
+Jackson-Sensible 基于注解的jackson序列化脱敏组件
