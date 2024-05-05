@@ -109,6 +109,7 @@
         <module>springbootdemo795-Converter</module>
         <module>springbootdemo796-Jackson-Sensible</module>
         <module>springbootdemo797-Param-Parser</module>
+        <module>springbootdemo798-Just-Simmand</module>
     </modules>
 
     <properties>

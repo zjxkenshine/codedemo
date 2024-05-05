@@ -293,3 +293,6 @@ Jackson-Sensible 基于注解的jackson序列化脱敏组件
 
 ## 797.springbootdemo797-Param-Parser
 Param-parser 将字符串解析成对应的对象
+
+## 798.springbootdemo798-Just-Simmand
+Just-Simmand 自定义指令工具
