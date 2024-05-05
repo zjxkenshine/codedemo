@@ -110,6 +110,7 @@
         <module>springbootdemo796-Jackson-Sensible</module>
         <module>springbootdemo797-Param-Parser</module>
         <module>springbootdemo798-Just-Simmand</module>
+        <module>springbootdemo799-Reflection-Kit</module>
     </modules>
 
     <properties>
