@@ -10,6 +10,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>springbootdemo800-Cmdline-Parser</module>
+        <module>springbootdemo801-ExceptionCapture</module>
     </modules>
 
     <properties>
