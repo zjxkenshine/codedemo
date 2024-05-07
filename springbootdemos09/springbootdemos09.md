@@ -4,3 +4,6 @@ Cmdline-Parser 超简单的行命令解析器，自定义语义解析和语义�
 
 ## 801.springbootdemo801-ExceptionCapture
 ExceptionCapture Springboot全局异常捕获模块
+
+## 802.springbootdemo802-NoRepeat
+NoRepeat springboot的接口等幂性组件

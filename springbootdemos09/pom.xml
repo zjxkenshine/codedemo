@@ -11,6 +11,7 @@
     <modules>
         <module>springbootdemo800-Cmdline-Parser</module>
         <module>springbootdemo801-ExceptionCapture</module>
+        <module>springbootdemo802-NoRepeat</module>
     </modules>
 
     <properties>
