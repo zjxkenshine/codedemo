@@ -7,3 +7,6 @@ ExceptionCapture Springboot全局异常捕获模块
 
 ## 802.springbootdemo802-NoRepeat
 NoRepeat springboot的接口等幂性组件
+
+## 803.springbootdemo803-ObjectComparator
+Object-comparator 对象属性比对工具

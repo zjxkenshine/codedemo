@@ -12,6 +12,7 @@
         <module>springbootdemo800-Cmdline-Parser</module>
         <module>springbootdemo801-ExceptionCapture</module>
         <module>springbootdemo802-NoRepeat</module>
+        <module>springbootdemo803-ObjectComparator</module>
     </modules>
 
     <properties>
