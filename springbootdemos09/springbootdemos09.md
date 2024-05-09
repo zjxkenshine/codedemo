@@ -10,3 +10,6 @@ NoRepeat springboot的接口等幂性组件
 
 ## 803.springbootdemo803-ObjectComparator
 Object-comparator 对象属性比对工具
+
+## 804.springbootdemo804-Vars-Parser
+Vars-Parser 文本变量解析器
