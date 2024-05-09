@@ -14,6 +14,7 @@
         <module>springbootdemo802-NoRepeat</module>
         <module>springbootdemo803-ObjectComparator</module>
         <module>springbootdemo804-Vars-Parser</module>
+        <module>springbootdemo805-Html-Parser</module>
     </modules>
 
     <properties>
