@@ -1,0 +1,5 @@
+station:
+  # 接口限制配置
+  limit:
+    # 是否开启限制策略
+    enable: true
