@@ -19,6 +19,7 @@
         <module>springbootdemo807-Loader-Jar</module>
         <module>springbootdemo808-Easy-File</module>
         <module>springbootdemo809-Jtar</module>
+        <module>springbootdemo810-Roaster</module>
     </modules>
 
     <properties>
