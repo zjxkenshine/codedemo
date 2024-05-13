@@ -18,6 +18,7 @@
         <module>springbootdemo806-Mark-Done</module>
         <module>springbootdemo807-Loader-Jar</module>
         <module>springbootdemo808-Easy-File</module>
+        <module>springbootdemo809-Jtar</module>
     </modules>
 
     <properties>
