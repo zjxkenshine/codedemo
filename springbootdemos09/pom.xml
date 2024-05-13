@@ -20,6 +20,7 @@
         <module>springbootdemo808-Easy-File</module>
         <module>springbootdemo809-Jtar</module>
         <module>springbootdemo810-Roaster</module>
+        <module>springbootdemo811-Mockdata</module>
     </modules>
 
     <properties>
