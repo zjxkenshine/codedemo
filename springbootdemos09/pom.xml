@@ -17,6 +17,7 @@
         <module>springbootdemo805-Html-Parser</module>
         <module>springbootdemo806-Mark-Done</module>
         <module>springbootdemo807-Loader-Jar</module>
+        <module>springbootdemo808-Easy-File</module>
     </modules>
 
     <properties>
