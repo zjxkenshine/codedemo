@@ -16,6 +16,7 @@
         <module>springbootdemo804-Vars-Parser</module>
         <module>springbootdemo805-Html-Parser</module>
         <module>springbootdemo806-Mark-Done</module>
+        <module>springbootdemo807-Loader-Jar</module>
     </modules>
 
     <properties>
