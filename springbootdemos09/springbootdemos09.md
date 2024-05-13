@@ -34,3 +34,6 @@ Roaster Java解析器(类似javapoet)
 
 ## 811.springbootdemo811-Mockdata
 Mockdata 非常简单但又高度自定义的数据生成工具
+
+## 812.springbootdemo812-Easy-Language
+Easy-Language 简单的语言包加载工具
