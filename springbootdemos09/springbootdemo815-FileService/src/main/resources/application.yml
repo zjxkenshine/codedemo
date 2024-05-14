@@ -1,0 +1,14 @@
+#spring:
+#  servlet:
+#    multipart:
+#      location: D:\Github\codedemo\springbootdemos09\springbootdemo815-FileService
+
+station:
+  file:
+    # 是否允许新上传的文件覆盖已有的同名文件
+    cover: false
+    path:
+      # 文件系统根目录，相对路径或绝对路径
+      main: D:\Github\codedemo\springbootdemos09\springbootdemo815-FileService
+    allowed: jpg, png，txt # 允许上传的文件后置，存在值时只允许设定值上传。忽略大小写。
+    blocked: exe # 不允许上传的文件后缀，blocked优先级大于allowed
