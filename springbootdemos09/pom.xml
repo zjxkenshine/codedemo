@@ -23,6 +23,7 @@
         <module>springbootdemo811-Mockdata</module>
         <module>springbootdemo812-Easy-Language</module>
         <module>springbootdemo813-Limit-Spring-Boot-Starter</module>
+        <module>springbootdemo814-Easy-Dict</module>
     </modules>
 
     <properties>

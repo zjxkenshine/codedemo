@@ -40,3 +40,6 @@ Easy-Language 简单的语言包加载工具
 
 ## 813.springbootdemo813-Limit-Spring-Boot-Starter
 Limit-Spring-Boot-Starter 限流组件
+
+## 814.springbootdemo814-Easy-Dict
+Easy-Dict 简单字典，用于文本转义场景
