@@ -46,3 +46,6 @@ Easy-Dict 简单字典，用于文本转义场景
 
 ## 815.springbootdemo815-FileService
 springboot 整合 FileService 简单文件管理系统
+
+## 816.springbootdemo816-Logging
+springboot 整合 Logging 日志服务与接口日志框架

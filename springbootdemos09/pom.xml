@@ -25,6 +25,7 @@
         <module>springbootdemo813-Limit-Spring-Boot-Starter</module>
         <module>springbootdemo814-Easy-Dict</module>
         <module>springbootdemo815-FileService</module>
+        <module>springbootdemo816-Logging</module>
     </modules>
 
     <properties>
