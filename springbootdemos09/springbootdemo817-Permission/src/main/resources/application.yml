@@ -1,0 +1,5 @@
+station:
+  # 权限功能配置
+  permission:
+    # 权限功能是否开启
+    enabled: true
