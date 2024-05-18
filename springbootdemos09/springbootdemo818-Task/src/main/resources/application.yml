@@ -1,0 +1,21 @@
+
+station:
+  # 可重复任务配置
+  task:
+    # 是否启用任务服务，默认开启。关闭后，不会通过此服务加载定时任务。
+    enabled: true
+    # 执行任务的最大线程数，默认20
+    maxSize: 2
+    # 是否开启正则名称匹配，对allowed与blocked参数生效。默认false
+    regex: false
+    # 允许的可重复任务列表。格式为yml的列表格式
+    allowed:
+      - name1
+      - name2
+    # 屏蔽的可重复任务列表
+    blocked:
+      - name3
+      - name4
+spring:
+  profiles:
+    active: dev

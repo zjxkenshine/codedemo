@@ -27,6 +27,7 @@
         <module>springbootdemo815-FileService</module>
         <module>springbootdemo816-Logging</module>
         <module>springbootdemo817-Permission</module>
+        <module>springbootdemo818-Task</module>
     </modules>
 
     <properties>

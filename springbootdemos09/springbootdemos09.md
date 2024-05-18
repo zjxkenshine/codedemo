@@ -52,3 +52,6 @@ springboot 整合 Logging 日志服务与接口日志框架
 
 ## 817.springbootdemo817-Permission
 springboot 整合 Permission 接口权限控制
+
+## 818.springbootdemo818-Task
+springboot 整合 TaskService 定时任务与多线程任务管理服务
