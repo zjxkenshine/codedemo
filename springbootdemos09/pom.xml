@@ -28,6 +28,7 @@
         <module>springbootdemo816-Logging</module>
         <module>springbootdemo817-Permission</module>
         <module>springbootdemo818-Task</module>
+        <module>springbootdemo819-Poiji</module>
     </modules>
 
     <properties>
