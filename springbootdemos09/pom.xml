@@ -29,6 +29,7 @@
         <module>springbootdemo817-Permission</module>
         <module>springbootdemo818-Task</module>
         <module>springbootdemo819-Poiji</module>
+        <module>springbootdemo820-Log-Record</module>
     </modules>
 
     <properties>
