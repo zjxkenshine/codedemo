@@ -31,6 +31,7 @@
         <module>springbootdemo819-Poiji</module>
         <module>springbootdemo820-Log-Record</module>
         <module>springbootdemo821-Tair</module>
+        <module>springbootdemo822-RSocket</module>
     </modules>
 
     <properties>

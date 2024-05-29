@@ -64,3 +64,6 @@ springboot 整合 log-record 记录操作日志
 
 ## 821.springbootdemo821-Tair
 Tair 分布式 key/value 存储系统
+
+## 822.springbootdemo822-RSocket
+RSocket 基于异步消息传递的网络通信协议
