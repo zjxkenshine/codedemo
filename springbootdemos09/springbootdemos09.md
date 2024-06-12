@@ -67,3 +67,6 @@ Tair 分布式 key/value 存储系统
 
 ## 822.springbootdemo822-RSocket
 RSocket 基于异步消息传递的网络通信协议
+
+## 823.springbootdemo823-SocketD
+SocketD 基于"事件"和"语义消息""流"的网络应用协议

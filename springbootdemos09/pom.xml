@@ -32,6 +32,7 @@
         <module>springbootdemo820-Log-Record</module>
         <module>springbootdemo821-Tair</module>
         <module>springbootdemo822-RSocket</module>
+        <module>springbootdemo823-SocketD</module>
     </modules>
 
     <properties>
