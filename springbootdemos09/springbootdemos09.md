@@ -73,3 +73,6 @@ SocketD 基于"事件"和"语义消息""流"的网络应用协议
 
 ## 824.springbootdemo824-PNGLibrary
 PNG library png处理
+
+## 825.springbootdemo825-MapStruct-Plus
+springboot 整合 MapStruct-Plus 对象转换

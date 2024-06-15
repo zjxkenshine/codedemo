@@ -34,6 +34,7 @@
         <module>springbootdemo822-RSocket</module>
         <module>springbootdemo823-SocketD</module>
         <module>springbootdemo824-PNGLibrary</module>
+        <module>springbootdemo825-MapStruct-Plus</module>
     </modules>
 
     <properties>
